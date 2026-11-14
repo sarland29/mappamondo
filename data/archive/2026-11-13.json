@@ -1,0 +1,1785 @@
+{
+ "date": "2026-11-13",
+ "dateLabel": "Venerdì 13 novembre 2026",
+ "headline": "Oggi a Dublino il vertice informale Ue dopo l'incontro Zelensky-inviati Usa e l'annuncio di uno scambio di prigionieri. Nuovi attacchi notturni con droni in Ucraina e su Mosca. In Italia firmato il patto su salari e contratti, sindacati a Palazzo Chigi; piena del Roja a Ventimiglia.",
+ "items": [
+  {
+   "cat": "politica",
+   "cc": "IE",
+   "check": {
+    "level": "confermata",
+    "note": "La valutazione di Kushner sui «progressi» è riferita dall'agenzia russa Tass."
+   },
+   "fx": [
+    {
+     "from": [
+      55.7558,
+      37.6173
+     ],
+     "label": "Mosca → Dublino",
+     "t": "link",
+     "to": [
+      53.3017,
+      -6.4511
+     ]
+    }
+   ],
+   "icon": "talks",
+   "id": "dublino-zelensky",
+   "label": "Baldonnel",
+   "lat": 53.3017,
+   "lng": -6.4511,
+   "place": "Baldonnel, Dublino",
+   "sources": [
+    {
+     "n": "The Tribune",
+     "u": "https://www.tribuneindia.com/news/world/zelenskyy-meets-witkoff-kushner-in-ireland-announces-major-prisoner-exchange-greater-european-role-in-ukraine-peace-talks"
+    },
+    {
+     "n": "Irish Times",
+     "u": "https://www.irishtimes.com/ireland/2026/11/13/ukraine-dominates-agenda-as-europes-leaders-come-to-dublin/"
+    },
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/13/kushner-progressi-significativi-nei-negoziati-ucraina-russia_0393c901-faa1-466e-9cda-fc878fd4cb61.html"
+    }
+   ],
+   "text": "Arrivati da Mosca dopo il colloquio con Putin, gli inviati americani hanno aggiornato il presidente ucraino all'aeroporto militare di Baldonnel, vicino a Dublino. Zelensky parla di uno scambio di prigionieri senza precedenti in preparazione e di un posto per l'Europa al prossimo tavolo negoziale, atteso già la settimana prossima. Kushner, citato dalla Tass, vede «progressi significativi», ma il Cremlino ribadisce il no a truppe straniere in Ucraina dopo un accordo.",
+   "title": "Zelensky vede Witkoff e Kushner in Irlanda: in arrivo un maxi scambio di prigionieri",
+   "weight": 3,
+   "zoom": 60
+  },
+  {
+   "cat": "politica",
+   "cc": "IE",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "gov",
+   "id": "ue-dublino",
+   "label": "Vertice Ue",
+   "lat": 53.3429,
+   "lng": -6.2674,
+   "place": "Dublino",
+   "sources": [
+    {
+     "n": "Agence Europe",
+     "u": "https://agenceurope.eu/en/bulletin/article/13980/3/leaders-to-discuss-ai-at-informal-meeting-in-dublin-on-friday-against-backdrop-of-situation-in-ukraine"
+    },
+    {
+     "n": "Irish Times",
+     "u": "https://www.irishtimes.com/ireland/2026/11/13/ukraine-dominates-agenda-as-europes-leaders-come-to-dublin/"
+    },
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/11/12/regional-security-dominates-european-talks-in-dublin-amid-hybrid-attacks"
+    }
+   ],
+   "text": "Dopo la Comunità politica europea, i capi di Stato e di governo dei Ventisette restano a Dublino per una riunione informale dedicata all'IA, con la guerra sullo sfondo. Resta aperto il nodo di chi rappresenterà l'Europa nei negoziati: Meloni ha descritto un'Unione divisa, Costa nega le spaccature e per Bruxelles un inviato dedicato è ancora prematuro.",
+   "title": "Oggi a Dublino il vertice informale Ue su intelligenza artificiale e Ucraina",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "alert",
+   "id": "it-allarmi",
+   "label": "Allarmi scuole",
+   "lat": 41.8835,
+   "lng": 12.4706,
+   "place": "Roma",
+   "sources": [
+    {
+     "n": "Umbria Journal",
+     "u": "https://www.umbriajournaltv.it/rassegna-stampa-del-13-novembre-allarmi-politica-e-cronaca/"
+    },
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/allarmi-bomba-a-roma-indagano-i-pm-dellantiterrorismo_1d0534fa-4748-4d5c-b3e6-61a28ebd5a6b.html"
+    },
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/11/12/regional-security-dominates-european-talks-in-dublin-amid-hybrid-attacks"
+    }
+   ],
+   "text": "Nella seconda ondata di mail minatorie le evacuazioni sono crollate rispetto al giorno prima, grazie alla linea di tenere aperte le scuole in assenza di elementi concreti. Il governo prepara un protocollo che toglie l'evacuazione automatica e potrebbe valere anche per trasporti, ospedali e uffici. A Roma indagano i pm dell'antiterrorismo.",
+   "title": "Allarmi bomba nelle scuole: 3.778 istituti raggiunti, solo 77 evacuazioni",
+   "weight": 3,
+   "zoom": 50
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Dichiarazioni riportate da una sola testata consultata."
+   },
+   "icon": "gov",
+   "id": "schlein-chigi",
+   "label": "Palazzo Chigi",
+   "lat": 41.901,
+   "lng": 12.4797,
+   "place": "Palazzo Chigi, Roma",
+   "sources": [
+    {
+     "n": "Open",
+     "u": "https://www.open.online/2026/11/13/ell-schlein-meloni-allarmi-bomba/"
+    }
+   ],
+   "text": "La segretaria del Pd chiede protocolli chiari per scuole e ospedali, una catena di comando definita e più fondi alla cybersicurezza, anche spostandoli dagli armamenti. Lamenta che l'esecutivo non abbia ancora indicato chi ci sia dietro gli attacchi e rilancia la richiesta di coinvolgere l'opposizione sulla manovra.",
+   "title": "Schlein dopo Palazzo Chigi: «Il governo ci chiama quando non sa che fare»",
+   "weight": 2,
+   "zoom": 160
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Scambio di dichiarazioni riportato da una sola testata consultata."
+   },
+   "fx": [
+    {
+     "from": [
+      53.3478,
+      -6.2394
+     ],
+     "label": "replica da Dublino",
+     "t": "link",
+     "to": [
+      41.8997,
+      12.4785
+     ]
+    }
+   ],
+   "icon": "money",
+   "id": "banche-messina",
+   "label": "Banche",
+   "lat": 41.8997,
+   "lng": 12.4785,
+   "place": "Roma",
+   "sources": [
+    {
+     "n": "Milano Finanza",
+     "u": "https://www.milanofinanza.it/news/manovra-botta-e-risposta-tra-meloni-e-messina-sul-contributo-delle-banche-la-premier-rivendica-una-scelta-202611121639433711"
+    }
+   ],
+   "text": "Davanti alla commissione d'inchiesta sul sistema bancario, l'ad di Intesa Sanpaolo ha definito la nuova tassa sugli extraprofitti non coerente con la Costituzione e ha accusato il governo di un atteggiamento da bullo. Da Dublino la premier ha replicato che alcune banche hanno prosperato grazie alla stabilità del Paese e che chiedere un contributo è «una scelta di giustizia».",
+   "title": "Contributo delle banche, scontro tra Messina e Meloni",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "money",
+   "id": "upb-manovra",
+   "label": "Manovra",
+   "lat": 41.9,
+   "lng": 12.474,
+   "place": "Roma",
+   "sources": [
+    {
+     "n": "Il Fatto Quotidiano",
+     "u": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/11/13/cosi-lupb-smonta-la-manovra-regali-fiscali-ai-dirigenti-solo-l1-agli-operai/8570070/"
+    },
+    {
+     "n": "Juorno",
+     "u": "https://www.juorno.it/manovra-2027-giorgetti-apre-alle-modifiche-con-coperture-il-nodo-di-scuola-pensioni-e-sanita/"
+    }
+   ],
+   "text": "Secondo l'Ufficio parlamentare di bilancio i benefici della riforma dell'imposta sul reddito vanno in larga parte ai redditi più alti, con quote minime per operai e impiegati. L'estensione della flat tax al 15% può valere fino a 23mila euro l'anno per un autonomo con 100mila euro di ricavi. Giorgetti apre a modifiche, purché con coperture.",
+   "title": "Manovra, l'Upb: il taglio Irpef favorisce soprattutto i dirigenti",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "talks",
+   "id": "sindacati-chigi",
+   "label": "Sindacati",
+   "lat": 41.9012,
+   "lng": 12.4801,
+   "place": "Palazzo Chigi, Roma",
+   "sources": [
+    {
+     "n": "Sky TG24",
+     "u": "https://tg24.sky.it/politica/2026/11/06/manovra-2027-sindacati-ultime-notizie"
+    },
+    {
+     "n": "Teleborsa",
+     "u": "https://www.teleborsa.it/News/2026/11/06/fuoco-di-fila-sulla-manovra-sindacati-convocati-il-13-novembre-5.html"
+    },
+    {
+     "n": "Orizzonte Scuola",
+     "u": "https://www.orizzontescuola.it/manovra-sindacati-convocati-a-palazzo-chigi-il-13-novembre-ma-la-scuola-resta-in-piazza-sit-in-a-roma-l11-assemblee-il-16-e-il-17-sciopero-il-20/"
+    }
+   ],
+   "text": "Sul tavolo pensioni, sanità e scuola: la Cgil denuncia circa 14mila posti persi tra docenti e personale Ata in tre anni. Il 20 novembre è in calendario lo sciopero della Flc Cgil.",
+   "title": "Oggi pomeriggio i sindacati convocati a Palazzo Chigi sulla manovra",
+   "weight": 1,
+   "zoom": 160
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Fonte ufficiale: bollettino del Dipartimento della Protezione civile."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "storm",
+   "id": "maltempo",
+   "label": "Allerta meteo",
+   "lat": 43.1,
+   "lng": 12,
+   "place": "Italia centrale",
+   "sources": [
+    {
+     "n": "MeteoWeb",
+     "u": "https://www.meteoweb.eu/2026/11/allerta-meteo-protezione-civile-13-novembre-piogge-e-venti-forti-fino-a-burrasca-al-sud-allarme-arancione-in-5-regioni-e-giallo-in-7/1002002644/"
+    },
+    {
+     "n": "Sky TG24",
+     "u": "https://tg24.sky.it/cronaca/2026/11/12/previsioni-meteo-allerta-maltempo"
+    },
+    {
+     "n": "Quotidiano.net",
+     "u": "https://www.quotidiano.net/ultimaora/maltempo-pcivile-allerta-arancione-in-5-regioni-gialla-in-13-6c751c54"
+    }
+   ],
+   "text": "La Protezione civile ha diramato per oggi l'allerta arancione in parte di Liguria, Emilia-Romagna, Toscana, Umbria e Lazio, e gialla in altre regioni. Previsti rovesci e temporali con accumuli elevati e venti di burrasca su coste e Appennino; mari fino ad agitati.",
+   "title": "Maltempo, allerta arancione in cinque regioni del Centro-Nord",
+   "weight": 2,
+   "zoom": 8
+  },
+  {
+   "cat": "guerra",
+   "cc": "UA",
+   "check": {
+    "level": "parziale",
+    "note": "Numeri dell'aeronautica e delle autorità ucraine; il colpo al centro commerciale non è confermato."
+   },
+   "fx": [
+    {
+     "from": [
+      53.2434,
+      34.3634
+     ],
+     "label": "da Briansk",
+     "n": 3,
+     "t": "strike",
+     "to": [
+      50.4501,
+      30.5234
+     ]
+    },
+    {
+     "from": [
+      51.7304,
+      36.1926
+     ],
+     "label": "droni da Kursk",
+     "n": 2,
+     "t": "strike",
+     "to": [
+      50.8833,
+      26.45
+     ]
+    },
+    {
+     "from": [
+      45,
+      34.1
+     ],
+     "label": "drone dalla Crimea",
+     "n": 1,
+     "t": "strike",
+     "to": [
+      46.6354,
+      32.6169
+     ]
+    },
+    {
+     "cc": [
+      "UA"
+     ],
+     "t": "zone"
+    }
+   ],
+   "icon": "missile",
+   "id": "ua-kyiv",
+   "label": "Kiev",
+   "lat": 50.4501,
+   "lng": 30.5234,
+   "place": "Kiev",
+   "sources": [
+    {
+     "n": "UA.news",
+     "u": "https://ua.news/en/war-vs-rf/rosiia-atakuvala-ukrayinu-raketami-ta-dronami-ppo-zneshkodila-94-povitriani-tsili"
+    },
+    {
+     "n": "Kyiv Independent",
+     "u": "https://kyivindependent.com/russia-attacks-kyiv-with-ballistic-missiles-hours-after-peace-talks-end/"
+    },
+    {
+     "n": "UA.news",
+     "u": "https://ua.news/en/war-vs-rf/ukrayinski-karpati-opinilisia-pid-zagrozoiu-balistiki-vnochi-13-listopada"
+    }
+   ],
+   "text": "La Russia ha lanciato missili Iskander-M e KN-23 dalle regioni di Briansk, Voronezh e Kursk e 123 droni: la difesa aerea ne ha neutralizzati 94. A Kiev potrebbe essere stato colpito un centro commerciale Epicentr, nella regione bruciano impianti nel distretto di Obukhiv e a Rivne manca la corrente. A Kherson una donna è morta dopo un attacco con drone; nella notte nuovo allarme balistico fino ai Carpazi.",
+   "title": "Missili balistici su Kiev poche ore dopo i colloqui di pace",
+   "weight": 3,
+   "zoom": 40
+  },
+  {
+   "cat": "guerra",
+   "cc": "PS",
+   "check": {
+    "level": "parziale",
+    "note": "Bilancio di fonti sanitarie e della Protezione civile di Gaza, non verificabile in modo indipendente."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    },
+    {
+     "cc": [
+      "PS"
+     ],
+     "t": "zone"
+    }
+   ],
+   "icon": "hospital",
+   "id": "gaza-raid",
+   "label": "al-Shifa",
+   "lat": 31.5236,
+   "lng": 34.4433,
+   "place": "Ospedale al-Shifa, Gaza City",
+   "sources": [
+    {
+     "n": "Middle East Eye",
+     "u": "https://www.middleeasteye.net/live-blog/live-blog-update/11-palestinians-killed-dawn"
+    },
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/video/newsfeed/2026/11/12/israel-strikes-intensive-care-at-gazas-nasser-hospital"
+    }
+   ],
+   "text": "Dopo il raid notturno sull'ospedale Nasser di Khan Younis, che ha centrato la terapia intensiva, un'auto è stata colpita davanti all'ospedale al-Shifa di Gaza City. Un drone ha centrato un veicolo a sud di Deir al-Balah e un uomo è stato ucciso vicino al cimitero di Jabalia. Il bilancio della giornata è di almeno dieci vittime.",
+   "title": "Gaza, dieci morti in un giorno: colpiti al-Shifa e Deir al-Balah",
+   "weight": 3,
+   "zoom": 150
+  },
+  {
+   "cat": "politica",
+   "cc": "US",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola testata consultata sul testo della dichiarazione."
+   },
+   "icon": "talks",
+   "id": "gaza-aiuti",
+   "label": "Onu",
+   "lat": 40.7489,
+   "lng": -73.968,
+   "place": "Palazzo di Vetro, New York",
+   "sources": [
+    {
+     "n": "Arab News Pakistan",
+     "u": "https://www.arabnews.pk/pakistan/pakistan-50-other-states-urge-incoming-israeli-government-to-allow-relief-supplies-in-gaza-3006912"
+    }
+   ],
+   "text": "La dichiarazione, presentata all'Onu dall'ambasciatrice britannica, chiede accesso rapido da tutti i valichi, il via libera a materiali per rifugi, acqua e sanità e la protezione degli operatori. Per l'inverno sono stati garantiti solo un terzo dei fondi necessari, con 1,65 milioni di persone ancora in tende o edifici danneggiati.",
+   "title": "53 Paesi chiedono al nuovo governo israeliano di aprire Gaza agli aiuti",
+   "weight": 2,
+   "zoom": 150
+  },
+  {
+   "cat": "politica",
+   "cc": "PS",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola testata consultata."
+   },
+   "icon": "justice",
+   "id": "e1-onu",
+   "label": "Piano E1",
+   "lat": 31.79,
+   "lng": 35.29,
+   "place": "Area E1, Cisgiordania",
+   "sources": [
+    {
+     "n": "Times of Israel",
+     "u": "https://www.timesofisrael.com/liveblog-november-12-2026/"
+    }
+   ],
+   "text": "Danimarca e altri Stati europei vogliono una riunione d'emergenza sul progetto di insediamento tra Gerusalemme e Ma'ale Adumim. Israele respinge la richiesta; la gara per 1.234 alloggi scade il 19 novembre.",
+   "title": "Piano E1 in Cisgiordania, gli europei chiedono un Consiglio di sicurezza urgente",
+   "weight": 1,
+   "zoom": 120
+  },
+  {
+   "cat": "politica",
+   "cc": "IL",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "gov",
+   "id": "israele-governo",
+   "label": "Knesset",
+   "lat": 31.7767,
+   "lng": 35.2054,
+   "place": "Knesset, Gerusalemme",
+   "sources": [
+    {
+     "n": "Times of Israel",
+     "u": "https://www.timesofisrael.com/liveblog-november-12-2026/"
+    },
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/amp/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government"
+    }
+   ],
+   "text": "Incaricato da Herzog al posto di Netanyahu, il leader di Yashar cerca una maggioranza alla Knesset. Un neodeputato di Giudaismo unito della Torah apre a intese con qualsiasi fazione, anche i partiti arabi.",
+   "title": "Israele, Eisenkot tratta con i partiti haredi per il nuovo governo",
+   "weight": 1,
+   "zoom": 150
+  },
+  {
+   "cat": "guerra",
+   "cc": "AE",
+   "check": {
+    "level": "parziale",
+    "note": "Origine del proiettile non identificata; le affermazioni dei Pasdaran non sono verificate."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    },
+    {
+     "cc": [
+      "IR"
+     ],
+     "t": "zone"
+    }
+   ],
+   "icon": "ship",
+   "id": "hormuz",
+   "label": "Hormuz",
+   "lat": 26,
+   "lng": 56,
+   "place": "Al largo di Ras al-Khaimah",
+   "sources": [
+    {
+     "n": "CBS News",
+     "u": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/"
+    },
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met"
+    }
+   ],
+   "text": "Un mercantile è stato raggiunto da un proiettile non identificato a circa 14 miglia dalla costa emiratina, con un incendio in sala macchine e nessun ferito noto. I Pasdaran parlano di petroliere in fiamme su una rotta «non autorizzata». Teheran offre di ridurre a due giorni l'attuazione di una tregua ma mantiene le sue sette condizioni, che Rubio respinge; il greggio sale, Brent a 95,8 dollari.",
+   "title": "Hormuz, nave colpita al largo di Ras al-Khaimah. Rubio: condizioni iraniane inaccettabili",
+   "weight": 3,
+   "zoom": 20
+  },
+  {
+   "cat": "politica",
+   "cc": "IR",
+   "check": {
+    "level": "parziale",
+    "note": "I possibili colloqui Vance-Rezaei sono indiscrezioni di stampa, smentite da Rezaei."
+   },
+   "icon": "alert",
+   "id": "iran-tnp",
+   "label": "Teheran",
+   "lat": 35.6892,
+   "lng": 51.389,
+   "place": "Teheran",
+   "sources": [
+    {
+     "n": "AP via Times Free Press",
+     "u": "https://www.timesfreepress.com/news/2026/nov/12/israel-hits-gaza-hospital-and-france-turns-away-a-settler-leader-and-other-mideast-news/"
+    },
+    {
+     "n": "Times of Israel",
+     "u": "https://www.timesofisrael.com/liveblog-november-12-2026/"
+    }
+   ],
+   "text": "L'indicazione arriva mentre Teheran esclude di consegnare il materiale arricchito. A Washington il vicepresidente Vance valuterebbe colloqui diretti con Rezaei, che smentisce incontri in programma.",
+   "title": "Iran, un consesso di religiosi propone di valutare l'uscita dal Tnp",
+   "weight": 1,
+   "zoom": 40
+  },
+  {
+   "cat": "guerra",
+   "cc": "SD",
+   "check": {
+    "level": "parziale",
+    "note": "Raid riferiti da fonti locali; i dati sui bambini sono dell'Unicef."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    },
+    {
+     "cc": [
+      "SD"
+     ],
+     "t": "zone"
+    }
+   ],
+   "icon": "blast",
+   "id": "sudan",
+   "label": "al-Nuhud",
+   "lat": 12.7,
+   "lng": 28.4333,
+   "place": "al-Nuhud, Kordofan Occidentale",
+   "sources": [
+    {
+     "n": "Darfur24",
+     "u": "https://darfur24.com/en/2026/11/10/army-intensifies-airstrikes-on-al-nuhud-in-west-kordofan/"
+    },
+    {
+     "n": "UN News",
+     "u": "https://news.un.org/en/story/2026/11/1168771"
+    }
+   ],
+   "text": "Almeno sette incursioni aeree hanno colpito al-Nuhud e i villaggi vicini nel Kordofan Occidentale, dove i combattimenti con le Rsf si intensificano. L'Unicef denuncia che i droni a lungo raggio colpiscono ogni giorno centrali elettriche e quartieri, come a El Obeid.",
+   "title": "Sudan, raid su al-Nuhud. Unicef: i droni fanno due vittime su tre tra i bambini",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "tech",
+   "cc": "US",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "chip",
+   "id": "nvidia-lutnick",
+   "label": "Nvidia",
+   "lat": 38.8927,
+   "lng": -77.0049,
+   "place": "Washington",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/13/media-lutnick-testimoniera-sul-caso-nvidia-prima-del-congresso_1d353339-a1d8-495f-8853-635e1df21342.html"
+    },
+    {
+     "n": "Eurasia Business News",
+     "u": "https://eurasiabusinessnews.com/2026/11/13/stock-market-today-november-12-2026-dow-sp-500-and-nasdaq-fall-after-jensen-huang-resigns/"
+    }
+   ],
+   "text": "Lutnick si è offerto di rispondere alla commissione Banche del Senato sulle verifiche di sicurezza nazionale prima del via libera alla vendita di chip avanzati alla Cina. Dopo le dimissioni di Jensen Huang il titolo ha chiuso a -4,3%, dopo essere arrivato a perdere il 14%.",
+   "title": "Caso Nvidia, il segretario al Commercio Lutnick testimonierà al Congresso",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "economia",
+   "cc": "US",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "money",
+   "id": "wall-street",
+   "label": "Wall Street",
+   "lat": 40.7069,
+   "lng": -74.0113,
+   "place": "Wall Street, New York",
+   "sources": [
+    {
+     "n": "Eurasia Business News",
+     "u": "https://eurasiabusinessnews.com/2026/11/13/stock-market-today-november-12-2026-dow-sp-500-and-nasdaq-fall-after-jensen-huang-resigns/"
+    },
+    {
+     "n": "Yahoo Finance",
+     "u": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-211731317.html"
+    }
+   ],
+   "text": "Dow Jones -0,36%, S&P 500 -0,35% e Nasdaq -0,39%, frenati da Nvidia e dai rendimenti in salita. Il Brent sale a 95,8 dollari sui timori per Hormuz e le infrastrutture saudite; oro in calo sotto i 3.900 dollari.",
+   "title": "Wall Street chiude in calo, petrolio in rialzo di oltre il 3%",
+   "weight": 1,
+   "zoom": 150
+  },
+  {
+   "cat": "ambiente",
+   "cc": "TR",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "leaf",
+   "id": "cop31",
+   "label": "Cop31",
+   "lat": 36.8969,
+   "lng": 30.7133,
+   "place": "Antalya",
+   "sources": [
+    {
+     "n": "Climate Home News",
+     "u": "https://www.climatechangenews.com/2026/11/11/cop31-bulletin-day-3-with-the-people-stuck-outside-world-leaders-jet-in/"
+    },
+    {
+     "n": "UNFCCC",
+     "u": "https://unfccc.int/cop31"
+    }
+   ],
+   "text": "Al vertice dei leader il segretario generale Onu ha indicato quattro pilastri: uscita equa dai fossili, adattamento, finanza e cooperazione. Il fondo per le foreste tropicali è a 7,9 miliardi di dollari sui 10 previsti, senza nuovi impegni.",
+   "title": "Cop31 ad Antalya, Guterres propone un «patto per la giustizia climatica»",
+   "weight": 1,
+   "zoom": 50
+  },
+  {
+   "cat": "sport",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "ball",
+   "id": "ita-fra",
+   "label": "San Siro",
+   "lat": 45.4781,
+   "live": {
+    "a": "ITA",
+    "b": "FRA",
+    "kind": "score",
+    "sa": 3,
+    "sb": 1,
+    "status": "Finale"
+   },
+   "lng": 9.124,
+   "place": "San Siro, Milano",
+   "sources": [
+    {
+     "n": "Sky Sport",
+     "u": "https://sport.sky.it/calcio/nations-league/2026/11/12/nations-league-risultati-12-novembre-gol"
+    },
+    {
+     "n": "Virgilio Sport",
+     "u": "https://www.virgilio.it/sport/dirette/live/uefa-nations-league/12-11-2026/italia-francia/2626986/"
+    }
+   ],
+   "text": "Dopo il vantaggio di Olise, la doppietta di Pio Esposito (un gol su rigore) e la rete di Frattesi firmano la rimonta azzurra. Domenica la trasferta in Belgio decide il girone.",
+   "title": "Nations League, l'Italia ribalta la Francia: 3-1 a San Siro",
+   "weight": 2,
+   "zoom": 180
+  },
+  {
+   "cat": "sport",
+   "cc": "CZ",
+   "check": {
+    "level": "parziale",
+    "note": "Risultato da una sola testata sportiva consultata."
+   },
+   "icon": "ball",
+   "id": "cze-esp",
+   "label": "CZE-ESP",
+   "lat": 50.0755,
+   "live": {
+    "a": "CZE",
+    "b": "ESP",
+    "kind": "score",
+    "sa": 0,
+    "sb": 2,
+    "status": "Finale"
+   },
+   "lng": 14.4378,
+   "place": "Praga",
+   "sources": [
+    {
+     "n": "Sky Sport",
+     "u": "https://sport.sky.it/calcio/nations-league/2026/11/12/nations-league-risultati-12-novembre-gol"
+    }
+   ],
+   "text": "Decidono il rigore di Baena prima dell'intervallo e il gol di Pubill nel recupero. Nello stesso girone l'Inghilterra batte la Croazia 2-1 e si qualifica con una giornata d'anticipo.",
+   "title": "La Spagna passa in Repubblica Ceca: 2-0",
+   "weight": 1,
+   "zoom": 60
+  },
+  {
+   "cat": "sport",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "tennis",
+   "id": "atp-finals",
+   "label": "Atp Finals",
+   "lat": 45.042,
+   "lng": 7.65,
+   "place": "Inalpi Arena, Torino",
+   "sources": [
+    {
+     "n": "Sky Sport",
+     "u": "https://sport.sky.it/tennis/2026/11/12/sorteggio-gironi-tabellone-atp-finals-2026-diretta"
+    },
+    {
+     "n": "Fanpage",
+     "u": "https://www.fanpage.it/sport/tennis/atp-finals-2026-oggi-il-sorteggio-del-tabellone-con-le-fasce-dei-gironi-quando-gioca-cobolli/"
+    }
+   ],
+   "text": "Senza Sinner, fermo per infortunio, il romano è l'unico italiano in singolare e troverà Alcaraz, Medvedev e Tiafoe. I gironi si giocano da domenica 15 a venerdì 20 novembre, la finale è il 22.",
+   "title": "Atp Finals, sorteggio a Torino: Cobolli nel girone con Alcaraz",
+   "weight": 2,
+   "zoom": 180
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Fatto confermato da più testate, ma il numero di salvati e dispersi è discordante e non ancora ufficiale."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "storm",
+   "id": "ventimiglia-roja-migranti",
+   "label": "Piena del Roja",
+   "lat": 43.7935,
+   "lng": 7.6085,
+   "place": "Fiume Roja, Ventimiglia (Imperia)",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/12/maltempo-al-centronord-piena-travolge-migranti-a-ventimiglia_fd1325d7-6a5a-4bce-9871-a73474015925.html"
+    },
+    {
+     "n": "EspansioneTv",
+     "u": "https://www.espansionetv.it/2026/11/12/migranti-travolti-dal-fiume-a-ventimiglia-sei-in-salvo/"
+    }
+   ],
+   "text": "Nel tardo pomeriggio di giovedì il fiume Roja, ingrossato dalle piogge, ha investito un gruppo di migranti accampati sul greto sotto un cavalcavia ferroviario a Ventimiglia (Imperia). Vigili del fuoco, sommozzatori, polizia ferroviaria e carabinieri hanno soccorso diverse persone, ma i numeri dei salvati variano tra le fonti (da 8 a 16). Alcune persone risultavano disperse: secondo EspansioneTv potrebbero anche essersi allontanate per evitare i controlli. La linea ferroviaria costiera è stata sospesa per consentire le ricerche.",
+   "title": "Ventimiglia, la piena del Roja travolge un accampamento di migranti",
+   "weight": 3,
+   "zoom": 120
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Le accuse sono la ricostruzione della Procura; la versione di De Gennaro non è ancora nota."
+   },
+   "icon": "justice",
+   "id": "de-gennaro-perquisizioni",
+   "label": "Caso agenda rossa",
+   "lat": 37.4901,
+   "lng": 14.0629,
+   "place": "Procura di Caltanissetta",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/12/lagenda-rossa-di-borsellino-perquisizioni-allex-capo-della-polizia-de-gennaro_4f725d2f-4016-4316-9cbb-d99677d42f7c.html"
+    },
+    {
+     "n": "Gazzetta del Sud",
+     "u": "https://gazzettadelsud.it/articoli/cronaca/2026/11/12/depistaggio-via-damelio-perquisizioni-del-ros-per-de-gennaro-e-contorno-df2cca21-b051-4512-a8d2-886698dc0712/"
+    },
+    {
+     "n": "Sky TG24",
+     "u": "https://tg24.sky.it/cronaca/2026/11/12/strage-via-damelio-perquisizioni-de-gennaro-borsellino"
+    }
+   ],
+   "text": "La Procura di Caltanissetta, che indaga sulle stragi di mafia del 1992, ha disposto tramite i carabinieri del Ros perquisizioni nei confronti dell'ex capo della Polizia Gianni De Gennaro, di alcuni suoi collaboratori e dell'ex collaboratore di giustizia Salvatore Contorno. Secondo i pm, De Gennaro avrebbe cercato di impedire a Contorno di testimoniare e avrebbe fatto sparire documenti, poi recuperati. De Gennaro non è indagato per le stragi; la sua posizione riguarda il presunto depistaggio legato anche all'agenda rossa di Paolo Borsellino. Non risultano al momento dichiarazioni della difesa.",
+   "title": "Depistaggio via D'Amelio, perquisizioni per l'ex capo della Polizia De Gennaro",
+   "weight": 3,
+   "zoom": 70
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "talks",
+   "id": "accordo-salari-contratti",
+   "label": "Patto sui salari",
+   "lat": 41.9028,
+   "lng": 12.4964,
+   "place": "Roma",
+   "sources": [
+    {
+     "n": "Agi",
+     "u": "https://www.agi.it/economia/news/2026-11-12/salari-contratti-accordo-cgil-cisl-uil-imprese-39991061/"
+    },
+    {
+     "n": "Sky TG24",
+     "u": "https://tg24.sky.it/economia/2026/11/12/salari-contratti-accordo-sindacati-imprese-cosa-prevede"
+    },
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/imprese-sindacati-siglata-lintesa-su-rappresentanza-e-contratti_4ada9c15-45fb-4eec-b605-9ab35d5a9f75.html"
+    }
+   ],
+   "text": "Dopo 18 ore di trattativa Cgil, Cisl e Uil hanno firmato con 13 associazioni datoriali, tra cui Confindustria e Confcommercio, un accordo su rappresentanza, rinnovi dei contratti nazionali e recupero dell'inflazione in busta paga. Le piattaforme andranno presentate sei mesi prima della scadenza e, in caso di ritardo nei rinnovi, scatterà una tutela legata all'inflazione; la rappresentatività sarà misurata per contrastare i cosiddetti contratti pirata, che riducono paghe e diritti. La ministra del Lavoro Calderone ha parlato di accordo storico, mentre sigle sindacali di base lo hanno criticato.",
+   "title": "Salari e contratti, firmata l'intesa tra Cgil, Cisl, Uil e 13 associazioni d'impresa",
+   "weight": 3,
+   "zoom": 50
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "hospital",
+   "id": "domenico-monaldi-perizia",
+   "label": "Caso Domenico",
+   "lat": 40.861,
+   "lng": 14.2845,
+   "place": "Tribunale di Napoli",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/12/la-morte-di-domenico-la-mamma-tanta-rabbia-nel-rivedere-il-dottor-oppido_8812e887-4ee5-4b84-862c-182a11ddaf63.html"
+    },
+    {
+     "n": "Il Mattino",
+     "u": "https://www.ilmattino.it/napoli/cronaca/domenico_caliendo_la_teste_venti_giorni_prima_potevamo_salvarlo-9886259.html"
+    },
+    {
+     "n": "LaPresse",
+     "u": "https://www.lapresse.it/cronaca/2026/09/11/bimbo-morto-dopo-trapianto-a-napoli-incidente-probatorio-su-maxi-perizia-il-12-e-13-novembre/"
+    }
+   ],
+   "text": "Al Tribunale di Napoli è iniziato l'incidente probatorio, cioè l'esame anticipato in contraddittorio dei periti nominati dal gip, sulla morte di Domenico Caliendo, il bambino di due anni deceduto al Monaldi dopo un trapianto di cuore fallito. Gli indagati sono nove sanitari, tra cui il cardiochirurgo Guido Oppido, i cui legali sostengono che abbia operato correttamente. Agli atti c'è la testimonianza di un'anestesista secondo cui fino a metà gennaio il bimbo poteva ancora essere ritrapiantato. L'esame prosegue oggi.",
+   "title": "Morte del piccolo Domenico a Napoli, al via l'esame dei periti in tribunale",
+   "weight": 2,
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Ruolo preciso di Pandetta non dettagliato dalle fonti."
+   },
+   "icon": "siren",
+   "id": "messina-pandetta-carcere",
+   "label": "Blitz a Messina",
+   "lat": 38.1745,
+   "lng": 15.542,
+   "place": "Carcere di Gazzi, Messina",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sicilia/notizie/2026/11/12/traffico-di-droga-e-cellulari-in-carcere-accusato-il-trapper-niko-pandetta_0153ffe0-f47a-4f91-ae45-c44fe8573c37.html"
+    },
+    {
+     "n": "Il Fatto Quotidiano",
+     "u": "https://www.ilfattoquotidiano.it/2026/11/12/niko-pandetta-coinvolto-in-un-maxi-blitz-antimafia-per-il-traffico-di-droga-e-i-traffici-illeciti-in-carcere/8569081/"
+    },
+    {
+     "n": "CataniaToday",
+     "u": "https://www.cataniatoday.it/cronaca/maxi-blitz-droga-cellulari-carcere-arresti-catania-pandetta.html"
+    }
+   ],
+   "text": "I carabinieri di Messina hanno eseguito 36 misure cautelari in carcere in un'inchiesta su un traffico di droga e telefoni cellulari all'interno del penitenziario cittadino di Gazzi, secondo le testate locali. Tra i destinatari c'è il cantante trap catanese Niko Pandetta, già detenuto per una condanna per spaccio ed evasione. Le accuse vanno ancora valutate nel processo.",
+   "title": "Droga e cellulari in carcere a Messina, 36 misure: coinvolto il trapper Niko Pandetta",
+   "weight": 2,
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "justice",
+   "id": "grillo-appello-sassari",
+   "label": "Appello Grillo",
+   "lat": 40.7262,
+   "lng": 8.5605,
+   "place": "Corte d'appello, Sassari",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/12/processo-dappello-a-grillo-jr-a-sassari-si-decide-sui-ricorsi-difese_b0547d28-cc8b-4716-b80b-207b8f24e1da.html"
+    },
+    {
+     "n": "L'Unione Sarda",
+     "u": "https://www.unionesarda.it/news-sardegna/gallura/sassari-a-porte-chiuse-il-processo-dappello-a-ciro-grillo-e-amici-ofb1u65s"
+    },
+    {
+     "n": "Ordine dei Giornalisti",
+     "u": "https://www.odg.it/processo-dappello-a-grillo-jr-e-tre-amici-condannati-in-primo-grado-per-violenza-sessuale-sara-a-porte-chiuse/68983"
+    }
+   ],
+   "text": "Alla Corte d'appello di Sassari è cominciato il processo di secondo grado a Ciro Grillo, Edoardo Capitta, Francesco Corsiglia e Vittorio Lauria, condannati a Tempio Pausania per violenza sessuale di gruppo avvenuta a Porto Cervo nel 2019. In primo grado tre imputati hanno avuto 8 anni e Corsiglia 6 anni e mezzo. Su richiesta di una delle ragazze, il processo si svolgerà a porte chiuse; le difese chiedono l'annullamento della sentenza perché le motivazioni non sarebbero firmate dal giudice estensore.",
+   "title": "Sassari, al via l'appello per Ciro Grillo e tre amici: udienze a porte chiuse",
+   "weight": 2,
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "justice",
+   "id": "garlasco-sempio-udienza",
+   "label": "Caso Garlasco",
+   "lat": 45.1868,
+   "lng": 9.1555,
+   "place": "Tribunale di Pavia",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/12/il-25-febbraio-ludienza-per-sempio-per-lomicidio-di-chiara-poggi_e27733db-732a-41af-9832-aa6eb5bde397.html"
+    },
+    {
+     "n": "Agi",
+     "u": "https://www.agi.it/cronaca/news/2026-11-12/garlasco-udienza-sempio-cosa-succede-39998606/"
+    },
+    {
+     "n": "Adnkronos",
+     "u": "https://adnkronos.com/cronaca/caso-garlasco-fissata-udienza-preliminare-sempio-davanti-al-gup-il-25-febbraio_1o8CMYXRbnuxctbwtD6HGm"
+    }
+   ],
+   "text": "Il giudice dell'udienza preliminare di Pavia ha fissato al 25 febbraio l'udienza in cui deciderà se mandare a processo Andrea Sempio, 38 anni, accusato dalla Procura dell'omicidio di Chiara Poggi del 2007. Sempio si dichiara innocente. La difesa chiederà di sospendere il procedimento finché resta definitiva la condanna a 16 anni di Alberto Stasi, per la quale si attende una richiesta di revisione a Brescia. La famiglia Poggi non si costituirà parte civile.",
+   "title": "Garlasco, il 25 febbraio l'udienza preliminare per Andrea Sempio",
+   "weight": 2,
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "justice",
+   "id": "rebellin-appello-venezia",
+   "label": "Caso Rebellin",
+   "lat": 45.4372,
+   "lng": 12.3338,
+   "place": "Corte d'appello, Venezia",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/12/travolse-e-uccise-rebellin-in-appello-deciso-il-non-doversi-procedere_2ca8f830-452d-4f28-8c9f-edbeb1573909.html"
+    },
+    {
+     "n": "Sky TG24",
+     "u": "https://tg24.sky.it/cronaca/2026/11/12/morte-davide-rebellin-rieke-corte-appello"
+    }
+   ],
+   "text": "La Corte d'appello di Venezia ha dichiarato il non doversi procedere nei confronti di Wolfgang Rieke, il camionista tedesco condannato in primo grado a Vicenza a 4 anni per aver investito e ucciso il ciclista Davide Rebellin nel 2022 a Montebello Vicentino, fuggendo poi senza soccorrerlo. Secondo una perizia medica, dopo un grave problema di salute Rieke non è in grado di partecipare consapevolmente al processo; oggi vive in una struttura per anziani in Germania.",
+   "title": "Morte di Rebellin, l'appello si ferma: il camionista non può stare in giudizio",
+   "weight": 1,
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "hospital",
+   "id": "caritas-poverta-sanitaria",
+   "label": "Rapporto Caritas",
+   "lat": 41.8986,
+   "lng": 12.473,
+   "place": "Roma",
+   "sources": [
+    {
+     "n": "AgenSIR",
+     "u": "https://www.agensir.it/quotidiano/2026/11/12/poverta-caritas-in-10-anni-694-di-persone-con-fragilita-sanitarie-raddoppiano-i-casi-con-disabilita/"
+    },
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/12/caritas-persiste-la-poverta-in-italia-in-particolare-quella-sanitaria_d0c36f21-99e5-45b2-b837-857b63f94f26.html"
+    },
+    {
+     "n": "Caritas Italiana",
+     "u": "https://www.caritas.it/rapporto-poverta-e-risorse-2026-dare-misura-allinvisibile-riconoscere-le-risorse/"
+    }
+   ],
+   "text": "Il Rapporto 2026 su povertà ed esclusione sociale di Caritas Italiana, presentato a Roma, segnala che in dieci anni le persone con fragilità sanitarie che si rivolgono ai suoi centri sono aumentate del 69,4% e i casi con disabilità sono più che raddoppiati. Nel 2025 i 110 ambulatori Caritas censiti hanno curato oltre 30mila persone, quasi sempre gratis, mentre 5,6 milioni di italiani hanno rinunciato a visite o esami per costi o liste d'attesa. Caritas chiede più fondi pubblici stabili e personale per il Servizio sanitario nazionale.",
+   "title": "Caritas: in dieci anni +69% di poveri con problemi di salute",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "money",
+   "id": "borsa-milano-nvidia",
+   "label": "Borsa -0,27%",
+   "lat": 45.4642,
+   "lng": 9.1856,
+   "place": "Piazza Affari, Milano",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/economia/2026/11/12/borsa-milano-chiude-a-027-technoprobe-giu-su-tonfo-nvidia_d4b86315-48e2-44d1-b891-169061d4b61b.html"
+    },
+    {
+     "n": "Money.it",
+     "u": "https://www.money.it/piazza-affari-chiude-in-calo-ftse-mib-12-11-2026"
+    }
+   ],
+   "text": "La Borsa di Milano ha chiuso giovedì in ribasso dello 0,27%, con l'indice Ftse Mib a 51.808 punti. Tra i titoli peggiori Amplifon (-5,3%), Technoprobe (-4,7%), colpita dalle vendite sui tecnologici dopo le notizie sulle dimissioni dell'amministratore delegato di Nvidia, e Stellantis (-4,3%). In rialzo invece Italgas, Pirelli, Terna ed Eni.",
+   "title": "Piazza Affari chiude in calo (-0,27%), pesano tecnologici e Stellantis",
+   "weight": 1,
+   "zoom": 150
+  },
+  {
+   "cat": "societa",
+   "cc": "ES",
+   "check": {
+    "level": "confermata",
+    "note": "Lo sciopero si è svolto l'11 novembre; bilancio pubblicato il 12. Cifre di partecipazione discordanti tra organizzatori e autorità."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "protest",
+   "id": "spagna-sciopero-generale",
+   "label": "Sciopero generale",
+   "lat": 40.4169,
+   "lng": -3.7035,
+   "place": "Madrid, Spagna",
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/spain-holds-its-first-general-strike-in-14-years-amid-mass-protests-and-police-charges"
+    },
+    {
+     "n": "El Salto",
+     "u": "https://www.elsaltodiario.com/huelga-general/directo-or-arranca-huelga-general-vivienda-piquetes-acciones-barrios"
+    },
+    {
+     "n": "Demócrata",
+     "u": "https://www.democrata.es/en/politics/general-strike-11n-an-atypical-stoppage-marked-by-the-urda-accident-with-the-demonstrations-as-thermometer/"
+    }
+   ],
+   "text": "Il 24 ore di stop indetto da CCOO e UGT, i due maggiori sindacati, insieme a CGT e CNT, ha portato in piazza centinaia di migliaia di persone contro il caro affitti, saliti di circa l'80% in dieci anni, e i salari bassi. Le stime divergono: a Madrid 500 mila per l'Unione degli inquilini, 120 mila per la prefettura; a Barcellona 400 mila per gli organizzatori, 55 mila per la polizia locale. Si contano oltre 70 arresti, scontri a Madrid e Barcellona e almeno otto feriti secondo i sindacati. I sindacati parlano di successo, le imprese di fallimento; il leader del Partito popolare Feijóo ha parlato di un possibile «errore storico» dei sindacati.",
+   "title": "Spagna, primo sciopero generale in 14 anni su casa e salari: oltre 70 arresti",
+   "weight": 3,
+   "zoom": 60
+  },
+  {
+   "cat": "economia",
+   "cc": "DE",
+   "check": {
+    "level": "parziale",
+    "note": "Notizia riportata da Euronews sulla base di Bild, Zeit e Reuters."
+   },
+   "icon": "car",
+   "id": "mercedes-stop-investimenti",
+   "label": "Mercedes",
+   "lat": 48.7833,
+   "lng": 9.25,
+   "place": "Stoccarda, Germania",
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/mercedes-benz-halts-new-investment-in-german-plants-considers-closures"
+    },
+    {
+     "n": "Stuttgarter Zeitung",
+     "u": "https://www.stuttgarter-zeitung.de/wirtschaft/stuttgarter-autobauer-vom-sparprogramm-zu-drohenden-werkschliessungen-protokoll-der-eskalation-bei-mercedes-79532005.html"
+    }
+   ],
+   "text": "Il consiglio di gestione di Mercedes-Benz ha sospeso i nuovi investimenti nelle fabbriche in Germania e valuta in modo più concreto la chiusura di due siti, uno di assemblaggio e uno di motori, mentre è in stallo il negoziato con il consiglio di fabbrica e il sindacato IG Metall. L'azienda chiede orari più lunghi a parità di stipendio e tagli ai premi, sostenendo che un'ora di lavoro in Germania costa fino a cinque volte quella nei siti dell'Est Europa. La direttrice del personale Britta Seeger ha detto che il gruppo vuole evitare chiusure ma deve considerarle seriamente; non è noto quali impianti sarebbero coinvolti.",
+   "title": "Mercedes-Benz congela gli investimenti negli impianti tedeschi e valuta chiusure",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "ambiente",
+   "cc": "DE",
+   "check": {
+    "level": "parziale",
+    "note": "Contenuto della lettera riferito da Euronews, che l'ha visionata; una sola testata consultata."
+   },
+   "icon": "leaf",
+   "id": "merz-mercato-carbonio",
+   "label": "Merz e ETS",
+   "lat": 52.5202,
+   "lng": 13.3694,
+   "place": "Berlino, Germania",
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/merz-urges-eu-to-stand-firm-on-carbon-market-reforms-despite-growing-opposition"
+    }
+   ],
+   "text": "In una lettera alla presidente della Commissione, il cancelliere tedesco Friedrich Merz chiede di chiudere in fretta la riforma dell'ETS, il sistema Ue di scambio delle quote di emissione, senza annacquarlo: per le imprese, scrive, la certezza sugli investimenti è «straordinariamente importante». Merz respinge nuove modifiche all'ETS2, che dal 2028 metterà un prezzo sulle emissioni di carburanti per trasporti e riscaldamento, mentre diversi Stati membri chiedono rinvii a causa dei costi dell'elettricità. Anche la sua ministra dell'Economia, Katherina Reiche, ha spinto per allentare le regole. Il Parlamento europeo vota a metà dicembre.",
+   "title": "Merz scrive a von der Leyen: non indebolire il mercato europeo della CO2",
+   "weight": 2,
+   "zoom": 150
+  },
+  {
+   "cat": "economia",
+   "cc": "GB",
+   "check": {
+    "level": "confermata",
+    "note": "Dato ufficiale ONS riportato da Euronews con AFP."
+   },
+   "icon": "money",
+   "id": "regno-unito-pil-trimestre",
+   "label": "Pil britannico",
+   "lat": 51.5025,
+   "lng": -0.1281,
+   "place": "Londra, Regno Unito",
+   "sources": [
+    {
+     "n": "Euronews / AFP",
+     "u": "https://www.euronews.com/2026/11/12/uk-economy-grows-07-in-third-quarter-as-ai-demand-lifts-output"
+    }
+   ],
+   "text": "Secondo l'Ufficio nazionale di statistica (ONS), l'economia britannica è cresciuta dello 0,7% tra luglio e settembre, dopo lo 0,5% rivisto del secondo trimestre, in linea con le attese; a settembre +0,2% e su base annua +1,9%. A spingere sono stati i servizi (+0,9%), in particolare programmazione e consulenza informatica (+4,4%), legate alla domanda di IA. Il governo parla di «resilienza» nonostante il rincaro dell'energia dovuto alla guerra con l'Iran; l'inflazione a settembre era al 3,5% e la Banca d'Inghilterra ha da poco alzato i tassi al 4%.",
+   "title": "Regno Unito, Pil +0,7% nel terzo trimestre trainato dall'intelligenza artificiale",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "politica",
+   "cc": "HU",
+   "check": {
+    "level": "parziale",
+    "note": "Fonti anonime della Commissione; il governo ungherese non ha commentato."
+   },
+   "icon": "money",
+   "id": "ungheria-fondi-ripresa",
+   "label": "Fondi Ue",
+   "lat": 47.507,
+   "lng": 19.0456,
+   "place": "Budapest, Ungheria",
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/commission-set-to-approve-hungarys-10bn-in-post-pandemic-recovery-fund-next-week"
+    },
+    {
+     "n": "Eunews",
+     "u": "https://www.eunews.it/en/2026/07/10/hungary-green-light-for-the-pnrr-10-billion-to-be-released-for-budapest-by-the-end-of-august/"
+    }
+   ],
+   "text": "Secondo funzionari della Commissione europea citati da Euronews, Bruxelles si prepara ad approvare entro fine mese quasi tutti i 10 miliardi di euro destinati all'Ungheria dal Dispositivo per la ripresa e la resilienza, congelati durante i governi di Viktor Orbán per problemi di Stato di diritto e corruzione. Il governo del premier Péter Magyar, eletto ad aprile, ha modificato oltre cento leggi su indipendenza della magistratura e anticorruzione; la valutazione potrebbe uscire già la prossima settimana e servirà poi il via libera degli Stati membri. Restano bloccati altri 2,2 miliardi legati a libertà accademica e diritti delle persone LGBTI+.",
+   "title": "Ungheria verso lo sblocco di quasi 10 miliardi del Recovery Fund Ue",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "tech",
+   "cc": "FR",
+   "check": {
+    "level": "confermata",
+    "note": "Annuncio ufficiale del ministero, riportato da Euronews."
+   },
+   "icon": "chip",
+   "id": "francia-centro-ia-difesa",
+   "label": "IA e difesa",
+   "lat": 48.1173,
+   "lng": -1.6778,
+   "place": "Rennes, Francia",
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/france-to-spearhead-new-ai-defence-resilience-centre-with-partner-nations"
+    }
+   ],
+   "text": "Il ministero delle Forze armate francese ha annunciato un centro per la resilienza dell'intelligenza artificiale nella difesa, con sede a Rennes, per accelerare l'uso militare dell'IA insieme a Paesi partner non ancora resi noti. Il progetto era nato nel quadro dei Centri di eccellenza della Nato; dopo la pausa decisa dall'Alleanza, Parigi è andata avanti da sola e punta comunque al riconoscimento Nato. L'operatività è prevista per il 2027.",
+   "title": "La Francia guiderà un centro per l'IA nella difesa a Rennes con Paesi alleati",
+   "weight": 1,
+   "zoom": 60
+  },
+  {
+   "cat": "economia",
+   "cc": "BE",
+   "check": {
+    "level": "parziale",
+    "note": "Stime di un gruppo ambientalista su dati Kpler."
+   },
+   "icon": "ship",
+   "id": "ue-gnl-russo-artico",
+   "label": "GNL russo",
+   "lat": 51.3333,
+   "lng": 3.2,
+   "place": "Zeebrugge, Belgio",
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/eu-spent-87bn-on-russian-arctic-lng-in-2026-as-import-ban-looms"
+    }
+   ],
+   "text": "Secondo un'analisi dell'organizzazione ambientalista Urgewald su dati della società Kpler, tra gennaio e ottobre l'Ue ha importato 12,89 milioni di tonnellate di gas naturale liquefatto (GNL) dal progetto russo Yamal, per circa 8,7 miliardi di euro, il 21% in più dell'intero 2025: è l'81% delle consegne mondiali del progetto. Il Belgio è il primo destinatario nei dieci mesi, la Francia in ottobre; seguono Spagna, Paesi Bassi e Portogallo. Il divieto Ue di importare GNL russo scatta dal 1° gennaio 2027.",
+   "title": "Gas russo dall'Artico: l'Ue ha speso 8,7 miliardi nel 2026, a 50 giorni dal divieto",
+   "weight": 1,
+   "zoom": 60
+  },
+  {
+   "cat": "politica",
+   "cc": "FR",
+   "check": {
+    "level": "confermata",
+    "note": "Voti in plenaria riportati da Euronews; conteggi esatti non disponibili."
+   },
+   "icon": "vote",
+   "id": "pe-voto-neomamme-difesa",
+   "label": "Plenaria Pe",
+   "lat": 48.5973,
+   "lng": 7.7686,
+   "place": "Parlamento europeo, Strasburgo",
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/meps-back-voting-rights-for-new-mothers-but-fathers-miss-out"
+    },
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/eu-defence-start-ups-face-funding-and-bureaucracy-traps-meps-warn"
+    }
+   ],
+   "text": "Il Parlamento europeo ha approvato in via definitiva, a larga maggioranza, la possibilità per le eurodeputate di delegare il voto a un collega da tre mesi prima a sei mesi dopo il parto; la regola entrerà in vigore solo dopo la ratifica della riforma della legge elettorale europea da parte di tutti i 27 Stati (finora dieci). L'esclusione dei padri divide: la relatrice olandese Lara Wolters (socialisti) avrebbe voluto estenderla, mentre per altri avrebbe messo a rischio il via libera. Nella stessa sessione oltre 400 eurodeputati hanno sostenuto un rapporto che chiede fondi e meno burocrazia per le start-up europee della difesa.",
+   "title": "Strasburgo, sì al voto per delega delle eurodeputate neomamme",
+   "weight": 1,
+   "zoom": 150
+  },
+  {
+   "cat": "tech",
+   "cc": "FR",
+   "check": {
+    "level": "confermata",
+    "note": "Annuncio Esa riportato da Euronews con AFP."
+   },
+   "icon": "rocket",
+   "id": "esa-hera-asteroide",
+   "label": "Sonda Hera",
+   "lat": 48.8483,
+   "lng": 2.3036,
+   "place": "Sede Esa, Parigi",
+   "sources": [
+    {
+     "n": "Euronews / AFP",
+     "u": "https://www.euronews.com/2026/11/12/europes-hera-spacecraft-begins-close-inspections-of-asteroid-in-planetary-defence-mission"
+    }
+   ],
+   "text": "L'Agenzia spaziale europea (Esa) ha annunciato che la sonda Hera, lanciata nel 2024, studia ora da 25-30 km il sistema binario Didymos e la sua piccola luna Dimorphos, colpita nel 2022 dalla missione Dart della Nasa per testare la deviazione degli asteroidi. Il mese prossimo si avvicinerà a circa 20 km; a bordo ha 25 strumenti e due mini-satelliti che tenteranno anche un atterraggio. L'obiettivo è misurare gli effetti dell'impatto, utile alla difesa planetaria.",
+   "title": "La sonda europea Hera inizia a ispezionare da vicino l'asteroide colpito dalla Nasa",
+   "weight": 1,
+   "zoom": 150
+  },
+  {
+   "cat": "economia",
+   "cc": "LU",
+   "check": {
+    "level": "confermata",
+    "note": "Dati ufficiali Eurostat riportati da Euronews."
+   },
+   "icon": "fuel",
+   "id": "eurostat-prezzi-energia",
+   "label": "Bollette Ue",
+   "lat": 49.6337,
+   "lng": 6.169,
+   "place": "Eurostat, Lussemburgo",
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/11/12/eu-household-electricity-and-gas-prices-fell-in-the-first-half-of-2026-who-pays-the-most"
+    }
+   ],
+   "text": "Nel primo semestre 2026 il prezzo medio Ue dell'elettricità per le famiglie è sceso dell'1,6% a 28,3 euro ogni 100 kWh e quello del gas del 3,5% a 11 euro, nonostante la guerra con l'Iran abbia fatto salire i prezzi all'ingrosso. L'elettricità più cara nell'Ue è in Irlanda (38,7 euro), la più economica in Ungheria (11,4); la Romania registra il rincaro maggiore (+51,9%). Gli analisti si attendono aumenti in bolletta nel secondo semestre e soprattutto nel 2027, perché i contratti a prezzo fisso ritardano l'effetto dei rincari.",
+   "title": "Eurostat: bollette di luce e gas in calo nel primo semestre 2026",
+   "weight": 1,
+   "zoom": 120
+  },
+  {
+   "cat": "guerra",
+   "cc": "UA",
+   "check": {
+    "level": "confermata",
+    "note": "Dati del Servizio emergenze ucraino ripresi da due testate."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "hospital",
+   "id": "kyiv-clinica-shevchenkivskyi",
+   "label": "Kiev, clinica",
+   "lat": 50.4547,
+   "lng": 30.492,
+   "place": "Shevchenkivskyi, Kiev",
+   "sources": [
+    {
+     "n": "Kyiv Independent",
+     "u": "https://kyivindependent.com/3-injured-dozens-evacuated-after-russian-drone-damages-kyiv-medical-facility-in-overnight-attack/"
+    },
+    {
+     "n": "Ukrinform",
+     "u": "https://www.ukrinform.net/rubric-ato/4184147-drone-debris-sparks-fire-at-medical-facility-in-kyiv.html"
+    }
+   ],
+   "text": "Verso le 5 del 13 novembre i rottami di un drone russo abbattuto hanno provocato un incendio in una struttura medica del quartiere Shevchenkivskyi, nel centro di Kiev. Secondo il Servizio statale per le emergenze ucraino tre persone sono rimaste ferite, circa 30 sono state evacuate e sette sono state soccorse dai vigili del fuoco; il secondo piano è in parte distrutto. È un nuovo attacco notturno, distinto da quello con missili balistici della notte precedente.",
+   "title": "Kiev, detriti di un drone incendiano una struttura sanitaria: tre feriti",
+   "weight": 2,
+   "zoom": 120
+  },
+  {
+   "cat": "guerra",
+   "cc": "UA",
+   "check": {
+    "level": "parziale",
+    "note": "Dati delle autorità locali ucraine riportati dall'agenzia Ukrinform."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "blast",
+   "id": "rivne-vinnytsia-droni",
+   "label": "Rivne e Vinnytsia",
+   "lat": 50.623,
+   "lng": 26.24,
+   "place": "Rivne, Ucraina",
+   "sources": [
+    {
+     "n": "Ukrinform",
+     "u": "https://www.ukrinform.net/rubric-ato/4184146-russian-drone-hits-apartment-building-in-rivne-children-among-injured.html"
+    },
+    {
+     "n": "Ukrinform",
+     "u": "https://www.ukrinform.net/rubric-ato/4184149-russian-attack-injures-two-women-in-vinnytsia-damages-homes-kindergarten.html"
+    }
+   ],
+   "text": "Nella notte tra 12 e 13 novembre un drone ha colpito un condominio a Rivne, nell'ovest dell'Ucraina: secondo il governatore Oleksandr Koval i feriti sono sei, tra cui due bambini, e due appartamenti hanno preso fuoco. A Vinnytsia, nel centro del Paese, il sindaco Serhii Morhunov riferisce di due donne ferite e di danni a case, palazzi e a un asilo. Gli attacchi arrivano dalla Russia; le autorità non hanno indicato i punti di lancio.",
+   "title": "Droni russi su Rivne e Vinnytsia: sei feriti, tra cui due bambini",
+   "weight": 2,
+   "zoom": 50
+  },
+  {
+   "cat": "guerra",
+   "cc": "RU",
+   "check": {
+    "level": "parziale",
+    "note": "Numeri forniti solo dalle autorità russe, non verificabili."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "plane",
+   "id": "mosca-droni-aeroporti",
+   "label": "Droni su Mosca",
+   "lat": 55.7558,
+   "lng": 37.6173,
+   "place": "Mosca, Russia",
+   "sources": [
+    {
+     "n": "Kyiv Independent",
+     "u": "https://kyivindependent.com/mass-drone-attack-on-moscow-grounds-flights-at-regions-airports/"
+    }
+   ],
+   "text": "Il sindaco di Mosca Sergei Sobyanin sostiene che la difesa aerea abbia abbattuto 105 droni diretti verso la capitale russa tra la sera del 12 e le 2 del 13 novembre. L'agenzia russa per il trasporto aereo ha limitato le operazioni negli aeroporti di Sheremetyevo, Domodedovo e Zhukovsky. Non sono stati segnalati danni o vittime; Kiev non ha commentato.",
+   "title": "Oltre cento droni verso Mosca, limitati i voli a Sheremetyevo e Domodedovo",
+   "weight": 2,
+   "zoom": 20
+  },
+  {
+   "cat": "guerra",
+   "cc": "RU",
+   "check": {
+    "level": "parziale",
+    "note": "Rivendicazione ucraina; Mosca conferma l'attacco ma non i danni."
+   },
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "fuel",
+   "id": "omsk-raffineria",
+   "label": "Raffineria Omsk",
+   "lat": 55.075,
+   "lng": 73.232,
+   "place": "Omsk, Russia",
+   "sources": [
+    {
+     "n": "Kyiv Independent",
+     "u": "https://kyivindependent.com/russias-largest-oil-refinery-slammed-by-drones-in-8-hr-attack-2-500-km-from-ukraine/"
+    }
+   ],
+   "text": "Le forze per le operazioni speciali ucraine rivendicano un attacco con droni contro la raffineria di Omsk, in Siberia, di proprietà di Gazprom e a circa 2.500 km dal confine. Il governatore Vitaly Khotsenko ha confermato un attacco durato oltre otto ore, parlando di «detriti di droni caduti» senza nominare l'impianto. Un canale russo indipendente segnala un incendio vicino alla raffineria; l'entità dei danni non è verificata.",
+   "title": "Droni ucraini sulla raffineria di Omsk, la più grande della Russia",
+   "weight": 2,
+   "zoom": 120
+  },
+  {
+   "cat": "guerra",
+   "cc": "UA",
+   "check": {
+    "level": "parziale",
+    "note": "Dati delle amministrazioni regionali ucraine."
+   },
+   "fx": [
+    {
+     "cc": [
+      "UA"
+     ],
+     "t": "zone"
+    }
+   ],
+   "icon": "siren",
+   "id": "ua-bilancio-12-novembre",
+   "label": "Bilancio 24 ore",
+   "lat": 48.7389,
+   "lng": 37.5848,
+   "place": "Kramatorsk, Donetsk",
+   "sources": [
+    {
+     "n": "Kyiv Independent",
+     "u": "https://kyivindependent.com/russian-attacks-kill-10-injure-40-across-ukraine-over-past-day-as-peace-talks-end/"
+    },
+    {
+     "n": "Ukrinform",
+     "u": "https://www.ukrinform.net/rubric-ato/4183911-russian-forces-strike-zlatopil-in-kharkiv-region-enterprise-destroyed-people-injured.html"
+    }
+   ],
+   "text": "Secondo le autorità regionali, nella giornata del 12 novembre i bombardamenti russi hanno ucciso due persone a Sloviansk e Kramatorsk (Donetsk), due nella regione di Kharkiv e una a Kherson, oltre alla vittima di Kiev. A Zaporizhzhia il governatore Ivan Fedorov conta 797 attacchi su 55 località e 15 feriti, tra cui un bambino. A Zlatopil (Kharkiv) due missili Banderol hanno colpito un'azienda, ferendo un anziano e un bambino.",
+   "title": "Attacchi russi in Ucraina: 10 morti e 40 feriti in 24 ore",
+   "weight": 2,
+   "zoom": 15
+  },
+  {
+   "cat": "guerra",
+   "cc": "FR",
+   "check": {
+    "level": "confermata",
+    "note": "Resoconto Al Jazeera con AFP e AP; posizioni di entrambi i governi riportate."
+   },
+   "icon": "plane",
+   "id": "dagan-francia",
+   "label": "Dagan respinto",
+   "lat": 48.8566,
+   "lng": 2.3522,
+   "place": "Parigi, Francia",
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/11/12/chk-prominent-israeli-settler-denied-entry-into-france"
+    }
+   ],
+   "text": "Il 12 novembre Israele ha definito «del tutto inaccettabile» la decisione della Francia di vietare l'ingresso a Yossi Dagan, esponente del Likud a capo di un'organizzazione delle colonie in Cisgiordania, respinto la settimana scorsa in un aeroporto di Parigi. Il ministero francese motiva il divieto con il suo ruolo attivo nella politica degli insediamenti, contraria al diritto internazionale. Il ministero degli Esteri israeliano parla di motivi politici e chiederà spiegazioni a Parigi.",
+   "title": "Israele protesta con Parigi per il divieto d'ingresso al leader dei coloni Dagan",
+   "weight": 1,
+   "zoom": 40
+  },
+  {
+   "cat": "guerra",
+   "cc": "LB",
+   "check": {
+    "level": "parziale",
+    "note": "Dettagli da fonti giudiziarie libanesi riportate da AFP e Al Jazeera."
+   },
+   "icon": "justice",
+   "id": "beirut-alwani-estradizione",
+   "label": "Caso al-Alwani",
+   "lat": 33.879,
+   "lng": 35.497,
+   "place": "Tariq al-Jdideh, Beirut",
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects"
+    }
+   ],
+   "text": "La procura libanese ha chiesto a Damasco di arrestare e consegnare due cittadini siriani sospettati dell'omicidio dell'ex parlamentare iracheno Ahmed al-Alwani, trovato morto in un appartamento del quartiere beirutino di Tariq al-Jdideh. Secondo una fonte giudiziaria citata dall'AFP è stato strangolato e la pista iniziale è economica; un cittadino libanese è stato arrestato. La Siria non ha ancora risposto.",
+   "title": "Ex deputato iracheno ucciso a Beirut, il Libano chiede alla Siria due sospetti",
+   "weight": 1,
+   "zoom": 150
+  },
+  {
+   "cat": "guerra",
+   "cc": "PS",
+   "check": {
+    "level": "confermata",
+    "note": "Resoconto Al Jazeera con AFP; versione israeliana riportata."
+   },
+   "icon": "storm",
+   "id": "gaza-neonato-freddo",
+   "label": "Morto di freddo",
+   "lat": 31.34,
+   "lng": 34.295,
+   "place": "Khan Younis, Gaza",
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/11/12/palestinian-baby-dies-from-cold-in-gaza-amid-israeli-restrictions-on-aid"
+    },
+    {
+     "n": "Al Jazeera (reportage)",
+     "u": "https://www.aljazeera.com/features/2026/11/12/her-hands-are-as-cold-as-ice-gaza-families-struggle-to-keep-warm"
+    }
+   ],
+   "text": "Kinan Raqiq, nove mesi, è morto per ipotermia nella tenda della famiglia a Khan Younis, secondo un medico e la Protezione civile di Gaza citati dall'AFP. Le piogge hanno allagato migliaia di tende: per l'Onu circa 26.000 famiglie sono colpite dal maltempo e il 65% della popolazione vive in ripari provvisori. Il premier israeliano Netanyahu afferma che Israele ha fatto entrare 91.000 tende e attribuisce a Hamas la responsabilità delle sofferenze.",
+   "title": "Gaza, neonato di nove mesi morto di freddo in una tenda a Khan Younis",
+   "weight": 2,
+   "zoom": 60
+  },
+  {
+   "cat": "fede",
+   "cc": "PE",
+   "check": {
+    "level": "confermata",
+    "note": "Nota ufficiale della Sala Stampa della Santa Sede."
+   },
+   "icon": "church",
+   "id": "papa-lima-vittime-abusi",
+   "label": "Papa e vittime",
+   "lat": -12.08,
+   "lng": -77.045,
+   "place": "Nunziatura apostolica, Lima",
+   "sources": [
+    {
+     "n": "Vatican News",
+     "u": "https://www.vaticannews.va/it/papa/news/2026-11/papa-leone-xiv-incontro-vittime-abusi-peru.html"
+    }
+   ],
+   "text": "Il 12 novembre il Papa ha ricevuto per oltre un'ora, nella Nunziatura apostolica di Lima, sei persone abusate da membri del clero e di istituzioni ecclesiali, alcune legate al Sodalicio de Vida Cristiana, movimento sciolto dalla Santa Sede nel 2024. Secondo la Sala Stampa vaticana si è parlato di come favorire «un cambiamento di mentalità attraverso l'ascolto delle vittime». Il 9 novembre a Buenos Aires aveva incontrato altre cinque vittime.",
+   "title": "Lima, Leone XIV incontra sei vittime di abusi nella Chiesa peruviana",
+   "weight": 2,
+   "zoom": 150
+  },
+  {
+   "cat": "sport",
+   "cc": "FI",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "trophy",
+   "id": "sci-levi",
+   "label": "Slalom Levi",
+   "lat": 67.8037,
+   "lng": 24.8089,
+   "place": "Levi, Finlandia",
+   "sources": [
+    {
+     "n": "OA Sport",
+     "u": "https://www.oasport.it/2026/11/coppa-del-mondo-sci-alpino-levi-2026-orari-tv-streaming-programma-slalom/"
+    },
+    {
+     "n": "Centro Meteo Italiano",
+     "u": "https://www.centrometeoitaliano.it/sport-vari/coppa-del-mondo-sci-alpino-femminile-e-maschile-programma-e-dove-vedere-in-tv-le-prossime-gare-a-levi-184253/"
+    }
+   ],
+   "text": "Nel weekend la Coppa del mondo di sci alpino fa tappa a Levi, in Lapponia finlandese, con i primi slalom stagionali. Sabato 14 novembre gareggiano le donne, domenica 15 gli uomini, con prima manche alle 10 e seconda alle 13. Tra le azzurre convocate Anna Trocker e Marta Rossetti, al rientro.",
+   "title": "Sci alpino, Coppa del mondo a Levi: slalom donne sabato, uomini domenica",
+   "weight": 2,
+   "zoom": 60
+  }
+ ],
+ "pills": [
+  "dublino-zelensky",
+  "ue-dublino",
+  "accordo-salari-contratti",
+  "ventimiglia-roja-migranti",
+  "ua-kyiv",
+  "spagna-sciopero-generale",
+  "de-gennaro-perquisizioni",
+  "gaza-neonato-freddo",
+  "ita-fra"
+ ],
+ "updatedAt": "2026-11-13T22:55:00+01:00",
+ "weather": {
+  "cities": [
+   {
+    "lat": 41.9,
+    "lng": 12.5,
+    "name": "Roma",
+    "note": "Piogge irregolari sul Lazio, con possibili temporali dal pomeriggio sulle coste tirreniche.",
+    "rank": 1,
+    "sky": "rain",
+    "tmax": 18
+   },
+   {
+    "lat": 45.46,
+    "lng": 9.19,
+    "name": "Milano",
+    "note": "Nuvolosità irregolare, temperature in calo per i venti da nord.",
+    "rank": 1,
+    "sky": "partly",
+    "tmax": 12
+   },
+   {
+    "lat": 40.85,
+    "lng": 14.27,
+    "name": "Napoli",
+    "note": "Schiarite alternate ad annuvolamenti, con locali piovaschi tra mattino e pomeriggio.",
+    "rank": 1,
+    "sky": "partly",
+    "tmax": 20,
+    "tmin": 14
+   },
+   {
+    "lat": 38.12,
+    "lng": 13.36,
+    "name": "Palermo",
+    "note": "Clima mite sulle isole maggiori.",
+    "rank": 1,
+    "sky": "sun",
+    "tmax": 23
+   },
+   {
+    "lat": 45.44,
+    "lng": 12.33,
+    "name": "Venezia",
+    "note": "Cielo sereno o poco nuvoloso; Bora in ingresso sull'Adriatico.",
+    "rank": 1,
+    "sky": "sun",
+    "tmax": 12
+   },
+   {
+    "lat": 44.49,
+    "lng": 11.34,
+    "name": "Bologna",
+    "note": "Poco nuvoloso, nessuna pioggia prevista; resta l'allerta per le piene dei fiumi in pianura.",
+    "rank": 2,
+    "sky": "partly",
+    "tmax": 12
+   },
+   {
+    "lat": 45.07,
+    "lng": 7.68,
+    "name": "Torino",
+    "note": "Cielo molto nuvoloso, deboli piogge possibili in nottata.",
+    "rank": 2,
+    "sky": "cloud",
+    "tmax": 10,
+    "tmin": 8
+   },
+   {
+    "lat": 44.41,
+    "lng": 8.93,
+    "name": "Genova",
+    "note": "Nuvolosità irregolare.",
+    "rank": 2,
+    "sky": "partly",
+    "tmax": 14
+   },
+   {
+    "lat": 39.22,
+    "lng": 9.12,
+    "name": "Cagliari",
+    "note": "Piogge irregolari sulla Sardegna.",
+    "rank": 2,
+    "sky": "rain"
+   },
+   {
+    "lat": 40.64,
+    "lng": 15.8,
+    "name": "Potenza",
+    "rank": 2,
+    "sky": "partly",
+    "tmax": 14
+   }
+  ],
+  "day": "sabato 14 novembre",
+  "europe": [],
+  "italy": [
+   {
+    "areas": "Pianura bolognese e pianura modenese; giallo sul resto della regione",
+    "lat": 44.55,
+    "level": "arancione",
+    "lng": 11,
+    "note": "Non sono attese nuove piogge forti, ma i fiumi gonfiati dalle piogge di venerdì continuano a portare piene verso valle: sorvegliati Reno e Savena. Bologna ha attivato il centro operativo comunale.",
+    "region": "Emilia-Romagna",
+    "risks": [
+     "idraulico"
+    ],
+    "until": "sabato 14 novembre"
+   },
+   {
+    "lat": 43.35,
+    "level": "giallo",
+    "lng": 11.1,
+    "note": "Dopo oltre 24 ore di piogge su Toscana nord-ovest e Spezzino i fenomeni si stanno attenuando; restano sotto osservazione diversi corsi d'acqua.",
+    "region": "Toscana",
+    "risks": [
+     "idraulico"
+    ],
+    "until": "fino alle 8 di sabato al nord, fino alle 14 nel Valdarno Inferiore e sulla costa"
+   },
+   {
+    "areas": "Tutta la regione",
+    "lat": 40.85,
+    "level": "giallo",
+    "lng": 14.85,
+    "note": "Possibili rovesci e temporali locali; mare mosso nel Golfo di Napoli.",
+    "region": "Campania",
+    "risks": [
+     "idrogeologico",
+     "temporali"
+    ],
+    "until": "fino alle 12 di sabato 14 novembre"
+   },
+   {
+    "areas": "Tre zone di allerta",
+    "lat": 42.95,
+    "level": "giallo",
+    "lng": 12.55,
+    "region": "Umbria",
+    "risks": [
+     "idrogeologico"
+    ],
+    "until": "sabato 14 novembre"
+   },
+   {
+    "lat": 43.35,
+    "level": "giallo",
+    "lng": 13.15,
+    "region": "Marche",
+    "risks": [
+     "idrogeologico"
+    ],
+    "until": "sabato 14 novembre"
+   }
+  ],
+  "sources": [
+   {
+    "n": "MeteoWeb (bollettino Protezione civile)",
+    "u": "https://www.meteoweb.eu/2026/11/allerta-meteo-protezione-civile-14-novembre-rischio-idraulico-e-idrogeologico-in-4-regioni-le-criticita-previste/1002003167/"
+   },
+   {
+    "n": "Fanpage",
+    "u": "https://www.fanpage.it/attualita/maltempo-allerta-meteo-arancione-gialla-14-novembre-2026-temporali-protezione-civile-regioni-colpite/"
+   },
+   {
+    "n": "Newsroom24 (previsioni)",
+    "u": "https://newsroom24.it/notizia/2026/11/13/meteo-previsioni-per-domani-sabato-14-novembre-sole-al-nord-piogge-sparse-sul-tirreno"
+   }
+  ]
+ }
+}

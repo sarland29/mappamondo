@@ -1,0 +1,864 @@
+{
+ "date": "2026-11-12",
+ "dateLabel": "Giovedì 12 novembre 2026",
+ "extras": {
+  "accordo-lavoro": {
+   "icon": "talks",
+   "zoom": 30
+  },
+  "aiuti-kiev": {
+   "icon": "money",
+   "zoom": 60
+  },
+  "borsa-milano": {
+   "icon": "money",
+   "zoom": 60
+  },
+  "brooklyn": {
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "collapse",
+   "zoom": 120
+  },
+  "carburanti": {
+   "icon": "fuel",
+   "zoom": 8
+  },
+  "chigi-opposizioni": {
+   "icon": "gov",
+   "zoom": 60
+  },
+  "cop31": {
+   "icon": "leaf",
+   "zoom": 30
+  },
+  "dublino": {
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "talks",
+   "zoom": 40
+  },
+  "ebola": {
+   "fx": [
+    {
+     "cc": [
+      "CD"
+     ],
+     "t": "zone"
+    }
+   ],
+   "icon": "virus",
+   "zoom": 15
+  },
+  "eng-cro": {
+   "icon": "ball",
+   "zoom": 8
+  },
+  "gaza-freddo": {
+   "icon": "storm",
+   "zoom": 150
+  },
+  "gaza-nasser": {
+   "fx": [
+    {
+     "t": "pulse"
+    },
+    {
+     "cc": [
+      "PS"
+     ],
+     "t": "zone"
+    }
+   ],
+   "icon": "hospital",
+   "zoom": 150
+  },
+  "hormuz": {
+   "fx": [
+    {
+     "t": "pulse"
+    }
+   ],
+   "icon": "ship",
+   "zoom": 45
+  },
+  "indonesia": {
+   "icon": "gov",
+   "zoom": 20
+  },
+  "it-scuole": {
+   "icon": "alert",
+   "zoom": 8
+  },
+  "ita-fra": {
+   "icon": "ball",
+   "zoom": 200
+  },
+  "manovra": {
+   "icon": "gov",
+   "zoom": 60
+  },
+  "mississippi": {
+   "icon": "vote",
+   "zoom": 15
+  },
+  "nordici": {
+   "icon": "shield",
+   "zoom": 10
+  },
+  "nvidia": {
+   "icon": "chip",
+   "zoom": 40
+  },
+  "papa-lima": {
+   "icon": "church",
+   "zoom": 60
+  },
+  "romanov": {
+   "icon": "gem",
+   "zoom": 40
+  },
+  "spagna-voto": {
+   "icon": "vote",
+   "zoom": 20
+  },
+  "sud-sudan": {
+   "icon": "blast",
+   "zoom": 20
+  },
+  "tur-bel": {
+   "icon": "ball",
+   "zoom": 8
+  },
+  "ua-attacchi": {
+   "fx": [
+    {
+     "from": [
+      51.6,
+      36.6
+     ],
+     "label": "Attacchi russi su Kyiv",
+     "n": 3,
+     "t": "strike",
+     "to": [
+      50.45,
+      30.52
+     ]
+    },
+    {
+     "from": [
+      51.6,
+      36.6
+     ],
+     "n": 2,
+     "t": "strike",
+     "to": [
+      46.3,
+      30.655
+     ]
+    },
+    {
+     "cc": [
+      "UA"
+     ],
+     "t": "zone"
+    }
+   ],
+   "icon": "missile",
+   "zoom": 12
+  },
+  "ua-cremlino": {
+   "fx": [
+    {
+     "from": [
+      55.752,
+      37.6175
+     ],
+     "label": "Gli inviati Usa verso Dublino",
+     "t": "link",
+     "to": [
+      53.3478,
+      -6.2394
+     ]
+    }
+   ],
+   "icon": "talks",
+   "zoom": 15
+  },
+  "uk-pil": {
+   "icon": "money",
+   "zoom": 30
+  },
+  "wall-street": {
+   "icon": "money",
+   "zoom": 80
+  }
+ },
+ "headline": "Seconda ondata di falsi allarmi bomba nelle scuole, ma quasi nessuna evacuazione. Raid sull'ospedale Nasser a Gaza, Witkoff e Kushner da Putin senza tregua, 50 leader a Dublino. Nvidia perde Huang; a San Siro l'Italia batte la Francia 3-1.",
+ "items": [
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "id": "it-scuole",
+   "label": "Scuole",
+   "lat": 41.9,
+   "lng": 12.5,
+   "place": "Italia",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/12/nuovo-allarme-bomba-nelle-scuole-indagano-i-pm-dellantiterrorismo-liveblog_97a3c6b7-93f4-44a2-940b-dd33198f2f91.html"
+    },
+    {
+     "n": "Adnkronos",
+     "u": "https://www.adnkronos.com/cronaca/allarme-bomba-ultime-notizie-oggi_kR2rchYkTUnhGOd4xtFUT"
+    }
+   ],
+   "text": "Nuovi messaggi minatori, firmati con lo pseudonimo «Mikhail Andropov» e partiti da indirizzi stranieri, hanno raggiunto migliaia di istituti. Su indicazione dei ministri dell'Interno e dell'Istruzione quasi tutte le scuole sono rimaste aperte: secondo Palazzo Chigi solo 77 sono state evacuate. Indaga l'antiterrorismo della Procura di Roma per procurato allarme e minacce aggravate.",
+   "title": "Falsi allarmi bomba, seconda ondata: mail a oltre 3.700 scuole, poche evacuazioni",
+   "weight": 3,
+   "zoom": 5
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "id": "chigi-opposizioni",
+   "label": "Palazzo Chigi",
+   "lat": 41.901,
+   "lng": 12.4797,
+   "place": "Palazzo Chigi, Roma",
+   "sources": [
+    {
+     "n": "Dire",
+     "u": "https://www.dire.it/12-11-2026/1288319-tg-politico-parlamentare-edizione-del-12-novembre-2026/"
+    }
+   ],
+   "text": "Circa due ore di confronto sulla minaccia informatica: la premier chiede unità e annuncia un protocollo per non evacuare gli istituti alla sola ricezione di una mail di massa. Le opposizioni si dicono disponibili al dialogo ma respingono una delega in bianco al governo.",
+   "title": "Allarmi nelle scuole, Meloni riceve le opposizioni a Palazzo Chigi",
+   "weight": 2,
+   "zoom": 30
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "id": "accordo-lavoro",
+   "label": "Accordo lavoro",
+   "lat": 41.9,
+   "lng": 12.49,
+   "place": "Roma",
+   "sources": [
+    {
+     "n": "Dire",
+     "u": "https://www.dire.it/12-11-2026/1288319-tg-politico-parlamentare-edizione-del-12-novembre-2026/"
+    }
+   ],
+   "text": "Dopo una trattativa di quasi 18 ore Cgil, Cisl, Uil e tredici associazioni datoriali hanno raggiunto un accordo che punta a difendere il potere d'acquisto dall'inflazione e a contrastare i contratti al ribasso. Landini parla di adeguamenti salariali garantiti in ogni contratto; Meloni lo definisce un traguardo storico.",
+   "title": "Sindacati e imprese firmano l'intesa su salari, rappresentanza e contratti pirata",
+   "weight": 2,
+   "zoom": 10
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "id": "manovra",
+   "label": "Manovra",
+   "lat": 41.9009,
+   "lng": 12.4787,
+   "place": "Montecitorio, Roma",
+   "sources": [
+    {
+     "n": "Dire",
+     "u": "https://www.dire.it/12-11-2026/1288319-tg-politico-parlamentare-edizione-del-12-novembre-2026/"
+    },
+    {
+     "n": "L'Espresso",
+     "u": "https://lespresso.it/c/politica/2026/11/9/legge-bilancio-soldi-tagli-manovra/65728"
+    }
+   ],
+   "text": "Dopo il vertice a Palazzo Chigi i partiti di governo intendono ritoccare la legge di bilancio in Parlamento con interventi mirati anche su università e pensioni. Si chiudono le audizioni del ministro Giorgetti davanti alle commissioni Bilancio di Camera e Senato.",
+   "title": "Manovra, la maggioranza prepara emendamenti su sanità, pensioni e scuola",
+   "weight": 2,
+   "zoom": 28
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "id": "aiuti-kiev",
+   "label": "Mef",
+   "lat": 41.9063,
+   "lng": 12.4952,
+   "place": "Ministero dell'Economia, Roma",
+   "sources": [
+    {
+     "n": "Dire",
+     "u": "https://www.dire.it/12-11-2026/1288319-tg-politico-parlamentare-edizione-del-12-novembre-2026/"
+    }
+   ],
+   "text": "La firma del ministro dell'Economia arriva dopo giorni di discussione politica nella maggioranza; il Mef spiega di aver verificato la coerenza con gli indirizzi parlamentari e la copertura finanziaria.",
+   "title": "Giorgetti firma il decreto per il 13° pacchetto di aiuti all'Ucraina",
+   "weight": 1,
+   "zoom": 28
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "id": "borsa-milano",
+   "label": "Piazza Affari",
+   "lat": 45.4642,
+   "lng": 9.1859,
+   "place": "Piazza Affari, Milano",
+   "sources": [
+    {
+     "n": "Money.it",
+     "u": "https://www.money.it/piazza-affari-chiude-in-calo-ftse-mib-12-11-2026"
+    },
+    {
+     "n": "SoldiOnline",
+     "u": "https://www.soldionline.it/notizie/azioni-italia/piazza-affari-chiude-in-rosso-027-perche-crollano-amplifon-e-technoprobe"
+    }
+   ],
+   "text": "Il Ftse Mib termina a 51.808 punti mentre il resto d'Europa chiude poco mosso. Pesano Amplifon (-5,3%) e Stellantis (-4,3%); in rialzo Diasorin, Italgas ed Eni, quest'ultima spinta dal rimbalzo del greggio. L'euro scende sotto 1,11 dollari.",
+   "title": "Piazza Affari chiude in calo dello 0,27%, giù Stellantis e Amplifon",
+   "weight": 2,
+   "zoom": 30
+  },
+  {
+   "cat": "economia",
+   "cc": "US",
+   "id": "wall-street",
+   "label": "Wall Street",
+   "lat": 40.7069,
+   "lng": -74.0113,
+   "place": "Wall Street, New York",
+   "sources": [
+    {
+     "n": "Yahoo Finance",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
+    },
+    {
+     "n": "Stocktitan",
+     "u": "https://stocktitan.net/articles/stock-market-today-live-november-12-2026"
+    }
+   ],
+   "text": "I listini americani chiudono appena sotto la parità: il crollo di Nvidia, arrivata a perdere oltre l'8% prima dell'annuncio ufficiale, pesa più dei guadagni del settore energetico. In controtendenza Amd e Broadcom, salite di circa il 5%.",
+   "title": "Wall Street in lieve calo, Nvidia scivola dopo l'uscita di Huang",
+   "weight": 2,
+   "zoom": 30
+  },
+  {
+   "cat": "tech",
+   "cc": "US",
+   "id": "nvidia",
+   "label": "Nvidia",
+   "lat": 37.3706,
+   "lng": -121.9671,
+   "place": "Santa Clara, California",
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress"
+    },
+    {
+     "n": "Bloomberg",
+     "u": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-s-10-billion-anthropic-ipo-pledge-in-focus-with-ceo-exit"
+    }
+   ],
+   "text": "Il fondatore si dimette da amministratore delegato e dal consiglio dopo le rivelazioni su due relazioni, una con un'ex manager sospettata di legami con l'intelligence cinese. La direttrice finanziaria guida l'azienda in attesa di un successore; Trump ha suggerito Tim Cook. Sotto osservazione anche l'impegno da 10 miliardi di Nvidia nell'imminente quotazione di Anthropic.",
+   "title": "Nvidia, Jensen Huang lascia dopo 33 anni: Colette Kress ceo ad interim",
+   "weight": 3,
+   "zoom": 25
+  },
+  {
+   "cat": "guerra",
+   "cc": "PS",
+   "id": "gaza-nasser",
+   "label": "Ospedale Nasser",
+   "lat": 31.346,
+   "lng": 34.295,
+   "place": "Ospedale Nasser, Khan Younis",
+   "sources": [
+    {
+     "n": "AP via KPBS",
+     "u": "https://www.kpbs.org/news/international/2026/11/12/an-israeli-strike-on-a-gaza-hospital-kills-6-people-including-a-doctor-and-a-child"
+    },
+    {
+     "n": "UN News",
+     "u": "https://news.un.org/en/story/2026/11/1168796"
+    }
+   ],
+   "text": "Il missile ha colpito l'ala chirurgica poco dopo mezzanotte, ferendo almeno 28 persone e bloccando gli interventi. Israele dice di aver preso di mira un comandante di Hamas, che però non risulta tra le vittime; il direttore dell'ospedale nega di aver ricevuto avvisi. Dalla tregua dell'ottobre 2025 i morti nella Striscia sono oltre 1.600.",
+   "title": "Gaza, raid sull'ospedale Nasser: 6 morti, tra loro un chirurgo e un 13enne",
+   "weight": 3,
+   "zoom": 35
+  },
+  {
+   "cat": "guerra",
+   "cc": "PS",
+   "id": "gaza-freddo",
+   "label": "Tende sfollati",
+   "lat": 31.34,
+   "lng": 34.29,
+   "place": "Khan Younis, Gaza",
+   "sources": [
+    {
+     "n": "Il Fatto Quotidiano",
+     "u": "https://www.ilfattoquotidiano.it/mondo/"
+    }
+   ],
+   "text": "Il piccolo è stato trovato senza vita dopo le piogge che nel fine settimana hanno allagato decine di migliaia di tende degli sfollati. Nonostante la tregua, nella Striscia si continuano a contare vittime.",
+   "title": "Khan Younis, neonato di nove mesi morto di freddo in una tenda",
+   "weight": 2,
+   "zoom": 30
+  },
+  {
+   "cat": "guerra",
+   "cc": "RU",
+   "id": "ua-cremlino",
+   "label": "Cremlino",
+   "lat": 55.752,
+   "lng": 37.6175,
+   "place": "Cremlino, Mosca",
+   "sources": [
+    {
+     "n": "LIGA.net",
+     "u": "https://news.liga.net/en/politics/news/after-meeting-with-putin-witkoff-announced-a-new-meeting-between-ukraine-russia-and-the-united-states-it-is-unclear-with-the-europeans"
+    },
+    {
+     "n": "Irish Times",
+     "u": "https://www.irishtimes.com/politics/2026/11/12/eu-meetings-dublin-road-closures-traffic-disruption-latest/"
+    }
+   ],
+   "text": "Dopo il colloquio al Cremlino l'inviato Usa annuncia un nuovo round di negoziati a tre con Mosca e Kiev, forse aperto agli europei; il consigliere di Putin Ushakov frena e accusa l'Europa di prolungare la guerra. Putin propone una missione umanitaria a Kostiantynivka. Gli inviati volano poi a Dublino da Zelensky.",
+   "title": "Witkoff e Kushner da Putin: «Fatti progressi», ma nessuna tregua",
+   "weight": 3,
+   "zoom": 30
+  },
+  {
+   "cat": "guerra",
+   "cc": "UA",
+   "id": "ua-attacchi",
+   "label": "Chornomorsk",
+   "lat": 46.3,
+   "lng": 30.655,
+   "place": "Chornomorsk, Odessa",
+   "sources": [
+    {
+     "n": "Kyiv Independent",
+     "u": "https://kyivindependent.com/russian-attacks-kill-10-injure-40-across-ukraine-over-past-day-as-peace-talks-end/"
+    }
+   ],
+   "text": "Nelle ultime 24 ore le incursioni russe hanno fatto vittime in sei regioni e circa 40 feriti. Almeno quattro i morti al mercato della città portuale vicino a Odessa; un morto e sette feriti a Kyiv dopo l'attacco con missili balistici e droni. Blackout in diverse zone dell'ovest del Paese.",
+   "title": "Ucraina, 10 morti negli attacchi russi: colpito un mercato a Chornomorsk",
+   "weight": 2,
+   "zoom": 12
+  },
+  {
+   "cat": "politica",
+   "cc": "IE",
+   "id": "dublino",
+   "label": "Vertice Cpe",
+   "lat": 53.3478,
+   "lng": -6.2394,
+   "place": "Convention Centre Dublin",
+   "sources": [
+    {
+     "n": "RTÉ",
+     "u": "https://www.rte.ie/news/eu-presidency/2026/1112/1598891-epc-summit/"
+    },
+    {
+     "n": "Teleborsa",
+     "u": "https://www.teleborsa.it/News/2026/11/12/ue-due-giorni-di-confronto-a-dublino-su-ucraina-meloni-in-pressing-per-inviato-ue-123.html"
+    },
+    {
+     "n": "Italpress",
+     "u": "https://www.italpress.com/ucraina-meloni-incontra-zelensky-a-dublino-e-conferma-il-sostegno-dellitalia-a-kiev/"
+    }
+   ],
+   "text": "Il vertice al Convention Centre, il più grande evento diplomatico mai ospitato dall'Irlanda, è dominato dalla guerra e dal buco da circa 70 miliardi nei conti di Kiev per il 2027. Zelensky punta a risultati entro fine anno; Meloni, che ha confermato il sostegno italiano, chiede un inviato Ue nei negoziati. Venerdì il Consiglio europeo informale.",
+   "title": "Dublino, 50 leader alla Comunità politica europea. Meloni vede Zelensky",
+   "weight": 3,
+   "zoom": 30
+  },
+  {
+   "cat": "guerra",
+   "cc": "IR",
+   "id": "hormuz",
+   "label": "Hormuz",
+   "lat": 26.57,
+   "lng": 56.25,
+   "place": "Stretto di Hormuz",
+   "sources": [
+    {
+     "n": "Reuters via MarineLink",
+     "u": "https://www.marinelink.com/news/four-oil-tankers-struck-hormuz-explosions-544333"
+    },
+    {
+     "n": "GV Wire",
+     "u": "https://gvwire.com/2026/11/12/four-tankers-struck-by-explosions-in-strait-of-hormuz-iran-says/"
+    }
+   ],
+   "text": "Teheran afferma che due superpetroliere sono state fermate mercoledì e altre due hanno urtato mine giovedì pomeriggio nella parte orientale dello Stretto; la versione non è verificata in modo indipendente. A novembre le navi colpite sono già almeno dieci, dopo le 37 di ottobre. Il Brent risale verso i 95 dollari.",
+   "title": "Hormuz, quattro petroliere colpite: per l'Iran hanno violato le rotte",
+   "weight": 3,
+   "zoom": 8
+  },
+  {
+   "cat": "guerra",
+   "cc": "SS",
+   "id": "sud-sudan",
+   "label": "Abiemnom",
+   "lat": 9.65,
+   "lng": 28.85,
+   "place": "Abiemnom, Sud Sudan",
+   "sources": [
+    {
+     "n": "OkayAfrica",
+     "u": "https://www.okayafrica.com/today-in-africa-nov-12-2026-un-peacekeepers-and-south-sudan-accused-of-ignoring-warnings-before-deadly-attack-africas-early-disaster-warning-systems-now-match-the-americas/1441876"
+    }
+   ],
+   "text": "Secondo il rapporto, caschi blu e autorità erano stati allertati settimane prima del raid di marzo in cui sono state uccise almeno 213 persone. La missione Unmiss replica di aver protetto circa 2.500 civili con mezzi limitati.",
+   "title": "Sud Sudan, Amnesty accusa l'Onu: avvisi ignorati prima della strage di Abiemnom",
+   "weight": 1,
+   "zoom": 7
+  },
+  {
+   "cat": "fede",
+   "cc": "PE",
+   "id": "papa-lima",
+   "label": "Papa a Lima",
+   "lat": -12.0464,
+   "lng": -77.03,
+   "place": "Plaza de Armas, Lima",
+   "sources": [
+    {
+     "n": "America Magazine",
+     "u": "https://www.americamagazine.org/vatican-dispatch/2026/11/12/pope-leo-peru-lima/"
+    },
+    {
+     "n": "ABC News / AP",
+     "u": "https://abcnews.com/International/wireStory/pope-tells-perus-bishops-accompany-flocks-respond-abuse-138081099"
+    }
+   ],
+   "text": "Settimo giorno del viaggio in Sudamerica: a Lima Leone XIV ha pregato davanti al Signore dei Miracoli, incontrato i vescovi nella residenza arcivescovile e poi la gente in Plaza de Armas, prima della veglia con i giovani in uno stadio. Ha chiesto pastori capaci di costruire ponti contro la polarizzazione. Venerdì vola a Chiclayo, la sua ex diocesi.",
+   "title": "Il Papa ai vescovi peruviani: verità e giustizia per le vittime di abusi",
+   "weight": 3,
+   "zoom": 30
+  },
+  {
+   "cat": "sport",
+   "cc": "IT",
+   "id": "ita-fra",
+   "label": "San Siro",
+   "lat": 45.478,
+   "live": {
+    "a": "ITA",
+    "b": "FRA",
+    "kind": "score",
+    "sa": 3,
+    "sb": 1,
+    "status": "Finale"
+   },
+   "lng": 9.124,
+   "place": "San Siro, Milano",
+   "sources": [
+    {
+     "n": "Sky Sport",
+     "u": "https://sport.sky.it/calcio/nations-league/2026/11/12/nations-league-risultati-12-novembre-gol"
+    },
+    {
+     "n": "Virgilio Sport",
+     "u": "https://www.virgilio.it/sport/dirette/live/uefa-nations-league/12-11-2026/italia-francia/2626986/"
+    }
+   ],
+   "text": "Gli azzurri vanno sotto al 10' con Olise, poi la ribaltano con la doppietta di Pio Esposito (il secondo su rigore) e il gol di Frattesi, salendo in testa al girone. Domenica la sfida decisiva in Belgio.",
+   "title": "Nations League, l'Italia rimonta la Francia: 3-1 a San Siro",
+   "weight": 3,
+   "zoom": 40
+  },
+  {
+   "cat": "sport",
+   "cc": "TR",
+   "id": "tur-bel",
+   "label": "TUR-BEL",
+   "lat": 39,
+   "live": {
+    "a": "TUR",
+    "b": "BEL",
+    "kind": "score",
+    "sa": 1,
+    "sb": 2,
+    "status": "Finale"
+   },
+   "lng": 35,
+   "place": "Turchia",
+   "sources": [
+    {
+     "n": "Sky Sport",
+     "u": "https://sport.sky.it/calcio/nations-league/2026/11/12/nations-league-risultati-12-novembre-gol"
+    },
+    {
+     "n": "Fanpage",
+     "u": "https://www.fanpage.it/sport/calcio/il-belgio-supera-litalia-in-nations-league-cambia-la-classifica-dopo-la-rimonta-contro-la-turchia/"
+    }
+   ],
+   "text": "Dopo il vantaggio di Arda Güler, i belgi ribaltano in tre minuti con De Bruyne e De Ketelaere. Il girone si deciderà nello scontro diretto con gli azzurri a Bruxelles.",
+   "title": "Il Belgio rimonta la Turchia 2-1, domenica sfida all'Italia",
+   "weight": 2,
+   "zoom": 5
+  },
+  {
+   "cat": "sport",
+   "cc": "GB",
+   "id": "eng-cro",
+   "label": "ENG-CRO",
+   "lat": 52.5,
+   "live": {
+    "a": "ENG",
+    "b": "CRO",
+    "kind": "score",
+    "sa": 2,
+    "sb": 1,
+    "status": "Finale"
+   },
+   "lng": -1.5,
+   "place": "Inghilterra",
+   "sources": [
+    {
+     "n": "Sky Sport",
+     "u": "https://sport.sky.it/calcio/nations-league/2026/11/12/nations-league-risultati-12-novembre-gol"
+    }
+   ],
+   "text": "Rogers apre, Sučić pareggia nella ripresa, poi il capitano inglese firma il successo dal dischetto. Nello stesso girone la Spagna vince 2-0 in Repubblica Ceca.",
+   "title": "L'Inghilterra batte la Croazia 2-1, decide un rigore di Kane",
+   "weight": 1,
+   "zoom": 5
+  },
+  {
+   "cat": "societa",
+   "cc": "US",
+   "id": "brooklyn",
+   "label": "Flatbush",
+   "lat": 40.636,
+   "lng": -73.952,
+   "place": "Flatbush, Brooklyn",
+   "sources": [
+    {
+     "n": "Time",
+     "u": "https://time.com/article/2026/11/12/brooklyn-new-york-apartment-building-collapse-death-toll-search-rescue-operations/"
+    },
+    {
+     "n": "ABC7 New York",
+     "u": "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/"
+    }
+   ],
+   "text": "Il palazzo di Flatbush Avenue è crollato sul cantiere adiacente; i feriti sono 18, tra cui quattro vigili del fuoco. I pompieri escludono altre vittime. Il sindaco Mamdani ha annunciato un'indagine su edificio e cantiere, mentre la città ispeziona un centinaio di siti collegati.",
+   "title": "Crollo a Brooklyn, 8 morti tra cui due bambini: concluse le ricerche",
+   "weight": 2,
+   "zoom": 25
+  },
+  {
+   "cat": "ambiente",
+   "cc": "TR",
+   "id": "cop31",
+   "label": "Cop31",
+   "lat": 36.89,
+   "lng": 30.71,
+   "place": "Antalya, Turchia",
+   "sources": [
+    {
+     "n": "OkayAfrica",
+     "u": "https://www.okayafrica.com/today-in-africa-nov-12-2026-un-peacekeepers-and-south-sudan-accused-of-ignoring-warnings-before-deadly-attack-africas-early-disaster-warning-systems-now-match-the-americas/1441876"
+    },
+    {
+     "n": "Anadolu",
+     "u": "https://aa.com.tr/en/turkiye/cop31-climate-summit-opens-in-turkiye-amid-calls-for-stronger-action/4116474"
+    }
+   ],
+   "text": "Un rapporto Onu presentato ad Antalya indica che il 70% dei Paesi ha ormai sistemi di allarme multirischio e che l'Africa ha fatto i maggiori progressi; resta scoperto un Paese su tre. L'Organizzazione meteorologica mondiale avverte che l'El Niño di quest'anno è il più forte dal 1950. I negoziati proseguono fino al 20 novembre.",
+   "title": "Cop31, l'Africa recupera sui sistemi di allerta precoce. El Niño record",
+   "weight": 2,
+   "zoom": 8
+  },
+  {
+   "cat": "ambiente",
+   "cc": "CD",
+   "id": "ebola",
+   "label": "Ebola",
+   "lat": 0.5,
+   "lng": 29.3,
+   "place": "Nord Kivu, RD Congo",
+   "sources": [
+    {
+     "n": "OkayAfrica",
+     "u": "https://www.okayafrica.com/today-in-africa-nov-12-2026-un-peacekeepers-and-south-sudan-accused-of-ignoring-warnings-before-deadly-attack-africas-early-disaster-warning-systems-now-match-the-americas/1441876"
+    },
+    {
+     "n": "ECDC",
+     "u": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-09"
+    }
+   ],
+   "text": "Medici senza frontiere denuncia operatori non pagati, poca formazione e ambulanze senza carburante; due decessi su tre avvengono fuori dai centri di cura. È la seconda epidemia di Ebola più letale mai registrata, con più di 11mila contagi da maggio. Per il ceppo Bundibugyo non esiste ancora un vaccino approvato.",
+   "title": "Ebola in Congo, Msf: «Epidemia fuori controllo», oltre 5.400 morti",
+   "weight": 2,
+   "zoom": 6
+  },
+  {
+   "cat": "politica",
+   "cc": "ES",
+   "id": "spagna-voto",
+   "label": "Madrid",
+   "lat": 40.4168,
+   "lng": -3.7038,
+   "place": "Madrid",
+   "sources": [
+    {
+     "n": "RTÉ",
+     "u": "https://www.rte.ie/news/eu-presidency/2026/1112/1598891-epc-summit/"
+    },
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/10/05/pedro-sanchez-calls-early-elections-in-spain-after-defeat-of-housing-decrees"
+    }
+   ],
+   "text": "Il premier, impegnato nella campagna elettorale dopo la sconfitta sui decreti per la casa, non partecipa al vertice europeo in Irlanda. Assenti anche Erdoğan, alla Cop31, e il belga De Wever.",
+   "title": "Spagna verso il voto anticipato del 29 novembre, Sánchez salta Dublino",
+   "weight": 1,
+   "zoom": 8
+  },
+  {
+   "cat": "economia",
+   "cc": "GB",
+   "id": "uk-pil",
+   "label": "Londra",
+   "lat": 51.5074,
+   "lng": -0.1278,
+   "place": "Londra",
+   "sources": [
+    {
+     "n": "Rio Times",
+     "u": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-12-2026/"
+    }
+   ],
+   "text": "La crescita accelera rispetto al +0,5% del secondo trimestre secondo l'istituto di statistica britannico; a settembre la produzione è salita dello 0,2%.",
+   "title": "Regno Unito, Pil del terzo trimestre a +0,7%",
+   "weight": 1,
+   "zoom": 9
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "id": "carburanti",
+   "label": "Prezzi",
+   "lat": 43.77,
+   "lng": 11.25,
+   "place": "Italia",
+   "sources": [
+    {
+     "n": "Tgcom24",
+     "u": "https://www.tgcom24.mediaset.it/"
+    }
+   ],
+   "text": "Lo sconto sulle accise resta in vigore fino al 23 novembre. Le bollette di luce e gas scendono in tutta Europa, ma l'Italia resta tra i Paesi dove l'energia costa di più.",
+   "title": "Carburanti in calo con il taglio delle accise, gasolio a 2,225 euro",
+   "weight": 2,
+   "zoom": 5
+  },
+  {
+   "cat": "politica",
+   "cc": "US",
+   "id": "mississippi",
+   "label": "Mississippi",
+   "lat": 32.3,
+   "lng": -90.18,
+   "place": "Mississippi, Usa",
+   "sources": [
+    {
+     "n": "Morning Star",
+     "u": "https://morningstaronline.co.uk/article/world-brief-november-12-2026"
+    }
+   ],
+   "text": "Un risultato storico nel dopo-elezioni americano, in uno Stato del profondo Sud.",
+   "title": "Il Mississippi elegge il primo senatore nero dall'Ottocento",
+   "weight": 1,
+   "zoom": 6
+  },
+  {
+   "cat": "politica",
+   "cc": "NO",
+   "id": "nordici",
+   "label": "Oslo",
+   "lat": 59.91,
+   "lng": 10.75,
+   "place": "Oslo",
+   "sources": [
+    {
+     "n": "US News / Reuters",
+     "u": "https://www.usnews.com/news/world"
+    }
+   ],
+   "text": "Lo annuncia la Norvegia: l'obiettivo è integrare di più le forze armate della regione.",
+   "title": "I Paesi nordici verso un accordo di difesa comune",
+   "weight": 1,
+   "zoom": 6
+  },
+  {
+   "cat": "politica",
+   "cc": "ID",
+   "id": "indonesia",
+   "label": "Giacarta",
+   "lat": -6.2,
+   "lng": 106.85,
+   "place": "Giacarta",
+   "sources": [
+    {
+     "n": "Radio Bullets",
+     "u": "https://www.radiobullets.com/notiziari/12-novembre-2026-notiziario-mondo/"
+    },
+    {
+     "n": "Morning Star",
+     "u": "https://morningstaronline.co.uk/article/world-brief-november-12-2026"
+    }
+   ],
+   "text": "Le dimissioni arrivano mentre la polizia indaga su intercettazioni illegali che avrebbero preso di mira anche il presidente.",
+   "title": "Indonesia, si dimette il vicepresidente",
+   "weight": 1,
+   "zoom": 6
+  },
+  {
+   "cat": "societa",
+   "cc": "CH",
+   "id": "romanov",
+   "label": "Ginevra",
+   "lat": 46.2,
+   "lng": 6.14,
+   "place": "Ginevra",
+   "sources": [
+    {
+     "n": "US News / AP",
+     "u": "https://www.usnews.com/news/world"
+    }
+   ],
+   "text": "La pietra pesa quasi 198 carati; l'asta è stata battuta da Sotheby's.",
+   "title": "Ginevra, bracciale con zaffiro dei Romanov venduto per 4,9 milioni di dollari",
+   "weight": 1,
+   "zoom": 8
+  }
+ ],
+ "pills": [
+  "it-scuole",
+  "gaza-nasser",
+  "ua-cremlino",
+  "dublino",
+  "hormuz",
+  "nvidia",
+  "papa-lima",
+  "ita-fra"
+ ],
+ "updatedAt": "2026-11-13T00:05:00+01:00"
+}
