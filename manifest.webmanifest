@@ -1,0 +1,16 @@
+{
+  "name": "Mappamondo — le notizie del giorno",
+  "short_name": "Mappamondo",
+  "description": "Le notizie del giorno in pillole e su una mappa interattiva, da fonti verificate.",
+  "lang": "it",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3efe7",
+  "theme_color": "#f3efe7",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
