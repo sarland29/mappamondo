@@ -1,5 +1,5 @@
 /* Mappamondo service worker: app shell cached, news always fresh when online */
-const SHELL = "mm-shell-v2";
+const SHELL = "mm-shell-v3";
 const DATA = "mm-data-v1";
 const SHELL_FILES = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-180.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(SHELL).then(c => c.addAll(SHELL_FILES)).then(() => self.skipWaiting())); });
@@ -7,6 +7,8 @@ self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Pr
 self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET") return;
+  // live weather and radar always come straight from their services
+  if (url.origin !== location.origin && !/cdnjs\.cloudflare\.com|fonts\.(googleapis|gstatic)\.com/.test(url.host)) return;
   if (url.origin === location.origin && url.pathname.includes("/data/")) {
     // news: network first, saved copy when offline
     const key = url.origin + url.pathname;
