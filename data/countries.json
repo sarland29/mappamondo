@@ -1,0 +1,1452 @@
+{
+ "countries": {
+  "AD": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Andorra la Vella",
+   "currency": "euro",
+   "eu": false,
+   "euro": true,
+   "gov": "Xavier Espot Zamora",
+   "govLabel": "Capo del governo",
+   "head": "Emmanuel Macron (presidente francese) e Josep-Lluís Serrano Pentinat (vescovo di Urgell)",
+   "headLabel": "Coprincipi",
+   "languages": "catalano",
+   "nato": false,
+   "population": "circa 88 mila (2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Govern d'Andorra",
+     "u": "https://www.govern.ad"
+    }
+   ]
+  },
+  "AL": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Tirana",
+   "currency": "lek",
+   "eu": false,
+   "euro": false,
+   "gov": "Edi Rama",
+   "govLabel": "Primo ministro",
+   "head": "Bajram Begaj",
+   "headLabel": "Presidente",
+   "languages": "albanese",
+   "nato": true,
+   "population": "circa 2,4 milioni (Instat, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Consiglio dei ministri",
+     "u": "https://kryeministria.al/en/"
+    }
+   ]
+  },
+  "AM": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Erevan",
+   "currency": "dram armeno",
+   "eu": false,
+   "euro": false,
+   "gov": "Nikol Pashinyan (riconfermato dopo le elezioni di giugno 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Vahagn Khachaturyan",
+   "headLabel": "Presidente",
+   "languages": "armeno",
+   "nato": false,
+   "population": "circa 3 milioni (2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Daily Sabah",
+     "u": "https://www.dailysabah.com/world/europe/armenia-rehires-pm-pashinyan-as-new-parliament-holds-1st-session/amp"
+    }
+   ]
+  },
+  "AT": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Vienna",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Christian Stocker",
+   "govLabel": "Cancelliere",
+   "head": "Alexander Van der Bellen",
+   "headLabel": "Presidente federale",
+   "languages": "tedesco",
+   "nato": false,
+   "population": "circa 9,2 milioni (Statistik Austria, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Bundeskanzleramt",
+     "u": "https://www.bundeskanzleramt.gv.at"
+    }
+   ]
+  },
+  "AZ": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Baku",
+   "currency": "manat azero",
+   "eu": false,
+   "euro": false,
+   "gov": "Ali Asadov",
+   "govLabel": "Primo ministro",
+   "head": "Ilham Aliyev",
+   "headLabel": "Presidente",
+   "languages": "azero",
+   "nato": false,
+   "population": "circa 10,2 milioni (2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Presidenza dell'Azerbaigian",
+     "u": "https://president.az/en"
+    }
+   ]
+  },
+  "BA": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Sarajevo",
+   "currency": "marco convertibile",
+   "eu": false,
+   "euro": false,
+   "gov": "Borjana Krišto",
+   "govLabel": "Presidente del Consiglio dei ministri",
+   "head": "Denis Bećirović (presidente di turno), Željka Cvijanović, Željko Komšić; dal 16 novembre 2026 Darijana Filipović subentra a Komšić",
+   "headLabel": "Presidenza collegiale (tre membri)",
+   "languages": "bosniaco, croato, serbo",
+   "nato": false,
+   "note": "Il Paese è diviso in due entità (Federazione di Bosnia ed Erzegovina e Republika Srpska) più il distretto di Brčko; un Alto rappresentante internazionale vigila sugli accordi di Dayton.",
+   "population": "circa 3,2 milioni (stima)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "N1 Bosnia",
+     "u": "https://n1info.ba/english/news/newly-elected-bih-presidency-members-to-take-office-on-november-16"
+    }
+   ]
+  },
+  "BE": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Bruxelles",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Bart De Wever",
+   "govLabel": "Primo ministro",
+   "head": "Filippo",
+   "headLabel": "Re",
+   "languages": "neerlandese, francese, tedesco",
+   "nato": true,
+   "note": "A inizio novembre 2026 De Wever ha offerto le dimissioni per lo stallo sul bilancio; il Re le ha respinte e i negoziati proseguono.",
+   "population": "circa 11,8 milioni (Statbel, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Brussels Signal",
+     "u": "https://brusselssignal.eu/2026/11/belgian-king-refuses-de-wevers-resignation-and-orders-coalition-back-to-budget-talks/"
+    }
+   ]
+  },
+  "BG": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Sofia",
+   "currency": "euro (dal 1° gennaio 2026)",
+   "eu": true,
+   "euro": true,
+   "gov": "Rumen Radev (da maggio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Iliana Iotova (in carica da gennaio 2026, eletta il 1° novembre 2026)",
+   "headLabel": "Presidente",
+   "languages": "bulgaro",
+   "nato": true,
+   "population": "circa 6,4 milioni (NSI, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Brussels Signal",
+     "u": "https://brusselssignal.eu/2026/11/bulgaria-elects-iotova-as-its-first-woman-president/"
+    },
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/4/20/bulgarias-former-president-radev-wins-election-all-you-need-to-know"
+    }
+   ]
+  },
+  "BY": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Minsk",
+   "currency": "rublo bielorusso",
+   "eu": false,
+   "euro": false,
+   "gov": "Aleksandr Turchin",
+   "govLabel": "Primo ministro",
+   "head": "Aljaksandr Lukašenko",
+   "headLabel": "Presidente",
+   "languages": "bielorusso, russo",
+   "nato": false,
+   "note": "Lukašenko è al potere dal 1994; Ue e Stati Uniti non hanno riconosciuto come libere le elezioni presidenziali del 2020 e del 2025.",
+   "population": "circa 9,1 milioni (Belstat, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Presidenza della Bielorussia",
+     "u": "https://president.gov.by/en"
+    }
+   ]
+  },
+  "CH": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Berna (città federale)",
+   "currency": "franco svizzero",
+   "eu": false,
+   "euro": false,
+   "head": "Guy Parmelin",
+   "headLabel": "Presidente della Confederazione (2026)",
+   "languages": "tedesco, francese, italiano, romancio",
+   "nato": false,
+   "note": "Il governo è un organo collegiale di sette membri (Consiglio federale); la presidenza ruota ogni anno.",
+   "population": "circa 9,1 milioni (UST, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Confederazione Svizzera",
+     "u": "https://www.admin.ch/de/bundespraesidium-2026"
+    }
+   ]
+  },
+  "CN": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Pechino",
+   "currency": "renminbi (yuan)",
+   "eu": false,
+   "euro": false,
+   "gov": "Li Qiang",
+   "govLabel": "Premier del Consiglio di Stato",
+   "head": "Xi Jinping (anche segretario generale del Partito comunista)",
+   "headLabel": "Presidente",
+   "languages": "cinese mandarino",
+   "nato": false,
+   "population": "circa 1,41 miliardi (NBS, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Governo cinese",
+     "u": "https://english.www.gov.cn"
+    }
+   ]
+  },
+  "CY": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Nicosia",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "head": "Nikos Christodoulides",
+   "headLabel": "Presidente",
+   "languages": "greco, turco",
+   "nato": false,
+   "note": "L'isola è divisa dal 1974: il nord è amministrato dall'autoproclamata Repubblica turca di Cipro del Nord, riconosciuta solo dalla Turchia; il diritto Ue si applica di fatto solo nel sud.",
+   "population": "circa 970 mila nelle aree controllate dal governo (Cystat, 2024)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Presidenza di Cipro",
+     "u": "https://www.presidency.gov.cy"
+    }
+   ]
+  },
+  "CZ": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Praga",
+   "currency": "corona ceca",
+   "eu": true,
+   "euro": false,
+   "gov": "Andrej Babiš",
+   "govLabel": "Primo ministro",
+   "head": "Petr Pavel",
+   "headLabel": "Presidente",
+   "languages": "ceco",
+   "nato": true,
+   "population": "circa 10,9 milioni (ČSÚ, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Ufficio del governo ceco",
+     "u": "https://uv.gov.cz/en/media-centrum/aktualne/prime-minister-babis-in-bratislava-we-will-resume-the-joint-meetings-of-the-czech-and-slovak-governments-224960/"
+    }
+   ]
+  },
+  "DE": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Berlino",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Friedrich Merz",
+   "govLabel": "Cancelliere",
+   "head": "Frank-Walter Steinmeier",
+   "headLabel": "Presidente federale",
+   "languages": "tedesco",
+   "nato": true,
+   "population": "circa 83,5 milioni (Destatis, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Bundesregierung",
+     "u": "https://www.bundesregierung.de"
+    }
+   ]
+  },
+  "DK": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Copenaghen",
+   "currency": "corona danese",
+   "eu": true,
+   "euro": false,
+   "gov": "Mette Frederiksen (terzo mandato, governo formato a giugno 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Federico X",
+   "headLabel": "Re",
+   "languages": "danese",
+   "nato": true,
+   "note": "La Danimarca non adotta l'euro per scelta (clausola di esenzione).",
+   "population": "circa 6 milioni (Danmarks Statistik, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "RTÉ",
+     "u": "https://www.rte.ie/news/world/2026/0602/1576271-denmark-government/"
+    }
+   ]
+  },
+  "DZ": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Algeri",
+   "currency": "dinaro algerino",
+   "eu": false,
+   "euro": false,
+   "gov": "Sifi Ghrieb",
+   "govLabel": "Primo ministro",
+   "head": "Abdelmadjid Tebboune",
+   "headLabel": "Presidente",
+   "languages": "arabo, tamazight (berbero)",
+   "nato": false,
+   "population": "circa 47 milioni (ONS, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "CIA World Leaders",
+     "u": "https://www.cia.gov/resources/world-leaders/historical-data/2026-october/algeria/"
+    }
+   ]
+  },
+  "EE": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Tallinn",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Kristen Michal",
+   "govLabel": "Primo ministro",
+   "head": "Ülle Madise (dal 12 ottobre 2026)",
+   "headLabel": "Presidente della Repubblica",
+   "languages": "estone",
+   "nato": true,
+   "population": "circa 1,37 milioni (Statistics Estonia, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Anadolu",
+     "u": "https://aa.com.tr/en/europe/estonian-parliament-elects-ulle-madise-as-next-president/4045840"
+    },
+    {
+     "n": "OSW",
+     "u": "https://www.osw.waw.pl/en/publikacje/analyses/2026-09-04/estonia-presidential-election-shadow-a-political-crisis"
+    }
+   ]
+  },
+  "EG": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Il Cairo",
+   "currency": "lira egiziana",
+   "eu": false,
+   "euro": false,
+   "gov": "Mostafa Madbouly",
+   "govLabel": "Primo ministro",
+   "head": "Abdel Fattah al-Sisi",
+   "headLabel": "Presidente",
+   "languages": "arabo",
+   "nato": false,
+   "population": "circa 108 milioni (CAPMAS, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Ahram Online",
+     "u": "https://english.ahram.org.eg/NewsContent/1/64/562224/Egypt/Politics-/UPDATED-ElSisi-swears-in--cabinet-members-in-wider.aspx"
+    }
+   ]
+  },
+  "ES": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Madrid",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Pedro Sánchez (in carica fino alle elezioni anticipate del 29 novembre 2026)",
+   "govLabel": "Presidente del Governo",
+   "head": "Felipe VI",
+   "headLabel": "Re",
+   "languages": "spagnolo (castigliano); catalano, basco e galiziano co-ufficiali nelle rispettive comunità",
+   "nato": true,
+   "note": "Elezioni politiche anticipate fissate per il 29 novembre 2026.",
+   "population": "circa 49 milioni (INE, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/10/05/pedro-sanchez-calls-early-elections-in-spain-after-defeat-of-housing-decrees"
+    }
+   ]
+  },
+  "FI": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Helsinki",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Petteri Orpo",
+   "govLabel": "Primo ministro",
+   "head": "Alexander Stubb",
+   "headLabel": "Presidente",
+   "languages": "finlandese, svedese",
+   "nato": true,
+   "population": "circa 5,6 milioni (Statistics Finland, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Valtioneuvosto",
+     "u": "https://valtioneuvosto.fi/en/-/prime-minister-orpo-to-meet-with-canadian-and-nordic-prime-ministers-in-norway"
+    }
+   ]
+  },
+  "FR": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Parigi",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Sébastien Lecornu",
+   "govLabel": "Primo ministro",
+   "head": "Emmanuel Macron",
+   "headLabel": "Presidente",
+   "languages": "francese",
+   "nato": true,
+   "population": "circa 68,6 milioni (Insee, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Governo francese",
+     "u": "https://www.info.gouv.fr"
+    },
+    {
+     "n": "franceinfo",
+     "u": "https://www.franceinfo.fr/politique/gouvernement-de-sebastien-lecornu/"
+    }
+   ]
+  },
+  "GB": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Londra",
+   "currency": "sterlina britannica",
+   "eu": false,
+   "euro": false,
+   "gov": "Andy Burnham (dal 20 luglio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Carlo III",
+   "headLabel": "Re",
+   "languages": "inglese (gallese ufficiale in Galles)",
+   "nato": true,
+   "note": "Burnham è succeduto a Keir Starmer, dimessosi a luglio 2026.",
+   "population": "circa 69 milioni (ONS, 2024)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "GOV.UK",
+     "u": "https://gov.uk/government/people/andy-burnham"
+    },
+    {
+     "n": "Axios",
+     "u": "https://www.axios.com/2026/07/17/andy-burnham-new-uk-prime-minister"
+    }
+   ]
+  },
+  "GE": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Tbilisi",
+   "currency": "lari",
+   "eu": false,
+   "euro": false,
+   "gov": "Irakli Kobakhidze",
+   "govLabel": "Primo ministro",
+   "head": "Mikheil Kavelashvili",
+   "headLabel": "Presidente",
+   "languages": "georgiano",
+   "nato": false,
+   "note": "Abcasia e Ossezia del Sud sono fuori dal controllo del governo e riconosciute come indipendenti dalla Russia e da pochi altri Stati.",
+   "population": "circa 3,7 milioni (Geostat, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Georgia Today",
+     "u": "https://georgiatoday.ge/georgian-pm-irakli-kobakhidze-to-attend-euronews-eu-enlargement-summit-in-brussels/"
+    }
+   ]
+  },
+  "GR": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Atene",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Kyriakos Mitsotakis",
+   "govLabel": "Primo ministro",
+   "head": "Konstantinos Tasoulas",
+   "headLabel": "Presidente della Repubblica",
+   "languages": "greco",
+   "nato": true,
+   "population": "circa 10,4 milioni (ELSTAT, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Primo ministro greco",
+     "u": "https://www.primeminister.gr"
+    }
+   ]
+  },
+  "HR": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Zagabria",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Andrej Plenković",
+   "govLabel": "Primo ministro",
+   "head": "Zoran Milanović",
+   "headLabel": "Presidente",
+   "languages": "croato",
+   "nato": true,
+   "population": "circa 3,9 milioni (DZS, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Governo croato",
+     "u": "https://vlada.gov.hr"
+    }
+   ]
+  },
+  "HU": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Budapest",
+   "currency": "fiorino ungherese",
+   "eu": true,
+   "euro": false,
+   "gov": "Péter Magyar (da maggio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "András Baka (dal 19 agosto 2026)",
+   "headLabel": "Presidente della Repubblica",
+   "languages": "ungherese",
+   "nato": true,
+   "population": "circa 9,5 milioni (KSH, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/8/11/hungary-elects-supreme-court-judge-ousted-by-orban-as-new-president"
+    },
+    {
+     "n": "bne IntelliNews",
+     "u": "https://www.intellinews.com/peter-magyar-sworn-in-as-new-hungarian-prime-minister-441910/"
+    }
+   ]
+  },
+  "IE": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Dublino",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Micheál Martin",
+   "govLabel": "Taoiseach (capo del governo)",
+   "head": "Catherine Connolly",
+   "headLabel": "Presidente",
+   "languages": "irlandese, inglese",
+   "nato": false,
+   "population": "circa 5,4 milioni (CSO, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Governo irlandese",
+     "u": "https://www.gov.ie"
+    }
+   ]
+  },
+  "IL": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Gerusalemme (status contestato; molte ambasciate a Tel Aviv)",
+   "currency": "nuovo shekel",
+   "eu": false,
+   "euro": false,
+   "gov": "Benjamin Netanyahu (in carica per gli affari correnti)",
+   "govLabel": "Primo ministro",
+   "head": "Isaac Herzog",
+   "headLabel": "Presidente",
+   "languages": "ebraico (arabo con status speciale)",
+   "nato": false,
+   "note": "Dopo le elezioni di fine ottobre 2026, senza maggioranza netta, il presidente ha incaricato Gadi Eisenkot di formare il governo (sei settimane di tempo).",
+   "population": "circa 10 milioni (CBS Israele, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government"
+    },
+    {
+     "n": "CNN",
+     "u": "https://www.cnn.com/2026/11/07/middleeast/eisenkot-israel-government-latam-intl"
+    }
+   ]
+  },
+  "IQ": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Baghdad",
+   "currency": "dinaro iracheno",
+   "eu": false,
+   "euro": false,
+   "gov": "Ali al-Zaidi (da maggio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Nizar Amedi (da aprile 2026)",
+   "headLabel": "Presidente",
+   "languages": "arabo, curdo",
+   "nato": false,
+   "note": "Il Kurdistan iracheno, nel nord, è una regione autonoma con un proprio governo.",
+   "population": "circa 46 milioni (stima 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Asharq Al-Awsat",
+     "u": "https://english.aawsat.com/node/5261247"
+    },
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/5/14/iraqs-parliament-approves-new-ali-al-zaidi-government"
+    }
+   ]
+  },
+  "IR": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Teheran",
+   "currency": "rial iraniano",
+   "eu": false,
+   "euro": false,
+   "gov": "Masoud Pezeshkian",
+   "govLabel": "Presidente (capo del governo)",
+   "head": "Mojtaba Khamenei (dall'8 marzo 2026)",
+   "headLabel": "Guida suprema",
+   "languages": "persiano",
+   "nato": false,
+   "note": "La Guida suprema è la massima autorità dello Stato; Mojtaba Khamenei è succeduto al padre Ali Khamenei, morto nel 2026.",
+   "population": "circa 86 milioni (stima 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/opinions/2026/11/5/can-irans-new-supreme-leader-make-peace-from-behind-the-scenes"
+    },
+    {
+     "n": "Wikipedia",
+     "u": "https://en.wikipedia.org/wiki/Mojtaba_Khamenei"
+    }
+   ]
+  },
+  "IS": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Reykjavík",
+   "currency": "corona islandese",
+   "eu": false,
+   "euro": false,
+   "gov": "Kristrún Frostadóttir",
+   "govLabel": "Primo ministro",
+   "head": "Halla Tómasdóttir",
+   "headLabel": "Presidente",
+   "languages": "islandese",
+   "nato": true,
+   "population": "circa 390 mila (Statistics Iceland, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Governo islandese",
+     "u": "https://www.government.is"
+    }
+   ]
+  },
+  "IT": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Roma",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Giorgia Meloni",
+   "govLabel": "Presidente del Consiglio",
+   "head": "Sergio Mattarella",
+   "headLabel": "Presidente della Repubblica",
+   "languages": "italiano",
+   "nato": true,
+   "population": "circa 59 milioni (Istat, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Quirinale",
+     "u": "https://www.quirinale.it"
+    },
+    {
+     "n": "Governo italiano",
+     "u": "https://www.governo.it"
+    }
+   ]
+  },
+  "JO": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Amman",
+   "currency": "dinaro giordano",
+   "eu": false,
+   "euro": false,
+   "gov": "Jafar Hassan",
+   "govLabel": "Primo ministro",
+   "head": "Abdallah II",
+   "headLabel": "Re",
+   "languages": "arabo",
+   "nato": false,
+   "population": "circa 11,5 milioni (DoS, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Jordan News",
+     "u": "https://www.jordannews.jo/Section-109/News/Royal-Decree-Approves-Cabinet-Reshuffle-Under-Prime-Minister-Hassan-54095"
+    }
+   ]
+  },
+  "LB": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Beirut",
+   "currency": "lira libanese",
+   "eu": false,
+   "euro": false,
+   "gov": "Nawaf Salam",
+   "govLabel": "Primo ministro",
+   "head": "Joseph Aoun",
+   "headLabel": "Presidente",
+   "languages": "arabo",
+   "nato": false,
+   "note": "Le elezioni parlamentari previste nel 2026 sono state rinviate dal Parlamento al 2028 a causa della guerra.",
+   "population": "circa 5,8 milioni (stima Onu, rifugiati inclusi)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2025/1/14/who-is-nawaf-salam-lebanons-pm-designate-amid-political-shift"
+    }
+   ]
+  },
+  "LI": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Vaduz",
+   "currency": "franco svizzero",
+   "eu": false,
+   "euro": false,
+   "gov": "Brigitte Haas",
+   "govLabel": "Capo del governo",
+   "head": "Hans-Adam II (funzioni esercitate dal principe ereditario Alois come reggente)",
+   "headLabel": "Principe regnante",
+   "languages": "tedesco",
+   "nato": false,
+   "population": "circa 40 mila (2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Governo del Liechtenstein",
+     "u": "https://www.regierung.li"
+    }
+   ]
+  },
+  "LT": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Vilnius",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Mindaugas Sinkevičius (da luglio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Gitanas Nausėda",
+   "headLabel": "Presidente",
+   "languages": "lituano",
+   "nato": true,
+   "population": "circa 2,9 milioni (2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/my-europe/2026/06/30/lithuanias-parliament-approves-sinkevicius-as-prime-minister"
+    }
+   ]
+  },
+  "LU": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Lussemburgo",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Luc Frieden",
+   "govLabel": "Primo ministro",
+   "head": "Guglielmo V (dal 3 ottobre 2025)",
+   "headLabel": "Granduca",
+   "languages": "lussemburghese, francese, tedesco",
+   "nato": true,
+   "population": "circa 680 mila (Statec, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Governo lussemburghese",
+     "u": "https://gouvernement.lu"
+    }
+   ]
+  },
+  "LV": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Riga",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Andris Kulbergs (incaricato di formare il nuovo governo dopo le elezioni di ottobre 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Edgars Rinkēvičs",
+   "headLabel": "Presidente",
+   "languages": "lettone",
+   "nato": true,
+   "population": "circa 1,86 milioni (CSP, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "LSM",
+     "u": "https://eng.lsm.lv/article/politics/politics/04.11.2026-kulbergs-says-government-proposal-will-be-ready-by-november-18.a670472/"
+    }
+   ]
+  },
+  "LY": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Tripoli",
+   "currency": "dinaro libico",
+   "eu": false,
+   "euro": false,
+   "gov": "Abdul Hamid Dbeibah",
+   "govLabel": "Primo ministro del Governo di unità nazionale (Tripoli)",
+   "head": "Mohamed al-Menfi",
+   "headLabel": "Presidente del Consiglio presidenziale",
+   "languages": "arabo",
+   "nato": false,
+   "note": "Il Paese è diviso: il governo di Tripoli è riconosciuto dall'Onu, mentre l'est e il sud sono controllati da un governo rivale e dalle forze del generale Khalifa Haftar.",
+   "population": "circa 7,4 milioni (stima)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "QNA",
+     "u": "https://qna.org.qa/en/News-Area/News/2026-10/31/libyas-presidential-council-chief-welcomes-12-month-unsmil-extension"
+    },
+    {
+     "n": "Asharq Al-Awsat",
+     "u": "https://english.aawsat.com/arab-world/5146001-libya%E2%80%99s-presidential-council-parliament-clash-over-naming-new-prime-minister"
+    }
+   ]
+  },
+  "MA": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Rabat",
+   "currency": "dirham marocchino",
+   "eu": false,
+   "euro": false,
+   "gov": "Fatima Ezzahra El Mansouri (da settembre 2026)",
+   "govLabel": "Capo del governo",
+   "head": "Mohammed VI",
+   "headLabel": "Re",
+   "languages": "arabo, tamazight (berbero)",
+   "nato": false,
+   "note": "Il Marocco controlla gran parte del Sahara occidentale, territorio conteso con il Fronte Polisario.",
+   "population": "circa 37 milioni (HCP, censimento 2024)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Al-Monitor",
+     "u": "https://www.al-monitor.com/originals/2026/09/moroccos-king-appoints-first-woman-prime-minister-following-election"
+    },
+    {
+     "n": "Morocco World News",
+     "u": "https://www.moroccoworldnews.com/2026/09/340205/who-is-fatima-ezzahra-el-mansouri-moroccos-first-woman-head-of-government/"
+    }
+   ]
+  },
+  "MC": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Monaco",
+   "currency": "euro",
+   "eu": false,
+   "euro": true,
+   "gov": "Christophe Mirmand",
+   "govLabel": "Ministro di Stato",
+   "head": "Alberto II",
+   "headLabel": "Principe",
+   "languages": "francese",
+   "nato": false,
+   "population": "circa 38 mila (IMSEE, 2024)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Governo del Principato",
+     "u": "https://www.gouv.mc/en/government-institutions/the-government/the-ministry-of-state"
+    }
+   ]
+  },
+  "MD": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Chișinău",
+   "currency": "leu moldavo",
+   "eu": false,
+   "euro": false,
+   "gov": "Vasile Tofan (da luglio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Maia Sandu",
+   "headLabel": "Presidente",
+   "languages": "romeno",
+   "nato": false,
+   "note": "La regione separatista della Transnistria, sulla riva sinistra del Dnestr, sfugge al controllo del governo dal 1992. È candidata all'adesione Ue.",
+   "population": "circa 2,4 milioni (BNS, 2025, esclusa la Transnistria)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "AP via WTOP",
+     "u": "https://wtop.com/europe/2026/07/moldovas-parliament-elects-investor-vasile-tofan-as-prime-minister-to-push-eu-membership-bid/"
+    }
+   ]
+  },
+  "ME": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Podgorica",
+   "currency": "euro (adottato senza accordo formale con l'Ue)",
+   "eu": false,
+   "euro": true,
+   "gov": "Milojko Spajić",
+   "govLabel": "Primo ministro",
+   "head": "Jakov Milatović",
+   "headLabel": "Presidente",
+   "languages": "montenegrino",
+   "nato": true,
+   "population": "circa 620 mila (Monstat, 2024)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Governo del Montenegro",
+     "u": "https://www.gov.me/en/article/pm-spajic-participates-in-the-regional-leaders-summit-on-the-growth-plan"
+    }
+   ]
+  },
+  "MK": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Skopje",
+   "currency": "denar macedone",
+   "eu": false,
+   "euro": false,
+   "gov": "Hristijan Mickoski",
+   "govLabel": "Primo ministro",
+   "head": "Gordana Siljanovska-Davkova",
+   "headLabel": "Presidente",
+   "languages": "macedone, albanese",
+   "nato": true,
+   "population": "circa 1,8 milioni (2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Governo della Macedonia del Nord",
+     "u": "https://vlada.mk"
+    }
+   ]
+  },
+  "MT": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "La Valletta",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Robert Abela (rieletto a maggio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Myriam Spiteri Debono",
+   "headLabel": "Presidente",
+   "languages": "maltese, inglese",
+   "nato": false,
+   "population": "circa 570 mila (NSO, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "MaltaToday",
+     "u": "https://www.maltatoday.com.mt/news/election-2026/142259/live__robert_abela_to_be_sworn_in_after_labours_electoral_victory_on_sunday_1"
+    }
+   ]
+  },
+  "NL": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Amsterdam (sede del governo: L'Aia)",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Rob Jetten (dal 23 febbraio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Guglielmo Alessandro",
+   "headLabel": "Re",
+   "languages": "neerlandese",
+   "nato": true,
+   "population": "circa 18 milioni (CBS, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Rijksoverheid",
+     "u": "https://www.rijksoverheid.nl/regering/over-de-regering/kabinetten-sinds-1945/kabinet-jetten"
+    }
+   ]
+  },
+  "NO": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Oslo",
+   "currency": "corona norvegese",
+   "eu": false,
+   "euro": false,
+   "gov": "Jonas Gahr Støre",
+   "govLabel": "Primo ministro",
+   "head": "Harald V",
+   "headLabel": "Re",
+   "languages": "norvegese, sami",
+   "nato": true,
+   "note": "Non fa parte dell'Ue ma è nello Spazio economico europeo e in Schengen.",
+   "population": "circa 5,6 milioni (SSB, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Regjeringen",
+     "u": "https://www.regjeringen.no/en/whats-new/news-and-press-releases/id2006120/?page=0"
+    }
+   ]
+  },
+  "PL": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Varsavia",
+   "currency": "złoty",
+   "eu": true,
+   "euro": false,
+   "gov": "Donald Tusk",
+   "govLabel": "Primo ministro",
+   "head": "Karol Nawrocki",
+   "headLabel": "Presidente",
+   "languages": "polacco",
+   "nato": true,
+   "population": "circa 37,5 milioni (GUS, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Governo polacco",
+     "u": "https://www.gov.pl"
+    }
+   ]
+  },
+  "PS": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Ramallah (sede amministrativa; capitale rivendicata: Gerusalemme Est)",
+   "currency": "shekel israeliano e dinaro giordano (nessuna moneta propria)",
+   "eu": false,
+   "euro": false,
+   "gov": "Mohammad Mustafa",
+   "govLabel": "Primo ministro",
+   "head": "Mahmoud Abbas",
+   "headLabel": "Presidente dello Stato di Palestina e dell'Autorità nazionale palestinese",
+   "languages": "arabo",
+   "nato": false,
+   "note": "L'Autorità palestinese amministra parti della Cisgiordania, in larga parte sotto controllo militare israeliano. A Gaza un comitato tecnico palestinese (NCAG) sotto la supervisione del Board of Peace dovrebbe gestire gli affari civili; secondo le fonti Hamas mantiene il controllo della sicurezza in parte della Striscia e Israele ne controlla un'altra parte.",
+   "population": "circa 5,5 milioni (PCBS, stima)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Ufficio del primo ministro palestinese",
+     "u": "https://pmo.pna.ps/en/Article/5311/ministers"
+    },
+    {
+     "n": "Wikipedia – Comitato per Gaza",
+     "u": "https://en.wikipedia.org/wiki/National_Committee_for_the_Administration_of_Gaza"
+    }
+   ]
+  },
+  "PT": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Lisbona",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Luís Montenegro",
+   "govLabel": "Primo ministro",
+   "head": "António José Seguro (dal 9 marzo 2026)",
+   "headLabel": "Presidente della Repubblica",
+   "languages": "portoghese",
+   "nato": true,
+   "population": "circa 10,7 milioni (INE, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Governo portoghese",
+     "u": "https://portugal.gov.pt/gc25/comunicacao/noticias/primeiro-ministro-deseja-maior-sucesso-a-antonio-jose-seguro-no-inicio-do-mandato-presidencial"
+    }
+   ]
+  },
+  "RO": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Bucarest",
+   "currency": "leu romeno",
+   "eu": true,
+   "euro": false,
+   "gov": "Luca Niculescu (dal 21 ottobre 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Nicușor Dan",
+   "headLabel": "Presidente",
+   "languages": "romeno",
+   "nato": true,
+   "population": "circa 19 milioni (INS, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Euronews",
+     "u": "https://www.euronews.com/2026/10/21/new-romanian-prime-minister-luca-niculescu-and-cabinet-members-sworn-in"
+    }
+   ]
+  },
+  "RS": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Belgrado",
+   "currency": "dinaro serbo",
+   "eu": false,
+   "euro": false,
+   "gov": "Đuro Macut (in carica per gli affari correnti)",
+   "govLabel": "Primo ministro",
+   "head": "Ana Brnabić (presidente ad interim dopo le dimissioni di Aleksandar Vučić, settembre 2026)",
+   "headLabel": "Presidente",
+   "languages": "serbo",
+   "nato": false,
+   "note": "Alle elezioni anticipate del 25 ottobre 2026 ha vinto la Lista degli studenti; il nuovo Parlamento si insedia il 17 novembre e deve formare il governo.",
+   "population": "circa 6,6 milioni (RZS, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/10/25/serbia-voter-turnout-highest-in-decades-as-students-oppose-longtime-leader"
+    },
+    {
+     "n": "RTÉ",
+     "u": "https://www.rte.ie/news/2026/1101/1597425-serbia-politics/"
+    }
+   ]
+  },
+  "RU": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Mosca",
+   "currency": "rublo russo",
+   "eu": false,
+   "euro": false,
+   "gov": "Michail Mišustin",
+   "govLabel": "Presidente del Governo",
+   "head": "Vladimir Putin",
+   "headLabel": "Presidente",
+   "languages": "russo",
+   "nato": false,
+   "population": "circa 146 milioni (Rosstat, 2025, inclusa la Crimea)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Cremlino",
+     "u": "http://en.kremlin.ru"
+    }
+   ]
+  },
+  "SA": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Riad",
+   "currency": "riyal saudita",
+   "eu": false,
+   "euro": false,
+   "gov": "Mohammed bin Salman (principe ereditario)",
+   "govLabel": "Primo ministro",
+   "head": "Salman bin Abdulaziz",
+   "headLabel": "Re",
+   "languages": "arabo",
+   "nato": false,
+   "population": "circa 35 milioni (GASTAT, 2024)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Saudi Press Agency",
+     "u": "https://www.spa.gov.sa/en"
+    }
+   ]
+  },
+  "SE": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Stoccolma",
+   "currency": "corona svedese",
+   "eu": true,
+   "euro": false,
+   "gov": "Ulf Kristersson (dimissionario, in carica per gli affari correnti)",
+   "govLabel": "Primo ministro",
+   "head": "Carlo XVI Gustavo",
+   "headLabel": "Re",
+   "languages": "svedese",
+   "nato": true,
+   "note": "Dopo le elezioni del 13 settembre 2026 il Parlamento ha respinto due candidati premier; la formazione del governo è in corso.",
+   "population": "circa 10,6 milioni (SCB, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "Riksdagen",
+     "u": "https://www.riksdagen.se/en/news/"
+    },
+    {
+     "n": "The Star (Reuters)",
+     "u": "https://www.thestar.com.my/news/world/2026/11/03/sweden-parliament-rejects-centre-leader-as-prime-minister-as-expected"
+    }
+   ]
+  },
+  "SI": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Lubiana",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Janez Janša (da maggio 2026)",
+   "govLabel": "Primo ministro",
+   "head": "Nataša Pirc Musar",
+   "headLabel": "Presidente",
+   "languages": "sloveno (italiano e ungherese nelle aree delle minoranze)",
+   "nato": true,
+   "population": "circa 2,1 milioni (SURS, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "AP via WTOP",
+     "u": "https://wtop.com/news/2026/06/slovenias-parliament-approves-right-leaning-government-as-jansa-returns-as-pm-for-a-fourth-time/"
+    }
+   ]
+  },
+  "SK": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Bratislava",
+   "currency": "euro",
+   "eu": true,
+   "euro": true,
+   "gov": "Robert Fico",
+   "govLabel": "Primo ministro",
+   "head": "Peter Pellegrini",
+   "headLabel": "Presidente",
+   "languages": "slovacco",
+   "nato": true,
+   "population": "circa 5,4 milioni (ŠÚ SR, 2025)",
+   "schengen": true,
+   "sources": [
+    {
+     "n": "OSW",
+     "u": "https://www.osw.waw.pl/en/publikacje/osw-commentary/2026-05-27/faster-lower-stronger-policies-ficos-fourth-government"
+    }
+   ]
+  },
+  "SM": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "San Marino",
+   "currency": "euro",
+   "eu": false,
+   "euro": true,
+   "gov": "Luca Beccari",
+   "govLabel": "Segretario di Stato per gli Affari Esteri",
+   "head": "Gerardo Giovagnoli e William Casali (1° ottobre 2026 – 1° aprile 2027)",
+   "headLabel": "Capitani Reggenti",
+   "languages": "italiano",
+   "nato": false,
+   "note": "I due Capitani Reggenti, capi di Stato, cambiano ogni sei mesi; non esiste un primo ministro, il Segretario agli Esteri ha il ruolo politico più rilevante.",
+   "population": "circa 34 mila (2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Reggenza della Repubblica",
+     "u": "https://reggenzadellarepubblica.sm/pub1/ReggenzaSM/en/Capitani_Reggenti/Capitani_Reggenti_In_Carica.html"
+    }
+   ]
+  },
+  "SY": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Damasco",
+   "currency": "lira siriana",
+   "eu": false,
+   "euro": false,
+   "head": "Ahmed al-Sharaa",
+   "headLabel": "Presidente (di transizione)",
+   "languages": "arabo",
+   "nato": false,
+   "note": "Dopo la caduta di Bashar al-Assad (dicembre 2024) il Paese è guidato da autorità di transizione; non c'è un primo ministro e il presidente guida il governo.",
+   "population": "circa 25 milioni (stima Onu)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Agenzia statale azera AZERTAG",
+     "u": "https://azertag.az/en/xeber/transitional_president_of_syria_ahmad_al_sharaa_concludes_visit_to_azerbaijan-3655199"
+    }
+   ]
+  },
+  "TN": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Tunisi",
+   "currency": "dinaro tunisino",
+   "eu": false,
+   "euro": false,
+   "gov": "Sara Zaafrani Zenzri",
+   "govLabel": "Capo del governo",
+   "head": "Kaïs Saïed",
+   "headLabel": "Presidente",
+   "languages": "arabo",
+   "nato": false,
+   "population": "circa 12 milioni (INS, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Presidenza del governo tunisino",
+     "u": "https://www.pm.gov.tn/en/recherche"
+    }
+   ]
+  },
+  "TR": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Ankara",
+   "currency": "lira turca",
+   "eu": false,
+   "euro": false,
+   "head": "Recep Tayyip Erdoğan",
+   "headLabel": "Presidente",
+   "languages": "turco",
+   "nato": true,
+   "note": "Dal 2018 è una repubblica presidenziale: il presidente è anche capo del governo. È candidata all'adesione Ue, con negoziati fermi.",
+   "population": "circa 85,7 milioni (TÜİK, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Presidenza della Turchia",
+     "u": "https://www.tccb.gov.tr/en/"
+    }
+   ]
+  },
+  "UA": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Kiev",
+   "currency": "grivnia",
+   "eu": false,
+   "euro": false,
+   "gov": "Yulia Svyrydenko",
+   "govLabel": "Primo ministro",
+   "head": "Volodymyr Zelensky",
+   "headLabel": "Presidente",
+   "languages": "ucraino",
+   "nato": false,
+   "note": "Dal 2022 è in corso l'invasione russa; parte del territorio (inclusa la Crimea, annessa nel 2014) è occupata dalla Russia. È candidata all'adesione Ue.",
+   "population": "stime incerte a causa della guerra (circa 30-35 milioni nei territori controllati dal governo)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Presidenza dell'Ucraina",
+     "u": "https://www.president.gov.ua/en"
+    },
+    {
+     "n": "Governo ucraino",
+     "u": "https://www.kmu.gov.ua/en"
+    }
+   ]
+  },
+  "US": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Washington",
+   "currency": "dollaro statunitense",
+   "eu": false,
+   "euro": false,
+   "head": "Donald Trump",
+   "headLabel": "Presidente",
+   "languages": "nessuna a livello federale per legge; l'inglese è stato dichiarato lingua ufficiale con ordine esecutivo (2025)",
+   "nato": true,
+   "note": "Il presidente è sia capo dello Stato sia capo del governo.",
+   "population": "circa 341 milioni (US Census Bureau, 2025)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Casa Bianca",
+     "u": "https://www.whitehouse.gov"
+    }
+   ]
+  },
+  "VA": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Città del Vaticano",
+   "currency": "euro",
+   "eu": false,
+   "euro": true,
+   "gov": "Suor Raffaella Petrini",
+   "govLabel": "Presidente del Governatorato",
+   "head": "Papa Leone XIV",
+   "headLabel": "Sommo Pontefice",
+   "languages": "italiano (lingua ufficiale della Santa Sede: latino)",
+   "nato": false,
+   "note": "Il Papa è sovrano dello Stato; la Segreteria di Stato (cardinale Pietro Parolin) cura i rapporti diplomatici.",
+   "population": "circa 800 abitanti",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Sala Stampa della Santa Sede",
+     "u": "https://press.vatican.va"
+    }
+   ]
+  },
+  "XK": {
+   "asOf": "il 14 novembre 2026",
+   "capital": "Pristina",
+   "currency": "euro (adottato unilateralmente)",
+   "eu": false,
+   "euro": true,
+   "gov": "Albin Kurti",
+   "govLabel": "Primo ministro",
+   "head": "Justina Shiroka Pula (dal 7 ottobre 2026)",
+   "headLabel": "Presidente",
+   "languages": "albanese, serbo",
+   "nato": false,
+   "note": "Ha dichiarato l'indipendenza dalla Serbia nel 2008: è riconosciuto da circa metà degli Stati Onu e da 22 dei 27 Paesi Ue; la Serbia non lo riconosce.",
+   "population": "circa 1,6 milioni (stima)",
+   "schengen": false,
+   "sources": [
+    {
+     "n": "Prishtina Insight",
+     "u": "https://prishtinainsight.com/kosovo-elects-president-dodging-new-political-deadlock/"
+    },
+    {
+     "n": "Al Jazeera",
+     "u": "https://www.aljazeera.com/news/2026/9/13/kosovo-approves-new-government-after-months-of-political-deadlock"
+    }
+   ]
+  }
+ },
+ "updatedAt": "2026-11-14T15:30:52Z",
+ "updatedLabel": "il 14 novembre 2026"
+}

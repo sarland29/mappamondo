@@ -1,0 +1,2381 @@
+{
+ "date": "2026-11-14",
+ "items": [
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA e Protezione civile regionale"
+   },
+   "icon": "storm",
+   "id": "ar-valtiberina-frane",
+   "label": "Frane Aretino",
+   "lat": 43.5714,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 12.1394,
+   "place": "Sansepolcro, Arezzo",
+   "province": "AR",
+   "region": "Toscana",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/toscana/notizie/2026/11/13/maltempo-nellaretino-nella-notte-allagamenti-e-frane_131039fd-97e2-4949-88dd-698b9914f38e.html"
+    },
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/toscana/notizie/2026/11/13/maltempo-in-toscana-124-persone-ancora-isolate-e-un-centinaio-evacuate_10090a54-26cb-4b5e-8f7e-8ca3ba9b3165.html"
+    }
+   ],
+   "text": "La pioggia della notte tra il 12 e il 13 novembre ha causato frane e allagamenti nell'Aretino, soprattutto a Sansepolcro e Anghiari. Una frana ha isolato la frazione Montagna e l'elicottero Drago ha evacuato due persone; i vigili del fuoco hanno svolto circa 70 interventi. Chiuse temporaneamente alcune strade, tra cui la Marecchiese e la Sp 77.",
+   "title": "Maltempo in Valtiberina: frane e allagamenti, frazione isolata a Sansepolcro",
+   "zoom": 140
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA, dati Protezione civile regionale e Comune"
+   },
+   "icon": "storm",
+   "id": "pi-serchio-piena-ripafratta",
+   "label": "Piena Serchio",
+   "lat": 43.7639,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 10.4417,
+   "place": "San Giuliano Terme, Pisa",
+   "province": "PI",
+   "region": "Toscana",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/toscana/notizie/2026/11/13/maltempo-in-transito-la-terza-piena-del-serchio_768bc16f-5fbe-4a17-a82f-78ed9f8648e3.html"
+    },
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/toscana/notizie/2026/11/13/maltempo-in-toscana-124-persone-ancora-isolate-e-un-centinaio-evacuate_10090a54-26cb-4b5e-8f7e-8ca3ba9b3165.html"
+    }
+   ],
+   "text": "Venerdì è transitata la terza piena del Serchio, con il colmo atteso in serata a San Giuliano Terme e nella notte a Vecchiano. Il Comune di San Giuliano ha chiuso il ponte di Ripafratta e ordinato l'evacuazione delle aree golenali fino al passaggio della piena. In Toscana risultavano 124 persone isolate e circa un centinaio evacuate tra Pisano e Lucchese.",
+   "title": "Terza piena del Serchio: evacuate le golene, chiuso il ponte di Ripafratta",
+   "zoom": 140
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA su dati Protezione civile regionale"
+   },
+   "icon": "storm",
+   "id": "ms-massa-maltempo-cisa",
+   "label": "Maltempo Massa",
+   "lat": 44.036,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 10.141,
+   "place": "Massa",
+   "province": "MS",
+   "region": "Toscana",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/toscana/notizie/2026/11/13/maltempo-in-toscana-124-persone-ancora-isolate-e-un-centinaio-evacuate_10090a54-26cb-4b5e-8f7e-8ca3ba9b3165.html"
+    }
+   ],
+   "text": "Nel Massese il maltempo ha fatto crollare opere di difesa delle sponde a Caniparola, dove è stata attivata una pompa per tenere sotto controllo l'acqua. Il torrente Osca ha eroso la sponda vicino al km 88 dell'autostrada della Cisa. A Massa i vigili del fuoco hanno soccorso una persona rimasta bloccata in auto nel sottopasso allagato di via Oliveti.",
+   "title": "Massa-Carrara: argini ceduti, erosione sulla Cisa e un automobilista salvato",
+   "zoom": 120
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA"
+   },
+   "icon": "road",
+   "id": "gr-corridoio-tirrenico-presidio",
+   "label": "Aurelia",
+   "lat": 42.4536,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 11.4219,
+   "place": "Capalbio, Grosseto",
+   "province": "GR",
+   "region": "Toscana",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/toscana/notizie/2026/11/13/corridoio-tirrenico-presidio-a-roma-di-istituzioni-e-rappresentanti-grossetani_2ff83597-17b1-443d-9ad0-c532ffdb86cb.html"
+    }
+   ],
+   "text": "Provincia di Grosseto, i 28 Comuni del territorio, Camera di commercio e sindacati hanno manifestato davanti a Montecitorio per chiedere il completamento del Corridoio Tirrenico. Le richieste riguardano l'Aurelia a quattro corsie, i fondi per i lotti pronti e un cronoprogramma chiaro. Il sindaco di Capalbio ha definito pericolosi i 14 km a una sola carreggiata nel suo territorio.",
+   "title": "Aurelia, la Maremma a Montecitorio: chiesto di completare il Corridoio Tirrenico",
+   "zoom": 130
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica"
+   },
+   "icon": "train",
+   "id": "fi-treno-200-aretina",
+   "label": "Treno 200 km/h",
+   "lat": 43.7764,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 11.248,
+   "place": "Firenze",
+   "province": "FI",
+   "region": "Toscana",
+   "sources": [
+    {
+     "n": "La Nazione",
+     "u": "https://www.lanazione.it/firenze/cronaca/treno-veloce-linea-aretina-brxy5o1o"
+    }
+   ],
+   "text": "Martedì 17 novembre sarà presentato il primo treno regionale toscano capace di raggiungere i 200 km/h, che viaggerà tra Arezzo e Firenze Santa Maria Novella. Un secondo convoglio è atteso tra circa un mese e altri quattro entro la primavera 2027. L'assessore regionale ai trasporti ricorda che servono soprattutto puntualità e affidabilità.",
+   "title": "Arezzo-Firenze, arriva il primo treno regionale da 200 km/h",
+   "zoom": 120
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA su dati Protezione civile regionale"
+   },
+   "icon": "storm",
+   "id": "pg-citerna-tevere-allagamenti",
+   "label": "Piogge Umbria",
+   "lat": 43.4983,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 12.115,
+   "place": "Citerna, Perugia",
+   "province": "PG",
+   "region": "Umbria",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/umbria/notizie/2026/11/13/disagi-in-varie-zone-dellumbria-per-le-forti-piogge_a6191f7c-2f0a-4575-8e18-46cf3184288d.html"
+    }
+   ],
+   "text": "Le forti piogge di venerdì hanno allagato alcune abitazioni a Citerna, dove il Comune ha attivato il centro operativo e chiesto l'aiuto dei volontari. Il Tevere ha superato la soglia arancione a Santa Lucia, in Alta Valle del Tevere. A Perugia, tra San Galigano e Rimbocchi, sono caduti alcuni alberi.",
+   "title": "Piogge in Umbria: allagamenti a Citerna, Tevere oltre la soglia arancione",
+   "zoom": 150
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA, comunicazione della Provincia"
+   },
+   "icon": "road",
+   "id": "pg-eugubina-riaperta",
+   "label": "Eugubina",
+   "lat": 43.37,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 12.6,
+   "place": "Gubbio, Perugia",
+   "province": "PG",
+   "region": "Umbria",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/umbria/notizie/2026/11/13/riaperta-al-traffico-la-sr-298-eugubina-dopo-la-chiusura-per-caduta-massi_a0566b38-7a27-4758-b242-b1675be41129.html"
+    }
+   ],
+   "text": "Venerdì pomeriggio la Provincia di Perugia ha riaperto la Sr 298 Eugubina tra Gubbio e Scheggia, chiusa giovedì sera per una caduta di massi al km 10. Sono state messe barriere di protezione e nel punto del crollo si deve guidare con la massima prudenza. Nei prossimi giorni la Provincia valuterà come riparare le reti paramassi danneggiate.",
+   "title": "Gubbio, riaperta la Sr 298 Eugubina dopo la caduta di massi",
+   "zoom": 140
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica, dati del Comune"
+   },
+   "icon": "chart",
+   "id": "tr-censimento-istat",
+   "label": "Censimento",
+   "lat": 42.5606,
+   "lng": 12.6466,
+   "place": "Terni",
+   "province": "TR",
+   "region": "Umbria",
+   "sources": [
+    {
+     "n": "UmbriaON",
+     "u": "https://www.umbriaon.it/terni-censimento-1-250-su-3-800-famiglie-hanno-risposto-finora-tocca-ai-rilevatori/"
+    }
+   ],
+   "text": "A Terni hanno già compilato il censimento Istat 1.250 delle 3.800 famiglie estratte, un dato che il Comune giudica sopra la media. Da giovedì i rilevatori contattano chi non ha ancora risposto; online si può compilare fino al 6 dicembre. Il Comune ricorda che i rilevatori autorizzati hanno un tesserino con il logo Istat.",
+   "title": "Censimento Istat a Terni: ha risposto una famiglia su tre",
+   "zoom": 120
+  },
+  {
+   "cat": "fede",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA"
+   },
+   "icon": "church",
+   "id": "pg-assisi-centenario-bilancio",
+   "label": "San Francesco",
+   "lat": 43.0707,
+   "lng": 12.6196,
+   "place": "Assisi, Perugia",
+   "province": "PG",
+   "region": "Umbria",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/umbria/notizie/2026/11/13/arcudi-soddisfazione-per-i-risultati-delle-celebrazioni-francescane_344cc2f6-6071-44df-a49e-aeead48a0382.html"
+    }
+   ],
+   "text": "Le celebrazioni per gli 800 anni dalla morte di San Francesco hanno portato oltre 370mila pellegrini all'ostensione delle spoglie ad Assisi. Lo ha ricordato il consigliere regionale Nilo Arcudi, insieme a un consigliere comunale di Assisi. La legge regionale sul centenario ha già finanziato 23 progetti; il 15 novembre scadono le nuove domande di contributo.",
+   "title": "Centenario di San Francesco: oltre 370mila pellegrini per l'ostensione",
+   "zoom": 130
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA e Resto del Carlino"
+   },
+   "icon": "storm",
+   "id": "pu-metauro-stato-calamita",
+   "label": "Metauro",
+   "lat": 43.6676,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 12.5236,
+   "place": "Urbania, Pesaro e Urbino",
+   "province": "PU",
+   "region": "Marche",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/marche/notizie/2026/11/13/esonda-il-metauro-nel-pesarese-una-persona-salvata-dai-vigili-del_3a6295ec-185e-4d9c-9a5f-d8680904e83b.html"
+    },
+    {
+     "n": "il Resto del Carlino",
+     "u": "https://www.ilrestodelcarlino.it/marche/cronaca/maltempo-pesarese-alluvionato-danni-a65b12a2?_fcb=1794667208"
+    }
+   ],
+   "text": "Nella notte tra il 12 e il 13 novembre il Metauro è esondato nell'entroterra pesarese, tra Urbania, Sant'Angelo in Vado e Mercatello; a Urbania i vigili del fuoco hanno salvato una persona bloccata in casa. I Comuni e l'Unione montana hanno chiesto lo stato di calamità. La Provincia stima per ora 1,2 milioni di euro di danni alle strade.",
+   "title": "Metauro esondato: danni per 1,2 milioni, chiesto lo stato di calamità",
+   "zoom": 140
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Cronache Fermane e Resto del Carlino"
+   },
+   "icon": "storm",
+   "id": "an-esino-moie-soglia",
+   "label": "Esino",
+   "lat": 43.505,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 13.13,
+   "place": "Moie, Maiolati Spontini, Ancona",
+   "province": "AN",
+   "region": "Marche",
+   "sources": [
+    {
+     "n": "Cronache Fermane",
+     "u": "https://www.cronachefermane.it/2026/11/14/maltempo-alberi-caduti-a-porto-san-giorgio-e-santelpidio-a-mare-vigili-del-fuoco-al-lavoro-nella-notte/798017/"
+    },
+    {
+     "n": "il Resto del Carlino",
+     "u": "https://www.ilrestodelcarlino.it/marche/cronaca/maltempo-pesarese-alluvionato-danni-a65b12a2?_fcb=1794667208"
+    }
+   ],
+   "text": "Nella notte tra venerdì e sabato l'Esino ha toccato la soglia idrometrica massima a Moie di Maiolati Spontini, sorvegliato da vigili del fuoco e Protezione civile. Nelle Marche i vigili del fuoco sono intervenuti 15 volte, soprattutto per alberi e rami caduti tra Ancona, Jesi, Pesaro, Recanati e il Fermano. Non risultano feriti.",
+   "title": "Esino al livello massimo a Moie, alberi caduti in mezza regione",
+   "zoom": 150
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA"
+   },
+   "icon": "money",
+   "id": "mc-sisma-piano-440-milioni",
+   "label": "Fondi sisma",
+   "lat": 43.3002,
+   "layers": [
+    "economia"
+   ],
+   "lng": 13.4532,
+   "place": "Macerata",
+   "province": "MC",
+   "region": "Marche",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/marche/notizie/2026/11/13/sisma-piano-da-440-milioni-per-329-opere-pubbliche-nelle-marche_07f2f2db-18cb-4fbc-ae61-649a4dc186bf.html"
+    }
+   ],
+   "text": "La struttura commissariale per il sisma 2016 ha approvato un piano da 440 milioni di euro per 329 opere pubbliche nelle Marche. La quota maggiore va al Maceratese, con 154 interventi per 178 milioni, seguito da Ascoli Piceno e Fermo. Tra i progetti ci sono l'acquedotto dei Sibillini ad Arquata e il chiostro di San Nicola a Tolentino.",
+   "title": "Ricostruzione post-sisma: 440 milioni per 329 opere pubbliche nelle Marche",
+   "zoom": 110
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA"
+   },
+   "icon": "money",
+   "id": "ap-hp-composites-tavolo",
+   "label": "Hp Composites",
+   "lat": 42.864,
+   "layers": [
+    "economia"
+   ],
+   "lng": 13.64,
+   "place": "Campolungo, Ascoli Piceno",
+   "province": "AP",
+   "region": "Marche",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/marche/notizie/2026/11/13/hp-composites-sindacati-preoccupati-lunedi-nuovo-tavolo-sul-futuro_0c31993b-9fbb-4ce0-93d6-22f1fc19eb01.html"
+    }
+   ],
+   "text": "L'azienda di Campolungo, ad Ascoli Piceno, ha chiuso un accordo con i creditori e dice di aver salvato tutti i posti di lavoro e interrotto la cassa integrazione. Fim, Fiom e Uilm restano però preoccupati e parlano di una fase delicata. Lunedì 16 novembre è previsto un nuovo incontro al tavolo regionale.",
+   "title": "Hp Composites, sindacati in allerta: lunedì tavolo in Regione",
+   "zoom": 140
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA"
+   },
+   "icon": "gov",
+   "id": "vt-san-carluccio-alloggi",
+   "label": "Alloggi anziani",
+   "lat": 42.4144,
+   "lng": 12.106,
+   "place": "Viterbo",
+   "province": "VT",
+   "region": "Lazio",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/lazio/notizie/2026/11/13/sindaca-di-viterbo-inaugura-nuovi-alloggi-per-anziani-e-fragili_f9ce0196-3970-4001-a309-044f396c967c.html"
+    },
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/lazio/notizie/2026/11/13/dal-comune-oltre-800mila-euro-per-le-strade-di-viterbo_344cfc4b-f4f5-4997-9415-20c2bbb19ba3.html"
+    }
+   ],
+   "text": "Nel complesso comunale di San Carluccio, nel centro medievale di Viterbo, sono stati inaugurati 16 appartamenti ristrutturati per persone over 65 con poca autonomia o senza una rete familiare. I lavori sono stati finanziati con il Pnrr, insieme ad altri sette Comuni del distretto sociale. Il Comune ha anche avviato la progettazione di lavori per oltre 840mila euro sulle strade cittadine.",
+   "title": "Viterbo, 16 nuovi alloggi per anziani fragili nel centro storico",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica; i fondi non sono ancora assegnati"
+   },
+   "icon": "chart",
+   "id": "ri-reti-impresa-confartigianato",
+   "label": "Reti d'impresa",
+   "lat": 42.404,
+   "layers": [
+    "economia"
+   ],
+   "lng": 12.862,
+   "place": "Rieti",
+   "province": "RI",
+   "region": "Lazio",
+   "sources": [
+    {
+     "n": "RietiLife",
+     "u": "https://www.rietilife.com/2026/11/13/reti-dimpresa-confartigianato-rieti-presenta-11-progetti-per-oltre-828mila-euro-coinvolte-piu-di-500-aziende/"
+    }
+   ],
+   "text": "Confartigianato Rieti ha presentato 11 progetti di rete per il bando regionale Reti di Imprese 2026, con oltre 500 aziende coinvolte. Gli investimenti previsti sono circa 828mila euro, di cui 715mila chiesti alla Regione Lazio. I progetti riguardano turismo, promozione dei prodotti e servizi nei Comuni della provincia e ora attendono la valutazione regionale.",
+   "title": "Rieti, 11 reti d'impresa candidate ai fondi regionali: coinvolte 500 aziende",
+   "zoom": 120
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Radio Luna e Latina Oggi"
+   },
+   "icon": "leaf",
+   "id": "lt-storni-falchi",
+   "label": "Storni",
+   "lat": 41.4676,
+   "lng": 12.9037,
+   "place": "Latina",
+   "province": "LT",
+   "region": "Lazio",
+   "sources": [
+    {
+     "n": "Radio Luna",
+     "u": "https://www.radioluna.it/news/2026/11/latina-guano-sui-marciapiedi-del-centro-riparte-il-servizio-di-allontanamento-degli-storni-nasso-effetti-visibili-gia-dalla-prossima-settimana/"
+    },
+    {
+     "n": "Latina Oggi",
+     "u": "https://www.latinaoggi.eu/news/cronaca/324147/latina-parte-oggi-il-servizio-di-allontanamento-degli-storni.html"
+    }
+   ],
+   "text": "Il Comune di Latina ha fatto ripartire il servizio per allontanare gli storni, i cui escrementi sporcano i marciapiedi del centro. Si usano rapaci e dissuasori sonori, un metodo che non fa male agli uccelli. Il servizio durerà fino al 31 dicembre e, secondo l'assessore all'Ambiente, i primi effetti si vedranno dalla prossima settimana.",
+   "title": "Latina, tornano i falchi in centro per allontanare gli storni",
+   "zoom": 120
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica"
+   },
+   "icon": "gov",
+   "id": "fr-lista-marzi-maggioranza",
+   "label": "Comune",
+   "lat": 41.64,
+   "lng": 13.342,
+   "place": "Frosinone",
+   "province": "FR",
+   "region": "Lazio",
+   "sources": [
+    {
+     "n": "Lazio TV",
+     "u": "https://laziotv.it/frosinone/ribaltone-in-comune-la-lista-marzi-entra-nella-maggioranza-di-centrodestra-del-sindaco-mastrangeli"
+    }
+   ],
+   "text": "La lista dell'ex sindaco Domenico Marzi, alle ultime elezioni all'opposizione, è entrata formalmente nella maggioranza di centrodestra del sindaco Riccardo Mastrangeli. A un suo consigliere è andata la delega all'urbanistica. Il Pd e il candidato sindaco del centrosinistra hanno criticato la scelta, mentre la lista sosterrà Mastrangeli alle elezioni di primavera.",
+   "title": "Frosinone, la Lista Marzi entra nella maggioranza del sindaco Mastrangeli",
+   "zoom": 120
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Riportata da più testate regionali"
+   },
+   "icon": "leaf",
+   "id": "pa-forestale-91-agenti",
+   "label": "Forestale +91",
+   "lat": 38.1196,
+   "lng": 13.3707,
+   "place": "Palermo",
+   "province": "PA",
+   "region": "Sicilia",
+   "sources": [
+    {
+     "n": "QdS",
+     "u": "https://qds.it/nuove-forze-per-il-corpo-forestale-in-sicilia-giurano-91-agenti/"
+    },
+    {
+     "n": "La Sicilia",
+     "u": "https://www.lasicilia.it/news/cronaca/3090294/corpo-forestale-giurano-91-nuovi-agenti-in-totale-saranno-400-controlleranno-territorio-e-merci-in-arrivo.html"
+    },
+    {
+     "n": "Giornale di Sicilia",
+     "u": "https://palermo.gds.it/articoli/cronaca/2026/11/14/corpo-forestale-giurano-91-agenti-schifani-e-savarino-energie-nuove-per-difendere-il-nostro-territorio-110d6d78-908b-4d40-972d-7e7134efe31d/"
+    }
+   ],
+   "text": "Novantuno nuovi agenti del Corpo forestale regionale hanno giurato a Palermo, sul Molo Trapezoidale, alla presenza del presidente della Regione. Si occuperanno di controllo del territorio, prevenzione e spegnimento degli incendi e verifiche sulle merci in arrivo. Altri 94 agenti sono in formazione e la Regione prevede nuovi ingressi nel 2027, fino a circa 400 assunzioni complessive.",
+   "title": "Corpo forestale siciliano, giurano 91 nuovi agenti a Palermo",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA e Gazzetta del Sud"
+   },
+   "icon": "globe",
+   "id": "me-taormina-teatro-sera",
+   "label": "Teatro di sera",
+   "lat": 37.8523,
+   "lng": 15.2921,
+   "place": "Taormina, Messina",
+   "province": "ME",
+   "region": "Sicilia",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/sicilia/notizie/2026/11/13/teatro-antico-di-taormina-si-illumina-per-visite-anche-dopo-il-tramonto_213b25a4-cd42-4653-8aae-90b4d5010617.html"
+    },
+    {
+     "n": "Gazzetta del Sud",
+     "u": "https://messina.gazzettadelsud.it/articoli/cultura/2026/11/13/il-parco-archeologico-e-taoarte-illuminano-il-teatro-antico-di-taormina-visite-anche-dopo-il-tramonto-c3134667-c3e6-4f80-b6f5-09c95afa4108/"
+    }
+   ],
+   "text": "Il Teatro Antico di Taormina si può visitare anche dopo il tramonto grazie a un nuovo impianto di illuminazione. L'intervento, pensato per l'autunno e l'inverno quando le giornate sono più corte, nasce dalla collaborazione tra Regione, Parco archeologico Naxos Taormina e TaoArte. Orari e data di avvio delle visite serali sono da verificare con il Parco.",
+   "title": "Taormina, il Teatro Antico si illumina: visite anche dopo il tramonto",
+   "zoom": 140
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata"
+   },
+   "icon": "hospital",
+   "id": "ag-asp-psicologi",
+   "label": "18 psicologi",
+   "lat": 37.3111,
+   "lng": 13.5765,
+   "place": "Agrigento",
+   "province": "AG",
+   "region": "Sicilia",
+   "sources": [
+    {
+     "n": "Teleacras",
+     "u": "https://www.teleacras.it/2026/11/14/lasp-di-agrigento-ha-completato-il-reclutamento-di-18-psicologi-destinati-alle-case-di-comunita/"
+    },
+    {
+     "n": "AgrigentoNotizie",
+     "u": "https://www.agrigentonotizie.it/attualita/asp-18-psicologi-case-comunita-contratti-assistenza.html"
+    }
+   ],
+   "text": "L'Asp di Agrigento ha completato l'assunzione di 18 psicologi che lavoreranno nelle Case di comunità della provincia. L'obiettivo è rendere più facile l'accesso al supporto per la salute mentale vicino a casa e ridurre il ricorso agli ospedali. Gli incarichi durano sei mesi, per 24 ore settimanali.",
+   "title": "Asp di Agrigento, 18 psicologi per le Case di comunità",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Dati di avanzamento riferiti dalla Cna"
+   },
+   "icon": "road",
+   "id": "rg-ragusa-catania-lotto3",
+   "label": "Ragusa-Catania",
+   "lat": 36.9269,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 14.7255,
+   "place": "Ragusa",
+   "province": "RG",
+   "region": "Sicilia",
+   "sources": [
+    {
+     "n": "Giornale Ibleo",
+     "u": "https://www.giornaleibleo.it/2026/11/14/ragusa-catania-sopralluogo-della-cna-territoriale-tutto-fermo-al-terzo-lotto-servono-risposte-immediate/"
+    }
+   ],
+   "text": "La Cna di Ragusa, dopo un sopralluogo, denuncia ritardi nei lavori della strada Ragusa-Catania. Secondo l'associazione il secondo lotto è vicino al 49% mentre il terzo è fermo intorno al 3%. La Cna chiede un incontro ad Anas e al commissario straordinario dell'opera, il presidente della Regione.",
+   "title": "Ragusa-Catania, la Cna: «Fermo il terzo lotto, servono risposte»",
+   "zoom": 110
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Augusta News e Siracusa News"
+   },
+   "icon": "leaf",
+   "id": "sr-cer-augusta-melilli",
+   "label": "Energia comune",
+   "lat": 37.2306,
+   "layers": [
+    "economia"
+   ],
+   "lng": 15.22,
+   "place": "Augusta, Siracusa",
+   "province": "SR",
+   "region": "Sicilia",
+   "sources": [
+    {
+     "n": "Augusta News",
+     "u": "https://www.augustanews.it/enel-supporta-la-nuova-comunita-energetica-rinnovabile-gia-operativa-ad-augusta-e-melilli/"
+    },
+    {
+     "n": "Siracusa News",
+     "u": "https://www.siracusanews.it/enel-supporta-la-nuova-comunita-energetica-rinnovabile-gia-operativa-ad-augusta-e-melilli/"
+    }
+   ],
+   "text": "Ad Augusta e Melilli è operativa la comunità energetica rinnovabile \"La Terra del Sole\", gestita con il supporto tecnico di Enel. Possono aderire cittadini, piccole imprese ed enti pubblici della zona, che condividono energia pulita e ricevono incentivi per vent'anni. Nelle prossime settimane sono previste campagne informative sul territorio.",
+   "title": "Augusta e Melilli, operativa una comunità energetica rinnovabile",
+   "zoom": 140
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica"
+   },
+   "icon": "justice",
+   "id": "ca-uta-carcere-nordio",
+   "label": "Carcere Uta",
+   "lat": 39.2889,
+   "lng": 8.9583,
+   "place": "Uta, Cagliari",
+   "province": "CA",
+   "region": "Sardegna",
+   "sources": [
+    {
+     "n": "Cagliaripad",
+     "u": "https://www.cagliaripad.it/680986/carcere-di-uta-nordio-risponde-a-pittalis-ma-la-replica-scatena-le-polemiche/"
+    }
+   ],
+   "text": "Il ministro della Giustizia ha risposto a un'interrogazione sul carcere di Uta, sovraffollato secondo i dati ministeriali (861 detenuti per 652 posti). Per il ministero personale e assistenza sanitaria sono adeguati. L'associazione Socialismo Diritti Riforme contesta i dati e segnala carenze di agenti e medici.",
+   "title": "Carcere di Uta, il ministro risponde sull'organico: critiche dalle associazioni",
+   "zoom": 140
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Iniziativa di un ente pubblico, una fonte"
+   },
+   "icon": "hospital",
+   "id": "ss-aou-antibiotici",
+   "label": "Antibiotici",
+   "lat": 40.7259,
+   "lng": 8.5557,
+   "place": "Sassari",
+   "province": "SS",
+   "region": "Sardegna",
+   "sources": [
+    {
+     "n": "Sassari Notizie",
+     "u": "https://www.sassarinotizie.com/2026/11/13/non-esagerare-con-gli-antibiotici-anche-i-boes-e-merdules-di-ottana-a-sostegno-della-campagna-dellaou-sassari-sullantimicrobico-resistenza/"
+    }
+   ],
+   "text": "L'Azienda ospedaliero universitaria di Sassari lancia una campagna contro l'uso eccessivo di antibiotici, che rende i batteri resistenti alle cure. Testimonial sono le maschere tradizionali Boes e Merdules di Ottana, con messaggi in italiano e in sardo. L'iniziativa accompagna la Settimana mondiale sull'antimicrobico-resistenza, dal 18 al 24 novembre.",
+   "title": "Aou Sassari, campagna sugli antibiotici con le maschere di Ottana",
+   "zoom": 120
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Comunicato Asl Ogliastra"
+   },
+   "icon": "virus",
+   "id": "nu-girasole-usutu",
+   "label": "Virus Usutu",
+   "lat": 39.9519,
+   "lng": 9.6608,
+   "place": "Girasole (Ogliastra), Nuoro",
+   "province": "NU",
+   "region": "Sardegna",
+   "sources": [
+    {
+     "n": "Asl Ogliastra",
+     "u": "https://www.aslogliastra.it/usutu-e-west-nile-le-misure-di-prevenzione-della-asl/"
+    },
+    {
+     "n": "Cagliaripad",
+     "u": "https://www.cagliaripad.it/680973/girasole-rilevato-il-virus-usutu-da-un-gruppo-di-zanzare-attivate-misure-di-prevenzione/"
+    },
+    {
+     "n": "L'Unione Sarda",
+     "u": "https://www.unionesarda.it/news-sardegna/ogliastra/girasole-zanzare-positive-al-virus-usutu-scatta-lordinanza-del-sindaco-m0l3h2dl"
+    }
+   ],
+   "text": "A Girasole, in Ogliastra, il virus Usutu è stato trovato in un gruppo di zanzare comuni catturate dalle trappole di monitoraggio; escluso il West Nile. La Asl Ogliastra parla di un segnale di allerta precoce e invita a eliminare l'acqua stagnante e a usare repellenti e zanzariere. Il Comune ha già emesso un'ordinanza di prevenzione.",
+   "title": "Girasole, virus Usutu nelle zanzare: la Asl rafforza la prevenzione",
+   "zoom": 150
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica"
+   },
+   "icon": "news",
+   "id": "or-festival-tres",
+   "label": "Festival Tres",
+   "lat": 40.2525,
+   "lng": 8.52,
+   "place": "Tresnuraghes, Oristano",
+   "province": "OR",
+   "region": "Sardegna",
+   "sources": [
+    {
+     "n": "LinkOristano",
+     "u": "https://www.linkoristano.it/2026/11/13/anteprima-a-bosa-e-tre-giorni-a-tresnuraghes-il-programma-del-nuovo-festival-tres-con-pulixi-damilano-e-bibbiana-cau/"
+    }
+   ],
+   "text": "Tresnuraghes ospiterà dal 5 al 7 dicembre la prima edizione di \"Tres - L'Isola delle Parole\", festival di libri e incontri con gli autori. L'anteprima è il 3 dicembre a Bosa. Tra gli ospiti Piergiorgio Pulixi, Marco Damilano e Bibbiana Cau; l'obiettivo è promuovere la lettura e far conoscere la Planargia.",
+   "title": "Nasce il festival letterario Tres, tra Bosa e Tresnuraghes",
+   "zoom": 150
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Dati Frontex riportati da una testata"
+   },
+   "icon": "ship",
+   "id": "su-rotta-algeria-sulcis",
+   "label": "Rotta algerina",
+   "lat": 38.9867,
+   "lng": 8.6417,
+   "place": "Sant'Anna Arresi, Sulcis",
+   "province": "SU",
+   "region": "Sardegna",
+   "sources": [
+    {
+     "n": "Cagliaripad",
+     "u": "https://www.cagliaripad.it/680968/allarme-migranti-sulla-rotta-algeria-sardegna-unattivita-senza-precedenti/"
+    }
+   ],
+   "text": "Secondo i dati dell'agenzia europea Frontex, aumentano gli arrivi di migranti dall'Algeria verso la Sardegna, con un record mensile a settembre. Le partenze avvengono soprattutto da Annaba, a circa 130 miglia, e gli sbarchi si concentrano sulle coste del Sulcis. Nel complesso, nei primi dieci mesi del 2026 gli ingressi irregolari nell'Ue sono calati del 29%.",
+   "title": "Frontex: in crescita la rotta dall'Algeria verso il Sulcis",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Comunicato ufficiale della Provincia autonoma di Trento"
+   },
+   "icon": "road",
+   "id": "tn-giudicarie-436-milioni",
+   "label": "Opere Giudicarie",
+   "lat": 46.0775,
+   "layers": [
+    "trasporti",
+    "economia"
+   ],
+   "lng": 10.9095,
+   "place": "San Lorenzo Dorsino, Trento",
+   "province": "TN",
+   "region": "Trentino-Alto Adige",
+   "sources": [
+    {
+     "n": "Ufficio Stampa Provincia autonoma di Trento",
+     "u": "https://www.ufficiostampa.provincia.tn.it/Comunicati/Giudicarie-opere-per-436-milioni-di-euro"
+    }
+   ],
+   "text": "La Giunta provinciale, riunita a San Lorenzo Dorsino, ha presentato un pacchetto di 34 interventi nelle Giudicarie per più di 436 milioni di euro. La gran parte riguarda le strade: la variante di Ponte Arche (oltre 154 milioni, gara puntata al 2027), la circonvallazione di Pinzolo e la galleria di Ponte Pià. Nel piano anche piste ciclabili, scuole a Tione e una Casa della Comunità da 12 milioni.",
+   "title": "Giudicarie, la Provincia mette in fila 34 opere per oltre 436 milioni",
+   "zoom": 140
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Comunicato della Provincia, ripreso da l'Adige"
+   },
+   "icon": "school",
+   "id": "tn-studio-lavoro-800-euro",
+   "label": "Studio e lavoro",
+   "lat": 46.0679,
+   "layers": [
+    "economia"
+   ],
+   "lng": 11.1211,
+   "place": "Trento",
+   "province": "TN",
+   "region": "Trentino-Alto Adige",
+   "sources": [
+    {
+     "n": "Ufficio Stampa Provincia autonoma di Trento",
+     "u": "https://www.ufficiostampa.provincia.tn.it/Comunicati/Studio-e-lavoro-dalla-Provincia-un-indennita-fino-a-800-euro-al-mese-per-i-lavoratori-dipendenti-che-scelgono-di-qualificarsi"
+    }
+   ],
+   "text": "L'Agenzia del Lavoro della Provincia di Trento sostiene con un'indennità i dipendenti privati under 36 che riducono o sospendono l'orario per prendere un titolo di studio. Si arriva a 800 euro al mese in caso di stop totale, con un tetto di 4.000 euro per domanda. La richiesta va fatta prima che inizi la riduzione d'orario concordata con l'azienda.",
+   "title": "Trentino, fino a 800 euro al mese ai giovani dipendenti che tornano a studiare",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica"
+   },
+   "icon": "hospital",
+   "id": "tn-taio-maxi-esercitazione",
+   "label": "Esercitazione",
+   "lat": 46.3214,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 11.0658,
+   "place": "Taio (Predaia), Trento",
+   "province": "TN",
+   "region": "Trentino-Alto Adige",
+   "sources": [
+    {
+     "n": "l'Adige",
+     "u": "https://www.ladige.it/territori/non-sole/maxi-emergenza-sulla-statale-43-a-taio-200-persone-impegnate-nellesercitazione-j7k1o5u1"
+    }
+   ],
+   "text": "Oggi, sabato 14 novembre, dalle 13 alle 18 sulla statale 43 a Taio si simula un grave incidente con più veicoli e decine di feriti. Partecipano circa 200 persone tra soccorritori e figuranti, coordinati da Trentino Emergenza e Protezione civile, con gli ospedali di Trento, Cles e Rovereto. Il traffico viene deviato nel centro abitato di Taio.",
+   "title": "Val di Non, oggi maxi esercitazione sulla statale 43 a Taio: traffico deviato",
+   "zoom": 145
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica; nessun responsabile individuato"
+   },
+   "icon": "church",
+   "id": "bz-domenicani-furti",
+   "label": "Furti in chiesa",
+   "lat": 46.4977,
+   "lng": 11.3517,
+   "place": "Bolzano",
+   "province": "BZ",
+   "region": "Trentino-Alto Adige",
+   "sources": [
+    {
+     "n": "Alto Adige",
+     "u": "https://www.altoadige.it/cronaca/bolzano/bolzano-furti-nella-chiesa-dei-domenicani-sparito-anche-un-pianoforte-h7yzyalq"
+    }
+   ],
+   "text": "Nella chiesa dei Domenicani di Bolzano sono stati rubati in pochi giorni le offerte di una cassetta forzata, un pianoforte digitale e parte di un impianto microfonico. Il danno è di alcune migliaia di euro e la parrocchia ha presentato denuncia. Il parroco teme per le opere d'arte della chiesa, tra cui la pala del Guercino e gli affreschi di scuola giottesca.",
+   "title": "Bolzano, furti nella chiesa dei Domenicani: sparito anche un pianoforte",
+   "zoom": 125
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA, dati del meteorologo provinciale"
+   },
+   "icon": "storm",
+   "id": "bz-freddo-cannoni-neve",
+   "label": "Freddo, -9°C",
+   "lat": 46.918,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 11.558,
+   "place": "Val di Vizze, Bolzano",
+   "province": "BZ",
+   "region": "Trentino-Alto Adige",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/veneto/notizie/2026/11/14/con-il-freddo-entrano-in-funzione-i-cannoni-sparaneve-sulle-dolomiti_a4a8b847-43d1-4c94-9f8a-2ca94f510d58.html"
+    }
+   ],
+   "text": "Il freddo è arrivato nelle valli altoatesine: nella notte si sono toccati -9 gradi a San Giacomo in Vizze e Pennes e -8 a Sesto e Predoi. Solo Bolzano è rimasta sopra lo zero. Con il calo delle temperature sono entrati in funzione gli impianti per la neve programmata.",
+   "title": "Alto Adige, notte a -9 gradi: partono i cannoni sparaneve",
+   "zoom": 130
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA"
+   },
+   "icon": "gov",
+   "id": "vi-mattarella-basilica-palladiana",
+   "label": "Mattarella",
+   "lat": 45.547,
+   "lng": 11.5459,
+   "place": "Vicenza",
+   "province": "VI",
+   "region": "Veneto",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/veneto/notizie/2026/11/13/mattarella-a-vicenza-per-lapertura-della-mostra-ispirazione-europa-italia-e-germania_764017e1-c036-4c32-8486-eab02afda3f7.html"
+    }
+   ],
+   "text": "Il Presidente della Repubblica ha inaugurato a Vicenza la mostra \"Ispirazione Europa - Italia e Germania\", dedicata a pittura e scultura tra Ottocento e Novecento, da Canova a Kiefer. Con lui il presidente della Regione, il prefetto, il sindaco e il presidente della Provincia. Mattarella ha salutato anche un centinaio di sindaci del Vicentino.",
+   "title": "Mattarella a Vicenza apre la mostra \"Ispirazione Europa\" alla Basilica Palladiana",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA; annuncio del Comune di Verona"
+   },
+   "icon": "church",
+   "id": "vr-presepi-arena",
+   "label": "Presepi Arena",
+   "lat": 45.439,
+   "lng": 10.9944,
+   "place": "Verona",
+   "province": "VR",
+   "region": "Veneto",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/veneto/notizie/2026/11/13/dopo-9-anni-la-rassegna-dei-presepi-torna-allarena-di-verona_06256e5b-8eef-4c92-a94e-ff040e979a49.html"
+    },
+    {
+     "n": "VeronaSera",
+     "u": "https://www.veronasera.it/attualita/presepi-mondo-arena-mostra-stella-natale-13-novembre-2026.html"
+    }
+   ],
+   "text": "La mostra internazionale \"Presepi dal mondo\" torna negli arcovoli dell'Arena di Verona dopo nove anni, con il via libera della Soprintendenza. Sarà aperta dal 19 novembre al 17 gennaio, tutti i giorni dalle 9 alle 20. Questa edizione ricorda gli 800 anni dalla morte di San Francesco.",
+   "title": "Verona, dopo 9 anni la rassegna dei presepi torna sotto l'Arena",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Comunicato della Regione del Veneto"
+   },
+   "icon": "trophy",
+   "id": "ve-premio-settembrini",
+   "label": "Premio Settembri",
+   "lat": 45.4925,
+   "lng": 12.2422,
+   "place": "Mestre, Venezia",
+   "province": "VE",
+   "region": "Veneto",
+   "sources": [
+    {
+     "n": "Regione del Veneto",
+     "u": "https://www.regione.veneto.it/article-detail?articleId=14442399"
+    }
+   ],
+   "text": "Oggi, sabato 14 novembre, al Teatro Toniolo di Mestre si proclama la vincitrice del Premio \"Leonilde e Arnaldo Settembrini\". In finale tre autrici: Chiara Briani, Alba Donati e Marta Morazzoni. La cerimonia inizia alle 18, il nome della vincitrice sarà reso noto intorno alle 19.30.",
+   "title": "Mestre, stasera al Toniolo la finale del Premio letterario Settembrini",
+   "zoom": 125
+  },
+  {
+   "cat": "sport",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Sopralluogo al cantiere del 12 novembre, riportato da più testate"
+   },
+   "icon": "ball",
+   "id": "ve-stadio-tessera",
+   "label": "Nuovo stadio",
+   "lat": 45.4955,
+   "lng": 12.327,
+   "place": "Tessera, Venezia",
+   "province": "VE",
+   "region": "Veneto",
+   "sources": [
+    {
+     "n": "Antenna Tre",
+     "u": "https://antennatre.medianordest.it/192493/tessera-ecco-il-nuovo-stadio-del-venezia-debutto-nel-2028/"
+    },
+    {
+     "n": "Calcio e Finanza",
+     "u": "https://www.calcioefinanza.it/2026/11/12/lavori-nuovo-stadio-venezia-bosco-dello-sport/"
+    }
+   ],
+   "text": "Il cantiere del nuovo stadio del Venezia nel Bosco dello Sport, a Tessera vicino all'aeroporto, procede secondo i tempi previsti. L'impianto avrà 18.500 posti e 22 skybox: i lavori principali dovrebbero chiudersi nell'autunno 2027 e l'inaugurazione è attesa nei primi mesi del 2028. Il Comune investe circa 94 milioni, il club 125 milioni nella concessione quarantennale.",
+   "title": "Nuovo stadio del Venezia a Tessera: 18.500 posti, apertura prevista nel 2028",
+   "zoom": 135
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica, con dichiarazioni del commissario Simico"
+   },
+   "icon": "leaf",
+   "id": "bl-cortina-8000-alberi",
+   "label": "8mila alberi",
+   "lat": 46.552,
+   "lng": 12.133,
+   "place": "Cortina d'Ampezzo, Belluno",
+   "province": "BL",
+   "region": "Veneto",
+   "sources": [
+    {
+     "n": "Corriere delle Alpi",
+     "u": "https://www.corrierealpi.it/cronaca/cortina-compensazione-ambientale-8000-alberi-sliding-centre-xeqlacmk"
+    }
+   ],
+   "text": "Sono iniziati i lavori di compensazione ambientale attorno allo Sliding Centre \"Eugenio Monti\" di Cortina: saranno messi a dimora 8.000 alberi di 40 specie locali, tra larici, abeti e faggi. L'obiettivo è ricreare un bosco misto dopo i tagli fatti per la pista. L'intervento dovrebbe durare circa due settimane, meteo permettendo.",
+   "title": "Cortina, piantati 8mila alberi attorno alla pista da bob olimpica",
+   "zoom": 140
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte (Telequattro), con interviste a sindaco e assessore"
+   },
+   "icon": "collapse",
+   "id": "ts-muggia-smottamento",
+   "label": "Smottamento",
+   "lat": 45.606,
+   "layers": [
+    "meteo",
+    "trasporti"
+   ],
+   "lng": 13.735,
+   "place": "Muggia, Trieste",
+   "province": "TS",
+   "region": "Friuli Venezia Giulia",
+   "sources": [
+    {
+     "n": "Telequattro",
+     "u": "https://telequattro.medianordest.it/80501/muggia-maltempo-smottamento-sul-costone-di-strada-per-lazzaretto-area-transennata/"
+    }
+   ],
+   "text": "La pioggia della notte ha fatto cedere parte del costone a terrazze lungo Strada per Lazzaretto, a Muggia. La Protezione civile ha transennato l'area e la viabilità è ridotta in attesa del ripristino. Non sono ancora stati indicati i tempi della riapertura completa.",
+   "title": "Muggia, il maltempo provoca uno smottamento sulla strada per Lazzaretto",
+   "zoom": 145
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Comunicato della Regione Friuli Venezia Giulia"
+   },
+   "icon": "road",
+   "id": "go-h4-riapre",
+   "label": "Riapre la H4",
+   "lat": 45.92,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 13.635,
+   "place": "Confine di Sant'Andrea, Gorizia",
+   "province": "GO",
+   "region": "Friuli Venezia Giulia",
+   "sources": [
+    {
+     "n": "Regione Friuli Venezia Giulia",
+     "u": "https://www.regione.fvg.it/rafvg/comunicati/comunicato.act;jsessionid=AE9AC826741E990D8C3779A4884A8AEF?dir=/rafvg/cms/RAFVG/notiziedallagiunta/&nm=20261114082342001"
+    }
+   ],
+   "text": "Da lunedì 16 novembre alle 5 la superstrada H4 in Slovenia torna percorribile nei due sensi, in alcuni tratti su una sola corsia. La chiusura per lavori aveva spostato il traffico sulla rete friulana, con oltre 180mila mezzi in più alla barriera del Lisert da luglio. Nel weekend sono possibili brevi chiusure per togliere la segnaletica provvisoria.",
+   "title": "Lunedì riapre la superstrada slovena H4, sollievo per il traffico verso Gorizia e Trieste",
+   "zoom": 130
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Comunicato della Regione Friuli Venezia Giulia"
+   },
+   "icon": "bus",
+   "id": "go-ex-tram-hub",
+   "label": "Ex Tram",
+   "lat": 45.929,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 13.603,
+   "place": "Gorizia",
+   "province": "GO",
+   "region": "Friuli Venezia Giulia",
+   "sources": [
+    {
+     "n": "Regione Friuli Venezia Giulia",
+     "u": "https://www.regione.fvg.it/rafvg/comunicati/comunicato.act;jsessionid=AE9AC826741E990D8C3779A4884A8AEF?dir=/rafvg/cms/RAFVG/notiziedallagiunta/&nm=20261113194927008"
+    }
+   ],
+   "text": "Comune di Gorizia e Università di Trieste hanno presentato il progetto per trasformare l'ex deposito del tram in un nodo di scambio vicino alla stazione e al terminal dei bus. Nell'edificio storico è prevista una stazione per biciclette pensata per studenti e giovani, accanto a un parcheggio multipiano da 90 posti. La Regione lo indica come modello di rigenerazione urbana.",
+   "title": "Gorizia, l'ex deposito del tram diventerà un polo per bici, bus e treni",
+   "zoom": 125
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Comunicato della Regione Friuli Venezia Giulia"
+   },
+   "icon": "road",
+   "id": "pn-strade-25-milioni",
+   "label": "Strade, 25,6 mln",
+   "lat": 45.958,
+   "layers": [
+    "trasporti",
+    "economia"
+   ],
+   "lng": 12.63,
+   "place": "Pordenone",
+   "province": "PN",
+   "region": "Friuli Venezia Giulia",
+   "sources": [
+    {
+     "n": "Regione Friuli Venezia Giulia",
+     "u": "https://www.regione.fvg.it/rafvg/comunicati/comunicato.act;jsessionid=AE9AC826741E990D8C3779A4884A8AEF?dir=/rafvg/cms/RAFVG/notiziedallagiunta/&nm=20261113181623006"
+    }
+   ],
+   "text": "La Giunta regionale ha riprogrammato 25,6 milioni già assegnati a Fvg Strade, senza fondi nuovi. La quota più grande, 10,8 milioni, va al collegamento tra via Nuova di Corva e l'autostrada A28 a Pordenone. Previsti anche lavori sulla SR 355 tra Comeglians e Rigolato, due rotatorie a Pasian di Prato e la manutenzione di ponti e viadotti.",
+   "title": "Strade del Friuli, la Regione sposta 25,6 milioni sulle opere urgenti",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Comunicato della Regione Friuli Venezia Giulia"
+   },
+   "icon": "gem",
+   "id": "ud-villa-manin-rinascite",
+   "label": "Mostra Rinascite",
+   "lat": 45.933,
+   "lng": 13.021,
+   "place": "Passariano di Codroipo, Udine",
+   "province": "UD",
+   "region": "Friuli Venezia Giulia",
+   "sources": [
+    {
+     "n": "Regione Friuli Venezia Giulia",
+     "u": "https://www.regione.fvg.it/rafvg/comunicati/comunicato.act;jsessionid=AE9AC826741E990D8C3779A4884A8AEF?dir=/rafvg/cms/RAFVG/notiziedallagiunta/&nm=20261113150716003"
+    }
+   ],
+   "text": "Apre oggi a Villa Manin di Passariano la mostra \"Rinascite. Da Leonardo da Vinci al contemporaneo\", dedicata al terremoto del 1976 e alla ricostruzione. Tra le opere ci sono fogli originali del Codice Atlantico di Leonardo, arrivati dalla Biblioteca Ambrosiana, e installazioni con le registrazioni radio di allora. Resta aperta fino al 21 febbraio 2027, dal martedì alla domenica.",
+   "title": "Villa Manin, da oggi la mostra \"Rinascite\" a 50 anni dal terremoto del Friuli",
+   "zoom": 145
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA"
+   },
+   "icon": "money",
+   "id": "bo-comunale-dedica-poltrona",
+   "label": "Comunale",
+   "lat": 44.4965,
+   "lng": 11.35,
+   "place": "Bologna",
+   "province": "BO",
+   "region": "Emilia-Romagna",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/emiliaromagna/notizie/2026/11/13/al-via-al-comunale-di-bologna-dedica-una-poltrona-raccolta-fondi-per-la-riapertura_ec58ca02-2a8c-4b96-a493-85ccf78c00ad.html"
+    }
+   ],
+   "text": "Il Teatro Comunale di Bologna lancia \"Dedica una poltrona\", ultima fase della raccolta fondi per il restauro: con 500 euro si finanzia un posto nei palchi con una targhetta. Grazie all'Art Bonus il costo reale per chi dona scende a 175 euro; l'obiettivo è 150mila euro. Il teatro tornerà in piazza Verdi con il concerto inaugurale del 14 febbraio 2027.",
+   "title": "Teatro Comunale di Bologna, 500 euro per dedicare una poltrona prima della riapertura",
+   "zoom": 120
+  },
+  {
+   "cat": "sport",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA, sulla base del comunicato del fondo"
+   },
+   "icon": "ball",
+   "id": "re-reggiana-courtois",
+   "label": "Reggiana",
+   "lat": 44.6983,
+   "layers": [
+    "economia"
+   ],
+   "lng": 10.6312,
+   "place": "Reggio Emilia",
+   "province": "RE",
+   "region": "Emilia-Romagna",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/emiliaromagna/notizie/2026/11/13/offerta-per-la-reggiana-courtois-punta-sul-calcio-italiano_13ad524c-e44c-45cd-bfc0-c325491addb5.html"
+    }
+   ],
+   "text": "Nxtplay Capital, fondo di investimento fondato anche dal portiere belga Thibaut Courtois, ha presentato un'offerta per comprare tutta la Reggiana. L'operazione dipende ancora dall'accordo con gli attuali soci e non sono stati resi noti prezzo e tempi. Il fondo dice di puntare su un progetto duraturo e sui giovani.",
+   "title": "Reggiana, offerta per il 100% del club dal fondo del portiere Courtois",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Annuncio della viceministra riportato dal Corriere Romagna"
+   },
+   "icon": "money",
+   "id": "fc-fondo-economia-sociale",
+   "label": "Fondo 150 mln",
+   "lat": 44.2226,
+   "layers": [
+    "economia"
+   ],
+   "lng": 12.0408,
+   "place": "Forlì",
+   "province": "FC",
+   "region": "Emilia-Romagna",
+   "sources": [
+    {
+     "n": "Corriere Romagna",
+     "u": "https://www.corriereromagna.it/forli/forli-dal-festival-dell-economia-sociale-l-annuncio-del-viceministro-bellucci-nasce-un-fondo-da-150-milioni-per-lavoro-e-inclusione-AF2326763"
+    }
+   ],
+   "text": "Al primo Festival dell'Economia Sociale di Forlì il governo ha annunciato un fondo da 150 milioni per lavoro e inclusione, unendo prestiti agevolati e contributi. Andranno 120 milioni a inclusione e lotta alla povertà e 30 milioni a misure per l'infanzia. I beneficiari sono fragili come persone con disabilità, anziani non autosufficienti, senza dimora e vittime di violenza.",
+   "title": "Da Forlì l'annuncio di un fondo nazionale da 150 milioni per l'economia sociale",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA; le responsabilità saranno accertate in giudizio"
+   },
+   "icon": "shield",
+   "id": "pc-polstrada-furti-camion",
+   "label": "Furti sui Tir",
+   "lat": 45.0526,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 9.693,
+   "place": "Piacenza",
+   "province": "PC",
+   "region": "Emilia-Romagna",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/emiliaromagna/notizie/2026/11/13/smantellata-banda-specializzata-nei-furti-acrobatici-su-camion-13-arresti_d592878a-45a1-4876-9d90-7859a14b7703.html"
+    }
+   ],
+   "text": "La Polizia stradale dell'Emilia-Romagna ha arrestato in flagranza 13 persone accusate di furti \"acrobatici\" sui camion, partiti lungo l'A21. Gli arresti sono avvenuti tra le province di Piacenza e Pavia, dove secondo gli investigatori c'erano le basi logistiche. Recuperata merce di lusso per circa 700mila euro; l'indagine è coordinata dalla Procura di Modena.",
+   "title": "Furti sui camion in autostrada, la Polstrada arresta 13 persone nel Piacentino",
+   "zoom": 115
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA su delibera della Giunta regionale"
+   },
+   "icon": "storm",
+   "id": "ao-alluvione-fontainemore-la-salle",
+   "label": "Torrenti sicuri",
+   "lat": 45.6478,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 7.8589,
+   "place": "Fontainemore, Aosta",
+   "province": "AO",
+   "region": "Valle d'Aosta",
+   "sources": [
+    {
+     "n": "ANSA Valle d'Aosta",
+     "u": "https://ansa.it/valledaosta/notizie/2026/11/14/alluvione-2025-la-giunta-approva-interventi-per-fontainemore-e-la-salle_82b2c5d5-aed8-43b4-ae8e-4602d92ce0e6.html"
+    }
+   ],
+   "text": "La Giunta regionale ha approvato i progetti per mettere in sicurezza i torrenti Bioley e Verney a Fontainemore e il Charvaz a La Salle, colpiti dall'alluvione dell'aprile 2025: l'investimento è di 2,33 milioni di euro. Altri 500mila euro vanno all'Arpa per studiare e monitorare gli effetti del cambiamento climatico in Valle fino al 2027.",
+   "title": "Dopo l'alluvione 2025, 2,3 milioni per i torrenti di Fontainemore e La Salle",
+   "zoom": 150
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA; risposta dell'assessore in Consiglio Valle"
+   },
+   "icon": "school",
+   "id": "ao-insegnanti-sanita-integrativa",
+   "label": "Scuola e salute",
+   "lat": 45.7372,
+   "lng": 7.3206,
+   "place": "Aosta",
+   "province": "AO",
+   "region": "Valle d'Aosta",
+   "sources": [
+    {
+     "n": "ANSA Valle d'Aosta",
+     "u": "https://www.ansa.it/valledaosta/notizie/2026/11/13/scuola-a-ogni-insegnante-valdostano-120-euro-per-sanita-integrativa_b0aec07c-c699-4b82-961d-fbe44694da02.html"
+    }
+   ],
+   "text": "La Regione darà a ogni insegnante valdostano circa 120 euro l'anno per la sanità integrativa, il doppio dei 59 euro previsti a livello nazionale, per una spesa di 240mila euro. Lo ha spiegato in Consiglio Valle l'assessore all'istruzione Erik Lavevaz: la gara per scegliere chi gestirà il fondo partirà a inizio 2027.",
+   "title": "Insegnanti valdostani, in arrivo circa 120 euro l'anno per la sanità integrativa",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA su nota del Comune di Aosta"
+   },
+   "icon": "shield",
+   "id": "ao-sicurezza-quartiere-cogne",
+   "label": "Sicurezza Aosta",
+   "lat": 45.732,
+   "lng": 7.31,
+   "place": "Quartiere Cogne, Aosta",
+   "province": "AO",
+   "region": "Valle d'Aosta",
+   "sources": [
+    {
+     "n": "ANSA Valle d'Aosta",
+     "u": "https://www.ansa.it/valledaosta/notizie/2026/11/13/sicurezza-sindaco-incontrera-commercianti-e-residenti-quartiere-cogne_3e4099f2-9930-431b-a7fd-a3ec0047a74c.html"
+    }
+   ],
+   "text": "Dopo una serie di furti e danneggiamenti a negozi e bar, il sindaco di Aosta Raffaele Rocco incontrerà nei prossimi giorni commercianti e residenti del quartiere Cogne. Il Comune annuncia controlli sull'illuminazione e sulle telecamere e più pattuglie della Polizia locale nelle ore più a rischio.",
+   "title": "Furti e vandalismi ad Aosta, il sindaco incontrerà residenti e negozianti",
+   "zoom": 130
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Più testate locali concordi (Targatocn, La Voce di Alba, Cuneodice)"
+   },
+   "icon": "money",
+   "id": "cn-elbi-dronero-esuberi",
+   "label": "Elbi, 30 esuberi",
+   "lat": 44.4664,
+   "layers": [
+    "economia"
+   ],
+   "lng": 7.3633,
+   "place": "Dronero, Cuneo",
+   "province": "CN",
+   "region": "Piemonte",
+   "sources": [
+    {
+     "n": "Targatocn",
+     "u": "https://www.targatocn.it/2026/11/13/leggi-notizia/argomenti/cuneo-e-valli/articolo/elbi-di-dronero-lassessore-regionale-marco-gallo-mi-faro-promotore-di-un-tavolo-in-regione-pe.html"
+    },
+    {
+     "n": "La Voce di Alba",
+     "u": "https://www.lavocedialba.it/2026/11/12/leggi-notizia/argomenti/economia-10/articolo/la-elbi-international-annuncia-30-esuberi-su-200-addetti-nello-stabilimento-di-dronero-mobilitazion.html"
+    }
+   ],
+   "text": "L'azienda Elbi, del gruppo Bitron, ha annunciato il trasferimento all'estero di tre linee produttive dello stabilimento di Dronero, con 30 esuberi su circa 200 lavoratori, e i sindacati si sono mobilitati. L'assessore regionale Marco Gallo propone un tavolo in Regione tra azienda, sindacati e istituzioni per difendere occupazione e sito.",
+   "title": "Elbi di Dronero sposta tre linee all'estero: 30 esuberi su circa 200 addetti",
+   "zoom": 150
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Più testate concordi (La Guida, Cuneo24, Gazzetta d'Alba); incontro in Regione con Anas"
+   },
+   "icon": "road",
+   "id": "cn-tangenziale-alba-fondi",
+   "label": "Tangenziale Alba",
+   "lat": 44.7008,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 8.0353,
+   "place": "Alba, Cuneo",
+   "province": "CN",
+   "region": "Piemonte",
+   "sources": [
+    {
+     "n": "La Guida",
+     "u": "https://laguida.it/2026/11/13/tangenziale-di-alba-reperiti-altri-3-milioni-per-i-lavori-sulla-sopraelevata"
+    },
+    {
+     "n": "Cuneo24",
+     "u": "https://www.cuneo24.it/2026/11/tangenziale-di-alba-sbloccati-altri-3-milioni-di-euro-per-la-sopraelevata-primi-miglioramenti-al-traffico-nellestate-2027-370620"
+    }
+   ],
+   "text": "Anas ha stanziato altri 3 milioni di euro per rinforzare la sopraelevata della tangenziale di Alba, arrivando a 9 milioni: ne servono ancora 5 per finire. Entro l'estate 2027 dovrebbero ridursi i restringimenti verso Cuneo che causano code, mentre le due corsie tornerebbero nel 2028 se arriveranno i fondi mancanti.",
+   "title": "Tangenziale di Alba, Anas trova altri 3 milioni per la sopraelevata",
+   "zoom": 130
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Più testate locali concordi (ATNews, Gazzetta d'Asti)"
+   },
+   "icon": "school",
+   "id": "at-asti-orienta-2026",
+   "label": "Asti Orienta",
+   "lat": 44.8985,
+   "lng": 8.2064,
+   "place": "Asti",
+   "province": "AT",
+   "region": "Piemonte",
+   "sources": [
+    {
+     "n": "ATNews",
+     "u": "https://www.atnews.it/2026/11/inaugurato-asti-orienta-2026-il-salone-dellorientamento-per-gli-studenti-delle-scuole-superiori-297485/"
+    },
+    {
+     "n": "Gazzetta d'Asti",
+     "u": "https://www.gazzettadasti.it/2026/11/11/asti-orienta-2026-due-appuntamenti-aiutare-giovani-scegliere-futuro-diploma/"
+    }
+   ],
+   "text": "Ad Asti si è aperto il salone Asti Orienta, che aiuta gli studenti delle superiori a scegliere tra università, formazione e lavoro, al polo universitario Rita Levi Montalcini. Lo organizza il Comune con Uni-Astiss, Regione, Provincia e Ufficio scolastico; il secondo appuntamento, un orientamento tra studenti, è il 28 novembre.",
+   "title": "Asti Orienta 2026: studenti delle superiori al salone sul dopo-diploma",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica locale (RadioGold)"
+   },
+   "icon": "money",
+   "id": "al-pastificio-piemontese-chiude",
+   "label": "Pastificio",
+   "lat": 44.9133,
+   "layers": [
+    "economia"
+   ],
+   "lng": 8.615,
+   "place": "Alessandria",
+   "province": "AL",
+   "region": "Piemonte",
+   "sources": [
+    {
+     "n": "RadioGold",
+     "u": "https://radiogold.it/news-alessandria/452042-alessandria-pastificio-piemontese-via-guasco-chiusura/"
+    }
+   ],
+   "text": "Il Pastificio Piemontese di via dei Guasco, ad Alessandria, chiuderà il 31 dicembre dopo 45 anni di attività, e due dipendenti perderanno il lavoro. I titolari indicano come cause i rincari di energia e materie prime e la concorrenza della grande distribuzione sulle piccole botteghe artigiane.",
+   "title": "Alessandria, chiude dopo 45 anni lo storico Pastificio Piemontese",
+   "zoom": 130
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA; dati comunicati dal presidente del Consiglio regionale"
+   },
+   "icon": "gov",
+   "id": "to-consiglio-regionale-bilancio-2027",
+   "label": "Bilancio Regione",
+   "lat": 45.0677,
+   "lng": 7.68,
+   "place": "Palazzo Lascaris, Torino",
+   "province": "TO",
+   "region": "Piemonte",
+   "sources": [
+    {
+     "n": "ANSA Piemonte",
+     "u": "https://www.ansa.it/piemonte/notizie/2026/11/13/presidente-consiglio-regionale-piemonte-ridotta-la-spesa-corrente_47863c51-3844-4ddf-89fc-701266cbac60.html"
+    }
+   ],
+   "text": "L'Ufficio di presidenza del Consiglio regionale del Piemonte ha approvato il bilancio di previsione 2027, con una spesa corrente di 54,16 milioni, circa 1,3 milioni in meno rispetto al 2026. Secondo il presidente Davide Nicco il risparmio viene soprattutto dall'efficienza energetica di Palazzo Lascaris e di altri due edifici e dalla revoca di una direzione prevista in passato.",
+   "title": "Consiglio regionale del Piemonte, nel bilancio 2027 spesa corrente giù di 1,3 milioni",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA"
+   },
+   "icon": "plane",
+   "id": "va-malpensa-voli-usa",
+   "label": "Malpensa-Usa",
+   "lat": 45.6301,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 8.7231,
+   "place": "Aeroporto di Malpensa, Varese",
+   "province": "VA",
+   "region": "Lombardia",
+   "sources": [
+    {
+     "n": "ANSA Lombardia",
+     "u": "https://www.ansa.it/lombardia/notizie/2026/11/14/blocco-negli-stati-uniti-cancellati-3-voli-su-10-previsti-a-malpensa_7a220a50-5b65-48a3-9899-0a781acd1c79.html"
+    }
+   ],
+   "text": "Dopo il blocco temporaneo di tutti i voli negli Stati Uniti del 13 novembre, a Malpensa le compagnie hanno cancellato 3 dei 10 collegamenti con gli Usa previsti per sabato. Gli altri voli sono confermati, tra cui i primi arrivi della mattina da New York.",
+   "title": "Stop ai voli negli Usa, a Malpensa cancellati 3 collegamenti su 10",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia Radiocor e altre testate (Cremonaoggi, Agenfood)"
+   },
+   "icon": "chart",
+   "id": "cr-latteria-soresina-finanziamento",
+   "label": "Soresina, 10 mln",
+   "lat": 45.2875,
+   "layers": [
+    "economia"
+   ],
+   "lng": 9.8569,
+   "place": "Soresina, Cremona",
+   "province": "CR",
+   "region": "Lombardia",
+   "sources": [
+    {
+     "n": "Radiocor - Borsa Italiana",
+     "u": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/sparkasse-finanziamento-da-10-mln-euro-a-latteria-soresina-nRC_13112026_1646_549212926.html"
+    },
+    {
+     "n": "Agenfood",
+     "u": "https://www.agenfood.it/distribuzione/sparkasse-sostiene-la-crescita-di-latteria-soresina-con-un-finanziamento-da-10-milioni-di-euro/"
+    }
+   ],
+   "text": "La cooperativa Latteria Soresina, nel Cremonese, ha ottenuto da Sparkasse un finanziamento da 10 milioni di euro. Servirà a trasformare in liquidità parte dei formaggi in stagionatura, per sostenere produzione e investimenti; la cooperativa riunisce circa 150 soci agricoltori ed è il primo produttore mondiale di Grana Padano.",
+   "title": "Latteria Soresina ottiene un finanziamento da 10 milioni per crescere",
+   "zoom": 150
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Fonte istituzionale (Lombardia Notizie, Regione) e altre testate"
+   },
+   "icon": "gov",
+   "id": "bg-mulini-storici-albino",
+   "label": "Mulini storici",
+   "lat": 45.759,
+   "lng": 9.793,
+   "place": "Comenduno, Albino (Bergamo)",
+   "province": "BG",
+   "region": "Lombardia",
+   "sources": [
+    {
+     "n": "Lombardia Notizie (Regione Lombardia)",
+     "u": "https://www.lombardianotizie.online/recupero-mulini-storici-lombardia/"
+    },
+    {
+     "n": "VareseNoi",
+     "u": "https://www.varesenoi.it/2026/11/13/leggi-notizia/argomenti/politica-20/articolo/100mila-euro-per-recuperare-sette-mulini-storici-lombardi-tuteliamo-la-memoria-del-lavoro-e-delle-1.html"
+    }
+   ],
+   "text": "Regione Lombardia ha stanziato 100mila euro per recuperare sette mulini e magli storici nelle province di Bergamo, Como, Pavia e Varese. Tra i progetti ci sono il Maglio Calvi di Comenduno ad Albino (23.500 euro) e il Maglio di Ghirla a Valganna (25.000 euro), che raccontano la storia del lavoro lombardo.",
+   "title": "Mulini storici, la Regione finanzia sette recuperi da Albino a Valganna",
+   "zoom": 140
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Due testate locali concordi (QuiBrescia, Bsnews); sentenza n. 205/2026"
+   },
+   "icon": "justice",
+   "id": "bs-discarica-castella-consulta",
+   "label": "Castella",
+   "lat": 45.52,
+   "lng": 10.285,
+   "place": "Cascina Castella, Brescia",
+   "province": "BS",
+   "region": "Lombardia",
+   "sources": [
+    {
+     "n": "QuiBrescia",
+     "u": "https://www.quibrescia.it/ambiente/2026/11/14/discarica-castella-la-provincia-era-competente-la-parola-passa-di-nuovo-al-tar/850355/"
+    },
+    {
+     "n": "Bsnews",
+     "u": "https://bsnews.it/2026/11/14/discarica-castella-la-consulta-salva-lautorizzazione-della-provincia-ma-al-tar-la-partita-resta-aperta/"
+    }
+   ],
+   "text": "La Corte costituzionale ha stabilito che la Provincia di Brescia poteva rilasciare l'autorizzazione alla discarica per rifiuti non pericolosi della Castella, tra Brescia e Rezzato. La sentenza non riguarda l'impatto ambientale: ora il Tar dovrà decidere nel merito i ricorsi dei Comuni di Brescia e Rezzato, sostenuti da altri tre Comuni.",
+   "title": "Discarica della Castella, la Consulta conferma la competenza della Provincia",
+   "zoom": 140
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica (Il Giorno)"
+   },
+   "icon": "hospital",
+   "id": "so-ospedale-sondrio-70-milioni",
+   "label": "Ospedale Sondrio",
+   "lat": 46.1699,
+   "lng": 9.8782,
+   "place": "Sondrio",
+   "province": "SO",
+   "region": "Lombardia",
+   "sources": [
+    {
+     "n": "Il Giorno",
+     "u": "https://ilgiorno.it/sondrio/cronaca/investimenti-ospedale-hg0jte5l"
+    }
+   ],
+   "text": "Il rinnovo dell'ospedale di Sondrio vale 70 milioni: il padiglione Sud sarà ampliato e rifatto, con pronto soccorso, sale operatorie e terapia intensiva in un'unica area. I lavori veri e propri partiranno nel 2029 con l'obiettivo di finire nel 2034; Asst e sindaco rispondono a chi teme penalizzazioni per l'ospedale di Sondalo.",
+   "title": "Ospedale di Sondrio, progetto da 70 milioni: cantieri dal 2029",
+   "zoom": 130
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica locale (Città della Spezia)"
+   },
+   "icon": "ship",
+   "id": "sp-vespucci-torna-spezia",
+   "label": "Vespucci a casa",
+   "lat": 44.103,
+   "lng": 9.825,
+   "place": "Molo Italia, La Spezia",
+   "province": "SP",
+   "region": "Liguria",
+   "sources": [
+    {
+     "n": "Città della Spezia",
+     "u": "https://www.cittadellaspezia.com/2026/11/14/il-vespucci-torna-alla-spezia-e-sostera-al-molo-italia-tre-giorni-per-visitare-il-veliero-della-marina-militare-681302"
+    }
+   ],
+   "text": "La nave scuola Amerigo Vespucci rientra alla Spezia, la sua città, e sarà aperta al pubblico al Molo Italia dal 20 al 22 novembre, dalle 14 alle 18.30. Chiude così una campagna di 194 giorni e oltre 16mila miglia, con il tour nordamericano; poi entrerà in arsenale per i lavori.",
+   "title": "L'Amerigo Vespucci torna alla Spezia: visite libere dal 20 al 22 novembre",
+   "zoom": 130
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica locale (Sanremonews); ordinanza della Polizia locale"
+   },
+   "icon": "storm",
+   "id": "im-mareggiata-vallecrosia",
+   "label": "Mareggiata",
+   "lat": 43.785,
+   "layers": [
+    "meteo"
+   ],
+   "lng": 7.642,
+   "place": "Vallecrosia, Imperia",
+   "province": "IM",
+   "region": "Liguria",
+   "sources": [
+    {
+     "n": "Sanremonews",
+     "u": "https://www.sanremonews.it/2026/11/13/leggi-notizia/argomenti/altre-notizie/articolo/mareggiata-a-vallecrosia-al-mare-le-onde-raggiungono-la-passeggiata-strada-chiusa-perri-massima.html"
+    }
+   ],
+   "text": "Una forte mareggiata ha spinto pietre e detriti sul lungomare di Vallecrosia, chiuso per sicurezza tra via Primo Maggio e il confine con Camporosso. Il sindaco Fabio Perri chiederà alla Regione di progettare e finanziare opere di difesa della costa, perché il problema si ripete ogni anno.",
+   "title": "Mareggiata a Vallecrosia, onde sulla passeggiata e lungomare chiuso",
+   "zoom": 150
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una sola fonte giornalistica (Sanremonews); fondi previsti ma non ancora erogati"
+   },
+   "icon": "leaf",
+   "id": "sv-acqua-osiglia-millesimo",
+   "label": "Acqua Val Bormid",
+   "lat": 44.365,
+   "lng": 8.205,
+   "place": "Millesimo, Savona",
+   "province": "SV",
+   "region": "Liguria",
+   "sources": [
+    {
+     "n": "Sanremonews",
+     "u": "https://www.sanremonews.it/2026/11/13/leggi-notizia/argomenti/altre-notizie/articolo/acqua-256-milioni-alla-liguria-ma-limperiese-resta-a-secco-dighero-sanremo-e-imperia-spariscon.html"
+    }
+   ],
+   "text": "Il piano nazionale per le infrastrutture idriche del ministero dei Trasporti prevede 25,6 milioni per tre interventi in Liguria, tra cui 6,14 milioni per una nuova condotta tra Osiglia e Millesimo, in Val Bormida. Gli altri fondi vanno al Tigullio-Val Fontanabuona e allo Spezzino; nessun progetto riguarda l'Imperiese, e un esponente ambientalista chiede chiarimenti.",
+   "title": "Piano idrico nazionale: 6 milioni per la condotta Osiglia-Millesimo",
+   "zoom": 150
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agenzia ANSA"
+   },
+   "icon": "chart",
+   "id": "ge-pmi-borsa-fondi-regione",
+   "label": "Pmi in Borsa",
+   "lat": 44.4075,
+   "layers": [
+    "economia"
+   ],
+   "lng": 8.934,
+   "place": "Palazzo della Borsa, Genova",
+   "province": "GE",
+   "region": "Liguria",
+   "sources": [
+    {
+     "n": "ANSA Liguria",
+     "u": "https://www.ansa.it/liguria/notizie/2026/11/13/in-liguria-due-aziende-verso-la-quotazione-in-borsa-grazie-a-fondi-regione_b982ba66-5455-480a-bca9-6b00c7978cec.html"
+    }
+   ],
+   "text": "Due imprese liguri hanno avviato la quotazione in Borsa grazie a un bando regionale da 4 milioni di euro di fondi europei, che copre metà dei costi. Se n'è parlato a Genova, al Palazzo della Borsa, in un convegno di Regione, Università e Camera di Commercio: la Liguria è stata la prima regione con una legge per aiutare le piccole e medie imprese a quotarsi.",
+   "title": "Due aziende liguri verso la Borsa con i fondi della Regione",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA e AbruzzoWeb; ipotesi ancora in fase di studio"
+   },
+   "icon": "road",
+   "id": "te-traforo-gran-sasso",
+   "label": "Gran Sasso",
+   "lat": 42.472,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 13.58,
+   "place": "Traforo del Gran Sasso, Teramo",
+   "province": "TE",
+   "region": "Abruzzo",
+   "sources": [
+    {
+     "n": "ANSA Abruzzo",
+     "u": "https://www.ansa.it/abruzzo/notizie/2026/11/13/traforo-del-gran-sasso-cavallari-al-lavoro-per-scongiurare-la-chiusura-totale_c347b76b-0728-4245-b893-ed6fe6ef4d3d.html"
+    },
+    {
+     "n": "AbruzzoWeb",
+     "u": "https://www.abruzzoweb.it/messa-in-sicurezza-traforo-del-gran-sasso-cavallari-importanti-rassicurazioni-su-acqua-e-viabilita/"
+    }
+   ],
+   "text": "Per i lavori antisismici nelle gallerie del Gran Sasso, previsti dal 2027, si valuta un nuovo sistema di gestione dei fumi che permetterebbe il transito a senso unico alternato. L'obiettivo è evitare la chiusura contemporanea delle due canne, che potrebbe durare da due a quattro anni. Il tema è stato discusso in commissione regionale con il commissario straordinario; avviati anche gli iter per i nuovi impianti di potabilizzazione dell'acqua.",
+   "title": "Traforo del Gran Sasso, si studia il senso unico alternato per evitare la chiusura",
+   "zoom": 130
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA, Rete8, AgenziaCult"
+   },
+   "icon": "news",
+   "id": "aq-teatro-comunale-riapre",
+   "label": "Teatro L'Aquila",
+   "lat": 42.351,
+   "lng": 13.399,
+   "place": "L'Aquila",
+   "province": "AQ",
+   "region": "Abruzzo",
+   "sources": [
+    {
+     "n": "ANSA Abruzzo",
+     "u": "https://www.ansa.it/abruzzo/notizie/2026/11/14/meloni-allaquila-il-20-novembre-per-la-riapertura-del-teatro-comunale_9d43a16b-d549-459b-84b7-e3b8155785db.html"
+    },
+    {
+     "n": "Rete8",
+     "u": "https://www.rete8.it/cronaca/giorgia-meloni-alla-riapertura-del-teatro-a-laquila-il-20-novembre/"
+    }
+   ],
+   "text": "Il Teatro Comunale dell'Aquila riapre la prossima settimana dopo 17 anni di attesa: taglio del nastro martedì 17 novembre con il ministro della Cultura. Mercoledì un'anteprima della Traviata riservata agli under 35, venerdì 20 la prima alla presenza della presidente del Consiglio. Il completamento è stato finanziato con 5 milioni di euro statali.",
+   "title": "L'Aquila, dopo 17 anni riapre il Teatro Comunale: si parte con La Traviata",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA e Notizie d'Abruzzo; indagini in corso"
+   },
+   "icon": "car",
+   "id": "pe-investiti-ss16-citta-santangelo",
+   "label": "Città S. Angelo",
+   "lat": 42.51,
+   "lng": 14.145,
+   "place": "Città Sant'Angelo, Pescara",
+   "province": "PE",
+   "region": "Abruzzo",
+   "sources": [
+    {
+     "n": "ANSA Abruzzo",
+     "u": "https://www.ansa.it/abruzzo/notizie/2026/11/14/a-bordo-di-unauto-investono-tre-ragazzi-e-fuggono-uno-e-gravissimo_09906cab-9237-427f-ac4e-856087198935.html"
+    },
+    {
+     "n": "Notizie d'Abruzzo",
+     "u": "https://www.notiziedabruzzo.it/cronaca-abruzzo/tre-giovani-investiti-sulla-strada-statale-16-a-citta-santangelo-gravissimo-un-19enne.html"
+    }
+   ],
+   "text": "Nella notte un'auto ha investito tre giovani sulla statale 16 a Marina di Città Sant'Angelo; gli occupanti sono fuggiti a piedi lasciando il veicolo sul posto. Un ragazzo di 19 anni è ricoverato in rianimazione in condizioni gravissime, gli altri due non sono in pericolo di vita. I carabinieri hanno fermato tre persone che si presume fossero a bordo: la loro posizione è al vaglio della magistratura.",
+   "title": "Tre ragazzi investiti sulla statale 16 a Città Sant'Angelo, un 19enne è grave",
+   "zoom": 145
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA; progetti Anas"
+   },
+   "icon": "collapse",
+   "id": "cb-ponte-trigno-cronoprogramma",
+   "label": "Ponte Trigno",
+   "lat": 42.045,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 14.765,
+   "place": "Montenero di Bisaccia, Campobasso",
+   "province": "CB",
+   "region": "Molise",
+   "sources": [
+    {
+     "n": "ANSA",
+     "u": "https://www.ansa.it/puglia/notizie/2026/11/13/ponte-crollato-sul-trigno-bretelle-su-a14-entro-lestate-viadotto-nel_d84fc6b8-316c-4841-a903-79f957226794.html"
+    }
+   ],
+   "text": "La Regione Molise ha presentato a Montenero di Bisaccia i tempi per superare il crollo del ponte della statale 16 sul Trigno, avvenuto il 2 aprile. Le bretelle provvisorie verso l'A14 richiedono circa cinque mesi di lavori e sono attese per l'estate 2027, il nuovo ponte per l'estate 2028. Per i ristori, le attività dovranno dimostrare il calo di fatturato.",
+   "title": "Ponte crollato sul Trigno: bretelle verso l'A14 per l'estate, nuovo viadotto nel 2028",
+   "zoom": 145
+  },
+  {
+   "cat": "politica",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una fonte (isNews)"
+   },
+   "icon": "gov",
+   "id": "is-uncem-unioni-montane",
+   "label": "Uncem Isernia",
+   "lat": 41.596,
+   "lng": 14.233,
+   "place": "Isernia",
+   "province": "IS",
+   "region": "Molise",
+   "sources": [
+    {
+     "n": "isNews",
+     "u": "https://www.isnews.it/2026/11/13/uncem-molise-in-assemblea-a-isernia-la-richiesta-alla-regione-unioni-montane-in-tutto-il-territorio/"
+    }
+   ],
+   "text": "L'assemblea dell'Uncem Molise a Isernia ha chiesto alla Regione di costituire Unioni montane di comuni in tutto il territorio. Secondo l'associazione, i piccoli comuni da soli contano poco su acqua, energia e foreste, mentre insieme possono gestire servizi e attrarre investimenti. Espresso anche sostegno alle battaglie per gli ospedali di Isernia e Agnone.",
+   "title": "Comuni montani riuniti a Isernia: chiesta alla Regione la nascita delle Unioni montane",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Iniziativa istituzionale della Prefettura, riportata da isNews"
+   },
+   "icon": "news",
+   "id": "cb-mostra-costituente-prefettura",
+   "label": "Mostra 1946",
+   "lat": 41.5603,
+   "lng": 14.6627,
+   "place": "Campobasso",
+   "province": "CB",
+   "region": "Molise",
+   "sources": [
+    {
+     "n": "isNews",
+     "u": "https://www.isnews.it/2026/11/13/ottantanni-dal-referendum-e-dallassemblea-costituente-mostra-alla-prefettura-di-campobasso/"
+    }
+   ],
+   "text": "Dal 16 al 24 novembre la Prefettura di Campobasso ospita una mostra documentaria sugli 80 anni del referendum del 1946 e dell'Assemblea costituente, con un focus sul contributo dei molisani. Sono previsti tre incontri pubblici, visite guidate gratuite su prenotazione il 18 e il 20 novembre e percorsi per gli studenti delle superiori.",
+   "title": "Campobasso, in Prefettura una mostra per gli 80 anni della Repubblica e della Costituente",
+   "zoom": 120
+  },
+  {
+   "cat": "ambiente",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Adnkronos su dati INGV-Osservatorio Vesuviano"
+   },
+   "icon": "alert",
+   "id": "na-terremoto-campi-flegrei",
+   "label": "Campi Flegrei",
+   "lat": 40.8272,
+   "lng": 14.1392,
+   "place": "Pozzuoli, Napoli",
+   "province": "NA",
+   "region": "Campania",
+   "sources": [
+    {
+     "n": "Adnkronos",
+     "u": "https://www.adnkronos.com/cronaca/terremoto-campi-flegrei-13-novembre-epicentro-magnitudo_4l3vtxFLhH28o93GjjyojC"
+    },
+    {
+     "n": "MeteoWeb",
+     "u": "https://www.meteoweb.eu/2026/11/campi-flegrei-scossa-di-terremoto-a-pozzuoli-avvertita-anche-nei-quartieri-occidentali-di-napoli-dati-e-mappe/1002002867/"
+    }
+   ],
+   "text": "Venerdì alle 8.22 una scossa di magnitudo 2.6, a circa 3 km di profondità, è stata registrata nella zona della Solfatara a Pozzuoli. È stata avvertita anche a Quarto e nei quartieri occidentali di Napoli come Bagnoli e Fuorigrotta. Non risultano danni; il Comune ha invitato a segnalare eventuali problemi a Polizia municipale e Protezione civile.",
+   "title": "Campi Flegrei, scossa di magnitudo 2.6 a Pozzuoli avvertita anche a Napoli ovest",
+   "zoom": 135
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Fanpage, Il Mattino, NapoliToday"
+   },
+   "icon": "bus",
+   "id": "na-sciopero-anm-16-novembre",
+   "label": "Sciopero Anm",
+   "lat": 40.8518,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 14.2681,
+   "place": "Napoli",
+   "province": "NA",
+   "region": "Campania",
+   "sources": [
+    {
+     "n": "Fanpage",
+     "u": "https://www.fanpage.it/napoli/sciopero-metro-bus-e-funicolari-a-napoli-il-16-novembre-protesta-per-mancata-trasparenza-sui-premi-in-anm/"
+    },
+    {
+     "n": "Il Mattino",
+     "u": "https://www.ilmattino.it/napoli/citta/anm_sciopero_trasporti_in_campania_programmato_per_il_16_novembre-9889559.html"
+    }
+   ],
+   "text": "Lunedì 16 novembre i mezzi Anm di Napoli (metro, bus, tram e funicolari) rischiano lo stop dalle 11 alle 15 per uno sciopero di quattro ore proclamato da Usb, Orsa Tpl e Faisa Confail. I sindacati contestano la revisione del premio di produzione e chiedono più trasparenza sui premi e miglioramenti economici per il personale.",
+   "title": "Napoli, lunedì 16 novembre sciopero Anm di 4 ore: a rischio metro, bus e funicolari",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Rapporto Banca d'Italia, ANSA"
+   },
+   "icon": "chart",
+   "id": "na-bankitalia-economia-campania",
+   "label": "Pil Campania",
+   "lat": 40.841,
+   "layers": [
+    "economia"
+   ],
+   "lng": 14.252,
+   "place": "Napoli",
+   "province": "NA",
+   "region": "Campania",
+   "sources": [
+    {
+     "n": "ANSA Campania",
+     "u": "https://www.ansa.it/campania/notizie/2026/11/13/bankitalia-leconomia-della-campania-continua-a-crescere_0b12caed-12d0-49d7-a628-d433917903cd.html"
+    }
+   ],
+   "text": "Secondo la Banca d'Italia, nel primo semestre 2026 il Pil della Campania è cresciuto dell'1,3% rispetto a un anno prima, più della media italiana (0,9%). Crescono costruzioni e servizi, trainati da turismo, trasporti e opere del Pnrr, mentre l'export cala soprattutto per la farmaceutica. I costi dell'energia riducono i margini delle imprese.",
+   "title": "Bankitalia: nel primo semestre 2026 l'economia della Campania cresce dell'1,3%",
+   "zoom": 115
+  },
+  {
+   "cat": "sport",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA; cause in corso di accertamento"
+   },
+   "icon": "ball",
+   "id": "sa-auto-calciatore-salernitana",
+   "label": "Salernitana",
+   "lat": 40.678,
+   "lng": 14.76,
+   "place": "Salerno",
+   "province": "SA",
+   "region": "Campania",
+   "sources": [
+    {
+     "n": "ANSA Campania",
+     "u": "https://www.ansa.it/campania/notizie/2026/11/13/in-fiamme-lauto-di-un-calciatore-della-salernitana-vile-intimidazione_3ef19c8b-48b4-4652-841c-609f3b4c9b4c.html"
+    }
+   ],
+   "text": "Nella notte tra giovedì e venerdì è andata a fuoco in viale Verdi, a Salerno, l'auto in uso a un calciatore della Salernitana; le fiamme sono state spente dai vigili del fuoco e indaga la Polizia di Stato. Il club ha condannato quello che definisce un atto intimidatorio e la Lega Pro ha espresso solidarietà. La squadra attraversa un momento difficile e domenica i tifosi diserteranno il primo tempo contro il Catania.",
+   "title": "Salerno, a fuoco l'auto di un calciatore della Salernitana: indaga la polizia",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una fonte (NTR24)"
+   },
+   "icon": "globe",
+   "id": "bn-stati-generali-francigena",
+   "label": "Via Francigena",
+   "lat": 41.1298,
+   "lng": 14.7826,
+   "place": "Benevento",
+   "province": "BN",
+   "region": "Campania",
+   "sources": [
+    {
+     "n": "NTR24",
+     "u": "https://www.ntr24.tv/2026/11/13/eventi-13-14-15-novembre/"
+    }
+   ],
+   "text": "Da venerdì a domenica Benevento ospita gli Stati generali della Via Francigena nel Sud, tre giorni dedicati al futuro dell'antico cammino. L'iniziativa è promossa dall'assessorato al Turismo della Regione Campania con l'Associazione europea delle Vie Francigene e si è aperta con un convegno al Museo del Sannio.",
+   "title": "Benevento ospita gli Stati generali della Via Francigena nel Sud",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Rapporto Banca d'Italia, ANSA"
+   },
+   "icon": "chart",
+   "id": "ba-bankitalia-pil-puglia",
+   "label": "Pil Puglia",
+   "lat": 41.1171,
+   "layers": [
+    "economia"
+   ],
+   "lng": 16.8719,
+   "place": "Bari",
+   "province": "BA",
+   "region": "Puglia",
+   "sources": [
+    {
+     "n": "ANSA Puglia",
+     "u": "https://www.ansa.it/puglia/notizie/2026/11/13/bankitalia-in-puglia-nei-primi-6-mesi-del-2026-il-pil-cresce-dell1_c5d5f503-bd1d-4e11-a220-32a7a49abfbe.html"
+    }
+   ],
+   "text": "Nel primo semestre 2026 l'economia pugliese è cresciuta dell'1%, in linea con Italia e Mezzogiorno, secondo la Banca d'Italia. Corrono le costruzioni grazie alle opere pubbliche e cresce l'export, ma l'industria è frenata dall'incertezza sullo stabilimento siderurgico di Taranto. Per la seconda metà dell'anno è atteso un rallentamento, anche per il caro energia.",
+   "title": "Bankitalia: Pil della Puglia +1% nel primo semestre, pesa l'incertezza su Taranto",
+   "zoom": 115
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA"
+   },
+   "icon": "school",
+   "id": "ba-biblioteca-rossani",
+   "label": "La Rossani",
+   "lat": 41.121,
+   "lng": 16.864,
+   "place": "Bari",
+   "province": "BA",
+   "region": "Puglia",
+   "sources": [
+    {
+     "n": "ANSA Puglia",
+     "u": "https://www.ansa.it/puglia/notizie/2026/11/13/a-bari-inaugurata-la-biblioteca-rossani-nel-ricordo-di-annibale-delia_de822818-dd0d-401f-bae9-5fd06ddfa9a6.html"
+    }
+   ],
+   "text": "Nel parco Rossani di Bari è stata inaugurata la nuova biblioteca regionale, che apre al pubblico dal 15 novembre. Comprende un polo di 1.500 metri quadri con archivi e oltre 33mila manifesti cinematografici e una biblioteca di pubblica lettura di 3.500 metri quadri nell'ex Casermetta, con spazi per bambini e ragazzi. È dedicata al ricordo di Annibale D'Elia, dirigente regionale alla Cultura scomparso a ottobre.",
+   "title": "Bari, inaugurata la biblioteca regionale La Rossani: apre al pubblico domenica",
+   "zoom": 125
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Antenna Sud e Studio 100"
+   },
+   "icon": "ship",
+   "id": "ta-nave-bande-nere-rientro",
+   "label": "Bande Nere",
+   "lat": 40.458,
+   "lng": 17.205,
+   "place": "Taranto",
+   "province": "TA",
+   "region": "Puglia",
+   "sources": [
+    {
+     "n": "Antenna Sud",
+     "u": "https://www.antennasud.com/taranto-rientra-nave-giovanni-delle-bande-nere-dopo-oltre-sei-mesi-nellindo-pacifico/"
+    },
+    {
+     "n": "Studio 100",
+     "u": "https://www.studio100.it/2026/11/13/taranto-sei-mesi-di-attesa-poi-le-lacrime-e-gli-abbracci-la-giovanni-delle-bande-nere-torna-a-casa/"
+    }
+   ],
+   "text": "Venerdì la nave della Marina Militare Giovanni delle Bande Nere è rientrata alla stazione navale di Mar Grande a Taranto, dopo oltre sei mesi di missione nell'Indo-Pacifico. Partita il 3 maggio, ha partecipato alle esercitazioni internazionali Rimpac e Pacific Dragon e ha fatto scalo in Giappone, Singapore, Thailandia e Malesia. Ad attendere l'equipaggio c'erano le famiglie.",
+   "title": "Taranto, la nave Giovanni delle Bande Nere rientra dopo sei mesi nell'Indo-Pacifico",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Determine pubblicate all'Albo pretorio, riportate da l'Immediato"
+   },
+   "icon": "gov",
+   "id": "fg-comune-21-assunzioni",
+   "label": "Assunzioni FG",
+   "lat": 41.4622,
+   "lng": 15.5446,
+   "place": "Foggia",
+   "province": "FG",
+   "region": "Puglia",
+   "sources": [
+    {
+     "n": "l'Immediato",
+     "u": "https://www.immediato.net/2026/11/14/comune-di-foggia-via-libera-a-21-assunzioni-dieci-nuovi-agenti-sette-geometri-e-quattro-amministrativi/"
+    }
+   ],
+   "text": "Il Comune di Foggia ha dato il via libera a 21 assunzioni a tempo pieno e indeterminato: 10 agenti di Polizia locale, 7 geometri e 4 istruttori amministrativi. I posti vengono coperti scorrendo graduatorie di concorsi già svolti, nell'ambito del piano 2026-2028 che prevede 54 nuovi ingressi. Il numero finale dipenderà da accettazioni e rinunce.",
+   "title": "Foggia, il Comune assume 21 persone: 10 agenti di polizia locale, geometri e amministrativi",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Canale Salento e Quotidiano di Puglia; ricorso al Tar pendente"
+   },
+   "icon": "car",
+   "id": "le-parcheggio-foro-boario",
+   "label": "Foro Boario",
+   "lat": 40.36,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 18.168,
+   "place": "Lecce",
+   "province": "LE",
+   "region": "Puglia",
+   "sources": [
+    {
+     "n": "Canale Salento",
+     "u": "https://www.canalesalento.it/2026/rassegna-del-giorno/le-notizie-flash-di-oggi-lecce-e-provincia-13-novembre/"
+    },
+    {
+     "n": "Quotidiano di Puglia",
+     "u": "https://www.quotidianodipuglia.it/lecce/lecce_parcheggio_foro_boario_lavori_ditte_gara_766_posti_progetto_tempi_tutte_le_informazioni-9886335.html"
+    },
+    {
+     "n": "TRNews",
+     "u": "https://trnews.it/2026/10/28/parcheggio-foro-boario-nuovo-ricorso-del-comitato-rinviata-ludienza-al-tar"
+    }
+   ],
+   "text": "Il Comune di Lecce accelera sul progetto di hub dell'intermodalità all'ex Foro Boario: nominata la commissione che valuterà le offerte di sei imprese per un parcheggio da 766 posti. Il progetto divide la città: un comitato contrario ha presentato ricorso al Tar.",
+   "title": "Lecce, mega parcheggio all'ex Foro Boario: sei imprese in gara per 766 posti",
+   "zoom": 125
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA e Corriere di Puglia e Lucania"
+   },
+   "icon": "trophy",
+   "id": "mt-film-festival-ferretti",
+   "label": "Film Festival",
+   "lat": 40.667,
+   "lng": 16.603,
+   "place": "Matera",
+   "province": "MT",
+   "region": "Basilicata",
+   "sources": [
+    {
+     "n": "ANSA Basilicata",
+     "u": "https://www.ansa.it/amp/basilicata/notizie/2026/11/12/matera-film-festival-domani-i-premi-oscar-dante-ferretti-e-francesca-lo-schiavo_5288d595-6ad3-4c36-a28b-d6106b46b21d.html"
+    },
+    {
+     "n": "Corriere di Puglia e Lucania",
+     "u": "https://www.corrierepl.it/2026/11/12/domani-al-matera-film-festival/"
+    }
+   ],
+   "text": "Al Matera Film Festival, giunto alla settima edizione e in corso fino al 15 novembre, gli scenografi Dante Ferretti e Francesca Lo Schiavo hanno ricevuto il premio Storia del Cinema. La coppia ha vinto insieme sei premi Oscar, con film come The Aviator e Hugo Cabret. Proiezioni e incontri del festival sono a ingresso gratuito.",
+   "title": "Matera Film Festival, premio agli scenografi premi Oscar Ferretti e Lo Schiavo",
+   "zoom": 125
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA su comunicazione della Regione"
+   },
+   "icon": "hospital",
+   "id": "mt-screening-salute-mentale",
+   "label": "Screening MT",
+   "lat": 40.663,
+   "lng": 16.608,
+   "place": "Matera",
+   "province": "MT",
+   "region": "Basilicata",
+   "sources": [
+    {
+     "n": "ANSA Basilicata",
+     "u": "https://www.ansa.it/basilicata/notizie/2026/11/13/sanita-in-basilicata-screening-oncologici-nei-centri-di-salute-mentale_1ee8172e-998b-4c95-a23d-a596c3f7bb3c.html"
+    }
+   ],
+   "text": "A Matera sono partiti gli screening per tumori del colon-retto e della cervice uterina all'interno di due centri per la salute mentale dell'Asm. L'obiettivo, spiega la Regione, è portare la prevenzione alle persone fragili che faticano a raggiungere i servizi. Il percorso dovrebbe essere esteso agli altri centri della Basilicata.",
+   "title": "Matera, screening oncologici direttamente nei centri di salute mentale",
+   "zoom": 125
+  },
+  {
+   "cat": "fede",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "ANSA"
+   },
+   "icon": "church",
+   "id": "pz-diocesi-udienza-papa",
+   "label": "Udienza Papa",
+   "lat": 40.6404,
+   "lng": 15.8056,
+   "place": "Potenza",
+   "province": "PZ",
+   "region": "Basilicata",
+   "sources": [
+    {
+     "n": "ANSA Basilicata",
+     "u": "https://www.ansa.it/basilicata/notizie/2026/11/13/le-diocesi-della-basilicata-da-papa-leone-il-13-marzo-2027_c6f5c822-9751-4a84-a487-0371d2aa8b47.html"
+    }
+   ],
+   "text": "Il Vaticano ha comunicato che le diocesi lucane saranno ricevute in udienza da Papa Leone il 13 marzo 2027. L'incontro chiuderà le celebrazioni per i 300 anni dalla nascita di San Gerardo Maiella e per il centenario del Seminario. La lettera della Casa Pontificia è stata inviata all'arcivescovo di Potenza, presidente dei vescovi della Basilicata.",
+   "title": "Le diocesi della Basilicata saranno ricevute da Papa Leone il 13 marzo 2027",
+   "zoom": 120
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Agi e LaPresse"
+   },
+   "icon": "car",
+   "id": "cs-incidente-ss107-san-fili",
+   "label": "SS107 San Fili",
+   "lat": 39.336,
+   "layers": [
+    "trasporti"
+   ],
+   "lng": 16.139,
+   "place": "San Fili, Cosenza",
+   "province": "CS",
+   "region": "Calabria",
+   "sources": [
+    {
+     "n": "Agi",
+     "u": "https://www.agi.it/cronaca/news/2026-11-14/incidente-galleria-107-morti-40030751/"
+    },
+    {
+     "n": "LaPresse",
+     "u": "https://www.lapresse.it/cronaca/2026/11/14/cosenza-grave-incidente-stradale-in-galleria-4-morti/"
+    }
+   ],
+   "text": "Sabato uno scontro tra due auto nella galleria Fiego, sulla statale 107 nel comune di San Fili, ha causato quattro morti. Una donna di 44 anni è stata trasportata in elicottero in ospedale in gravi condizioni. Il traffico è stato deviato su strade locali; le cause sono in corso di accertamento.",
+   "title": "Scontro in galleria sulla statale 107 a San Fili: quattro morti e una ferita grave",
+   "zoom": 145
+  },
+  {
+   "cat": "societa",
+   "cc": "IT",
+   "check": {
+    "level": "confermata",
+    "note": "Asp di Crotone e ANSA"
+   },
+   "icon": "hospital",
+   "id": "kr-emodinamica-h24",
+   "label": "Cuore H24",
+   "lat": 39.079,
+   "lng": 17.12,
+   "place": "Crotone",
+   "province": "KR",
+   "region": "Calabria",
+   "sources": [
+    {
+     "n": "Asp Crotone",
+     "u": "https://www.asp.crotone.it/emodinamica-crotone-servizio-h24-13-novembre-2026/"
+    },
+    {
+     "n": "ANSA Calabria",
+     "u": "https://www.ansa.it/calabria/notizie/2026/11/10/emodinamica-a-crotone-da-venerdi-13-il-servizio-sara-operativo-h24_38c2a648-a97e-4a84-a024-ec88eb241124.html"
+    }
+   ],
+   "text": "Da venerdì il servizio di emodinamica dell'ospedale San Giovanni di Dio di Crotone è operativo giorno e notte, sette giorni su sette. Crotone diventa il primo centro spoke calabrese nella rete regionale per l'infarto: le emergenze cardiache si possono trattare sul posto senza trasferimenti. In tre mesi e mezzo il reparto ha eseguito 320 procedure.",
+   "title": "Crotone, l'emodinamica dell'ospedale ora è attiva 24 ore su 24",
+   "zoom": 120
+  },
+  {
+   "cat": "economia",
+   "cc": "IT",
+   "check": {
+    "level": "parziale",
+    "note": "Una fonte (Corriere della Calabria)"
+   },
+   "icon": "money",
+   "id": "cz-degusto-fiera",
+   "label": "DeGusto",
+   "lat": 38.8226,
+   "lng": 16.61,
+   "place": "Catanzaro Lido, Catanzaro",
+   "province": "CZ",
+   "region": "Calabria",
+   "sources": [
+    {
+     "n": "Corriere della Calabria",
+     "u": "https://www.corrieredellacalabria.it/2026/11/12/tutto-pronto-per-degusto-2026-sabato-14-novembre-la-cerimonia-inaugurale/"
+    }
+   ],
+   "text": "Si apre oggi al centro fieristico Colosimo di Catanzaro Lido la sesta edizione di DeGusto, salone del cibo e delle bevande per ristoranti, hotel e bar, aperto fino al 17 novembre. In fiera circa 6.000 metri quadrati di esposizione e oltre 300 marchi da diverse regioni. In programma incontri su sostenibilità, Made in Italy ed export.",
+   "title": "Catanzaro, al via DeGusto: la fiera del food con oltre 300 marchi",
+   "zoom": 125
+  }
+ ],
+ "updatedAt": "2026-11-14T16:46:20+01:00"
+}
