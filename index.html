@@ -34,9 +34,15 @@ header.top{padding:14px 18px 10px;border-bottom:1px solid var(--line);background
 .brand h1{font-family:"Newsreader",Georgia,serif;font-weight:650;font-size:26px;letter-spacing:-.01em;margin:0}
 .brand h1 span{color:var(--accent)}
 .meta{font-size:12px;color:var(--muted);text-align:right;line-height:1.35}
-.headline{font-family:"Newsreader",Georgia,serif;font-size:16px;line-height:1.35;margin:8px 0 0}
-.app[data-view="map"] .headline{display:none}
-@media (min-width:900px){.app[data-view="map"] .headline{display:block}}
+.headline{font-family:"Newsreader",Georgia,serif;font-size:16px;line-height:1.35;margin:0}
+.hl-wrap{margin:8px 0 0}
+.hl-btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px 6px 10px;font-size:13px;font-weight:700;box-shadow:var(--shadow)}
+.hl-btn svg{width:15px;height:15px;transition:transform .2s}
+.hl-wrap.open .hl-btn svg.chev{transform:rotate(180deg)}
+.hl-wrap .headline{display:none;margin-top:8px}
+.hl-wrap.open .headline{display:block}
+.app[data-view="map"] .hl-wrap{display:none}
+@media (min-width:900px){.app[data-view="map"] .hl-wrap{display:block}}
 .banner{margin-top:8px;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .banner[hidden]{display:none}
 .banner button{border:0;background:var(--ink);color:var(--paper);border-radius:999px;padding:5px 11px;font-size:12px;font-weight:600}
@@ -394,7 +400,10 @@ window.jsVectorMap = { addMap: function(name, data){ window.__MM_MAPS[name] = da
       <h1>Mappa<span>mondo</span></h1>
       <div class="meta" id="meta">—</div>
     </div>
-    <p class="headline" id="headline"></p>
+    <div class="hl-wrap" id="hlWrap" hidden>
+      <button class="hl-btn" id="hlBtn" aria-expanded="false" aria-controls="headline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Il riassunto del giorno<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <p class="headline" id="headline"></p>
+    </div>
     <div class="banner" id="archBanner" hidden>
       <span id="archBannerText"></span>
       <button id="backToday">Torna a oggi</button>
@@ -798,6 +807,7 @@ function renderHeader(){
   if (ed.updatedAt){ const d = new Date(ed.updatedAt); if (!isNaN(d)) upd = "agg. " + d.toLocaleString("it-IT",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}); }
   $("#meta").innerHTML = esc(ed.dateLabel || ed.date || "") + (upd ? "<br>" + esc(upd) : "") + (ed.updateLabel ? "<br><b style=\"color:var(--accent)\">" + esc(ed.updateLabel) + "</b>" : "");
   $("#headline").textContent = ed.headline || "";
+  $("#hlWrap").hidden = !ed.headline;
   $("#archBanner").hidden = !state.archiveMode;
   if (state.archiveMode) $("#archBannerText").textContent = "Stai leggendo l'edizione di " + (ed.dateLabel || ed.date);
 }
@@ -1578,6 +1588,7 @@ function renderAll(){
   MAP.render();
 }
 
+$("#hlBtn").addEventListener("click", () => { const w = $("#hlWrap"); const open = !w.classList.contains("open"); w.classList.toggle("open", open); $("#hlBtn").setAttribute("aria-expanded", String(open)); });
 /* ---------- badges for news added or changed by the midday / evening update ---------- */
 function newBadge(it){
   if (it.isNew) return `<span class="badge-new">Nuova${it.newAt ? " " + esc(it.newAt) : ""}</span>`;
