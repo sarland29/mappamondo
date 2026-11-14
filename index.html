@@ -203,8 +203,14 @@ nav.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);op
 .sw-temp{background:linear-gradient(90deg,#2f6fd9,#3f9a6e,#e07a1f,#c4372b)}
 .lp-play{border:0;background:var(--accent);color:#fff;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
 .lp-play svg{width:16px;height:16px}
-.lp-range{flex:1;accent-color:var(--accent)}
-.lp-time{font-size:12.5px;font-weight:700;min-width:84px;text-align:right}
+.lp-range{flex:1;accent-color:var(--accent);-webkit-appearance:none;appearance:none;height:8px;border-radius:4px;background:linear-gradient(90deg,#7fb3ef 0,#7fb3ef var(--cut,60%),#c9a0ef var(--cut,60%),#c9a0ef 100%)}
+.lp-range::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--accent);border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.lp-range::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent);border:3px solid #fff}
+.lp-time small{display:block;font-size:10.5px;font-weight:700;color:#2f6fd9;text-transform:uppercase;letter-spacing:.04em}
+.lp-time small.fc{color:#8a4bb0}
+.lp-scale{display:flex;align-items:center;justify-content:space-between;font-size:10.5px;color:var(--muted);margin:-2px 0 0 40px}
+.lp-now{border:1px solid var(--line);background:transparent;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:700;color:var(--ink)}
+.lp-time{font-size:13px;font-weight:800;min-width:96px;text-align:right;line-height:1.15}
 .lp-note{font-size:11.5px;color:var(--muted);text-align:center}
 .fc-now{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
 .fc-now .fc-ico svg{width:44px;height:44px}
@@ -1724,7 +1730,7 @@ function showLegend(){
     ${state.layer === "meteo" ? `
     <div class="lgrow"><span class="lg lg-alert"><i style="background:#f2c230"></i><i style="background:#f08a24"></i><i style="background:#d93a2b"></i></span><span><b>Allerte della Protezione civile</b> per regione: giallo = criticità ordinaria, arancione = moderata, rosso = elevata. Tocca il cerchio con il punto esclamativo per i dettagli.</span></div>
     <div class="lgrow"><span class="lg lg-zone" style="--c:#f08a24"></span><span><b>Paese europeo colorato:</b> allerta meteo in corso in quel Paese, con lo stesso codice di colori.</span></div>
-    ${window.LIVEWX && LIVEWX.enabled ? `<div class="lgrow"><span class="lg lg-zone" style="--c:#1f5fd9"></span><span><b>Radar pioggia:</b> le zone azzurre e blu sono le precipitazioni rilevate dai radar nelle ultime 2 ore (fonte RainViewer). Col tasto ▶ le vedi muoversi.</span></div>
+    ${window.LIVEWX && LIVEWX.enabled ? `<div class="lgrow"><span class="lg lg-zone" style="--c:#1f5fd9"></span><span><b>Pioggia:</b> le zone azzurre, blu e viola sono le precipitazioni. Col cursore vai dalle ultime 2 ore, rilevate dai radar (fonte RainViewer), alle prossime 12 ore previste dal modello meteo (fonte Open-Meteo; la parte viola del cursore è la previsione). Col tasto ▶ le vedi muoversi.</span></div>
     <div class="lgrow"><span class="lg lg-score" style="background:#e07a1f">14°</span><span><b>Temperature adesso</b>, colorate dal blu (freddo) al rosso (caldo); la freccia indica da dove soffia il vento quando è sostenuto. Tocca un punto qualsiasi per le previsioni a 7 giorni (fonte Open-Meteo).</span></div>` : `<div class="lgrow"><span class="lg lg-wx">☁︎ 14°</span><span><b>Meteo nelle città:</b> simbolo del tempo previsto e temperatura massima. Avvicinandoti compaiono altre città. Radar e previsioni a 7 giorni sono nell'app installata.</span></div>`}` : ""}
     <div class="lgrow"><span class="lg lg-dot"></span><span><b>Cerchio con simbolo: una notizia.</b> Il colore indica il tema, la grandezza l'importanza. Toccalo per leggerla.<span class="lgcats">${cats}</span></span></div>
     <div class="lgrow"><span class="lg lg-dot" style="box-shadow:0 0 0 2px #fff inset"></span><span><b>Punti piccoli con bordo bianco: notizie locali</b> delle regioni italiane. Compaiono quando ti avvicini a una regione.</span></div>
@@ -1900,8 +1906,9 @@ window.LIVEWX = (function(){
   /* ---- controls panel shown in the weather layer ---- */
   const panel = document.createElement("div");
   panel.className = "livepanel"; panel.hidden = true;
-  panel.innerHTML = `<div class="lp-row"><button class="lp-t" data-o="radar" aria-pressed="true"><span class="sw sw-rain"></span>Radar pioggia</button><button class="lp-t" data-o="temps" aria-pressed="true"><span class="sw sw-temp"></span>Temperature e vento</button></div>
-    <div class="lp-row lp-radar"><button class="lp-play" aria-label="Riproduci le ultime 2 ore"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button><input type="range" class="lp-range" min="0" max="0" value="0" aria-label="Ora del radar"><span class="lp-time">—</span></div>
+  panel.innerHTML = `<div class="lp-row"><button class="lp-t" data-o="radar" aria-pressed="true"><span class="sw sw-rain"></span>Pioggia</button><button class="lp-t" data-o="temps" aria-pressed="true"><span class="sw sw-temp"></span>Temperature e vento</button></div>
+    <div class="lp-row lp-radar"><button class="lp-play" aria-label="Riproduci le ultime 2 ore"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button><input type="range" class="lp-range" min="0" max="0" value="0" aria-label="Ora: radar delle ultime 2 ore, poi previsione delle prossime 12"><span class="lp-time">—</span></div>
+    <div class="lp-scale"><span>‹ 2 ore fa · radar</span><button class="lp-now">Adesso</button><span>previsione 12 ore ›</span></div>
     <div class="lp-note">Tocca un punto della mappa per le previsioni dei prossimi 7 giorni.<br><small>Radar: RainViewer · Meteo: Open-Meteo</small></div>`;
   $("#map").parentNode.appendChild(panel);
   const cv = document.createElement("canvas"); cv.className = "radarcv"; $("#map").appendChild(cv);
@@ -1909,18 +1916,35 @@ window.LIVEWX = (function(){
 
   /* ---- radar (RainViewer, past 2 hours every 10 minutes, map tiles up to zoom 7) ---- */
   let R = { host: "", frames: [], i: -1, loadedAt: 0 }, tiles = new Map(), playTimer = null, drawQ = false;
+  let FC = { key: "", hours: [], cols: 0, rows: 0, lats: [], lngs: [], img: null, imgFor: -1 };
   async function loadRadar(){
     if (Date.now() - R.loadedAt < 5 * 60 * 1000 && R.frames.length) return;
     try {
       const r = await fetch("https://api.rainviewer.com/public/weather-maps.json", { cache: "no-cache" });
       const d = await r.json();
       const fr = (d && d.radar && Array.isArray(d.radar.past)) ? d.radar.past.filter(f => f && f.path) : [];
-      R = { host: d.host || "https://tilecache.rainviewer.com", frames: fr.slice(-7), i: Math.min(fr.length, 7) - 1, loadedAt: Date.now() };
-      const rg = panel.querySelector(".lp-range"); rg.max = Math.max(0, R.frames.length - 1); rg.value = R.i;
-      setTime(); queueDraw();
-    } catch(e){ R.frames = []; panel.querySelector(".lp-time").textContent = "radar non disponibile"; }
+      const wasNow = R.i === R.frames.length - 1 || R.i < 0;
+      R = { host: d.host || "https://tilecache.rainviewer.com", frames: fr.slice(-7), i: R.i, loadedAt: Date.now() };
+      if (wasNow || R.i >= total()) R.i = R.frames.length - 1;
+      rebuildRange();
+    } catch(e){ R.frames = []; rebuildRange(); }
   }
-  function setTime(){ const f = R.frames[R.i]; panel.querySelector(".lp-time").textContent = f ? new Date(f.time * 1000).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" }) + (R.i === R.frames.length - 1 ? " · ultimo" : "") : "—"; }
+  /* the slider runs over the radar frames (past 2 hours) and then the forecast hours */
+  const total = () => R.frames.length + FC.hours.length;
+  function rebuildRange(){
+    const rg = panel.querySelector(".lp-range"), n = total();
+    rg.max = Math.max(0, n - 1); if (R.i < 0) R.i = R.frames.length - 1; rg.value = Math.max(0, R.i);
+    const cut = n > 1 ? (R.frames.length - 0.5) / (n - 1) * 100 : 100;
+    rg.style.setProperty("--cut", cut.toFixed(1) + "%");
+    setTime(); queueDraw();
+  }
+  function setTime(){
+    const el = panel.querySelector(".lp-time");
+    const lg = MAP.liveGroup(); if (lg) lg.style("opacity", R.i >= R.frames.length ? 0.35 : null);
+    if (R.i < R.frames.length){ const f = R.frames[R.i]; el.innerHTML = f ? `${new Date(f.time * 1000).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" })}<small>${R.i === R.frames.length - 1 ? "radar, adesso" : "radar"}</small>` : (FC.hours.length ? "—" : "radar non disponibile"); return; }
+    const h = FC.hours[R.i - R.frames.length];
+    el.innerHTML = h ? `${new Date(h.t).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" })}<small class="fc">previsione +${R.i - R.frames.length + 1} h</small>` : "—";
+  }
   const merc = lat => Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
   const tileLat = (y, n) => Math.atan(Math.sinh(Math.PI * (1 - 2 * y / n))) * 180 / Math.PI;
   function queueDraw(){ if (drawQ) return; drawQ = true; requestAnimationFrame(() => { drawQ = false; draw(); }); }
@@ -1930,8 +1954,10 @@ window.LIVEWX = (function(){
     const dpr = Math.min(2, window.devicePixelRatio || 1);
     if (cv.width !== Math.round(D.W * dpr) || cv.height !== Math.round(D.H * dpr)){ cv.width = Math.round(D.W * dpr); cv.height = Math.round(D.H * dpr); cv.style.width = D.W + "px"; cv.style.height = D.H + "px"; }
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, D.W, D.H);
+    if (!t || !active() || !opts.radar) return;
+    if (R.i >= R.frames.length){ drawForecast(t, R.i - R.frames.length); return; }
     const f = R.frames[R.i];
-    if (!t || !active() || !opts.radar || !f) return;
+    if (!f) return;
     const a = t.invert([0, 0]), b = t.invert([D.W, D.H]);
     const nw = GEO.unproject(a[0], a[1]), se = GEO.unproject(b[0], b[1]);
     const lw = Math.max(-179, nw.lng), le = Math.min(179, se.lng), ln = Math.min(84, nw.lat), ls = Math.max(-84, se.lat);
@@ -1957,15 +1983,71 @@ window.LIVEWX = (function(){
       }
     }
   }
+  /* forecast rain (Open-Meteo hourly precipitation on a grid over the view) */
+  const RAIN = [[0.1, [127, 198, 255, 0.40]], [0.5, [89, 166, 255, 0.55]], [1.5, [47, 120, 235, 0.68]], [4, [31, 75, 200, 0.78]], [8, [106, 63, 208, 0.82]], [15, [196, 60, 160, 0.85]]];
+  function rainCol(v){ let c = null; for (const [th, col] of RAIN) if (v >= th) c = col; return c; }
+  function viewBox(){
+    const t = MAP.tr(), D = MAP.dims(); if (!t) return null;
+    const a = GEO.unproject(...t.invert([0, 0])), b = GEO.unproject(...t.invert([D.W, D.H]));
+    return { n: Math.min(72, a.lat), s: Math.max(26, b.lat), w: Math.max(-30, a.lng), e: Math.min(55, b.lng) };
+  }
+  async function loadFc(){
+    if (!active() || !opts.radar) return;
+    const v = viewBox(); if (!v || v.e <= v.w || v.n <= v.s) return;
+    let step = [0.25, 0.5, 1, 1.5, 2, 3].find(st => ((v.e - v.w) / st + 3) * ((v.n - v.s) / st + 3) <= 160) || 3;
+    const w = Math.floor(v.w / step) * step - step, e = Math.ceil(v.e / step) * step + step, n = Math.ceil(v.n / step) * step + step, s0 = Math.floor(v.s / step) * step - step;
+    const key = [step, w, e, n, s0].join(",");
+    if (key === FC.key && FC.hours.length && Date.now() - FC.at < 30 * 60 * 1000) return;
+    const lats = [], lngs = [];
+    for (let la = n; la >= s0 - 1e-9; la -= step) lats.push(+la.toFixed(3));
+    for (let lo = w; lo <= e + 1e-9; lo += step) lngs.push(+lo.toFixed(3));
+    const LA = [], LO = [];
+    lats.forEach(la => lngs.forEach(lo => { LA.push(la); LO.push(lo); }));
+    FC.key = key;
+    try {
+      const r = await fetch(`${OM}?latitude=${LA.join(",")}&longitude=${LO.join(",")}&hourly=precipitation&forecast_hours=14&timezone=auto`);
+      const d = await r.json(); const arr = Array.isArray(d) ? d : [d];
+      if (FC.key !== key || !arr[0] || !arr[0].hourly) return;
+      const times = arr[0].hourly.time.map((x, i) => ({ i, t: new Date(x + (arr[0].utc_offset_seconds != null ? "" : "")).getTime() }));
+      // hourly times are local to each point; use the first point's offset to get real instants
+      const off = (arr[0].utc_offset_seconds || 0) * 1000;
+      const inst = arr[0].hourly.time.map(x => Date.parse(x + "Z") - off);
+      const now = Date.now();
+      const idx = inst.map((t, i) => ({ t, i })).filter(o => o.t > now).slice(0, 12);
+      const wasFc = R.i >= R.frames.length; const oldH = R.i - R.frames.length;
+      FC = { key, at: Date.now(), cols: lngs.length, rows: lats.length, lats, lngs, img: null, imgFor: -1,
+        hours: idx.map(o => ({ t: o.t, vals: arr.map(p => (p && p.hourly && p.hourly.precipitation[o.i]) || 0) })) };
+      if (wasFc) R.i = R.frames.length + Math.min(oldH, FC.hours.length - 1);
+      rebuildRange();
+    } catch(e){ FC.key = ""; }
+  }
+  const fcCanvas = document.createElement("canvas");
+  function drawForecast(t, h){
+    const H = FC.hours[h]; if (!H) return;
+    if (FC.imgFor !== h){
+      fcCanvas.width = FC.cols; fcCanvas.height = FC.rows;
+      const c2 = fcCanvas.getContext("2d"), id = c2.createImageData(FC.cols, FC.rows);
+      H.vals.forEach((v, k) => { const col = rainCol(v); if (!col) return; const o = k * 4; id.data[o] = col[0]; id.data[o + 1] = col[1]; id.data[o + 2] = col[2]; id.data[o + 3] = Math.round(col[3] * 255); });
+      c2.putImageData(id, 0, 0); FC.imgFor = h;
+    }
+    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
+    // one strip per grid row so the picture follows the map projection
+    for (let j = 0; j < FC.rows - 1; j++){
+      const a = scr(FC.lats[j], FC.lngs[0], t), b = scr(FC.lats[j + 1], FC.lngs[0], t), c = scr(FC.lats[j], FC.lngs[FC.cols - 1], t);
+      const ya = Math.round(a[1]), hh = Math.round(b[1]) - ya; if (hh <= 0) continue;
+      ctx.drawImage(fcCanvas, 0.5, j + 0.5, FC.cols - 1, 1, a[0], ya, c[0] - a[0], hh);
+    }
+  }
   function play(){
     const btn = panel.querySelector(".lp-play");
     if (playTimer){ clearInterval(playTimer); playTimer = null; btn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`; return; }
-    if (R.frames.length < 2) return;
+    if (total() < 2) return;
     btn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>`;
     R.i = 0; sync();
-    playTimer = setInterval(() => { R.i = (R.i + 1) % R.frames.length; sync(); if (R.i === R.frames.length - 1){ clearInterval(playTimer); playTimer = null; setTimeout(() => { if (!playTimer) btn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`; }, 50); } }, 900);
+    playTimer = setInterval(() => { R.i = (R.i + 1) % total(); sync(); if (R.i === total() - 1){ clearInterval(playTimer); playTimer = null; setTimeout(() => { if (!playTimer) btn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`; }, 50); } }, 900);
   }
   function sync(){ panel.querySelector(".lp-range").value = R.i; setTime(); queueDraw(); }
+  panel.querySelector(".lp-now").addEventListener("click", () => { if (playTimer) play(); R.i = Math.max(0, R.frames.length - 1); sync(); });
   panel.querySelector(".lp-play").addEventListener("click", play);
   panel.querySelector(".lp-range").addEventListener("input", e => { if (playTimer) play(); R.i = +e.target.value; sync(); });
 
@@ -2023,7 +2105,7 @@ window.LIVEWX = (function(){
     const on = active(); if (on !== lastOn){ lastOn = on; refresh(); return; }
     for (const n of gridNodes){ const q = t.apply([n.p.x, n.p.y]); n.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
     queueDraw();
-    clearTimeout(gridTimer); gridTimer = setTimeout(loadGrid, 700);
+    clearTimeout(gridTimer); gridTimer = setTimeout(() => { loadGrid(); loadFc(); }, 700);
   }
 
   /* ---- tap anywhere: forecast for that point ---- */
@@ -2071,7 +2153,7 @@ window.LIVEWX = (function(){
     panel.hidden = !on;
     panel.querySelectorAll(".lp-t").forEach(b => b.setAttribute("aria-pressed", String(!!opts[b.dataset.o])));
     panel.querySelector(".lp-radar").style.display = opts.radar ? "" : "none";
-    if (on && opts.radar) loadRadar();
+    if (on && opts.radar){ loadRadar(); loadFc(); }
     if (!on || !opts.temps){ gridSig = "x"; renderGrid([]); gridSig = ""; } else loadGrid();
     queueDraw();
   }
