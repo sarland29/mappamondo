@@ -144,6 +144,46 @@ nav.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);op
 .reader .rd-body{overflow:auto;padding:0 12px 16px;overscroll-behavior:contain}
 .reader .rd-body .card{margin-bottom:0}
 .reader .rd-hint{font-size:11.5px;color:var(--muted);text-align:center;margin:8px 0 0}
+/* local news, country card, near me, search */
+#map .mk.loc .dot{stroke:#fff;stroke-width:2px}
+#map .mk.loc .lbl{font-size:10.5px}
+.regbar{display:flex;align-items:center;gap:8px;margin:2px 2px 10px}
+.regbar select{flex:1;min-width:0;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:9px 12px;font:inherit;font-size:15px;font-weight:600}
+.regbar small{color:var(--muted);font-size:12px}
+.cn-facts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:2px 0 12px}
+.cn-fact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 10px}
+.cn-fact small{display:block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:2px}
+.cn-fact b{font-size:13.5px;line-height:1.3;font-weight:650}
+.cn-fact.wide{grid-column:1/-1}
+.cn-tags{display:flex;flex-wrap:wrap;gap:5px;margin:-4px 0 12px}
+.cn-tags span{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 9px;background:color-mix(in srgb,var(--ink) 8%,transparent)}
+.cn-h{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:14px 2px 6px}
+.cn-row{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 10px;margin-bottom:6px;font:inherit;color:inherit}
+.cn-row .d{width:30px;height:30px;border-radius:9px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;color:#fff}
+.cn-row .d svg{width:17px;height:17px}
+.cn-row span{flex:1;min-width:0;font-size:14px;line-height:1.3;font-weight:600}
+.cn-row span small{display:block;font-weight:500;color:var(--muted);font-size:12px;margin-top:2px}
+.cn-week{display:flex;gap:4px;align-items:flex-end;height:54px;margin:4px 2px 2px}
+.cn-week div{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10px;color:var(--muted)}
+.cn-week i{display:block;width:100%;background:var(--accent);border-radius:4px 4px 1px 1px;min-height:2px;opacity:.8}
+.cn-src{font-size:11.5px;color:var(--muted);margin-top:10px;line-height:1.4}
+.cn-src a{color:inherit}
+#map .me .halo{fill:#2f6fd9;opacity:.18}
+#map .me .core{fill:#2f6fd9;stroke:#fff;stroke-width:3px}
+.searchbox{position:absolute;left:8px;right:8px;top:8px;z-index:35;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.22);padding:8px;display:none;max-height:calc(100% - 110px);flex-direction:column}
+.searchbox.open{display:flex}
+.searchbox .sb-row{display:flex;gap:6px}
+.searchbox input{flex:1;min-width:0;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:10px 14px;font:inherit;font-size:16px}
+.searchbox .sb-row button{border:0;background:transparent;font-size:18px;width:40px;color:var(--ink)}
+.sb-res{overflow:auto;margin-top:6px;overscroll-behavior:contain}
+.sb-res .sb-h{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:8px 6px 4px}
+.sb-res button{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:transparent;border:0;border-radius:10px;padding:8px 6px;font:inherit;color:inherit}
+.sb-res button:active,.sb-res button:hover{background:color-mix(in srgb,var(--ink) 6%,transparent)}
+.sb-res .ic{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;background:color-mix(in srgb,var(--ink) 8%,transparent)}
+.sb-res .ic svg{width:16px;height:16px}
+.sb-res span{flex:1;min-width:0;font-size:14px;line-height:1.3}
+.sb-res span small{display:block;color:var(--muted);font-size:12px}
+.sb-empty{font-size:13px;color:var(--muted);padding:10px 6px}
 /* listen + ask */
 .askbtn,.lsnbtn{display:none}
 .can-ask .askbtn{display:inline-flex}
@@ -434,7 +474,13 @@ window.jsVectorMap = { addMap: function(name, data){ window.__MM_MAPS[name] = da
         <div class="rw-head" id="rwHead"></div>
         <div class="rw-msg" id="rwMsg" hidden></div>
       </div>
+      <div class="searchbox" id="searchbox" role="search">
+        <div class="sb-row"><input id="sbIn" type="search" placeholder="Cerca una città, un Paese o un tema…" autocomplete="off" enterkeyhint="search"><button id="sbClose" aria-label="Chiudi la ricerca">✕</button></div>
+        <div class="sb-res" id="sbRes"></div>
+      </div>
       <div class="zoombtns">
+        <button id="zSearch" aria-label="Cerca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></button>
+        <button id="zNear" aria-label="Vicino a me" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg></button>
         <button id="zIn" aria-label="Avvicina">+</button>
         <button id="zOut" aria-label="Allontana">−</button>
         <button id="zHelp" aria-label="Legenda" style="font-size:17px;font-weight:700">?</button>
@@ -735,6 +781,17 @@ function items(){
   }
   return _itemsOut;
 }
+/* local news: a separate daily edition, shown on the map only from close up */
+let _locSrc = null, _locOut = [];
+function localItems(){
+  const L = state.local;
+  if (state.archiveMode || !L || !Array.isArray(L.items)) return [];
+  if (state.edition && L.date && state.edition.date && L.date !== state.edition.date) return [];
+  if (_locSrc !== L){ _locSrc = L; _locOut = L.items.filter(it => it && it.title && hasCoords(it)).map(it => Object.assign({}, it, { local: true, weight: 1, id: "loc-" + String(it.id || it.title).slice(0, 60) })); }
+  return _locOut;
+}
+function allItems(){ return items().concat(localItems()); }
+const LOC_K = 2.4;
 function visibleItems(){ return items().filter(it => state.cats.has(it.cat) || !CATS[it.cat]); }
 
 /* ---------- map layers ---------- */
@@ -760,7 +817,8 @@ const LAYERS = {
   all: { l: "Tutto", i: "layers", d: "Tutte le notizie del giorno: avvicinati per separarle e vedere linee e attacchi.", fxAlways: false,
          test: () => true }
 };
-function mapItems(){ const L = LAYERS[state.layer] || LAYERS.top; return items().filter(inRegion).filter(L.test); }
+function mapItems(){ const L = LAYERS[state.layer] || LAYERS.top; const loose = state.layer === "top" || state.layer === "all";
+  return items().filter(inRegion).filter(L.test).concat(localItems().filter(inRegion).filter(it => loose || (state.layer !== "hot" && L.test(it)))); }
 function setLayer(k){
   if (!LAYERS[k] || k === state.layer) return;
   state.layer = k;
@@ -1002,6 +1060,22 @@ function fxExplainHtml(it){
   return lines.length ? `<ul class="fxlist">${lines.join("")}</ul>` : "";
 }
 
+/* regional news in the list: one region at a time, chosen from a menu */
+function regionalHtml(){
+  const loc = localItems().filter(it => state.cats.has(it.cat) || !CATS[it.cat]);
+  if (!loc.length) return "";
+  const by = {};
+  loc.forEach(it => { const r = String(it.region || "Altre zone"); (by[r] = by[r] || []).push(it); });
+  const regs = Object.keys(by).sort((a, b) => a.localeCompare(b, "it"));
+  if (!state.region){ try { state.region = localStorage.getItem("mm_region") || ""; } catch(e){} }
+  if (!by[state.region]) state.region = by["Lombardia"] ? "Lombardia" : regs[0];
+  const list = by[state.region];
+  let h = `<div class="sectionlabel more-h">Dalle regioni</div><div class="regbar"><select id="regSel" aria-label="Scegli la regione">${regs.map(r => `<option value="${esc(r)}"${r === state.region ? " selected" : ""}>${esc(r)} (${by[r].length})</option>`).join("")}</select><small>${loc.length} notizie locali</small></div>`;
+  SECTIONS.local = { label: state.region, list, numbered: false };
+  if (state.listMode === "grid") h += `<div class="grid">${list.map((it, i) => tileHtml(it, 0, "local", i)).join("")}</div>`;
+  else h += list.map(it => cardHtml(it, 0, {small:true})).join("");
+  return h;
+}
 function firstSentence(t){ t = String(t || ""); const m = t.match(/^.{40,}?[.!?](\s|$)/); return (m ? m[0] : t).trim(); }
 function tileHtml(it, n, sec, idx){
   const c = catOf(it), chk = checkInfo(it);
@@ -1039,12 +1113,14 @@ function renderList(){
   for (const k in SECTIONS) delete SECTIONS[k];
   html += sectionHtml("pills", state.archiveMode ? "Le pillole del giorno" : "Le pillole di oggi", pills, true, true);
   html += sectionHtml("europe", "Italia ed Europa", europe, false, !pills.length);
+  html += regionalHtml();
   html += sectionHtml("world", "Dal resto del mondo", world, false, false);
   if (!pills.length && !europe.length && !world.length) html += `<div class="empty">Nessuna notizia per questi filtri.</div>`;
   html += `<div class="foot-note">Sintesi scritte da Claude a partire dalle fonti indicate in ogni notizia, verificate incrociando più testate. Le animazioni sulla mappa sono indicative.<br>L'edizione si aggiorna ogni mattina.</div>`;
   body.innerHTML = html;
   body.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", ev => { ev.stopPropagation(); focusItem(b.dataset.go); }));
   const lb = $("#lsnBtn"); if (lb) lb.addEventListener("click", () => LISTEN.start());
+  const rs = $("#regSel"); if (rs) rs.addEventListener("change", () => { state.region = rs.value; try { localStorage.setItem("mm_region", rs.value); } catch(e){} const y = $("#listPane").scrollTop; renderList(); renderFilters(); $("#listPane").scrollTop = y; });
   body.querySelectorAll("[data-lm]").forEach(b => b.addEventListener("click", () => {
     state.listMode = b.dataset.lm; try { localStorage.setItem("mm_listmode", state.listMode); } catch(e){}
     renderList(); renderFilters();
@@ -1062,7 +1138,7 @@ function renderList(){
 /* ---------- interactive map (Europe) ---------- */
 const MAP = (function(){
   let built = false, svg, world, gLand, gFx, gMk, gCl, zoom, W = 0, H = 0, kFit = 1, kHome = 1, kMin = 1, t = null, fxId = 0;
-  let RB = null, HB = null, mkNodes = [], arcNodes = [], wxNodes = [], gW = null, clSig = "", clGroups = [];
+  let RB = null, HB = null, mkNodes = [], arcNodes = [], wxNodes = [], gW = null, clSig = "", clGroups = [], gMe = null, meNode = null;
   const el = $("#map");
   const CL_R = 40;
   function ok(){ return !!(GEO && window.d3); }
@@ -1097,6 +1173,7 @@ const MAP = (function(){
     gW = svg.append("g").attr("class", "wx");
     gMk = svg.append("g").attr("class", "markers");
     gCl = svg.append("g").attr("class", "clusters");
+    gMe = svg.append("g").attr("class", "me-layer");
     zoom = d3.zoom()
       .on("start", ev => { if (ev.sourceEvent) { stopTour(); hideHint(); } })
       .on("zoom", ev => { t = ev.transform; world.attr("transform", t); place(); });
@@ -1210,7 +1287,7 @@ const MAP = (function(){
       const w = Math.max(1, Math.min(3, it.weight || 1));
       const r = w === 3 ? 14 : w === 2 ? 11 : 8;
       const col = catOf(it).c;
-      const g = gMk.append("g").attr("class", `mk w${w}`).attr("data-id", it.id);
+      const g = gMk.append("g").attr("class", `mk w${w}${it.local ? " loc" : ""}`).attr("data-id", it.id);
       const fx = Array.isArray(it.fx) ? it.fx : [];
       const pulsing = fx.some(f => f && f.t === "pulse");
       if (pulsing || w === 3){
@@ -1232,7 +1309,7 @@ const MAP = (function(){
       g.append("text").attr("class", "lbl").attr("text-anchor", "middle").attr("y", r + 14).text(String(it.label || it.place || "").slice(0, 24));
       g.on("click", ev => { ev.stopPropagation(); stopTour(); openNear(it, true); });
       const pi = pillIds.indexOf(it.id);
-      mkNodes.push({ it, g, w, p: GEO.project(it.lat, it.lng), prio: (pi >= 0 ? 100 - pi : 0) + w * 10, sx: 0, sy: 0 });
+      mkNodes.push({ it, g, w, loc: !!it.local, p: GEO.project(it.lat, it.lng), prio: it.local ? -1 : (pi >= 0 ? 100 - pi : 0) + w * 10, sx: 0, sy: 0 });
     });
     mkNodes.sort((a, b) => b.prio - a.prio);
     select(state.selected);
@@ -1396,26 +1473,29 @@ const MAP = (function(){
     el.classList.toggle("z3", t.k >= kHome * 5);
     const fxOn = (LAYERS[state.layer] || LAYERS.all).fxAlways || t.k >= kHome * 1.8;
     for (const n of mkNodes){ const q = t.apply([n.p.x, n.p.y]); n.sx = q[0]; n.sy = q[1]; }
-    // greedy clustering in screen space, most important first
+    // local news only from close up; greedy clustering in screen space, most important first
+    const locOn = t.k >= kHome * LOC_K;
     const cls = [], R2 = CL_R * CL_R;
     for (const n of mkNodes){
+      if (n.loc && !locOn) continue;
       let c = null;
       for (const k of cls){ const dx = k.x - n.sx, dy = k.y - n.sy; if (dx*dx + dy*dy < R2){ c = k; break; } }
       if (c) c.m.push(n); else cls.push({ x: n.sx, y: n.sy, m: [n] });
     }
     const multi = cls.filter(c => c.m.length > 1);
-    const sig = multi.map(c => c.m.map(n => n.it.id).join(",")).join("|");
+    const sig = (locOn ? "L" : "") + multi.map(c => c.m.map(n => n.it.id).join(",")).join("|");
     if (sig !== clSig){
       clSig = sig;
       gCl.selectAll("*").remove();
       const hidden = new Set();
       multi.forEach(c => c.m.forEach(n => hidden.add(n)));
-      for (const n of mkNodes) n.g.style("display", hidden.has(n) ? "none" : null);
+      for (const n of mkNodes) n.g.style("display", hidden.has(n) || (n.loc && !locOn) ? "none" : null);
       clGroups = multi.map(clusterBubble);
     }
     multi.forEach((c, i) => clGroups[i] && clGroups[i].attr("transform", `translate(${c.x.toFixed(1)},${c.y.toFixed(1)})`));
     for (const n of mkNodes) n.g.attr("transform", `translate(${n.sx.toFixed(1)},${n.sy.toFixed(1)})`);
     for (const n of wxNodes){ const q = t.apply([n.p.x, n.p.y]); n.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
+    if (meNode){ const q = t.apply([meNode.p.x, meNode.p.y]); meNode.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
     for (const n of arcNodes){
       const on = fxOn || n.it.id === state.selected;
       n.g.classed("off", !on);
@@ -1447,7 +1527,21 @@ const MAP = (function(){
     gCl.classed("dim", !!id);
     place();
   }
+  function setMe(lat, lng){
+    if (!built) return;
+    gMe.selectAll("*").remove();
+    const g = gMe.append("g").attr("class", "me");
+    g.append("circle").attr("class", "halo").attr("r", 22); g.append("circle").attr("class", "core").attr("r", 7);
+    meNode = { g, p: GEO.project(lat, lng) }; place();
+  }
+  function flyToCountry(cc){
+    if (!built) return false;
+    const node = gLand.select(`path[data-cc="${String(cc).toUpperCase().replace(/[^A-Z-]/g, "")}"]`).node();
+    if (!node) return false;
+    const b = node.getBBox(); flyToBox(b.x, b.y, b.x + b.width, b.y + b.height); return true;
+  }
   return {
+    setMe, flyToCountry, zoomK(){ return t && kHome ? t.k / kHome : 1; },
     ensure(){
       if ($("#mapPane").offsetWidth === 0 || !state.edition) return;
       if (!built){ if (!build()) return; render(); return; }
@@ -1465,7 +1559,7 @@ window.addEventListener("resize", () => MAP.ensure());
 function hideHint(){ const h = $("#maphint"); if (h) { h.style.opacity = "0"; setTimeout(() => h.remove(), 400); } }
 
 function focusItem(id){
-  const it = items().find(i => i.id === id); if (!it || !inRegion(it)) return;
+  const it = allItems().find(i => i.id === id); if (!it || !inRegion(it)) return;
   if (!state.cats.has(it.cat)) { state.cats.add(it.cat); renderAll(); }
   if (!isWide()) setView("map");
   setTimeout(() => { MAP.ensure(); openNear(it, true); }, 60);
@@ -1487,7 +1581,62 @@ function openArc(node){
     : `<b>Linea a puntini: un viaggio o un contatto diplomatico</b>${f.label ? " (" + esc(f.label) + ")" : ""}.`;
   showSheet(f.t === "strike" ? "Attacco" : "Collegamento", [node.it], 0, null, `<div class="arcnote">${what} Fa parte di questa notizia:</div>`);
 }
-function openRegion(code, mapName){
+function openRegion(code, mapName){ return showCountry(code, mapName); }
+function cnFacts(cc){ const R = state.countries && state.countries.countries; return R && typeof R === "object" ? R[String(cc).toUpperCase()] || null : null; }
+async function showCountry(code, mapName){
+  code = String(code || "").toUpperCase();
+  const name = countryName(code) || mapName || code;
+  stopTour();
+  const its = items().filter(i => (i.cc || "").toUpperCase() === code).sort((a, b) => (b.weight || 1) - (a.weight || 1));
+  const loc = localItems().filter(i => (i.cc || "").toUpperCase() === code);
+  const f = cnFacts(code);
+  const fact = (lbl, v, wide) => v ? `<div class="cn-fact${wide ? " wide" : ""}"><small>${esc(lbl)}</small><b>${esc(v)}</b></div>` : "";
+  let note = "";
+  if (state.layer === "meteo"){
+    const a = wxList("europe").find(x => String(x.cc || "").toUpperCase() === code);
+    const A = a && alertOf(a.level);
+    if (A) note = `<div class="arcnote"><span class="wxbadge" style="background:${A.c};color:${A.ink}">${esc(A.l)}</span> ${a.risk ? "<b>" + esc(a.risk) + "</b>. " : ""}${esc(a.note || "")}</div>`;
+  }
+  const row = (it, i, src) => { const c = catOf(it); return `<button class="cn-row" data-src="${src}" data-i="${i}"><span class="d" style="background:${c.c}">${iconSvg(iconOf(it))}</span><span>${esc(it.title)}<small>${esc(it.place || "")}${it.local ? " · notizia locale" : ""}</small></span></button>`; };
+  const build = (weekHtml, storiesHtml) => {
+    let h = note;
+    if (f){
+      h += `<div class="cn-facts">${fact("Capitale", f.capital)}${fact("Abitanti", f.population)}${fact(f.headLabel || "Capo dello Stato", f.head, true)}${fact(f.govLabel || "Capo del governo", f.gov, true)}${fact("Lingue", f.languages)}${fact("Moneta", f.currency)}</div>`;
+      const tags = [f.eu ? "Unione europea" : "", f.euro ? "Euro" : "", f.nato ? "Nato" : "", f.schengen ? "Schengen" : ""].filter(Boolean);
+      if (tags.length) h += `<div class="cn-tags">${tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>`;
+      if (f.note) h += `<p style="font-size:13px;line-height:1.45;margin:0 2px 8px">${esc(f.note)}</p>`;
+    }
+    h += `<div class="cn-h">Oggi</div>` + (its.length ? its.map((it, i) => row(it, i, "m")).join("") : `<div class="tl-empty">Nessuna notizia di oggi da ${esc(name)}.</div>`);
+    if (loc.length) h += `<div class="cn-h">Notizie locali</div>` + loc.slice(0, 12).map((it, i) => row(it, i, "l")).join("");
+    h += storiesHtml || "";
+    h += weekHtml || "";
+    if (f){ const srcs = (Array.isArray(f.sources) ? f.sources : []).map(s => { const u = safeUrl(s && s.u); return u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(s.n || new URL(u).hostname)}</a>` : ""; }).filter(Boolean).join(" · ");
+      h += `<div class="cn-src">Dati del Paese aggiornati ${esc(f.asOf || (state.countries && state.countries.updatedLabel) || "")}${srcs ? ". Fonti: " + srcs : ""}</div>`; }
+    return h;
+  };
+  const wire = () => { document.querySelectorAll("#shBody .cn-row").forEach(b => b.addEventListener("click", () => { const L = b.dataset.src === "l" ? loc : its; showSheet(name, L, +b.dataset.i); }));
+    document.querySelectorAll("#shBody [data-story]").forEach(() => {}); };
+  showInfo(name, build("", ""));
+  wire();
+  // the week: news counts per day and stories still open, from the archive
+  let arch = [];
+  try { arch = (await getArchive()) || []; } catch(e){ arch = []; }
+  if (state.sheetTitle !== name) return;
+  const days = [];
+  if (state.latest) days.push(state.latest);
+  arch.forEach(a => { if (!state.latest || a.data.date !== state.latest.date) days.push(a.data); });
+  const week = days.filter(d => d && d.date).sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 7).reverse();
+  const counts = week.map(d => ({ d, n: itemsOf(d).filter(i => (i.cc || "").toUpperCase() === code).length }));
+  const max = Math.max(1, ...counts.map(c => c.n));
+  const weekHtml = counts.length > 1 ? `<div class="cn-h">Notizie negli ultimi giorni</div><div class="cn-week">${counts.map(c => `<div><i style="height:${Math.round(4 + 40 * c.n / max)}px"></i>${esc(shortDate(c.d))}<b style="color:var(--ink)">${c.n}</b></div>`).join("")}</div>` : "";
+  const st = {};
+  week.forEach(d => itemsOf(d).forEach(i => { if ((i.cc || "").toUpperCase() === code && i.story){ const k = storyKey(i.story); if (!k) return; st[k] = st[k] || { label: storyLabelOf(i), n: 0 }; st[k].n++; } }));
+  const stories = Object.entries(st).sort((a, b) => b[1].n - a[1].n).slice(0, 8);
+  const storiesHtml = stories.length ? `<div class="cn-h">Storie aperte</div><div class="followbar" style="flex-wrap:wrap">${stories.map(([k, v]) => `<button class="chip" data-story="${esc(k)}" data-flabel="${esc(v.label)}"><b>${esc(v.label)}</b><small>${v.n}</small></button>`).join("")}</div>` : "";
+  if (state.sheetTitle !== name || !$("#sheet").classList.contains("open")) return;
+  state.sheetHtml = build(weekHtml, storiesHtml); renderSheet(); wire();
+}
+function openRegionOld(code, mapName){
   const name = countryName(code) || mapName || code;
   const its = items().filter(i => (i.cc || "").toUpperCase() === String(code).toUpperCase()).sort((a, b) => (b.weight || 1) - (a.weight || 1));
   stopTour();
@@ -1522,6 +1671,7 @@ function showLegend(){
     <div class="lgrow"><span class="lg lg-zone" style="--c:#f08a24"></span><span><b>Paese europeo colorato:</b> allerta meteo in corso in quel Paese, con lo stesso codice di colori.</span></div>
     <div class="lgrow"><span class="lg lg-wx">☁︎ 14°</span><span><b>Meteo nelle città:</b> simbolo del tempo previsto e temperatura massima. Avvicinandoti compaiono altre città.</span></div>` : ""}
     <div class="lgrow"><span class="lg lg-dot"></span><span><b>Cerchio con simbolo: una notizia.</b> Il colore indica il tema, la grandezza l'importanza. Toccalo per leggerla.<span class="lgcats">${cats}</span></span></div>
+    <div class="lgrow"><span class="lg lg-dot" style="box-shadow:0 0 0 2px #fff inset"></span><span><b>Punti piccoli con bordo bianco: notizie locali</b> delle regioni italiane. Compaiono quando ti avvicini a una regione.</span></div>
     <div class="lgrow"><span class="lg lg-cl"><i>3</i></span><span><b>Cerchio con numero: più notizie vicine.</b> Toccalo per avvicinarti e separarle.</span></div>
     <div class="lgrow"><span class="lg lg-pulse" style="--c:#c4372b"></span><span><b>Cerchi che si allargano:</b> evento in corso o appena avvenuto.</span></div>
     <div class="lgrow"><span class="lg lg-strike"></span><span><b>Curva tratteggiata con punti in movimento:</b> un attacco (missili, droni, raid), da dove parte a dove colpisce. Il punto di partenza è indicativo.</span></div>
@@ -1590,6 +1740,91 @@ function renderAll(){
 }
 
 $("#hlBtn").addEventListener("click", () => { const w = $("#hlWrap"); const open = !w.classList.contains("open"); w.classList.toggle("open", open); $("#hlBtn").setAttribute("aria-expanded", String(open)); });
+/* ---------- places for the search: Italian provincial capitals and European capitals ---------- */
+const PLACES = (function(){
+  const IT = "Agrigento 37.31 13.58|Alessandria 44.91 8.61|Ancona 43.62 13.52|Aosta 45.74 7.32|Arezzo 43.46 11.88|Ascoli Piceno 42.85 13.58|Asti 44.90 8.21|Avellino 40.91 14.79|Bari 41.12 16.87|Barletta 41.32 16.28|Belluno 46.14 12.22|Benevento 41.13 14.78|Bergamo 45.70 9.67|Biella 45.57 8.05|Bologna 44.49 11.34|Bolzano 46.50 11.35|Brescia 45.54 10.22|Brindisi 40.63 17.94|Cagliari 39.22 9.12|Caltanissetta 37.49 14.06|Campobasso 41.56 14.66|Caserta 41.07 14.33|Catania 37.50 15.09|Catanzaro 38.91 16.59|Chieti 42.35 14.17|Como 45.81 9.09|Cosenza 39.30 16.25|Cremona 45.13 10.02|Crotone 39.08 17.13|Cuneo 44.39 7.55|Enna 37.57 14.28|Fermo 43.16 13.72|Ferrara 44.84 11.62|Firenze 43.77 11.26|Foggia 41.46 15.55|Forlì 44.22 12.04|Frosinone 41.64 13.34|Genova 44.41 8.93|Gorizia 45.94 13.62|Grosseto 42.76 11.11|Imperia 43.89 8.03|Isernia 41.59 14.23|L'Aquila 42.35 13.40|La Spezia 44.10 9.82|Latina 41.47 12.90|Lecce 40.35 18.17|Lecco 45.86 9.40|Livorno 43.55 10.31|Lodi 45.31 9.50|Lucca 43.84 10.50|Macerata 43.30 13.45|Mantova 45.16 10.79|Massa 44.04 10.14|Matera 40.67 16.60|Messina 38.19 15.55|Milano 45.46 9.19|Modena 44.65 10.93|Monza 45.58 9.27|Napoli 40.85 14.27|Novara 45.45 8.62|Nuoro 40.32 9.33|Oristano 39.90 8.59|Padova 45.41 11.88|Palermo 38.12 13.36|Parma 44.80 10.33|Pavia 45.19 9.16|Perugia 43.11 12.39|Pesaro 43.91 12.91|Pescara 42.46 14.21|Piacenza 45.05 9.69|Pisa 43.72 10.40|Pistoia 43.93 10.91|Pordenone 45.96 12.66|Potenza 40.64 15.80|Prato 43.88 11.10|Ragusa 36.93 14.73|Ravenna 44.42 12.20|Reggio Calabria 38.11 15.65|Reggio Emilia 44.70 10.63|Rieti 42.40 12.86|Rimini 44.06 12.57|Roma 41.90 12.50|Rovigo 45.07 11.79|Salerno 40.68 14.77|Sassari 40.73 8.56|Savona 44.31 8.48|Siena 43.32 11.33|Siracusa 37.08 15.29|Sondrio 46.17 9.87|Taranto 40.47 17.24|Teramo 42.66 13.70|Terni 42.56 12.65|Torino 45.07 7.69|Trapani 38.02 12.51|Trento 46.07 11.12|Treviso 45.67 12.24|Trieste 45.65 13.78|Udine 46.06 13.24|Varese 45.82 8.83|Venezia 45.44 12.33|Verbania 45.92 8.55|Vercelli 45.32 8.42|Verona 45.44 10.99|Vibo Valentia 38.68 16.10|Vicenza 45.55 11.55|Viterbo 42.42 12.11|Carbonia 39.17 8.52|Andria 41.23 16.29|Trani 41.28 16.42|Cesena 44.14 12.24|Urbino 43.73 12.64";
+  const RG = "Lombardia 45.62 9.85|Piemonte 45.05 7.92|Valle d'Aosta 45.74 7.38|Liguria 44.27 8.70|Veneto 45.65 11.85|Trentino-Alto Adige 46.43 11.17|Friuli Venezia Giulia 46.08 13.05|Emilia-Romagna 44.52 11.00|Toscana 43.45 11.10|Umbria 42.97 12.49|Marche 43.35 13.15|Lazio 41.98 12.77|Abruzzo 42.23 13.85|Molise 41.68 14.60|Campania 40.86 14.84|Puglia 41.00 16.62|Basilicata 40.50 16.08|Calabria 39.07 16.35|Sicilia 37.55 14.10|Sardegna 40.05 9.03";
+  const EU = "Parigi 48.86 2.35|Berlino 52.52 13.40|Madrid 40.42 -3.70|Londra 51.51 -0.13|Lisbona 38.72 -9.14|Dublino 53.35 -6.26|Bruxelles 50.85 4.35|Amsterdam 52.37 4.90|Lussemburgo 49.61 6.13|Berna 46.95 7.45|Ginevra 46.20 6.15|Zurigo 47.38 8.54|Vienna 48.21 16.37|Copenaghen 55.68 12.57|Oslo 59.91 10.75|Stoccolma 59.33 18.07|Helsinki 60.17 24.94|Reykjavik 64.15 -21.94|Varsavia 52.23 21.01|Praga 50.08 14.44|Bratislava 48.15 17.11|Budapest 47.50 19.04|Lubiana 46.06 14.51|Zagabria 45.81 15.98|Sarajevo 43.86 18.41|Belgrado 44.79 20.45|Podgorica 42.44 19.26|Skopje 42.00 21.43|Tirana 41.33 19.82|Pristina 42.66 21.17|Atene 37.98 23.73|Nicosia 35.17 33.36|La Valletta 35.90 14.51|Sofia 42.70 23.32|Bucarest 44.43 26.10|Chisinau 47.01 28.86|Kiev 50.45 30.52|Leopoli 49.84 24.03|Odessa 46.48 30.72|Kharkiv 49.99 36.23|Minsk 53.90 27.56|Mosca 55.76 37.62|San Pietroburgo 59.94 30.31|Vilnius 54.69 25.28|Riga 56.95 24.11|Tallinn 59.44 24.75|Ankara 39.93 32.86|Istanbul 41.01 28.98|Tbilisi 41.72 44.79|Erevan 40.18 44.51|Baku 40.41 49.87|Gerusalemme 31.77 35.21|Tel Aviv 32.09 34.78|Gaza 31.50 34.47|Beirut 33.89 35.50|Damasco 33.51 36.29|Amman 31.95 35.93|Il Cairo 30.04 31.24|Tripoli 32.89 13.19|Tunisi 36.81 10.18|Algeri 36.75 3.06|Rabat 34.02 -6.83|Barcellona 41.39 2.17|Monaco di Baviera 48.14 11.58|Francoforte 50.11 8.68|Amburgo 53.55 9.99|Marsiglia 43.30 5.37|Lione 45.76 4.84|Nizza 43.70 7.27|Strasburgo 48.57 7.75|Città del Vaticano 41.90 12.45|San Marino 43.94 12.45|Monaco 43.74 7.42|Andorra 42.51 1.52";
+  const parse = (s, kind) => s.split("|").map(r => { const m = r.match(/^(.*) (-?[\d.]+) (-?[\d.]+)$/); return m ? { name: m[1], lat: +m[2], lng: +m[3], kind } : null; }).filter(Boolean);
+  return parse(IT, "città").concat(parse(RG, "regione"), parse(EU, "città"));
+})();
+const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9' ]/g, " ").replace(/\s+/g, " ").trim();
+
+function kmLL(a, b){ const R = 6371, r = Math.PI / 180; const dLa = (b.lat - a.lat) * r, dLo = (b.lng - a.lng) * r; const x = Math.sin(dLa/2)**2 + Math.cos(a.lat*r) * Math.cos(b.lat*r) * Math.sin(dLo/2)**2; return 2 * R * Math.asin(Math.sqrt(x)); }
+function newsNear(pt, radius){
+  return allItems().filter(hasCoords).map(it => ({ it, d: kmLL(pt, it) })).filter(x => x.d <= radius).sort((a, b) => a.d - b.d).map(x => x.it);
+}
+function openPlace(name, pt, radius){
+  if (!isWide()) setView("map");
+  setTimeout(() => {
+    MAP.ensure(); closeSheet();
+    MAP.flyTo(pt.lat, pt.lng, radius > 60 ? 18 : 60, 1300);
+    let list = newsNear(pt, radius);
+    let note = `<div class="arcnote">Notizie entro ${radius} km da ${esc(name)}, dalla più vicina.</div>`;
+    if (!list.length){ list = allItems().filter(hasCoords).sort((a, b) => kmLL(pt, a) - kmLL(pt, b)).slice(0, 6); note = `<div class="arcnote">Oggi nessuna notizia entro ${radius} km da ${esc(name)}. Ecco le più vicine.</div>`; }
+    showSheet(name, list, 0, null, note);
+  }, 60);
+}
+/* near me: only where the device lets the page ask for the position (the installed app) */
+(function(){
+  const btn = $("#zNear");
+  const site = !(window.claude && typeof window.claude.use === "function") && /^https?:$/.test(location.protocol) && !/claude\.ai|claudeusercontent/.test(location.hostname);
+  if (!site || !("geolocation" in navigator)) return;
+  btn.hidden = false;
+  btn.addEventListener("click", () => {
+    stopTour(); hideHint();
+    btn.style.opacity = ".5";
+    navigator.geolocation.getCurrentPosition(pos => {
+      btn.style.opacity = "";
+      const pt = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      MAP.setMe(pt.lat, pt.lng);
+      openPlace("te", pt, 50);
+      setTimeout(() => { if (state.sheetTitle === "te") { state.sheetTitle = "Vicino a te"; renderSheet(); } }, 120);
+    }, err => {
+      btn.style.opacity = "";
+      showInfo("Vicino a te", `<div class="empty" style="padding:12px">${err && err.code === 1 ? "Per vedere le notizie vicine consenti a Mappamondo di usare la posizione (Impostazioni › Privacy › Localizzazione › Siti web di Safari)." : "Non riesco a trovare la tua posizione in questo momento."}</div>`);
+    }, { enableHighAccuracy: false, timeout: 12000, maximumAge: 600000 });
+  });
+})();
+/* search: places, countries, news */
+(function(){
+  const box = $("#searchbox"), inp = $("#sbIn"), res = $("#sbRes");
+  const PIN = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>`;
+  const FLAG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>`;
+  let countries = null;
+  function countryIndex(){
+    if (countries) return countries;
+    const codes = new Set();
+    try { (GEO && GEO.paths ? Object.keys(GEO.paths) : []).forEach(c => codes.add(c.toUpperCase())); } catch(e){}
+    allItems().forEach(i => i.cc && codes.add(String(i.cc).toUpperCase()));
+    countries = [...codes].filter(c => /^[A-Z]{2}$/.test(c)).map(c => ({ cc: c, name: countryName(c) })).filter(c => c.name && c.name !== c.cc);
+    return countries;
+  }
+  function run(){
+    const q = norm(inp.value);
+    if (q.length < 2){ res.innerHTML = `<div class="sb-empty">Scrivi almeno due lettere: una città (per esempio Bergamo), un Paese (Francia) o un tema (sciopero, Champions, manovra).</div>`; return; }
+    const words = q.split(" ");
+    const hit = s => { const n = norm(s); return words.every(w => n.includes(w)); };
+    const starts = s => norm(s).startsWith(q);
+    const pl = PLACES.filter(p => hit(p.name)).sort((a, b) => (starts(b.name) - starts(a.name)) || a.name.length - b.name.length).slice(0, 5);
+    const cs = countryIndex().filter(c => hit(c.name)).sort((a, b) => (starts(b.name) - starts(a.name))).slice(0, 4);
+    const ns = allItems().map(it => ({ it, sc: (hit(it.title) ? 3 : 0) + (hit(it.place || "") ? 2 : 0) + (hit((it.storyLabel || "") + " " + (it.region || "")) ? 2 : 0) + (hit(it.text || "") ? 1 : 0) })).filter(x => x.sc > 0).sort((a, b) => b.sc - a.sc || (b.it.weight || 1) - (a.it.weight || 1)).slice(0, 12).map(x => x.it);
+    let h = "";
+    if (pl.length) h += `<div class="sb-h">Luoghi</div>` + pl.map((p, i) => `<button data-pl="${i}"><span class="ic">${PIN}</span><span>${esc(p.name)}<small>${esc(p.kind)} · ${newsNear(p, p.kind === "regione" ? 120 : 30).length} notizie vicine</small></span></button>`).join("");
+    if (cs.length) h += `<div class="sb-h">Paesi</div>` + cs.map(c => `<button data-cc="${esc(c.cc)}"><span class="ic">${FLAG}</span><span>${esc(c.name)}<small>scheda del Paese</small></span></button>`).join("");
+    if (ns.length) h += `<div class="sb-h">Notizie</div>` + ns.map((it, i) => { const c = catOf(it); return `<button data-n="${i}"><span class="ic" style="background:${c.c};color:#fff">${iconSvg(iconOf(it))}</span><span>${esc(it.title)}<small>${esc(it.place || "")}${it.local ? " · locale" : ""}</small></span></button>`; }).join("");
+    res.innerHTML = h || `<div class="sb-empty">Nessun risultato per «${esc(inp.value)}» nelle notizie di oggi.</div>`;
+    res.querySelectorAll("[data-pl]").forEach(b => b.addEventListener("click", () => { const p = pl[+b.dataset.pl]; close(); openPlace(p.name, p, p.kind === "regione" ? 120 : 30); }));
+    res.querySelectorAll("[data-cc]").forEach(b => b.addEventListener("click", () => { const cc = b.dataset.cc; close(); if (!isWide()) setView("map"); setTimeout(() => { MAP.ensure(); MAP.flyToCountry(cc); showCountry(cc); }, 60); }));
+    res.querySelectorAll("[data-n]").forEach(b => b.addEventListener("click", () => { const it = ns[+b.dataset.n]; close(); if (inRegion(it)) focusItem(it.id); else showSheet(it.place || "Notizia", [it], 0); }));
+  }
+  function open(){ stopTour(); hideHint(); closeSheet(); box.classList.add("open"); countries = null; run(); setTimeout(() => inp.focus(), 30); }
+  function close(){ box.classList.remove("open"); inp.blur(); }
+  $("#zSearch").addEventListener("click", () => box.classList.contains("open") ? close() : open());
+  $("#sbClose").addEventListener("click", close);
+  let tm = null; inp.addEventListener("input", () => { clearTimeout(tm); tm = setTimeout(run, 120); });
+  inp.addEventListener("keydown", e => { if (e.key === "Escape") close(); if (e.key === "Enter"){ const f = res.querySelector("button"); if (f) f.click(); } });
+})();
 /* ---------- badges for news added or changed by the midday / evening update ---------- */
 function newBadge(it){
   if (it.isNew) return `<span class="badge-new">Nuova${it.newAt ? " " + esc(it.newAt) : ""}</span>`;
@@ -1776,7 +2011,7 @@ document.addEventListener("click", ev => {
   const b = ev.target.closest("[data-ask]"); if (!b) return;
   ev.stopPropagation(); ev.preventDefault();
   const id = b.dataset.ask;
-  const it = items().find(i => i.id === id) || (RD.list || []).find(i => i.id === id);
+  const it = allItems().find(i => i.id === id) || (RD.list || []).find(i => i.id === id);
   ASK.open(it);
 }, true);
 
@@ -1977,13 +2212,14 @@ $("#backToday").addEventListener("click", () => backToToday());
 
 /* ---------- boot ---------- */
 /* data source: the artifact database inside Claude, or the site's own JSON files when installed as a web app */
+const FILES = { "editions/latest": "data/latest.json", "editions/local": "data/local.json", "reference/countries": "data/countries.json" };
 function staticDb(){
   const get = async (path) => { const r = await fetch(path + (path.includes("?") ? "&" : "?") + "t=" + Math.floor(Date.now() / 60000), {cache: "no-cache"}); if (!r.ok) throw new Error(r.status); return r.json(); };
   return {
     doc(path){ return { onSnapshot(cb, err){
       let last = ""; let stop = false;
-      const tick = async () => { if (stop) return; try { const d = await get("data/latest.json"); const k = d.updatedAt || ""; if (k !== last){ last = k; cb({exists: true, data: () => d, metadata: {fromCache: false}}); } } catch(e){ if (!last && err) err(e); } };
-      tick(); const iv = setInterval(tick, 5 * 60 * 1000);
+      const tick = async () => { if (stop) return; try { const d = await get(FILES[path] || "data/latest.json"); const k = d.updatedAt || ""; if (k !== last){ last = k; cb({exists: true, data: () => d, metadata: {fromCache: false}}); } } catch(e){ if (!last && err) err(e); } };
+      tick(); const iv = setInterval(tick, (path === "editions/latest" ? 5 : 30) * 60 * 1000);
       document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
       return () => { stop = true; clearInterval(iv); };
     } }; },
@@ -2024,6 +2260,12 @@ if (IS_SITE && "serviceWorker" in navigator) { window.addEventListener("load", (
     clearTimeout(timer);
     if (!state.latest) body.innerHTML = `<div class="empty">Non riesco a caricare le notizie in questo momento.</div>`;
   });
+  try { db.doc("editions/local").onSnapshot(snap => {
+    if (!snap.exists) return;
+    const d = snap.data(); if (!d || (state.local && state.local.updatedAt === d.updatedAt && state.local.date === d.date)) return;
+    state.local = d; if (state.edition){ const y = $("#listPane").scrollTop; renderList(); renderFilters(); $("#listPane").scrollTop = y; MAP.render(); }
+  }, () => {}); } catch(e){}
+  try { db.doc("reference/countries").onSnapshot(snap => { if (snap.exists) state.countries = snap.data(); }, () => {}); } catch(e){}
 })();
 })();
 </script>
