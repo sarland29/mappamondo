@@ -2,12 +2,12 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#f3efe7">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Mappamondo">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <title>Mappamondo — le notizie del giorno</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,10 @@ html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-fam
 button{font:inherit;color:inherit;cursor:pointer}
 a{color:inherit}
 .app{display:flex;flex-direction:column;height:100%}
-header.top{padding:14px 18px 10px;border-bottom:1px solid var(--line);background:var(--paper);position:relative;z-index:5}
+.sbscrim{position:fixed;left:0;right:0;top:0;height:env(safe-area-inset-top,0px);pointer-events:none;z-index:60;background:linear-gradient(rgba(25,22,18,.42),rgba(25,22,18,0))}
+@media (prefers-color-scheme:dark){.sbscrim{display:none}}
+
+header.top{padding:calc(14px + env(safe-area-inset-top)) 18px 10px;border-bottom:1px solid var(--line);background:var(--paper);position:relative;z-index:5}
 .brand{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
 .brand h1{font-family:"Newsreader",Georgia,serif;font-weight:650;font-size:26px;letter-spacing:-.01em;margin:0}
 .brand h1 span{color:var(--accent)}
@@ -169,6 +172,20 @@ nav.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);op
 .cn-src{font-size:11.5px;color:var(--muted);margin-top:10px;line-height:1.4}
 .cn-src a{color:inherit}
 #map .me .halo{fill:#2f6fd9;opacity:.18}
+#map .land path.fav{stroke:#d9a21b;stroke-width:1.6px;vector-effect:non-scaling-stroke}
+#map .favmk{cursor:pointer}
+#map .fav-layer.compact text{display:none}
+#map .fav-layer.compact .fs{transform:translate(14px,-30px) scale(.62)}
+#map .favmk .fs{fill:#f2b81f;stroke:#fff;stroke-width:1.6;paint-order:stroke}
+#map .favmk text{font:700 11px "Inter Tight",system-ui,sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
+.favbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px 6px 9px;font:inherit;font-size:13px;font-weight:700;margin:0 2px 10px}
+.favbtn svg{width:16px;height:16px;color:#d9a21b}
+.favbtn.on{background:#fbf0d2;border-color:#e8c766}
+@media (prefers-color-scheme:dark){.favbtn.on{background:#3a3020;border-color:#7a6224}}
+.favbar{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:none}
+.favbar::-webkit-scrollbar{display:none}
+.favbar .chip svg{width:13px;height:13px;color:#d9a21b}
+.favhint{font-size:12.5px;color:var(--muted);margin:2px 2px 12px;line-height:1.4}
 #map .me .core{fill:#2f6fd9;stroke:#fff;stroke-width:3px}
 .searchbox{position:absolute;left:8px;right:8px;top:8px;z-index:35;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.22);padding:8px;display:none;max-height:calc(100% - 110px);flex-direction:column}
 .searchbox.open{display:flex}
@@ -216,6 +233,44 @@ nav.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);op
 .lp-now{border:1px solid var(--line);background:transparent;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:700;color:var(--ink)}
 .lp-time{font-size:13px;font-weight:800;min-width:96px;text-align:right;line-height:1.15}
 .lp-note{font-size:11.5px;color:var(--muted);text-align:center}
+.lp-ddwrap{position:relative}
+.lp-dd{width:100%;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:12px;padding:8px 10px;font:inherit;font-size:13px;text-align:left}
+.lp-dd small{color:var(--muted);font-weight:600;flex:none}
+.lp-dd b{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lp-dd svg{width:16px;height:16px;flex:none;transition:transform .2s}
+.lp-dd[aria-expanded="true"] svg{transform:rotate(180deg)}
+.lp-menu{position:absolute;left:0;right:0;bottom:calc(100% + 6px);background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.22);padding:6px;z-index:5}
+.lp-menu[hidden]{display:none}
+.lp-mi{width:100%;display:flex;align-items:center;gap:10px;border:0;background:transparent;color:var(--ink);padding:9px 8px;border-radius:10px;font:inherit;font-size:14px;text-align:left}
+.lp-mi:active{background:var(--line)}
+.lp-mi .ck{width:20px;height:20px;border-radius:6px;border:2px solid var(--line);flex:none;display:flex;align-items:center;justify-content:center}
+.lp-mi[aria-checked="true"] .ck{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.lp-mi .ck svg{width:13px;height:13px;opacity:0}
+.lp-mi[aria-checked="true"] .ck svg{opacity:1}
+.lp-mi span.tx{flex:1;display:flex;flex-direction:column}
+.lp-mi span.tx small{color:var(--muted);font-size:11.5px;line-height:1.3}
+.lp-sun{font-size:12px;color:var(--ink);text-align:center;line-height:1.4}
+#map .ltemp text.lext{font-size:10.5px;font-weight:700;paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round;fill:var(--ink)}
+#map .lnight{fill:#0b1a3a;opacity:.26;pointer-events:none}
+@media (prefers-color-scheme:dark){#map .lnight{fill:#000;opacity:.4}}
+#map .lq{cursor:pointer}
+#map .lq circle.r{fill:#c4372b;fill-opacity:.28;stroke:#c4372b;stroke-width:1.5}
+#map .lq.old circle.r{fill:#e07a1f;stroke:#e07a1f;fill-opacity:.2}
+#map .lq text{font:800 10px "Inter Tight",system-ui,sans-serif;fill:#fff;pointer-events:none}
+#map .lq .pulse{fill:none;stroke:#c4372b;stroke-width:2;animation:qpulse 1.8s ease-out infinite}
+@keyframes qpulse{from{r:4;opacity:.9}to{r:26;opacity:0}}
+.fc-air{display:flex;align-items:center;gap:10px;margin:2px 2px 6px}
+.fc-air .aq{min-width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;color:#fff}
+.fc-air span{font-size:13px;line-height:1.4}
+.fc-air small{display:block;color:var(--muted);font-size:11.5px}
+.fc-pol{display:flex;flex-wrap:wrap;gap:6px;margin:0 2px 6px}
+.fc-pol span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+.fc-sun{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:2px 2px 6px}
+.fc-sun div{border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center;font-size:11.5px;color:var(--muted)}
+.fc-sun b{display:block;font-size:16px;color:var(--ink);margin-top:2px}
+.qrow{display:flex;gap:10px;align-items:center;padding:8px 2px;border-bottom:1px solid var(--line);font-size:13px}
+.qrow .m{min-width:40px;height:32px;border-radius:9px;background:#c4372b;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.qrow small{display:block;color:var(--muted);font-size:11.5px}
 .fc-now{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
 .fc-now .fc-ico svg{width:44px;height:44px}
 .fc-now b{font-size:30px;font-family:"Newsreader",serif;margin-right:8px}
@@ -495,6 +550,7 @@ window.jsVectorMap = { addMap: function(name, data){ window.__MM_MAPS[name] = da
 <body>
 <svg class="hiddendefs" aria-hidden="true"><defs><g id="mm-world"></g></defs></svg>
 <div class="app" id="app" data-view="list">
+  <div class="sbscrim" aria-hidden="true"></div>
   <header class="top">
     <div class="brand">
       <h1>Mappa<span>mondo</span></h1>
@@ -520,8 +576,8 @@ window.jsVectorMap = { addMap: function(name, data){ window.__MM_MAPS[name] = da
     <section class="pane" id="mapPane" aria-label="Mappa">
       <div id="map"></div>
       <div class="mapbar"><div class="filters" id="mapFilters"></div></div>
-      <button class="tourbtn" id="tourBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span>Giro d'Europa</span></button>
-      <button class="rwbtn" id="rwBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 109-9 9.5 9.5 0 00-6.5 2.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></svg><span>Riavvolgi</span></button>
+      <button class="tourbtn" id="tourBtn" hidden style="display:none"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span>Giro d'Europa</span></button>
+      <button class="rwbtn" id="rwBtn" hidden style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 109-9 9.5 9.5 0 00-6.5 2.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></svg><span>Riavvolgi</span></button>
       <div class="rewind" id="rewind" role="region" aria-label="Riavvolgi i giorni">
         <div class="rw-top">
           <button id="rwPlay" aria-label="Avvia"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
@@ -540,8 +596,8 @@ window.jsVectorMap = { addMap: function(name, data){ window.__MM_MAPS[name] = da
       <div class="zoombtns">
         <button id="zSearch" aria-label="Cerca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></button>
         <button id="zNear" aria-label="Vicino a me" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg></button>
-        <button id="zIn" aria-label="Avvicina">+</button>
-        <button id="zOut" aria-label="Allontana">−</button>
+        <button id="zIn" aria-label="Avvicina" hidden style="display:none">+</button>
+        <button id="zOut" aria-label="Allontana" hidden style="display:none">−</button>
         <button id="zHelp" aria-label="Legenda" style="font-size:17px;font-weight:700">?</button>
         <button id="zHome" aria-label="Vista iniziale"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></button>
       </div>
@@ -782,7 +838,7 @@ const state = {
   latest: null, edition: null, archiveMode: false, rewinding: false,
   listMode: (function(){ try { return localStorage.getItem('mm_listmode') === 'grid' ? 'grid' : 'full'; } catch(e){ return 'full'; } })(),
   cats: new Set(Object.keys(CATS)),
-  layer: (function(){ try { const v = localStorage.getItem('mm_layer'); return ['top','geo','meteo','sport','eco','pol','trasp','events','hot','all'].includes(v) ? v : 'top'; } catch(e){ return 'top'; } })(),
+  layer: (function(){ try { const v = localStorage.getItem('mm_layer'); return ['top','geo','meteo','sport','eco','pol','trasp','events','all'].includes(v) ? v : 'top'; } catch(e){ return 'top'; } })(),
   sheetList: [], sheetIdx: 0, read: new Set(), selected: null
 };
 try { const r = JSON.parse(localStorage.getItem("mm_read") || "[]"); if (Array.isArray(r)) r.slice(-400).forEach(x => state.read.add(x)); } catch(e){}
@@ -896,8 +952,6 @@ const LAYERS = {
   trasp: { l: "Trasporti e scioperi", i: "train", d: "Scioperi di treni, aerei, mezzi pubblici e altri servizi, con date e orari; grandi disagi.", fxAlways: true,
          test: it => inLayerTag(it, "trasporti") },
   events: { l: "Eventi", i: "ticket", d: "Concerti, festival, mostre, teatro, fiere, sagre e grandi eventi: oggi e nei prossimi 30 giorni.", fxAlways: false,
-         test: () => false },
-  hot: { l: "Dove si parla di più", i: "flame", d: "Paesi colorati in base a quante notizie hanno oggi. Tocca un Paese per leggerle.", fxAlways: false,
          test: () => false },
   all: { l: "Tutto", i: "layers", d: "Tutte le notizie del giorno: avvicinati per separarle e vedere linee e attacchi.", fxAlways: false,
          test: () => true }
@@ -1214,6 +1268,7 @@ function renderList(){
       <button data-lm="grid" aria-pressed="${state.listMode === "grid"}">${ICON_GRID}Griglia</button></div></div>`;
   html += `<div class="filters" id="listFilters"></div>`;
   html += followedHtml();
+  html += FAV.listHtml();
   for (const k in SECTIONS) delete SECTIONS[k];
   html += sectionHtml("pills", state.archiveMode ? "Le pillole del giorno" : "Le pillole di oggi", pills, true, true);
   html += sectionHtml("europe", "Italia ed Europa", europe, false, !pills.length);
@@ -1244,6 +1299,7 @@ function renderList(){
 /* ---------- interactive map (Europe) ---------- */
 const MAP = (function(){
   let built = false, svg, world, gLand, gFx, gMk, gCl, zoom, W = 0, H = 0, kFit = 1, kHome = 1, kMin = 1, t = null, fxId = 0;
+  let gFav = null, favNodes = [];
   let RB = null, HB = null, mkNodes = [], arcNodes = [], wxNodes = [], gW = null, clSig = "", clGroups = [], gMe = null, meNode = null, gLive = null;
   const el = $("#map");
   const CL_R = 40;
@@ -1281,6 +1337,7 @@ const MAP = (function(){
     gLive = svg.insert("g", ".markers").attr("class", "live");
     gCl = svg.append("g").attr("class", "clusters");
     gMe = svg.append("g").attr("class", "me-layer");
+    gFav = svg.insert("g", ".clusters").attr("class", "fav-layer");
     zoom = d3.zoom()
       .on("start", ev => { if (ev.sourceEvent) { stopTour(); hideHint(); } })
       .on("zoom", ev => { t = ev.transform; world.attr("transform", t); place(); });
@@ -1622,6 +1679,8 @@ const MAP = (function(){
     for (const n of mkNodes) n.g.attr("transform", `translate(${n.sx.toFixed(1)},${n.sy.toFixed(1)})`);
     for (const n of wxNodes){ const q = t.apply([n.p.x, n.p.y]); n.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
     if (window.LIVEWX) LIVEWX.onPlace();
+    if (gFav) gFav.classed("compact", state.layer === "meteo");
+    for (const n of favNodes){ const q = t.apply([n.p.x, n.p.y]); n.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
     if (meNode){ const q = t.apply([meNode.p.x, meNode.p.y]); meNode.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
     for (const n of arcNodes){
       const on = fxOn || n.it.id === state.selected;
@@ -1654,6 +1713,28 @@ const MAP = (function(){
     gCl.classed("dim", !!id);
     place();
   }
+  function setFavs(list){
+    if (!built) return;
+    gFav.selectAll("*").remove(); favNodes = [];
+    gLand.selectAll("path.fav").classed("fav", false);
+    (list || []).forEach(f => {
+      let p = null;
+      if (f.t === "c"){
+        const node = gLand.select(`path[data-cc="${String(f.cc).toUpperCase().replace(/[^A-Z-]/g, "")}"]`);
+        if (!node.node()) return;
+        node.classed("fav", true);
+        if (num(f.lat) && num(f.lng)) p = GEO.project(f.lat, f.lng);
+        else { const b = node.node().getBBox(); p = { x: b.x + b.width / 2, y: b.y + b.height / 2 }; }
+      } else if (num(f.lat) && num(f.lng)) p = GEO.project(f.lat, f.lng);
+      if (!p) return;
+      const g = gFav.append("g").attr("class", "favmk");
+      g.append("path").attr("class", "fs").attr("transform", "translate(-9,-9) scale(.75)").attr("d", "M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3l-5.8 3.1 1.1-6.5L2.6 9.3l6.5-.9z");
+      g.append("text").attr("x", 12).attr("y", 4).text(f.name);
+      g.on("click", ev => { ev.stopPropagation(); FAV.open(f); });
+      favNodes.push({ g, p });
+    });
+    place();
+  }
   function setMe(lat, lng){
     if (!built) return;
     gMe.selectAll("*").remove();
@@ -1669,10 +1750,10 @@ const MAP = (function(){
   }
   return {
     tr(){ return t; }, dims(){ return { W, H }; }, liveGroup(){ return gLive; }, svgNode(){ return svg && svg.node(); },
-    setMe, flyToCountry, zoomK(){ return t && kHome ? t.k / kHome : 1; },
+    setMe, setFavs, flyToCountry, zoomK(){ return t && kHome ? t.k / kHome : 1; },
     ensure(){
       if ($("#mapPane").offsetWidth === 0 || !state.edition) return;
-      if (!built){ if (!build()) return; render(); return; }
+      if (!built){ if (!build()) return; render(); try { FAV.paint(); } catch(e){} return; }
       const w = el.clientWidth, h = el.clientHeight;
       if (w !== W || h !== H){ size(); applyExtent(); place(); }
     },
@@ -1727,7 +1808,7 @@ async function showCountry(code, mapName){
   }
   const row = (it, i, src) => { const c = catOf(it); return `<button class="cn-row" data-src="${src}" data-i="${i}"><span class="d" style="background:${c.c}">${iconSvg(iconOf(it))}</span><span>${esc(it.title)}<small>${esc(it.place || "")}${it.local && !it.world ? " · notizia locale" : ""}</small></span></button>`; };
   const build = (weekHtml, storiesHtml) => {
-    let h = note;
+    let h = FAV.btn({ t: "c", cc: code, name }) + note;
     if (f){
       h += `<div class="cn-facts">${fact("Capitale", f.capital)}${fact("Abitanti", f.population)}${fact(f.headLabel || "Capo dello Stato", f.head, true)}${fact(f.govLabel || "Capo del governo", f.gov, true)}${fact("Lingue", f.languages)}${fact("Moneta", f.currency)}</div>`;
       const tags = [f.eu ? "Unione europea" : "", f.euro ? "Euro" : "", f.nato ? "Nato" : "", f.schengen ? "Schengen" : ""].filter(Boolean);
@@ -1799,7 +1880,10 @@ function showLegend(){
     <div class="lgrow"><span class="lg lg-alert"><i style="background:#f2c230"></i><i style="background:#f08a24"></i><i style="background:#d93a2b"></i></span><span><b>Allerte della Protezione civile</b> per regione: giallo = criticità ordinaria, arancione = moderata, rosso = elevata. Tocca il cerchio con il punto esclamativo per i dettagli.</span></div>
     <div class="lgrow"><span class="lg lg-zone" style="--c:#f08a24"></span><span><b>Paese europeo colorato:</b> allerta meteo in corso in quel Paese, con lo stesso codice di colori.</span></div>
     ${window.LIVEWX && LIVEWX.enabled ? `<div class="lgrow"><span class="lg lg-zone" style="--c:#1f5fd9"></span><span><b>Radar pioggia:</b> le macchie azzurre e blu sono la pioggia vera rilevata dai radar nelle ultime 2 ore (fonte RainViewer): più il colore è scuro, più piove forte. Col tasto ▶ le vedi muoversi.</span></div>
-    <div class="lgrow"><span class="lg lg-score" style="background:#e07a1f">14°</span><span><b>Tempo e temperature</b> come nelle cartine del meteo in tv: simbolo (sole, nuvole, pioggia, temporale, neve, nebbia) e temperatura, colorata dal blu (freddo) al rosso (caldo); la freccia indica il vento forte. Spostando il cursore verso destra vedi le previsioni ora per ora fino a 12 ore. Tocca un punto qualsiasi per le previsioni a 7 giorni (fonte Open-Meteo).</span></div>` : `<div class="lgrow"><span class="lg lg-wx">☁︎ 14°</span><span><b>Meteo nelle città:</b> simbolo del tempo previsto e temperatura massima. Avvicinandoti compaiono altre città. Radar e previsioni a 7 giorni sono nell'app installata.</span></div>`}` : ""}
+    <div class="lgrow"><span class="lg lg-score" style="background:#e07a1f">14°</span><span><b>Tempo e temperature</b> come nelle cartine del meteo in tv: simbolo (sole, nuvole, pioggia, temporale, neve, nebbia) e temperatura, colorata dal blu (freddo) al rosso (caldo); la freccia indica il vento forte. Spostando il cursore verso destra vedi le previsioni ora per ora fino a 12 ore. Tocca un punto qualsiasi per le previsioni a 7 giorni (fonte Open-Meteo).</span></div>
+    <div class="lgrow"><span class="lg lg-zone" style="--c:#c4372b;border-radius:50%"></span><span><b>Terremoti</b> (dal menu «Mostra»): le scosse delle ultime 24 ore, cerchio più grande = più forte, rosso = ultime 3 ore. Tocca un cerchio per i dettagli (fonti INGV e USGS).</span></div>
+    <div class="lgrow"><span class="lg lg-zone" style="--c:#3aa35b"></span><span><b>Qualità dell'aria:</b> il pallino colorato accanto alla città indica l'indice europeo, dal verde (buona) al viola (pessima). Toccando la mappa vedi anche i pollini.</span></div>
+    <div class="lgrow"><span class="lg lg-zone" style="--c:#0b1a3a"></span><span><b>Alba, tramonto e luna:</b> la zona scura è dove in questo momento è notte; accanto alle città gli orari del sole (ora italiana) e nel riquadro la fase lunare.</span></div>` : `<div class="lgrow"><span class="lg lg-wx">☁︎ 14°</span><span><b>Meteo nelle città:</b> simbolo del tempo previsto e temperatura massima. Avvicinandoti compaiono altre città. Radar e previsioni a 7 giorni sono nell'app installata.</span></div>`}` : ""}
     <div class="lgrow"><span class="lg lg-dot"></span><span><b>Cerchio con simbolo: una notizia.</b> Il colore indica il tema, la grandezza l'importanza. Toccalo per leggerla.<span class="lgcats">${cats}</span></span></div>
     <div class="lgrow"><span class="lg lg-dot" style="box-shadow:0 0 0 2px #fff inset"></span><span><b>Punti piccoli con bordo bianco: notizie locali</b> delle regioni italiane. Compaiono quando ti avvicini a una regione.</span></div>
     <div class="lgrow"><span class="lg lg-cl"><i>3</i></span><span><b>Cerchio con numero: più notizie vicine.</b> Toccalo per avvicinarti e separarle.</span></div>
@@ -1899,6 +1983,7 @@ function openPlace(name, pt, radius){
     if (state.layer === "meteo"){ const c = wxList("cities").filter(x => num(x.lat) && num(x.lng)).map(x => ({ x, d: kmLL(pt, x) })).sort((a, b) => a.d - b.d)[0];
       if (c && c.d < 30) note = `<div class="arcnote"><b>Meteo di oggi a ${esc(c.x.name)}:</b> ${esc((WX_NAMES && WX_NAMES[c.x.sky]) || "")}${num(c.x.tmin) ? ", minima " + Math.round(c.x.tmin) + "°" : ""}${num(c.x.tmax) ? ", massima " + Math.round(c.x.tmax) + "°" : ""}.${c.x.note ? " " + esc(c.x.note) : ""}<br><small>Le previsioni per i prossimi giorni sono nell'app installata.</small></div>` + note; }
     if (!list.length){ list = allItems().filter(hasCoords).sort((a, b) => kmLL(pt, a) - kmLL(pt, b)).slice(0, 6); note = `<div class="arcnote">Oggi nessuna notizia entro ${radius} km da ${esc(name)}. Ecco le più vicine.</div>`; }
+    if (name !== "te") note = FAV.btn({ t: "p", name, lat: pt.lat, lng: pt.lng, r: radius }) + note;
     showSheet(name, list, 0, null, note);
   }, 60);
 }
@@ -1976,19 +2061,64 @@ window.LIVEWX = (function(){
   const DIRS = ["N", "NE", "E", "SE", "S", "SO", "O", "NO"];
   const dirName = d => DIRS[Math.round(((d % 360) + 360) % 360 / 45) % 8];
   const wxSvg = k => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="${(typeof WX_ICONS !== "undefined" && WX_ICONS[k]) || ""}"/></svg>`;
-  let opts = { radar: true, temps: true };
+  let opts = { radar: true, temps: true, quakes: false, air: false, sun: false };
   try { const o = JSON.parse(localStorage.getItem("mm_livewx") || "null"); if (o && typeof o === "object") opts = Object.assign(opts, o); } catch(e){}
   const save = () => { try { localStorage.setItem("mm_livewx", JSON.stringify(opts)); } catch(e){} };
   const active = () => state.layer === "meteo" && !state.archiveMode;
+  const needCities = () => opts.temps || opts.air || opts.sun;
+  /* sun and moon, computed on the device (NOAA approximations, accurate to a minute or two) */
+  const RAD = Math.PI / 180;
+  function solar(date){
+    const start = Date.UTC(date.getUTCFullYear(), 0, 0), N = (date - start) / 864e5;
+    const B = 2 * Math.PI * (N - 81) / 364;
+    const eot = 9.87 * Math.sin(2 * B) - 7.53 * Math.cos(B) - 1.5 * Math.sin(B);
+    const decl = -23.44 * Math.cos(2 * Math.PI / 365 * (N + 10));
+    const utcH = date.getUTCHours() + date.getUTCMinutes() / 60 + date.getUTCSeconds() / 3600;
+    return { decl, eot, lng: -15 * (utcH - 12 + eot / 60) };
+  }
+  function sunTimes(lat, lng, date){
+    const d0 = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), 12));
+    const S = solar(d0);
+    const cosH = (Math.sin(-0.833 * RAD) - Math.sin(lat * RAD) * Math.sin(S.decl * RAD)) / (Math.cos(lat * RAD) * Math.cos(S.decl * RAD));
+    if (cosH > 1) return { polar: "night" }; if (cosH < -1) return { polar: "day" };
+    const H = Math.acos(cosH) / RAD / 15, noon = 12 - lng / 15 - S.eot / 60;
+    const at = h => new Date(d0.getTime() + (h - 12) * 3600e3);
+    return { rise: at(noon - H), set: at(noon + H), len: 2 * H };
+  }
+  const hm = d => d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+  function moon(date){
+    const syn = 29.530588853, ref = Date.UTC(2000, 0, 6, 18, 14);
+    const age = (((date - ref) / 864e5) % syn + syn) % syn, f = age / syn;
+    const ill = Math.round((1 - Math.cos(2 * Math.PI * f)) / 2 * 100);
+    const names = ["Luna nuova", "Falce crescente", "Primo quarto", "Gibbosa crescente", "Luna piena", "Gibbosa calante", "Ultimo quarto", "Falce calante"];
+    const wax = f < 0.5;
+    const name = ill <= 3 ? names[0] : ill >= 97 ? names[4] : Math.abs(ill - 50) <= 6 ? (wax ? names[2] : names[6]) : ill < 50 ? (wax ? names[1] : names[7]) : (wax ? names[3] : names[5]);
+    const toFull = ((0.5 - f + 1) % 1) * syn, toNew = ((1 - f) % 1) * syn;
+    return { name, ill, age, toFull, toNew };
+  }
+  const MOONI = f => { const r = 9, k = Math.cos(2 * Math.PI * f), right = f < 0.5; const rx = Math.abs(k) * r;
+    return `<svg viewBox="-11 -11 22 22" width="18" height="18" style="vertical-align:-4px"><circle r="${r}" fill="#2b3550"/><path d="M0,-${r} A${r},${r} 0 0 ${right ? 1 : 0} 0,${r} A${rx.toFixed(2)},${r} 0 0 ${(k > 0) === right ? 0 : 1} 0,-${r}Z" fill="#f4e6b8"/></svg>`; };
+  /* air quality (European AQI) */
+  const AQI = v => v == null ? null : v <= 20 ? ["#3aa35b", "buona"] : v <= 40 ? ["#a6c23a", "discreta"] : v <= 60 ? ["#e0b01f", "moderata"] : v <= 80 ? ["#e07a1f", "scadente"] : v <= 100 ? ["#c4372b", "cattiva"] : ["#7a2a7f", "pessima"];
+  const AQ = "https://air-quality-api.open-meteo.com/v1/air-quality";
+  const acache = new Map();
+  /* subgroups inside the live layer of the map */
+  function sub(cls, first){ const g = MAP.liveGroup(); if (!g) return null; let a = g.select("g." + cls); if (a.empty()) a = first ? g.insert("g", ":first-child").attr("class", cls) : g.append("g").attr("class", cls); return a; }
 
   /* ---- controls panel shown in the weather layer ---- */
   const panel = document.createElement("div");
   panel.className = "livepanel"; panel.hidden = true;
-  panel.innerHTML = `<div class="lp-row"><button class="lp-t" data-o="radar" aria-pressed="true"><span class="sw sw-rain"></span>Radar pioggia</button><button class="lp-t" data-o="temps" aria-pressed="true"><span class="sw sw-temp"></span>Tempo e temperature</button></div>
+  const OPTS = [["radar", "Radar pioggia", "Pioggia vera delle ultime 2 ore"], ["temps", "Tempo e temperature", "Simboli e gradi nelle città, previsioni ora per ora"], ["quakes", "Terremoti", "Scosse delle ultime 24 ore"], ["air", "Qualità dell'aria", "Indice europeo nelle città, più pollini"], ["sun", "Alba, tramonto e luna", "Dove è notte, orari del sole, fase lunare"]];
+  const CHECK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`;
+  panel.innerHTML = `<div class="lp-ddwrap"><button class="lp-dd" aria-expanded="false" aria-haspopup="true"><small>Mostra</small><b class="lp-ddl"></b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
+      <div class="lp-menu" role="menu" hidden>${OPTS.map(o => `<button class="lp-mi" role="menuitemcheckbox" data-o="${o[0]}" aria-checked="false"><span class="ck">${CHECK}</span><span class="tx">${o[1]}<small>${o[2]}</small></span></button>`).join("")}</div></div>
     <div class="lp-row lp-radar"><button class="lp-play" aria-label="Riproduci le ultime 2 ore"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button><input type="range" class="lp-range" min="0" max="0" value="0" aria-label="Ora: radar delle ultime 2 ore, poi previsione delle prossime 12"><span class="lp-time">—</span></div>
     <div class="lp-scale"><span>‹ 2 ore fa · radar</span><button class="lp-now">Adesso</button><span>previsioni 12 ore ›</span></div>
-    <div class="lp-key"><span>Pioggia:</span><i style="background:#9fd0ff"></i>debole<i style="background:#3d82ec"></i>moderata<i style="background:#1f3fa8"></i>forte<i style="background:#c43ca0"></i>molto forte</div>
-    <div class="lp-note">Tocca un punto della mappa per le previsioni dei prossimi 7 giorni.<br><small>Radar: RainViewer · Meteo: Open-Meteo</small></div>`;
+    <div class="lp-key lp-k-rain"><span>Pioggia:</span><i style="background:#9fd0ff"></i>debole<i style="background:#3d82ec"></i>moderata<i style="background:#1f3fa8"></i>forte<i style="background:#c43ca0"></i>molto forte</div>
+    <div class="lp-key lp-k-q"><span>Terremoti:</span><i style="background:#c4372b;border-radius:50%;width:9px;height:9px"></i>ultime 3 ore<i style="background:#e07a1f;border-radius:50%;width:9px;height:9px"></i>fino a 24 ore</div>
+    <div class="lp-key lp-k-air"><span>Aria: buona</span><i style="background:#3aa35b;margin-left:3px"></i><i style="background:#a6c23a;margin-left:0"></i><i style="background:#e0b01f;margin-left:0"></i><i style="background:#e07a1f;margin-left:0"></i><i style="background:#c4372b;margin-left:0"></i><i style="background:#7a2a7f;margin-left:0;margin-right:3px"></i>pessima</div>
+    <div class="lp-sun"></div>
+    <div class="lp-note">Tocca la mappa per le previsioni a 7 giorni.<br><small class="lp-src">Meteo e aria: Open-Meteo</small></div>`;
   $("#map").parentNode.appendChild(panel);
   const cv = document.createElement("canvas"); cv.className = "radarcv"; $("#map").appendChild(cv);
   const ctx = cv.getContext("2d");
@@ -2140,16 +2270,26 @@ window.LIVEWX = (function(){
     const cand = PLACES.filter(p => p.kind === "città").map(p => { const q = scr(p.lat, p.lng, t); return { p, x: q[0], y: q[1], rank: BIG.has(p.name) ? BIG.get(p.name) : 999 }; })
       .filter(c => c.x > 12 && c.x < D.W - 84 && c.y > 205 && c.y < D.H - 150);
     cand.sort((a, b) => (a.rank - b.rank) || a.p.name.localeCompare(b.p.name));
-    const minD = D.W < 600 ? 70 : 86, picked = [];
+    const minD = (D.W < 600 ? 70 : 86) * (opts.air && opts.sun ? 1.25 : 1), vy = (opts.temps ? 0.62 : 0.45) + ((opts.air || opts.sun) ? 0.22 : 0), picked = [];
     for (const c of cand){
-      if (picked.some(o => Math.abs(o.x - c.x) < minD && Math.abs(o.y - c.y) < minD * 0.62)) continue;
+      if (picked.some(o => Math.abs(o.x - c.x) < minD && Math.abs(o.y - c.y) < minD * vy)) continue;
       picked.push(c); if (picked.length >= 28) break;
     }
     return picked.map(c => ({ lat: c.p.lat, lng: c.p.lng, name: c.p.name }));
   }
+  async function loadAir(pts){
+    const need = pts.filter(p => { const c = acache.get(p.lat + "," + p.lng); return !c || Date.now() - c.at > 30 * 60e3; });
+    if (!need.length) return;
+    try {
+      const u = `${AQ}?latitude=${need.map(p => p.lat).join(",")}&longitude=${need.map(p => p.lng).join(",")}&current=european_aqi,pm2_5,pm10,ozone,nitrogen_dioxide&timezone=auto`;
+      const r = await fetch(u); const d = await r.json(); const arr = Array.isArray(d) ? d : [d];
+      arr.forEach((x, i) => { if (x && x.current && need[i]) acache.set(need[i].lat + "," + need[i].lng, { cur: x.current, at: Date.now() }); });
+    } catch(e){}
+  }
   async function loadGrid(){
-    if (!active() || !opts.temps) return;
-    const pts = gridPoints(); const need = pts.filter(p => !tcache.has(p.lat + "," + p.lng));
+    if (!active() || !needCities()) return;
+    const pts = gridPoints(); const need = opts.temps ? pts.filter(p => !tcache.has(p.lat + "," + p.lng)) : [];
+    if (opts.air) await loadAir(pts);
     if (need.length){
       try {
         const u = `${OM}?latitude=${need.map(p => p.lat).join(",")}&longitude=${need.map(p => p.lng).join(",")}&current=temperature_2m,wind_speed_10m,wind_direction_10m,weather_code&hourly=temperature_2m,weather_code,wind_speed_10m,wind_direction_10m&forecast_hours=14&timezone=auto`;
@@ -2173,8 +2313,22 @@ window.LIVEWX = (function(){
     return c.cur;
   }
   const ICOL = { sun: "#e0a21f", partly: "#d39a2a", cloud: "#7a8794", rain: "#2f6fd9", storm: "#8a4bb0", snow: "#4aa3d6", fog: "#8f979f", wind: "#5b6b7a" };
+  function paintExtras(n){
+    const parts = [];
+    n.ext.selectAll("*").remove();
+    const pill = opts.temps && tcache.get(n.key);
+    n.pill.style("display", pill ? null : "none");
+    n.lab.attr("y", pill ? 26 : 13);
+    n.ext.attr("y", pill ? 39 : 26);
+    n.dot.style("display", pill ? "none" : null);
+    if (opts.air){ const a = acache.get(n.key); const v = a && a.cur && a.cur.european_aqi; const A = AQI(v);
+      if (A){ n.ext.append("tspan").attr("fill", A[0]).text("● "); n.ext.append("tspan").text("aria " + Math.round(v) + (opts.sun ? "  " : "")); } }
+    if (opts.sun){ const T = sunTimes(n.lat, n.lng, new Date());
+      n.ext.append("tspan").attr("fill", "#d39a2a").text(T.rise ? "☀ " : "☀"); n.ext.append("tspan").text(T.rise ? hm(T.rise) + "–" + hm(T.set) : T.polar === "day" ? " sempre giorno" : " sempre notte"); }
+  }
   function paintGrid(){
     gridNodes.forEach(n => {
+      paintExtras(n);
       const c = tcache.get(n.key); if (!c) return; const v = valueAt(c); if (!v || typeof v.temperature_2m !== "number") return;
       const k = WMO(v.weather_code)[0], tv = Math.round(v.temperature_2m);
       n.ico.html(`<path d="${WX_ICONS[k] || ""}" fill="none" stroke="${ICOL[k] || "#555"}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`);
@@ -2186,21 +2340,24 @@ window.LIVEWX = (function(){
     });
   }
   function renderGrid(pts){
-    const g = MAP.liveGroup(); if (!g) return;
-    const sig = active() && opts.temps ? pts.map(p => p.lat + "," + p.lng).join("|") : "";
+    const g = sub("lgrid"); if (!g) return;
+    const sig = active() && needCities() ? [opts.temps, opts.air, opts.sun].join() + "|" + pts.map(p => p.lat + "," + p.lng).join("|") : "";
     if (sig === gridSig && gridNodes.length) { onPlace(); return; }
     gridSig = sig; g.selectAll("*").remove(); gridNodes = [];
     if (!sig) return;
     pts.forEach(p => {
-      const key = p.lat + "," + p.lng; if (!tcache.get(key)) return;
+      const key = p.lat + "," + p.lng;
+      if (opts.temps && !opts.air && !opts.sun && !tcache.get(key)) return;
       const n = g.append("g").attr("class", "ltemp");
-      const wind = n.append("path").attr("class", "lwind");
-      n.append("rect").attr("x", -27).attr("y", -15).attr("width", 54).attr("height", 30).attr("rx", 15);
-      const ico = n.append("g").attr("transform", "translate(-23,-11) scale(0.92)");
-      const txt = n.append("text").attr("x", 13).attr("text-anchor", "middle").attr("dy", "0.36em");
-      n.append("text").attr("class", "lcity").attr("text-anchor", "middle").attr("y", 26).text(p.name.length > 14 ? p.name.slice(0, 13) + "…" : p.name);
-      n.append("circle").attr("class", "ldot").attr("r", 2.5).attr("cy", 0).attr("cx", 0);
-      gridNodes.push({ g: n, p: GEO.project(p.lat, p.lng), key, ico, txt, wind });
+      const pill = n.append("g");
+      const wind = pill.append("path").attr("class", "lwind");
+      pill.append("rect").attr("x", -27).attr("y", -15).attr("width", 54).attr("height", 30).attr("rx", 15);
+      const ico = pill.append("g").attr("transform", "translate(-23,-11) scale(0.92)");
+      const txt = pill.append("text").attr("x", 13).attr("text-anchor", "middle").attr("dy", "0.36em");
+      const lab = n.append("text").attr("class", "lcity").attr("text-anchor", "middle").attr("y", 26).text(p.name.length > 14 ? p.name.slice(0, 13) + "…" : p.name);
+      const ext = n.append("text").attr("class", "lext").attr("text-anchor", "middle").attr("y", 39);
+      const dot = n.append("circle").attr("r", 3).attr("fill", "var(--ink)").style("display", "none");
+      gridNodes.push({ g: n, p: GEO.project(p.lat, p.lng), key, lat: p.lat, lng: p.lng, ico, txt, wind, pill, lab, ext, dot });
     });
     paintGrid();
     onPlace();
@@ -2210,8 +2367,90 @@ window.LIVEWX = (function(){
     const t = MAP.tr(); if (!t) return;
     const on = active(); if (on !== lastOn){ lastOn = on; refresh(); return; }
     for (const n of gridNodes){ const q = t.apply([n.p.x, n.p.y]); n.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
+    for (const n of qNodes){ const q = t.apply([n.p.x, n.p.y]); n.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
+    drawNight();
     queueDraw();
     clearTimeout(gridTimer); gridTimer = setTimeout(loadGrid, 700);
+  }
+
+  /* ---- earthquakes: INGV for Italy and nearby, USGS for the rest (magnitude 2.5+) ---- */
+  let Q = { list: [], at: 0, src: "" }, qNodes = [];
+  async function loadQuakes(){
+    if (Date.now() - Q.at < 8 * 60e3 && Q.at) { drawQuakes(); return; }
+    const since = new Date(Date.now() - 24 * 3600e3).toISOString().slice(0, 19);
+    const out = [], srcs = [];
+    const add = (lat, lng, mag, depth, time, place, src) => { if (!isFinite(lat) || !isFinite(lng) || !isFinite(mag)) return;
+      if (out.some(o => Math.abs(o.time - time) < 90e3 && kmLL(o, { lat, lng }) < 60)) return;
+      out.push({ lat, lng, mag, depth, time, place: String(place || "").replace(/^\d+\s*km\s+/i, ""), src }); };
+    const [a, b] = await Promise.allSettled([
+      fetch(`https://webservices.ingv.it/fdsnws/event/1/query?starttime=${since}&minmag=2&format=geojson&orderby=time&limit=300`).then(r => r.ok ? r.json() : null),
+      fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson").then(r => r.ok ? r.json() : null)
+    ]);
+    if (a.status === "fulfilled" && a.value && Array.isArray(a.value.features)){ srcs.push("INGV");
+      a.value.features.forEach(f => { const g = f.geometry && f.geometry.coordinates || [], p = f.properties || {}; add(+g[1], +g[0], +p.mag, +g[2], Date.parse(p.time + (/[Z+]/.test(String(p.time).slice(10)) ? "" : "Z")), p.place, "INGV"); }); }
+    if (b.status === "fulfilled" && b.value && Array.isArray(b.value.features)){ srcs.push("USGS");
+      b.value.features.forEach(f => { const g = f.geometry && f.geometry.coordinates || [], p = f.properties || {}; add(+g[1], +g[0], +p.mag, +g[2], +p.time, p.place, "USGS"); }); }
+    Q = { list: out.sort((x, y) => y.mag - x.mag), at: Date.now(), src: srcs.join(" e "), failed: !srcs.length };
+    drawQuakes(); keys();
+  }
+  function drawQuakes(){
+    const g = sub("lquake"); if (!g) return;
+    g.selectAll("*").remove(); qNodes = [];
+    if (!active() || !opts.quakes) return;
+    const now = Date.now();
+    Q.list.slice().sort((x, y) => x.mag - y.mag).forEach(e => {
+      const n = g.append("g").attr("class", "lq" + (now - e.time > 3 * 3600e3 ? " old" : ""));
+      const r = Math.max(5, Math.min(30, 3 + Math.pow(Math.max(0, e.mag), 1.6) * 1.6));
+      if (now - e.time < 3600e3 && e.mag >= 3) n.append("circle").attr("class", "pulse").attr("r", 4);
+      n.append("circle").attr("class", "r").attr("r", r);
+      if (r >= 11) n.append("text").attr("text-anchor", "middle").attr("dy", "0.36em").text(e.mag.toFixed(1));
+      n.on("click", ev => { ev.stopPropagation(); openQuake(e); });
+      qNodes.push({ g: n, p: GEO.project(e.lat, e.lng) });
+    });
+    onPlace();
+  }
+  const ago = t => { const m = Math.round((Date.now() - t) / 60e3); return m < 60 ? `${m} min fa` : `${Math.round(m / 60)} ${Math.round(m / 60) === 1 ? "ora" : "ore"} fa`; };
+  const qDesc = m => m < 3 ? "molto lieve, di solito non avvertita" : m < 4 ? "lieve, avvertita da qualcuno vicino all'epicentro" : m < 5 ? "moderata, avvertita in zona; danni rari" : m < 6 ? "forte, possibili danni vicino all'epicentro" : m < 7 ? "molto forte, possibili danni seri" : "fortissima, danni gravi possibili su vaste aree";
+  function openQuake(e){
+    stopTour(); hideHint();
+    const near = Q.list.filter(o => o !== e && kmLL(o, e) < 150).sort((a, b) => b.time - a.time).slice(0, 8);
+    const when = new Date(e.time);
+    let h = `<div class="qrow" style="border:0"><span class="m" style="min-width:56px;height:46px;font-size:19px;background:${Date.now() - e.time > 3 * 3600e3 ? "#e07a1f" : "#c4372b"}">${e.mag.toFixed(1)}</span><span><b>${esc(e.place || "Epicentro")}</b><small>${when.toLocaleString("it-IT", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })} (${ago(e.time)})${isFinite(e.depth) ? " · profondità " + Math.round(e.depth) + " km" : ""}</small></span></div>`;
+    h += `<p style="font-size:13px;line-height:1.45;margin:4px 2px 10px">Magnitudo ${e.mag.toFixed(1)}: scossa ${qDesc(e.mag)}.${isFinite(e.depth) && e.depth < 15 ? " Le scosse poco profonde si avvertono di più in superficie." : ""}</p>`;
+    if (near.length) h += `<div class="cn-h">Altre scosse nella zona (24 ore)</div>` + near.map(o => `<div class="qrow"><span class="m" style="background:${Date.now() - o.time > 3 * 3600e3 ? "#e07a1f" : "#c4372b"}">${o.mag.toFixed(1)}</span><span>${esc(o.place || "")}<small>${ago(o.time)}${isFinite(o.depth) ? " · " + Math.round(o.depth) + " km di profondità" : ""}</small></span></div>`).join("");
+    h += `<div class="cn-src">Dati automatici di ${e.src === "INGV" ? '<a href="https://terremoti.ingv.it/" target="_blank" rel="noopener noreferrer">INGV</a>' : '<a href="https://earthquake.usgs.gov/" target="_blank" rel="noopener noreferrer">USGS</a>'}, possono essere rivisti nelle ore successive. In caso di emergenza segui le indicazioni della Protezione civile.</div>`;
+    showInfo(`Terremoto M ${e.mag.toFixed(1)}`, h);
+  }
+  /* ---- night shade: where the sun is down right now ---- */
+  function drawNight(){
+    const g = sub("lnightg", true); if (!g) return;
+    const t = MAP.tr();
+    if (!active() || !opts.sun || !t){ g.selectAll("*").remove(); return; }
+    const S = solar(new Date()), td = Math.tan(S.decl * RAD) || 1e-6;
+    const pts = [];
+    for (let lng = -180; lng <= 180; lng += 2){ let lat = Math.atan(-Math.cos((lng - S.lng) * RAD) / td) / RAD; lat = Math.max(-84, Math.min(84, lat)); pts.push([lat, lng]); }
+    const pole = S.decl > 0 ? -84 : 84;
+    const ring = pts.concat([[pole, 180], [pole, -180]]).map(([la, lo]) => { const p = GEO.project(la, lo); return t.apply([p.x, p.y]); });
+    let path = g.select("path"); if (path.empty()) path = g.append("path").attr("class", "lnight");
+    path.attr("d", "M" + ring.map(q => q[0].toFixed(1) + "," + q[1].toFixed(1)).join("L") + "Z");
+  }
+  function sunRow(){
+    const el = panel.querySelector(".lp-sun"); if (!el) return;
+    if (!opts.sun){ el.style.display = "none"; return; }
+    const M = moon(new Date()), f = M.age / 29.530588853;
+    const T = sunTimes(41.9, 12.5, new Date());
+    el.style.display = "";
+    el.innerHTML = `${MOONI(f)} <b>${M.name}</b> ${M.ill}% · Roma ☀ ${T.rise ? hm(T.rise) : "–"}–${T.set ? hm(T.set) : "–"} · zona scura = notte`;
+  }
+  function keys(){
+    const sh = (sel, on) => { const e = panel.querySelector(sel); if (e) e.style.display = on ? "" : "none"; };
+    sh(".lp-k-rain", opts.radar); sh(".lp-k-q", opts.quakes); sh(".lp-k-air", opts.air);
+    const names = OPTS.filter(o => opts[o[0]]).map(o => o[1]);
+    panel.querySelector(".lp-ddl").textContent = names.length ? names.join(", ") : "Niente (solo allerte)";
+    panel.querySelectorAll(".lp-mi").forEach(b => b.setAttribute("aria-checked", String(!!opts[b.dataset.o])));
+    const src = ["Meteo" + (opts.air ? " e aria" : "") + ": Open-Meteo"]; if (opts.radar) src.unshift("Radar: RainViewer"); if (opts.quakes) src.push("Terremoti: " + (Q.failed ? "dati non disponibili ora" : (Q.src || "INGV e USGS")));
+    panel.querySelector(".lp-src").textContent = src.join(" · ");
+    sunRow();
   }
 
   /* ---- tap anywhere: forecast for that point ---- */
@@ -2222,7 +2461,9 @@ window.LIVEWX = (function(){
     showInfo(name, `<div class="empty"><div class="spinner"></div>Carico le previsioni…</div>`);
     try {
       const u = `${OM}?latitude=${ll.lat.toFixed(3)}&longitude=${ll.lng.toFixed(3)}&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,wind_direction_10m&hourly=temperature_2m,precipitation_probability,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,wind_speed_10m_max,wind_direction_10m_dominant,sunrise,sunset&forecast_days=7&timezone=auto`;
+      const aP = fetch(`${AQ}?latitude=${ll.lat.toFixed(3)}&longitude=${ll.lng.toFixed(3)}&current=european_aqi,pm2_5,pm10,ozone,nitrogen_dioxide,alder_pollen,birch_pollen,grass_pollen,olive_pollen,ragweed_pollen,mugwort_pollen&timezone=auto`).then(r => r.ok ? r.json() : null).catch(() => null);
       const r = await fetch(u); if (!r.ok) throw new Error(r.status); const d = await r.json();
+      const air = await aP;
       if (state.sheetTitle !== name) return;
       const c = d.current || {}, W = WMO(c.weather_code);
       const H = d.hourly || {}, now = Date.now();
@@ -2237,6 +2478,15 @@ window.LIVEWX = (function(){
       h += `<div class="cn-h">Prossime ore</div><div class="fc-hours">${hours.map(i => `<div><small>${new Date(H.time[i]).toLocaleTimeString("it-IT", { hour: "2-digit" })}</small>${wxSvg(WMO(H.weather_code[i])[0])}<b>${Math.round(H.temperature_2m[i])}°</b><small class="pp">${H.precipitation_probability && H.precipitation_probability[i] != null ? H.precipitation_probability[i] + "%" : ""}</small></div>`).join("")}</div>`;
       h += `<div class="cn-h">Prossimi 7 giorni</div><div class="fc-days">${(D2.time || []).map((s, i) => { const w = WMO(D2.weather_code[i]); const lo = D2.temperature_2m_min[i], hi = D2.temperature_2m_max[i];
         return `<div class="fc-day"><span class="fd-n">${esc(dayName(s, i))}</span><span class="fd-i" title="${esc(w[1])}">${wxSvg(w[0])}</span><span class="fd-lo">${Math.round(lo)}°</span><span class="fd-bar"><i style="left:${((lo - tmin) / span * 100).toFixed(0)}%;right:${(100 - (hi - tmin) / span * 100).toFixed(0)}%;background:linear-gradient(90deg,${tCol(lo)},${tCol(hi)})"></i></span><span class="fd-hi">${Math.round(hi)}°</span><span class="fd-r">${D2.precipitation_sum[i] >= 0.2 ? D2.precipitation_sum[i].toFixed(1).replace(".", ",") + " mm" : ""}${D2.precipitation_probability_max && D2.precipitation_probability_max[i] >= 20 ? " · " + D2.precipitation_probability_max[i] + "%" : ""}${D2.precipitation_sum[i] < 0.2 && !(D2.precipitation_probability_max && D2.precipitation_probability_max[i] >= 20) ? "asciutto" : ""}<br><small>${esc(w[1])} · vento ${Math.round(D2.wind_speed_10m_max[i])} km/h</small></span></div>`; }).join("")}</div>`;
+      if (air && air.current && air.current.european_aqi != null){ const ac = air.current, A = AQI(ac.european_aqi);
+        h += `<div class="cn-h">Qualità dell'aria adesso</div><div class="fc-air"><span class="aq" style="background:${A[0]}">${Math.round(ac.european_aqi)}</span><span><b>Aria ${A[1]}</b><small>Indice europeo (0-100+): PM2,5 ${Math.round(ac.pm2_5)} · PM10 ${Math.round(ac.pm10)} · ozono ${Math.round(ac.ozone)} · biossido di azoto ${Math.round(ac.nitrogen_dioxide)} µg/m³</small></span></div>`;
+        const POL = [["grass_pollen", "Graminacee"], ["olive_pollen", "Olivo"], ["birch_pollen", "Betulla"], ["alder_pollen", "Ontano"], ["ragweed_pollen", "Ambrosia"], ["mugwort_pollen", "Artemisia"]];
+        const pl = POL.filter(p => typeof ac[p[0]] === "number").map(p => { const v = ac[p[0]]; const lv = v < 1 ? null : v < 20 ? "basso" : v < 80 ? "medio" : "alto"; return lv ? `<span>${p[1]}: ${lv}</span>` : ""; }).filter(Boolean);
+        if (POL.some(p => typeof ac[p[0]] === "number")) h += `<div class="fc-pol">${pl.length ? `<span style="border:0;padding-left:0;color:var(--muted)">Pollini:</span>` + pl.join("") : `<span style="border:0;padding-left:0;color:var(--muted)">Pollini: assenti o molto bassi</span>`}</div>`; }
+      { const sr = D2.sunrise && D2.sunrise[0], ss = D2.sunset && D2.sunset[0], M = moon(new Date());
+        const tm = x => x ? String(x).slice(11, 16) : "–";
+        let len = ""; if (sr && ss){ const mins = (Date.parse(ss + "Z") - Date.parse(sr + "Z")) / 60e3; if (mins > 0) len = Math.floor(mins / 60) + " h " + String(Math.round(mins % 60)).padStart(2, "0"); }
+        h += `<div class="cn-h">Sole e luna</div><div class="fc-sun"><div>Alba<b>${tm(sr)}</b></div><div>Tramonto<b>${tm(ss)}</b></div><div>Luce<b>${len || "–"}</b></div></div><div class="lp-sun" style="text-align:left;margin:0 2px 6px">${MOONI(M.age / 29.530588853)} <b>${M.name}</b>, illuminata al ${M.ill}%</div>`; }
       if (nearNews.length) h += `<button class="cn-row" id="fcNews"><span class="d" style="background:var(--accent)">${iconSvg("news")}</span><span>${nearNews.length} ${nearNews.length === 1 ? "notizia" : "notizie"} di oggi nei dintorni<small>entro 30 km</small></span></button>`;
       h += `<div class="cn-src">Previsioni del modello meteo per questo punto, aggiornate più volte al giorno. Dati: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> (CC BY 4.0). Per le allerte ufficiali fa fede la Protezione civile.</div>`;
       state.sheetHtml = h; renderSheet();
@@ -2257,13 +2507,21 @@ window.LIVEWX = (function(){
   function refresh(){
     const on = active();
     panel.hidden = !on;
-    panel.querySelectorAll(".lp-t").forEach(b => b.setAttribute("aria-pressed", String(!!opts[b.dataset.o])));
+    keys();
     panel.querySelector(".lp-radar").style.display = opts.radar ? "" : "none";
+    panel.querySelector(".lp-scale").style.display = opts.radar ? "" : "none";
     if (on && opts.radar) loadRadar();
-    if (!on || !opts.temps){ gridSig = "x"; renderGrid([]); gridSig = ""; } else loadGrid();
+    if (!on || !needCities()){ gridSig = "x"; renderGrid([]); gridSig = ""; } else { gridSig = "x"; loadGrid(); }
+    if (on && opts.quakes) loadQuakes(); else drawQuakes();
+    drawNight();
     queueDraw();
   }
-  panel.querySelectorAll(".lp-t").forEach(b => b.addEventListener("click", () => { opts[b.dataset.o] = !opts[b.dataset.o]; save(); refresh(); }));
+  const dd = panel.querySelector(".lp-dd"), menu = panel.querySelector(".lp-menu");
+  const closeMenu = () => { menu.hidden = true; dd.setAttribute("aria-expanded", "false"); };
+  dd.addEventListener("click", ev => { ev.stopPropagation(); const open = menu.hidden; menu.hidden = !open; dd.setAttribute("aria-expanded", String(open)); });
+  panel.querySelectorAll(".lp-mi").forEach(b => b.addEventListener("click", ev => { ev.stopPropagation(); opts[b.dataset.o] = !opts[b.dataset.o]; save(); refresh(); }));
+  document.addEventListener("click", ev => { if (!menu.hidden && !ev.target.closest(".lp-ddwrap")) closeMenu(); });
+  setInterval(() => { if (active() && opts.quakes){ Q.at = 0; loadQuakes(); } if (active() && opts.sun){ drawNight(); sunRow(); } }, 5 * 60 * 1000);
   setInterval(() => { if (active() && opts.radar){ R.loadedAt = 0; loadRadar(); } }, 10 * 60 * 1000);
   api.tap = tap; api.onPlace = onPlace; api.refresh = refresh; api.forecast = forecast;
   return api;
@@ -2586,6 +2844,58 @@ function itemsOf(ed){
   return raw.filter(i => i && typeof i === "object").map(i => (ex[i.id] && typeof ex[i.id] === "object") ? Object.assign({}, i, ex[i.id]) : i);
 }
 
+/* ---------- favourite places and countries ---------- */
+const FAV = (function(){
+  let favs = [];
+  try { const a = JSON.parse(localStorage.getItem("mm_favs") || "[]"); if (Array.isArray(a)) favs = a.filter(f => f && f.name && (f.t === "c" ? f.cc : (num(f.lat) && num(f.lng)))).slice(0, 30); } catch(e){}
+  const key = f => f.t === "c" ? "c:" + String(f.cc).toUpperCase() : "p:" + norm(f.name);
+  const has = f => favs.some(x => key(x) === key(f));
+  const save = () => { try { localStorage.setItem("mm_favs", JSON.stringify(favs)); } catch(e){} };
+  const STARI = on => `<svg viewBox="0 0 24 24" fill="${on ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.2-4.1 5.8-.8z"/></svg>`;
+  function btn(f){
+    const on = has(f);
+    return `<button class="favbtn${on ? " on" : ""}" data-fav="${esc(JSON.stringify(f))}" aria-pressed="${on}">${STARI(on)}${on ? "Tra i preferiti" : "Aggiungi ai preferiti"}</button>`;
+  }
+  function newsOf(f){
+    if (f.t === "c"){ const cc = String(f.cc).toUpperCase(); return allItems().filter(i => (i.cc || "").toUpperCase() === cc); }
+    return newsNear({ lat: f.lat, lng: f.lng }, f.r || 40);
+  }
+  function listHtml(){
+    if (state.archiveMode) return "";
+    if (!favs.length) return `<div class="favhint">☆ Cerca una città o tocca un Paese sulla mappa e premi «Aggiungi ai preferiti»: le tue zone compariranno qui in cima.</div>`;
+    const chips = favs.map((f, i) => { const n = newsOf(f).length;
+      return `<button class="chip" data-favopen="${i}">${STARI(true)}<b>${esc(f.name)}</b><small>${n ? n + (n === 1 ? " notizia" : " notizie") : "nessuna notizia"}</small></button>`; }).join("");
+    const seen = new Set(), list = [];
+    favs.forEach(f => newsOf(f).slice(0, 4).forEach(it => { const k = it.id || it.title; if (!seen.has(k)){ seen.add(k); list.push(it); } }));
+    let h = `<div class="sectionlabel">Le mie zone</div><div class="favbar">${chips}</div>`;
+    if (list.length){
+      SECTIONS.favs = { label: "Le mie zone", list: list.slice(0, 10), numbered: false };
+      const L = SECTIONS.favs.list;
+      h += state.listMode === "grid" ? `<div class="grid">${L.map((it, i) => tileHtml(it, 0, "favs", i)).join("")}</div>` : L.map(it => cardHtml(it, 0, {small:true})).join("");
+    }
+    return h;
+  }
+  function open(f){
+    if (f.t === "c"){ if (!isWide()) setView("map"); setTimeout(() => { MAP.ensure(); MAP.flyToCountry(f.cc); showCountry(f.cc, f.name); }, 60); }
+    else openPlace(f.name, { lat: f.lat, lng: f.lng }, f.r || 40);
+  }
+  function paint(){ try { MAP.setFavs(favs); } catch(e){} }
+  function toggle(f){
+    if (has(f)) favs = favs.filter(x => key(x) !== key(f)); else favs.unshift(f);
+    favs = favs.slice(0, 30); save();
+    document.querySelectorAll("[data-fav]").forEach(b => { let g; try { g = JSON.parse(b.dataset.fav); } catch(e){ return; } if (key(g) !== key(f)) return; const on = has(g); b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on)); b.innerHTML = STARI(on) + (on ? "Tra i preferiti" : "Aggiungi ai preferiti"); });
+    if (state.sheetHtml && $("#sheet").classList.contains("open")) state.sheetHtml = $("#shBody").innerHTML;
+    if (state.sheetNote) { const tmp = document.createElement("div"); tmp.innerHTML = state.sheetNote; const b = tmp.querySelector("[data-fav]"); if (b){ const on = has(f); b.className = "favbtn" + (on ? " on" : ""); b.setAttribute("aria-pressed", String(on)); b.innerHTML = STARI(on) + (on ? "Tra i preferiti" : "Aggiungi ai preferiti"); state.sheetNote = tmp.innerHTML; } }
+    const y = $("#listPane").scrollTop; renderList(); renderFilters(); $("#listPane").scrollTop = y;
+    paint();
+  }
+  document.addEventListener("click", ev => {
+    const b = ev.target.closest("[data-fav]"); if (b){ ev.stopPropagation(); let f; try { f = JSON.parse(b.dataset.fav); } catch(e){ return; } toggle(f); return; }
+    const c = ev.target.closest("[data-favopen]"); if (c){ const f = favs[+c.dataset.favopen]; if (f) open(f); }
+  });
+  return { btn, listHtml, open, paint, toggle, list: () => favs.slice() };
+})();
+
 /* ---------- follow a story ---------- */
 let follows = {};
 try { const f = JSON.parse(localStorage.getItem("mm_follow") || "{}"); if (f && typeof f === "object" && !Array.isArray(f)) follows = f; } catch(e){}
@@ -2791,6 +3101,7 @@ if (IS_SITE && "serviceWorker" in navigator) { window.addEventListener("load", (
   }, () => {}); } catch(e){}
   try { db.doc("reference/countries").onSnapshot(snap => { if (snap.exists) state.countries = snap.data(); }, () => {}); } catch(e){}
 })();
+try { window.__mm = { showCountry, openPlace, closeSheet, setLayer, FAV, MAP }; } catch(e){}
 })();
 </script>
 </body>
