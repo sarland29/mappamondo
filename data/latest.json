@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-14",
-  "dateLabel": "Sabato 14 novembre 2026",
+  "date": "2026-11-15",
+  "dateLabel": "Domenica 15 novembre 2026",
   "elections": [
     {
       "cc": "ES",
@@ -24,7 +24,7 @@
       "type": "Elezioni politiche anticipate"
     }
   ],
-  "headline": "Zelensky riferisce che gli Usa hanno ipotizzato la Nato per Kiev in cambio del Donbas, mentre l'Ue prepara una squadra comune per i negoziati; droni russi su Odessa e Kiev. In Italia il governo ritira la misura sulla scuola dalla manovra e S&P conferma il rating; domani allerta gialla in 12 regioni. In Francia 106mila in piazza contro il carovita; nel rugby l'Italia cede 14-19 all'Argentina.",
+  "headline": "Allerta gialla per temporali e frane in 12 regioni; stasera Belgio-Italia decide i quarti di Nations League. In Ucraina 7 morti negli attacchi russi, il Nyt rivela le richieste di Mosca sulla Nato. Cinque morti in un incidente nel Cosentino, in Francia 219 fermati nelle proteste.",
   "indicators": [
     {
       "chg": 0,
@@ -39,862 +39,6 @@
   ],
   "items": [
     {
-      "cat": "politica",
-      "cc": "UA",
-      "check": {
-        "level": "parziale",
-        "note": "Lo riferisce Zelensky; non ci sono conferme né commenti ufficiali di Washington. Kiev dice di non avere ancora dettagli."
-      },
-      "fx": [
-        {
-          "t": "pulse"
-        }
-      ],
-      "icon": "talks",
-      "id": "zelensky-nato-donbas",
-      "isNew": true,
-      "label": "Nato e Donbas",
-      "lat": 50.4501,
-      "layers": [
-        "geopolitica"
-      ],
-      "lng": 30.5234,
-      "newAt": "13:20",
-      "place": "Kiev, Ucraina",
-      "sources": [
-        {
-          "n": "Kyiv Independent",
-          "u": "https://kyivindependent.com/us-floats-nato-membership-for-ukraine-in-exchange-for-donbas-withdrawal-zelensky-says/"
-        },
-        {
-          "n": "Adnkronos (AFP)",
-          "u": "https://www.adnkronos.com/internazionale/esteri/ucraina-russia-news-guerra-oggi-14-novembre-ultima-ora_1mJ0GfMZCWFbDYr4eDk5L8"
-        },
-        {
-          "n": "Kyiv Post",
-          "u": "https://www.kyivpost.com/post/90115"
-        },
-        {
-          "n": "Yahoo News (BBC)",
-          "u": "https://www.yahoo.com/news/world/articles/us-floated-ukraine-ceding-donbas-103105505.html"
-        }
-      ],
-      "story": "ucraina-negoziati",
-      "storyLabel": "Negoziati per l'Ucraina",
-      "text": "Secondo Zelensky, gli Stati Uniti hanno chiesto per la prima volta se l'Ucraina sarebbe disposta a ritirarsi dalla parte del Donbas che controlla ancora in cambio dell'ingresso nella Nato. Il presidente ucraino dice che una decisione simile non spetta a lui solo e che chiederebbe il parere dei cittadini; in ogni caso, aggiunge, non ci sarebbe alcun riconoscimento dei territori occupati come russi. Kiev chiede garanzie di sicurezza simili all'articolo 5 della Nato; Washington non ha commentato.",
-      "title": "Zelensky: gli Usa hanno ipotizzato la Nato per Kiev in cambio del Donbas",
-      "weight": 3,
-      "zoom": 40
-    },
-    {
-      "cat": "politica",
-      "cc": "IE",
-      "check": {
-        "level": "confermata",
-        "note": "La composizione e la guida della squadra non sono ancora state decise."
-      },
-      "fx": [
-        {
-          "cc": [
-            "IE"
-          ],
-          "t": "zone"
-        }
-      ],
-      "icon": "talks",
-      "id": "ue-team-negoziati",
-      "label": "Vertice Ue",
-      "lat": 53.3438,
-      "layers": [
-        "geopolitica"
-      ],
-      "lng": -6.2675,
-      "place": "Dublino, Irlanda",
-      "sources": [
-        {
-          "n": "Kyiv Independent",
-          "u": "https://kyivindependent.com/mass-drone-attack-on-moscow-grounds-flights-at-regions-airports/"
-        },
-        {
-          "n": "Quotidiano Nazionale",
-          "u": "https://www.quotidiano.net/esteri/consiglio-europeo-dublino-oggi-diretta-zelensky-meloni-hl8obaxf"
-        },
-        {
-          "n": "Euronews",
-          "u": "https://it.euronews.com/2026/11/13/leader-ue-a-dublino-discutono-chi-rappresenta-leuropa-nei-negoziati-di-pace-sullucraina"
-        }
-      ],
-      "story": "ucraina-negoziati",
-      "storyLabel": "Negoziati per l'Ucraina",
-      "text": "I leader dei Ventisette, riuniti venerdì a Dublino, hanno concordato di presentarsi con una squadra europea comune ai futuri colloqui di pace sull'Ucraina, secondo quanto riferito dal presidente del Consiglio europeo Costa. Resta da decidere chi la guiderà: il premier irlandese Martin indica una scelta entro una o due settimane, in vista di un Consiglio europeo straordinario a fine novembre. Meloni aveva chiesto un negoziatore con mandato chiaro, mentre l'Alta rappresentante Kallas sostiene che a rappresentare l'Unione debbano essere le istituzioni esistenti.",
-      "title": "Vertice di Dublino, l'Ue avrà una squadra comune ai negoziati sull'Ucraina",
-      "weight": 3,
-      "zoom": 60
-    },
-    {
-      "cat": "politica",
-      "cc": "DE",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "gov",
-      "id": "merz-trump-sorprese",
-      "label": "Merz",
-      "lat": 52.5202,
-      "layers": [
-        "geopolitica"
-      ],
-      "lng": 13.3694,
-      "place": "Berlino, Germania",
-      "sources": [
-        {
-          "n": "Reuters (via Internazionale)",
-          "u": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/13/germany-s-merz-asks-trump-for-no-surprises-from-putin-talks"
-        },
-        {
-          "n": "Rio Times",
-          "u": "https://www.riotimesonline.com/europe-intelligence-brief-friday-november-13-2026/"
-        }
-      ],
-      "story": "ucraina-negoziati",
-      "storyLabel": "Negoziati per l'Ucraina",
-      "text": "Il cancelliere tedesco Merz ha chiesto agli Stati Uniti di non prendere decisioni sull'Ucraina senza gli europei, temendo a Dublino un «secondo Anchorage», il vertice Trump-Putin del 2025 in Alaska. Merz ha detto di attendersi nelle prossime settimane negoziati veri e propri, per la prima volta con la partecipazione europea, e ha respinto la richiesta russa di mettere al centro l'architettura di sicurezza europea. Sul bilancio Ue 2028-2034 Berlino chiede che tutti i Paesi si impegnino a finanziare Kiev; il premier slovacco Fico ha definito la richiesta un ricatto.",
-      "title": "Merz a Trump: «Nessuna sorpresa» nei colloqui con Putin",
-      "weight": 2,
-      "zoom": 60
-    },
-    {
-      "cat": "guerra",
-      "cc": "UA",
-      "check": {
-        "level": "confermata",
-        "note": "Le fonti non indicano da dove sono partiti i droni."
-      },
-      "fx": [
-        {
-          "label": "Droni dalla Russia",
-          "n": 2,
-          "t": "strike",
-          "to": [
-            46.4825,
-            30.7233
-          ]
-        },
-        {
-          "label": "Droni dalla Russia",
-          "n": 1,
-          "t": "strike",
-          "to": [
-            50.4547,
-            30.492
-          ]
-        },
-        {
-          "t": "pulse"
-        },
-        {
-          "cc": [
-            "UA"
-          ],
-          "t": "zone"
-        }
-      ],
-      "icon": "missile",
-      "id": "ua-kyiv-odesa",
-      "label": "Odessa",
-      "lat": 46.4825,
-      "lng": 30.7233,
-      "place": "Odessa e Kiev, Ucraina",
-      "sources": [
-        {
-          "n": "Africanews",
-          "u": "https://www.africanews.com/2026/11/13/ukraine-russian-drone-attacks-hit-kyiv-hospital-leave-one-dead-in-odesa/"
-        },
-        {
-          "n": "Ukrinform",
-          "u": "https://www.ukrinform.net/rubric-ato/4184271-russian-attack-on-odesa-kills-two-injures-seven.html"
-        },
-        {
-          "n": "Kyiv Post",
-          "u": "https://www.kyivpost.com/post/90009"
-        }
-      ],
-      "story": "ucraina-guerra",
-      "storyLabel": "Guerra in Ucraina",
-      "text": "Nuovi attacchi russi con droni hanno colpito venerdì due città ucraine. A Odessa due persone sono morte e cinque sono rimaste ferite, secondo il capo dell'amministrazione militare cittadina Lysak; danneggiati una casa e diverse auto. A Kiev un incendio ha devastato parte del secondo piano di una struttura sanitaria nel distretto di Shevchenkivskyi: una trentina di persone sono state evacuate e sette soccorse.",
-      "title": "Droni russi su Kiev e Odessa: due morti, colpita una struttura sanitaria",
-      "weight": 3,
-      "zoom": 40
-    },
-    {
-      "cat": "guerra",
-      "cc": "UA",
-      "check": {
-        "level": "parziale",
-        "note": "Bilancio diffuso dalle autorità locali ucraine e riportato dal Kyiv Independent; non trovate altre testate indipendenti nelle ricerche."
-      },
-      "fx": [
-        {
-          "t": "pulse"
-        }
-      ],
-      "icon": "blast",
-      "id": "zaporizhzhia-kosmichnyi",
-      "label": "Zaporizhzhia",
-      "lat": 47.8388,
-      "lng": 35.1396,
-      "place": "Zaporizhzhia, Ucraina",
-      "sources": [
-        {
-          "n": "Kyiv Independent",
-          "u": "https://kyivindependent.com/ukraine-war-latest-ex-pm-press-secretary-reportedly-injured-in-moscow-car-explosion/"
-        }
-      ],
-      "story": "ucraina-guerra",
-      "storyLabel": "Guerra in Ucraina",
-      "text": "Un attacco russo venerdì mattina ha colpito un palazzo di più piani nel quartiere di Kosmichnyi a Zaporizhzhia, nel sud-est dell'Ucraina: secondo le autorità locali i feriti sono 50, tra cui otto bambini. I soccorritori hanno liberato 17 persone rimaste bloccate negli appartamenti; un volontario del servizio d'emergenza Cobra è morto colpito da una lastra di cemento durante la rimozione delle macerie.",
-      "title": "Zaporizhzhia, attacco su un quartiere residenziale: 50 feriti, morto un soccorritore",
-      "weight": 2,
-      "zoom": 60
-    },
-    {
-      "cat": "guerra",
-      "cc": "UA",
-      "check": {
-        "level": "parziale",
-        "note": "Annuncio di parte ucraina; non risultano conferme da Mosca nelle fonti consultate."
-      },
-      "icon": "shield",
-      "id": "evacuazioni-civili-occupati",
-      "label": "Evacuazioni",
-      "lat": 46.623,
-      "lng": 32.724,
-      "place": "Oleshky, regione di Kherson",
-      "sources": [
-        {
-          "n": "Kyiv Independent",
-          "u": "https://kyivindependent.com/ukraine-russia-launch-new-format-for-evacuating-civilians-from-occupied-territories-ombudsman-says/"
-        },
-        {
-          "n": "Kyiv Independent (riepilogo)",
-          "u": "https://kyivindependent.com/ukraine-war-latest-ex-pm-press-secretary-reportedly-injured-in-moscow-car-explosion/"
-        }
-      ],
-      "story": "ucraina-guerra",
-      "storyLabel": "Guerra in Ucraina",
-      "text": "Secondo il difensore civico ucraino Lubinets, Ucraina e Russia hanno concordato un nuovo meccanismo per evacuare ogni settimana anziani, persone con mobilità ridotta e malati dai territori occupati, con l'assistenza della Croce Rossa internazionale. Il 12 novembre sono rientrati i primi 16 civili; il meccanismo segue un'evacuazione da Oleshky, nella regione di Kherson.",
-      "title": "Kiev e Mosca avviano evacuazioni settimanali di civili dai territori occupati",
-      "weight": 1,
-      "zoom": 40
-    },
-    {
-      "cat": "guerra",
-      "cc": "UA",
-      "check": {
-        "level": "parziale",
-        "note": "Valutazioni dell'esercito ucraino e di un centro studi Usa; Mosca non ha commentato."
-      },
-      "icon": "shield",
-      "id": "fronte-avanzata-rallenta",
-      "label": "Fronte Donetsk",
-      "lat": 48.2826,
-      "lng": 37.1758,
-      "place": "Pokrovsk, regione di Donetsk",
-      "sources": [
-        {
-          "n": "Kyiv Independent",
-          "u": "https://kyivindependent.com/ukraine-war-latest-ex-pm-press-secretary-reportedly-injured-in-moscow-car-explosion/"
-        },
-        {
-          "n": "Kyiv Independent (feed)",
-          "u": "https://kyivindependent.com/news-archive/"
-        }
-      ],
-      "story": "ucraina-guerra",
-      "storyLabel": "Guerra in Ucraina",
-      "text": "Il comandante delle forze d'assalto aereo ucraine, il generale Apostol, sostiene che l'avanzata russa si è molto ridotta, mentre continuano le offensive di Mosca vicino a Dobropillia, Pokrovsk e Kostiantynivka. Secondo l'istituto statunitense Isw, in ottobre la Russia ha registrato per il secondo mese di fila una perdita netta di territorio, circa 27 chilometri quadrati.",
-      "title": "Fronte nel Donetsk, Kiev: l'avanzata russa ha rallentato",
-      "weight": 1,
-      "zoom": 20
-    },
-    {
-      "cat": "ambiente",
-      "cc": "TR",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "leaf",
-      "id": "cop31-antalya",
-      "label": "Cop31",
-      "lat": 36.8969,
-      "layers": [
-        "geopolitica"
-      ],
-      "lng": 30.7133,
-      "place": "Antalya, Turchia",
-      "sources": [
-        {
-          "n": "Reuters (via Internazionale)",
-          "u": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/13/cop31-talks-face-early-friction-over-future-of-fossil-fuels"
-        },
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/accadeoggi_dd38a7d3-309c-4e12-a6b9-d7b1590e0cf6.html"
-        }
-      ],
-      "story": "cop31",
-      "storyLabel": "Cop31 ad Antalya",
-      "text": "Alla conferenza Onu sul clima di Antalya, in Turchia, il segretario generale Guterres ha chiesto ai grandi emettitori riduzioni «immediate e drastiche» per non superare 1,5 gradi. I principali produttori e consumatori di fossili resistono a obiettivi vincolanti; la Turchia punta sull'elettrificazione, l'Ue chiede che sia basata su energia pulita. Il negoziatore australiano raccoglie le proposte fino a stasera e presenterà una bozza all'inizio della settimana; gli Stati Uniti non partecipano.",
-      "title": "Cop31, Guterres chiede tagli drastici delle emissioni: scontro sui combustibili fossili",
-      "weight": 2,
-      "zoom": 60
-    },
-    {
-      "cat": "economia",
-      "cc": "LU",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "chart",
-      "id": "eurostat-pil-q3",
-      "label": "Pil Ue",
-      "lat": 49.6337,
-      "lng": 6.169,
-      "place": "Lussemburgo",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/economia/2026/11/13/sp-conferma-il-rating-sullitalia-la-crescita-superera-le-stime.-giorgetti-e-la-strada-giusta_968a7f83-4609-47b6-b8c7-0b1ab287d3a7.html"
-        },
-        {
-          "n": "Radio Romania International",
-          "u": "https://www.rri.ro/en/news-and-current-affairs/newsflash/november-13-2026-id1083407.html"
-        }
-      ],
-      "text": "Secondo la stima preliminare di Eurostat l'economia dell'area euro è cresciuta dello 0,4% tra luglio e settembre rispetto al trimestre precedente, mentre il Pil italiano è rimasto invariato. Tra i Paesi più dinamici l'Irlanda (+5,5%) e la Romania (+2,1%), che recupera dopo due trimestri negativi.",
-      "title": "Eurostat: nel terzo trimestre Pil +0,4% nell'eurozona, Italia ferma",
-      "weight": 1,
-      "zoom": 60
-    },
-    {
-      "cat": "economia",
-      "cc": "RO",
-      "check": {
-        "level": "confermata",
-        "note": "Fonte unica: l'emittente pubblica romena."
-      },
-      "icon": "fuel",
-      "id": "romania-cernavoda",
-      "label": "Cernavodă",
-      "lat": 44.322,
-      "layers": [
-        "economia"
-      ],
-      "lng": 28.058,
-      "place": "Cernavodă, Romania",
-      "sources": [
-        {
-          "n": "Radio Romania International",
-          "u": "https://www.rri.ro/en/news-and-current-affairs/newsflash/november-13-2026-id1083407.html"
-        }
-      ],
-      "text": "Entrambi i reattori della centrale di Cernavodă, sul Danubio, dovrebbero tornare oggi alla piena potenza dopo un fermo legato al basso livello del fiume e a guasti tecnici. Insieme coprono circa un quinto della produzione elettrica romena; le centrali idroelettriche sul Danubio restano a regime ridotto per la portata molto inferiore alla media stagionale.",
-      "title": "Romania, la centrale nucleare di Cernavodă torna a pieno regime",
-      "weight": 1,
-      "zoom": 60
-    },
-    {
-      "cat": "politica",
-      "cc": "ES",
-      "check": {
-        "level": "confermata"
-      },
-      "fx": [
-        {
-          "cc": [
-            "ES"
-          ],
-          "t": "zone"
-        }
-      ],
-      "icon": "vote",
-      "id": "spagna-campagna-29n",
-      "label": "Voto 29 nov",
-      "lat": 40.4168,
-      "layers": [
-        "elezioni",
-        "geopolitica"
-      ],
-      "lng": -3.7038,
-      "place": "Madrid, Spagna",
-      "sources": [
-        {
-          "n": "El Constitucional",
-          "u": "https://www.elconstitucional.es/es/nacional/comienzan-campana-29n-sanchez-elige-sevilla-feijoo-apuesta-por-badalona-con-albiol-abascal-vuelve-colon-colau-arranca-en-vallecas_10069_102.html"
-        },
-        {
-          "n": "El Español",
-          "u": "https://www.elespanol.com/quincemil/actualidad/galicia/20261113/arranca-campana-electoral-galicia-tradicional-pegada-carteles/1003744452895_0.html"
-        },
-        {
-          "n": "Demócrata",
-          "u": "https://www.democrata.es/it/elezione-generali-in-spagna/cosi-sara-la-campagna-del-29n-dopo-urda-il-psoe-cerchera-di-recuperare-la-fiducia-il-pp-offrira-gestione-e-un-feijoo-presidenziale-e-vox-cerchera-una-svolta/"
-        }
-      ],
-      "story": "spagna-elezioni-29n",
-      "storyLabel": "Elezioni in Spagna",
-      "text": "È iniziata ufficialmente la campagna per le elezioni politiche anticipate spagnole del 29 novembre. Il premier socialista Sánchez ha aperto a Siviglia, il leader del Partito popolare Feijóo a Badalona, Abascal (Vox) in piazza Colón a Madrid, Ada Colau (Frente Amplio) e Irene Montero (Podemos) nella regione di Madrid. Sono in programma un confronto Sánchez-Feijóo e un dibattito a quattro, con date ancora da fissare; tra i temi, la sicurezza ferroviaria dopo l'incidente di Urda.",
-      "title": "Spagna, al via la campagna per le elezioni anticipate del 29 novembre",
-      "weight": 3,
-      "zoom": 8
-    },
-    {
-      "cat": "societa",
-      "cc": "FR",
-      "check": {
-        "level": "confermata",
-        "note": "Il bilancio definitivo dei fermi non è ancora consolidato; le cifre dei partecipanti sono quelle ufficiali riportate dai media."
-      },
-      "icon": "protest",
-      "id": "parigi-manifestazioni",
-      "label": "Cortei Parigi",
-      "lat": 48.8674,
-      "lng": 2.3636,
-      "place": "Place de la République, Parigi",
-      "sources": [
-        {
-          "n": "CNews",
-          "u": "https://www.cnews.fr/france/2026-11-14/manifestations-du-14-novembre-paris-le-cortege-selance-place-de-la-republique"
-        },
-        {
-          "n": "Agenzia Nova",
-          "u": "https://www.agenzianova.com/news/francia-106-mila-persone-hanno-manifestato-in-tutto-il-paese-tensioni-al-termine-del-corteo-a-parigi/"
-        },
-        {
-          "n": "Sky TG24",
-          "u": "https://tg24.sky.it/mondo/2026/11/14/manifestazioni-francia-oggi-news"
-        },
-        {
-          "n": "Corriere Nazionale",
-          "u": "https://www.corrierenazionale.it/2026/11/14/nuovo-sabato-di-proteste-in-francia-decine-di-persone-fermate-dalla-polizia"
-        }
-      ],
-      "story": "francia-proteste",
-      "storyLabel": "Proteste in Francia",
-      "text": "Circa 106mila persone hanno manifestato sabato in tutta la Francia, di cui circa 24mila a Parigi, secondo i dati diffusi in serata e riportati dai media francesi e italiani. Al quinto sabato di proteste hanno partecipato Gilet gialli, sindacati e organizzazioni giovanili, contro il carovita e un progetto di legge sull'uso delle armi da parte della polizia. A Parigi ci sono state tensioni al termine del corteo e la polizia ha effettuato decine di fermi; incidenti segnalati anche a Lione. Erano stati mobilitati circa 70mila agenti.",
-      "title": "Francia, 106mila in piazza contro il carovita: tensioni a fine corteo a Parigi",
-      "updatedAt": "19:55",
-      "weight": 2,
-      "zoom": 120
-    },
-    {
-      "cat": "societa",
-      "cc": "FR",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "news",
-      "id": "bataclan-11-anni",
-      "label": "Bataclan",
-      "lat": 48.8631,
-      "lng": 2.3708,
-      "place": "Bataclan, Parigi",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/videogallery/italia/2026/11/13/undici-anni-dalla-strage-del-bataclan-meloni-ricorda-valeria-solesin_8da5c7b6-f023-4310-8fed-a71f9c442b31.html"
-        }
-      ],
-      "text": "Il 13 novembre la Francia ha ricordato le 130 vittime degli attacchi jihadisti del 2015 al Bataclan, allo Stade de France e nei locali del centro di Parigi. La presidente del Consiglio Meloni ha reso omaggio a Valeria Solesin, la ricercatrice veneziana uccisa al Bataclan.",
-      "title": "Undici anni dagli attentati di Parigi, Meloni ricorda Valeria Solesin",
-      "weight": 1,
-      "zoom": 150
-    },
-    {
-      "cat": "politica",
-      "cc": "AL",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "protest",
-      "id": "tirana-protesta",
-      "label": "Tirana",
-      "lat": 41.3275,
-      "lng": 19.8187,
-      "place": "Tirana, Albania",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/accadeoggi_dd38a7d3-309c-4e12-a6b9-d7b1590e0cf6.html"
-        },
-        {
-          "n": "L'Espresso",
-          "u": "https://lespresso.it/c/mondo/2026/11/9/albania-proteste-fenicotteri-edi-rama-dimissioni-tirana-arresti-video/65794"
-        },
-        {
-          "n": "Arab News (AFP)",
-          "u": "https://www.arabnews.pk/world/thousands-gather-at-new-albanian-anti-government-rally-3005168"
-        }
-      ],
-      "story": "albania-proteste",
-      "storyLabel": "Proteste in Albania",
-      "text": "È convocata per oggi a Tirana una nuova manifestazione contro il governo del premier Edi Rama. Il movimento, guidato soprattutto da studenti che rifiutano l'etichetta di partito, è nato in primavera contro un resort di lusso legato alla famiglia Trump in un'area naturale protetta e si è allargato alle accuse di corruzione. Negli scontri del 7 novembre la polizia ha usato lacrimogeni e idranti e ha arrestato quattro persone; Rama attribuisce le violenze a «attori stranieri».",
-      "title": "Albania, nuova manifestazione contro il governo Rama a Tirana",
-      "weight": 2,
-      "zoom": 60
-    },
-    {
-      "cat": "societa",
-      "cc": "BE",
-      "check": {
-        "level": "confermata",
-        "note": "Le cause sono indicate dal governo Usa; non c'è ancora una ricostruzione tecnica ufficiale."
-      },
-      "fx": [
-        {
-          "from": [
-            50.8986,
-            4.4006
-          ],
-          "label": "Voli Europa → Usa ripresi",
-          "t": "link",
-          "to": [
-            38.8869,
-            -77.0228
-          ]
-        }
-      ],
-      "icon": "plane",
-      "id": "eurocontrol-voli-usa",
-      "label": "Voli per gli Usa",
-      "lat": 50.8986,
-      "layers": [
-        "trasporti"
-      ],
-      "lng": 4.4006,
-      "place": "Eurocontrol, Bruxelles",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/14/revocato-il-blocco-dei-voli-negli-stati-uniti_d2a6ded1-a075-4399-8855-8bc69e436c24.html"
-        },
-        {
-          "n": "Reuters (via Internazionale)",
-          "u": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/13/us-faa-grounds-all-departing-flights-due-to-extraordinary-circumstance-safety-reasons"
-        },
-        {
-          "n": "ANSA (ultima ora)",
-          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/eurocontrol-sospeso-tutto-il-traffico-aereo-diretto-negli-usa_a2f4b6cf-d75a-4ff8-b266-b694161d3fd3.html"
-        }
-      ],
-      "text": "Il blocco di tutte le partenze dagli aeroporti statunitensi, deciso nella notte dalla Faa per un guasto alle telecomunicazioni del controllo di volo, è stato revocato verso le 2.40 ora italiana, dopo circa tre ore e mezza. Su richiesta della Faa, Eurocontrol aveva sospeso i voli europei diretti negli Usa. Secondo la Cnn i voli cancellati sono oltre 3.000; il segretario ai Trasporti Duffy parla di decine di migliaia di passeggeri bloccati e attribuisce il guasto ad apparati di rete vecchi e sovraccarichi. Fbi e Sicurezza interna escludono un attacco informatico. In Italia coinvolti alcuni voli da Fiumicino, Milano e Catania.",
-      "title": "Usa, revocato dopo circa tre ore e mezza il blocco dei voli: ripresi anche quelli dall'Europa",
-      "updatedAt": "13:20",
-      "weight": 3,
-      "zoom": 60
-    },
-    {
-      "cat": "politica",
-      "cc": "FR",
-      "check": {
-        "level": "parziale",
-        "note": "Notizia riportata da una sola testata tra quelle consultate."
-      },
-      "icon": "justice",
-      "id": "zhevago-parigi",
-      "label": "Sequestro",
-      "lat": 48.8566,
-      "lng": 2.3522,
-      "place": "Parigi, Francia",
-      "sources": [
-        {
-          "n": "Kyiv Independent",
-          "u": "https://kyivindependent.com/mass-drone-attack-on-moscow-grounds-flights-at-regions-airports/"
-        }
-      ],
-      "text": "Le autorità francesi hanno sequestrato una residenza da circa 40 milioni di dollari a Parigi riconducibile all'imprenditore ucraino Kostiantyn Zhevago, nell'ambito di un'indagine per appropriazione indebita.",
-      "title": "La Francia sequestra la villa parigina dell'oligarca ucraino Zhevago",
-      "weight": 1,
-      "zoom": 60
-    },
-    {
-      "cat": "guerra",
-      "cc": "PS",
-      "check": {
-        "level": "parziale",
-        "note": "I bilanci sono di fonti mediche palestinesi e del ministero della Salute di Gaza; l'esercito israeliano non ha commentato questi episodi nelle fonti consultate."
-      },
-      "fx": [
-        {
-          "t": "pulse"
-        }
-      ],
-      "icon": "blast",
-      "id": "gaza-deir-al-balah",
-      "label": "Deir al-Balah",
-      "lat": 31.417,
-      "lng": 34.35,
-      "place": "Deir al-Balah, Gaza",
-      "sources": [
-        {
-          "n": "Middle East Eye",
-          "u": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-attacks-across-gaza"
-        },
-        {
-          "n": "Ocha (Onu)",
-          "u": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026"
-        },
-        {
-          "n": "Japan Times",
-          "u": "https://www.japantimes.co.jp/news/2026/11/13/world/israel-gaza-post-election-strike/"
-        }
-      ],
-      "story": "gaza-guerra",
-      "storyLabel": "Guerra a Gaza",
-      "text": "Secondo fonti mediche palestinesi citate da Middle East Eye, venerdì sei persone sono state uccise e una ventina ferite nella Striscia: a Deir al-Balah un secondo raid ha colpito chi soccorreva le vittime di un attacco precedente, mentre l'artiglieria ha bersagliato la zona est di Gaza City. Il ministero della Salute di Gaza conta oltre 1.600 morti dall'inizio della tregua dell'ottobre 2025. L'Onu (Ocha) segnala anche l'ingresso di aiuti in calo e decine di migliaia di rifugi danneggiati dalle piogge.",
-      "title": "Gaza, sei morti venerdì in attacchi israeliani a Deir al-Balah e Gaza City",
-      "weight": 3,
-      "zoom": 120
-    },
-    {
-      "cat": "guerra",
-      "cc": "PS",
-      "check": {
-        "level": "confermata",
-        "note": "Dati Onu; per l'uccisione del ragazzo è riportata anche la versione dell'esercito israeliano."
-      },
-      "icon": "alert",
-      "id": "cisgiordania-ocha",
-      "label": "Cisgiordania",
-      "lat": 32.2738,
-      "lng": 35.1958,
-      "place": "Burqa, Nablus",
-      "sources": [
-        {
-          "n": "Ocha (Onu)",
-          "u": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026"
-        }
-      ],
-      "story": "gaza-guerra",
-      "storyLabel": "Guerra a Gaza",
-      "text": "Nel rapporto settimanale l'agenzia Onu Ocha registra in Cisgiordania, tra il 3 e il 9 novembre, 52 attacchi di coloni con feriti o danni, 37 palestinesi feriti e la demolizione di 78 strutture che ha lasciato senza casa 150 persone. Il 9 novembre un ragazzo di 14 anni è stato ucciso dalle forze israeliane vicino a Burqa (Nablus): l'esercito afferma che il gruppo si preparava a lanciare pietre.",
-      "title": "Cisgiordania, l'Onu: 52 attacchi di coloni in una settimana e 78 demolizioni",
-      "weight": 1,
-      "zoom": 60
-    },
-    {
-      "cat": "politica",
-      "cc": "IL",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "gov",
-      "id": "israele-eisenkot",
-      "label": "Knesset",
-      "lat": 31.7767,
-      "layers": [
-        "elezioni"
-      ],
-      "lng": 35.2054,
-      "place": "Knesset, Gerusalemme",
-      "sources": [
-        {
-          "n": "Daily Sabah (Anadolu)",
-          "u": "https://www.dailysabah.com/world/mid-east/eisenkot-reports-progress-in-israeli-government-coalition-talks/amp"
-        },
-        {
-          "n": "Al Jazeera",
-          "u": "https://aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition"
-        },
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/netanyahu-insiste-governo-di-unita-nazionale-per-chiudere-i-conti-con-liran_c8608ef7-07b3-4696-a067-57f6719bef73.html"
-        }
-      ],
-      "story": "israele-governo",
-      "storyLabel": "Nuovo governo in Israele",
-      "text": "Dopo le elezioni del 27 ottobre, in cui nessuno schieramento ha ottenuto i 61 seggi necessari, il presidente Herzog ha affidato a Gadi Eisenkot, leader del partito Yashar, l'incarico di formare il governo: lo hanno indicato deputati che rappresentano 67 seggi, contro i 46 di Netanyahu. Eisenkot parla di progressi verso un «governo di emergenza nazionale», ma le trattative con i partiti dell'opposizione, molto divisi tra loro, non sono ancora concluse. Sabato sera Netanyahu, premier ad interim, ha chiesto un governo di unità nazionale che lo includa, sostenendo che solo così si garantisce la sicurezza del Paese, e ha ribadito l'intenzione di riprendere la guerra contro l'Iran.",
-      "title": "Israele, Eisenkot prosegue le trattative per un governo senza Netanyahu",
-      "updatedAt": "19:55",
-      "weight": 1,
-      "zoom": 120
-    },
-    {
-      "cat": "economia",
-      "cc": "IT",
-      "check": {
-        "level": "confermata",
-        "note": "La cifra di 500 milioni per la sanità è un'ipotesi riferita da una sola fonte, non confermata dal governo."
-      },
-      "icon": "money",
-      "id": "manovra-scuola-sindacati",
-      "label": "Manovra",
-      "lat": 41.901,
-      "layers": [
-        "economia"
-      ],
-      "lng": 12.4797,
-      "place": "Palazzo Chigi, Roma",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/politica/2026/11/13/manovra-il-governo-apre-alle-modifiche-saltano-i-tagli-alla-scuola-piu_a9e7d8e3-ebe1-4229-a908-26b2f2a973d6.html"
-        },
-        {
-          "n": "Adnkronos",
-          "u": "https://adnkronos.com/economia/manovra-governo-sindacati-incontro-modifiche-sciopero_6Asdsd35RP6LACPHJF6NTZ"
-        },
-        {
-          "n": "Tecnica della Scuola",
-          "u": "https://www.tecnicadellascuola.it/tagli-scuola-accordo-tra-governo-e-sindacati-lintervento-sara-ritirato"
-        },
-        {
-          "n": "Adnkronos (sanità)",
-          "u": "https://www.adnkronos.com/economia/500-mln-di-euro-in-piu-per-la-sanita-in-manovra-lipotesi-sul-tavolo-di-schillaci-giorgetti_6Cv2ufLn7bARxVaHAea1WK"
-        }
-      ],
-      "story": "manovra-2027",
-      "storyLabel": "Manovra 2027",
-      "text": "Al termine di quasi otto ore di confronto a Palazzo Chigi con le parti sociali, il governo ha tolto dalla legge di bilancio l'intervento che avrebbe ridotto di quasi 7mila unità docenti e personale Ata; Meloni sostiene che «non erano tagli». L'esecutivo si dice disponibile a destinare risorse aggiuntive alla sanità, mentre restano aperti i nodi su pensioni, superbonus ed exit tax. Cisl e Uil registrano passi avanti parziali; la Cgil, assente Landini, conferma lo sciopero generale del 20 novembre. Secondo Adnkronos, tra ministero della Salute e Mef si discute di circa 500 milioni in più per la sanità pubblica, da destinare soprattutto al personale: è un'ipotesi, non ancora una decisione.",
-      "title": "Manovra, il governo ritira la misura sulla scuola dopo il vertice con i sindacati",
-      "updatedAt": "19:55",
-      "weight": 3,
-      "zoom": 150
-    },
-    {
-      "cat": "economia",
-      "cc": "IT",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "money",
-      "id": "meloni-banche-contributo",
-      "label": "Banche",
-      "lat": 41.8985,
-      "layers": [
-        "economia"
-      ],
-      "lng": 12.4769,
-      "place": "Roma",
-      "sources": [
-        {
-          "n": "Notizie Flash (Teleborsa)",
-          "u": "https://www.notizieflash.net/2026/11/14/banche-meloni-risponde-a-messina-contributo-in-manovra-e-una-scelta-di-giustizia/"
-        },
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/politica/2026/11/13/manovra-il-governo-apre-alle-modifiche-saltano-i-tagli-alla-scuola-piu_a9e7d8e3-ebe1-4229-a908-26b2f2a973d6.html"
-        }
-      ],
-      "story": "manovra-2027",
-      "storyLabel": "Manovra 2027",
-      "text": "La presidente del Consiglio ha difeso il prelievo sulle banche previsto dalla manovra, rispondendo alle critiche dell'amministratore delegato di Intesa Sanpaolo Carlo Messina. Meloni ha detto di respingere l'idea che si tratti di misure «sudamericane».",
-      "title": "Contributo delle banche, Meloni replica a Messina: «Una scelta di giustizia»",
-      "weight": 1,
-      "zoom": 60
-    },
-    {
-      "cat": "economia",
-      "cc": "IT",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "chart",
-      "id": "sp-rating-italia",
-      "label": "Rating S&P",
-      "lat": 41.9063,
-      "lng": 12.4936,
-      "place": "Ministero dell'Economia, Roma",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/economia/2026/11/13/sp-conferma-il-rating-sullitalia-la-crescita-superera-le-stime.-giorgetti-e-la-strada-giusta_968a7f83-4609-47b6-b8c7-0b1ab287d3a7.html"
-        },
-        {
-          "n": "LaPresse",
-          "u": "https://www.lapresse.it/economia/2026/11/13/sp-conferma-rating-italia-bbb-con-outlook-positivo/"
-        },
-        {
-          "n": "Sky TG24",
-          "u": "https://tg24.sky.it/economia/2026/11/13/standard-poor-rating-italia"
-        }
-      ],
-      "text": "L'agenzia Standard & Poor's ha confermato venerdì sera il giudizio sul debito italiano (BBB+/A-2) con prospettiva positiva, citando l'impegno sui conti pubblici e una crescita attesa superiore alle stime precedenti grazie a esportazioni e fondi del Pnrr. Per una promozione chiede un calo del deficit tale da ridurre il rapporto debito/Pil. Il ministro dell'Economia Giorgetti parla di «ulteriore conferma che siamo sulla strada giusta».",
-      "title": "S&P conferma il rating dell'Italia a BBB+, outlook positivo",
-      "weight": 3,
-      "zoom": 150
-    },
-    {
-      "cat": "economia",
-      "cc": "IT",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "protest",
-      "id": "sciopero-generale-20nov",
-      "label": "Sciopero 20 nov",
-      "lat": 42.8,
-      "layers": [
-        "trasporti",
-        "economia"
-      ],
-      "lng": 12.5,
-      "place": "Italia",
-      "sources": [
-        {
-          "n": "Adnkronos",
-          "u": "https://www.adnkronos.com/economia/scioperi-bus-treni-aerei-novembre-2026-date_5pXmMUWbO8B31EVxPZUEWK"
-        },
-        {
-          "n": "Fanpage",
-          "u": "https://www.fanpage.it/attualita/scioperi-novembre-2026-si-fermano-treni-scuola-e-aerei-il-calendario-con-date-e-orari/"
-        },
-        {
-          "n": "Leggo",
-          "u": "https://www.leggo.it/economia/news/13_novembre_2026_manovra_governo_sindacati_sciopero_confermato_quando_ultime_notizie-9888150.html"
-        }
-      ],
-      "story": "scioperi-novembre",
-      "storyLabel": "Scioperi di novembre",
-      "text": "La Cgil conferma lo sciopero generale di tutti i settori pubblici e privati per venerdì 20 novembre contro la manovra. Nella stessa giornata scioperano scuola e università (Usb e altre sigle), i Cobas e la sanità, mentre per il trasporto ferroviario e il trasporto locale sono proclamati stop dalle 21 del 20 alle 20 del 21 novembre (Cub, Sgb e assemblea dei macchinisti). Trenitalia garantisce i servizi minimi.",
-      "title": "Venerdì 20 novembre sciopero generale della Cgil, a rischio anche i treni",
-      "weight": 2,
-      "zoom": 6
-    },
-    {
-      "cat": "societa",
-      "cc": "IT",
-      "check": {
-        "level": "confermata",
-        "note": "Fonte: calendario scioperi riportato dall'agenzia Adnkronos."
-      },
-      "icon": "bus",
-      "id": "bari-sciopero-tpl",
-      "label": "Sciopero bus",
-      "lat": 41.1171,
-      "layers": [
-        "trasporti"
-      ],
-      "lng": 16.8719,
-      "place": "Bari",
-      "sources": [
-        {
-          "n": "Adnkronos",
-          "u": "https://www.adnkronos.com/economia/scioperi-bus-treni-aerei-novembre-2026-date_5pXmMUWbO8B31EVxPZUEWK"
-        },
-        {
-          "n": "Today",
-          "u": "https://www.today.it/attualita/scioperi-novembre-2026-trasporti-treni-aerei-date-orari-citta.html"
-        }
-      ],
-      "story": "scioperi-novembre",
-      "storyLabel": "Scioperi di novembre",
-      "text": "Il trasporto pubblico locale a Bari si ferma per l'intera giornata di sabato per uno sciopero proclamato da Filt Cgil, Fit Cisl, Uiltrasporti e Ugl. Sono garantite le fasce orarie di servizio previste dalla legge.",
-      "title": "Bari, oggi sciopero di 24 ore di bus e trasporto locale",
-      "weight": 1,
-      "zoom": 60
-    },
-    {
       "cat": "ambiente",
       "cc": "IT",
       "check": {
@@ -906,169 +50,64 @@
         }
       ],
       "icon": "storm",
-      "id": "maltempo-emilia-arancione",
-      "label": "Allerta arancione",
-      "lat": 44.6,
+      "id": "maltempo-allerta-15nov",
+      "label": "Allerta gialla",
+      "lat": 41.3,
       "layers": [
         "meteo"
       ],
-      "lng": 11.2,
-      "place": "Pianura bolognese, Emilia-Romagna",
+      "lng": 14.6,
+      "place": "Italia centro-meridionale",
       "sources": [
         {
-          "n": "Meteo.it",
-          "u": "https://www.meteo.it/notizie/meteo-allerta-arancione-e-gialla-14-novembre-2026-in-italia-dove-6e5c026"
+          "n": "MeteoWeb",
+          "u": "https://www.meteoweb.eu/2026/11/allerta-meteo-protezione-civile-15-novembre-domenica-di-forte-maltempo-12-regioni-tra-temporali-frane-e-criticita-idrauliche/1002003492/"
         },
         {
           "n": "Fanpage",
-          "u": "https://www.fanpage.it/attualita/maltempo-allerta-meteo-arancione-gialla-14-novembre-2026-temporali-protezione-civile-regioni-colpite/"
+          "u": "https://www.fanpage.it/attualita/maltempo-allerta-meteo-gialla-15-novembre-2026-per-pioggia-e-temporali-le-regioni-colpite/"
         },
         {
-          "n": "MeteoWeb",
-          "u": "https://www.meteoweb.eu/2026/11/allerta-meteo-protezione-civile-14-novembre-rischio-idraulico-e-idrogeologico-in-4-regioni-le-criticita-previste/1002003167/"
+          "n": "MeteoCloud",
+          "u": "https://www.meteocloud.it/2026/11/14/allerta-meteo-gialla-domenica-15-novembre-in-12-regioni-rischio-idraulico-temporali-e-idrogeologico/"
         }
       ],
       "story": "maltempo-novembre",
       "storyLabel": "Maltempo di novembre",
-      "text": "Per oggi la Protezione civile mantiene l'allerta arancione per rischio idraulico nella pianura bolognese e modenese, dove i fiumi gonfiati dalle piogge dei giorni scorsi continuano a portare piene verso valle. Allerta gialla nel resto dell'Emilia-Romagna, in Toscana, Marche, Umbria e Campania. Dal pomeriggio sono attesi nuovi rovesci tra il Nord-Ovest e l'Emilia-Romagna e temporali sulle coste tirreniche.",
-      "title": "Maltempo, allerta arancione per le piene nella pianura bolognese e modenese",
+      "text": "La Protezione civile ha diramato per oggi un'allerta gialla per temporali, frane e piene dei corsi d'acqua in 12 regioni: Lazio, Toscana, Umbria, Marche, Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sardegna ed Emilia-Romagna, dove restano sorvegliate le piene nella pianura bolognese e modenese. Le piogge più intense sono attese tra Lazio meridionale, Campania, Basilicata tirrenica, Calabria tirrenica e Sardegna sud-occidentale, con venti forti da ovest e mari molto mossi. Al Nord il tempo è più asciutto, con neve solo sopra i 1.100 metri sulle Alpi occidentali.",
+      "title": "Maltempo, oggi allerta gialla in 12 regioni del Centro-Sud e in Emilia-Romagna",
       "weight": 3,
-      "zoom": 20
+      "zoom": 8
     },
     {
       "cat": "ambiente",
       "cc": "IT",
       "check": {
-        "level": "confermata",
-        "note": "Dettagli dalla cronaca ANSA; la situazione di allerta è confermata dal bollettino della Protezione civile."
+        "level": "confermata"
       },
-      "icon": "collapse",
-      "id": "liguria-frane",
-      "label": "Frane Liguria",
-      "lat": 44.3505,
+      "icon": "storm",
+      "id": "toscana-calamita",
+      "label": "Danni maltempo",
+      "lat": 43.7687,
       "layers": [
         "meteo"
       ],
-      "lng": 9.346,
-      "place": "Carasco, Genova",
+      "lng": 11.2559,
+      "place": "Firenze, Toscana",
       "sources": [
         {
           "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/frane-nella-notte-ed-evacuazioni-in-provincia-di-genova_1a6f2dbc-539e-4a57-aab6-351140c778d0.html"
+          "u": "https://www.ansa.it/toscana/notizie/2026/11/14/giani-danni-per-il-maltempo-in-toscana-valuteremo-lo-stato-di-calamita_301dc33f-d71d-40e6-87d1-a4f44b541ab8.html"
         },
         {
-          "n": "Fanpage",
-          "u": "https://www.fanpage.it/attualita/maltempo-allerta-meteo-arancione-gialla-14-novembre-2026-temporali-protezione-civile-regioni-colpite/"
+          "n": "MeteoWeb",
+          "u": "https://www.meteoweb.eu/2026/11/allerta-meteo-weekend-molto-vivace-tra-il-gelo-del-nord-il-caldo-del-sud-e-la-nuova-ondata-di-maltempo-in-arrivo-sul-tirreno-domenica-di-nubifragi/1002003397/"
         }
       ],
       "story": "maltempo-novembre",
       "storyLabel": "Maltempo di novembre",
-      "text": "Nella notte tra giovedì e venerdì una grossa frana ha minacciato un edificio a Carasco, nell'entroterra di Chiavari: dieci persone sono state evacuate e la provinciale 33 è chiusa. A La Spezia uno smottamento nel quartiere di Valdellora ha travolto un parcheggio e due palazzine sono state sgomberate; ad Arcola l'esondazione del Magra ha portato a evacuazioni. In Toscana l'Ombrone pistoiese ha toccato il livello record di 3,53 metri a Pontelungo.",
-      "title": "Liguria, frane ed evacuazioni nel Genovese e nello Spezzino",
-      "weight": 3,
-      "zoom": 80
-    },
-    {
-      "cat": "societa",
-      "cc": "IT",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "justice",
-      "id": "famiglia-bosco-appello",
-      "label": "Famiglia bosco",
-      "lat": 42.3498,
-      "lng": 13.3995,
-      "place": "Corte d'appello, L'Aquila",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/pillon-rigettato-il-ricorso-della-famiglia-del-bosco.-no-al-rientro-definitivo-dei_796a5aab-263b-44ce-aa32-966d9dec0e04.html"
-        },
-        {
-          "n": "ANSA (video)",
-          "u": "https://www.ansa.it/sito/videogallery/italia/2026/11/13/rigettato-il-ricorso-della-famiglia-del-bosco-i-bambini-non-tornano-a-casa_c8ffc222-6975-43ea-bebc-c6b0eb1a089c.html"
-        }
-      ],
-      "story": "famiglia-nel-bosco",
-      "storyLabel": "Famiglia nel bosco",
-      "text": "I giudici d'appello hanno confermato il provvedimento del tribunale per i minorenni: i tre figli della coppia anglo-australiana che viveva in un casolare nel Chietino non tornano per ora definitivamente a casa, ma prosegue il percorso di rientro graduale con fine settimana e visite in famiglia. Il legale dei genitori, Simone Pillon, annuncia ricorso in Cassazione.",
-      "title": "Famiglia nel bosco, la Corte d'appello dell'Aquila respinge il ricorso dei genitori",
-      "weight": 2,
-      "zoom": 80
-    },
-    {
-      "cat": "societa",
-      "cc": "IT",
-      "check": {
-        "level": "confermata",
-        "note": "Notizia d'agenzia; la revisione era stata ammessa nei mesi scorsi, come riportato anche da altre testate."
-      },
-      "icon": "justice",
-      "id": "busetto-libera",
-      "label": "Busetto libera",
-      "lat": 46.0679,
-      "lng": 11.1211,
-      "place": "Corte d'Assise, Trento",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/monica-busetto-linfermiera-condannata-a-25-anni-torna-libera-non-uccise-lei_8746d202-203b-435f-ac8d-c7ce3495b6fa.html"
-        },
-        {
-          "n": "Il Fatto Quotidiano",
-          "u": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/06/21/il-caso-che-imbarazza-nordio-si-alla-revisione-del-processo-per-il-delitto-di-mestre/8425018"
-        }
-      ],
-      "text": "La Corte d'Assise di Trento ha accolto la richiesta di revisione e annullato la condanna a 25 anni dell'operatrice socio-sanitaria veneziana, accusata dell'omicidio dell'anziana vicina Lida Taffi Pamio nel 2012 a Mestre. Di quel delitto si è poi accusata Susanna «Milly» Lazzarini. Busetto, 75 anni, è rientrata nella sua casa a Venezia.",
-      "title": "Monica Busetto torna libera dopo 14 anni: annullata la condanna per l'omicidio di Mestre",
-      "weight": 2,
-      "zoom": 80
-    },
-    {
-      "cat": "politica",
-      "cc": "IT",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "justice",
-      "id": "consulta-carceri",
-      "label": "Consulta",
-      "lat": 41.8992,
-      "lng": 12.4862,
-      "place": "Palazzo della Consulta, Roma",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/la-consulta-urgenti-interventi-del-legislatore-contro-il-sovraffollamento-delle-carceri_b523cc07-c605-464c-a651-ef54ce879957.html"
-        }
-      ],
-      "text": "La Corte costituzionale ha dichiarato inammissibile la questione sollevata dal tribunale di sorveglianza di Firenze sul carcere di Sollicciano, ma ha chiesto al legislatore misure urgenti contro il sovraffollamento, per esempio ampliando l'accesso alle misure alternative. Se la pena viola la dignità del detenuto deve esistere un rimedio, avverte la Corte, che in mancanza di interventi potrebbe agire da sola. Le Camere penali parlano di «profonda delusione».",
-      "title": "Carceri sovraffollate, la Consulta chiede interventi urgenti al Parlamento",
-      "weight": 2,
-      "zoom": 150
-    },
-    {
-      "cat": "societa",
-      "cc": "IT",
-      "check": {
-        "level": "confermata",
-        "note": "Accuse in fase di indagine."
-      },
-      "icon": "siren",
-      "id": "enna-casa-riposo",
-      "label": "Casa di riposo",
-      "lat": 37.567,
-      "lng": 14.2795,
-      "place": "Enna",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/anziani-senza-cibo-e-farmaci-arrestati-gestori-di-una-casa-di-riposo-a-enna_c2df3d03-5cad-4c49-bd9e-da1fd874ad24.html"
-        }
-      ],
-      "text": "La squadra mobile ha eseguito una misura cautelare nei confronti dei due gestori di una casa di riposo di Enna, accusati di maltrattamenti su ospiti molto fragili: secondo la Procura, violenze fisiche, privazione del cibo, limitazioni alla libertà e somministrazione irregolare dei farmaci. Disposti gli arresti domiciliari e l'obbligo di presentazione alla polizia giudiziaria.",
-      "title": "Enna, anziani maltrattati in una casa di riposo: misure per i due gestori",
+      "text": "Il presidente della Regione Toscana Eugenio Giani ha annunciato che la Regione valuterà la richiesta dello stato di calamità per i danni provocati dal maltempo dei giorni scorsi. Oggi sulla Toscana meridionale, tra Grossetano e costa sud, è in vigore un'allerta gialla per temporali e frane, con piogge attese anche sulle zone appenniniche già colpite.",
+      "title": "Toscana, Giani: dopo il maltempo valutiamo la richiesta dello stato di calamità",
       "weight": 1,
       "zoom": 60
     },
@@ -1076,27 +115,93 @@
       "cat": "societa",
       "cc": "IT",
       "check": {
-        "level": "parziale",
-        "note": "La lettura delle conclusioni dei periti è quella del consulente di parte della famiglia."
+        "level": "confermata",
+        "note": "La dinamica è ancora in fase di accertamento da parte dei carabinieri."
       },
-      "icon": "justice",
-      "id": "domenico-periti",
-      "label": "Caso Domenico",
-      "lat": 40.859,
-      "lng": 14.286,
-      "place": "Tribunale di Napoli",
+      "icon": "car",
+      "id": "cosenza-galleria",
+      "label": "Incidente mortale",
+      "lat": 39.335,
+      "layers": [
+        "trasporti"
+      ],
+      "lng": 16.145,
+      "place": "San Fili, Cosenza",
       "sources": [
         {
           "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/la-morte-di-domenico-i-periti-si-doveva-passare-al-cuore-artificiale_3a260076-9a35-4925-9e35-b7988d9d05d4.html"
+          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/14/scontro-tra-due-auto-in-galleria-cinque-morti-nel-cosentino_8ec108df-8b0d-4769-b193-6ad64658d5fa.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/"
         }
       ],
-      "story": "domenico-monaldi",
-      "storyLabel": "Morte del piccolo Domenico",
-      "text": "Si è concluso a Napoli l'incidente probatorio sulla morte di Domenico Caliendo. Secondo il consulente della famiglia, i periti nominati dal gip avrebbero indicato che il cardiochirurgo indagato per omicidio colposo doveva ricorrere al cuore artificiale Berlin Heart invece che all'Ecmo. La madre parla di «verità emersa»; la valutazione dei giudici è ancora attesa.",
-      "title": "Morte del piccolo Domenico, chiuso l'esame dei periti. La madre: «Si poteva salvare»",
-      "weight": 2,
+      "text": "Cinque persone sono morte sabato pomeriggio nello scontro quasi frontale tra due auto nella galleria Fiego, sulla statale 107 a San Fili, tra Cosenza e Paola. Le vittime sono un'automobilista di 82 anni e i quattro occupanti dell'altra vettura, tra cui un imprenditore di 50 anni, la madre e la zia; la compagna dell'uomo è morta in ospedale a Cosenza alcune ore dopo. I carabinieri stanno ricostruendo la dinamica: dai primi rilievi una delle due auto avrebbe invaso la corsia opposta in curva. La strada è rimasta chiusa per circa quattro ore.",
+      "title": "Cosenza, scontro frontale in galleria sulla statale 107: cinque morti",
+      "weight": 3,
+      "zoom": 120
+    },
+    {
+      "cat": "economia",
+      "cc": "IT",
+      "check": {
+        "level": "confermata",
+        "note": "Il contenuto della telefonata è ricostruito da fonti di stampa; non ci sono dichiarazioni ufficiali."
+      },
+      "icon": "money",
+      "id": "manovra-meloni-messina",
+      "label": "Manovra e banche",
+      "lat": 41.9012,
+      "layers": [
+        "economia"
+      ],
+      "lng": 12.4801,
+      "place": "Palazzo Chigi, Roma",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/politica/2026/11/14/meloni-messina-una-telefonata-per-chiarirsi-dopo-le-incomprensioni_44e64f57-2657-4960-b7bf-c79677f0315e.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/tajani-ho-sempre-detto-che-la-manovra-poteva-essere-migliorata-in-parlamento_ef23b892-6445-4107-88fb-57b29bd2714e.html"
+        }
+      ],
+      "story": "manovra-2027",
+      "storyLabel": "Manovra 2027",
+      "text": "La presidente del Consiglio Giorgia Meloni e l'amministratore delegato di Intesa Sanpaolo Carlo Messina si sono sentiti al telefono per chiarire le tensioni sulla manovra, dopo le critiche del banchiere al contributo chiesto agli istituti di credito e all'allungamento a dieci anni dei rimborsi dei crediti del Superbonus. Nessuna delle due parti ha commentato. Le banche chiedono di coinvolgere anche energia e assicurazioni; il governo rinvia ogni modifica agli emendamenti in Parlamento, a saldi invariati. Il vicepremier Tajani ha ribadito che il testo può essere migliorato in aula.",
+      "title": "Manovra, telefonata di chiarimento tra Meloni e Messina sul contributo delle banche",
+      "weight": 3,
       "zoom": 150
+    },
+    {
+      "cat": "politica",
+      "cc": "IT",
+      "check": {
+        "level": "confermata",
+        "note": "I numeri dei partecipanti sono quelli della Questura."
+      },
+      "icon": "protest",
+      "id": "parma-cortei",
+      "label": "Due cortei",
+      "lat": 44.8015,
+      "lng": 10.3279,
+      "place": "Parma",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/politica/2026/11/14/parma-antifascista-risponde-alla-remigrazione-in-20mila-contro-1500_789f2b86-7cde-4f63-b44b-28f3eff55f07.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/emiliaromagna/notizie/2026/11/14/parma-blindata-per-il-doppio-corteo-sfilano-pro-remigrazione-e-antifascisti_b84f6ae5-9692-4b76-aea6-0600f1621634.html"
+        }
+      ],
+      "text": "Sabato Parma ha ospitato due manifestazioni contrapposte tenute separate da un ampio schieramento di forze dell'ordine: secondo la Questura circa 20mila persone hanno partecipato al corteo antifascista promosso da sindaci, Anpi, sindacati e associazioni, e circa 1.500 a quello del comitato di estrema destra Remigrazione e Riconquista. Non sono stati segnalati incidenti; alla fine del corteo di destra ci sono stati cori e saluti fascisti. Il sindaco Michele Guerra ha criticato duramente l'iniziativa.",
+      "title": "Parma, 20mila al corteo antifascista e 1.500 a quello per la «remigrazione»",
+      "weight": 2,
+      "zoom": 80
     },
     {
       "cat": "societa",
@@ -1105,20 +210,24 @@
         "level": "confermata"
       },
       "icon": "siren",
-      "id": "torino-palazzo-nuovo",
-      "label": "Palazzo Nuovo",
-      "lat": 45.0695,
-      "lng": 7.695,
-      "place": "Palazzo Nuovo, Torino",
+      "id": "milano-truffa-92enne",
+      "label": "Truffa mortale",
+      "lat": 45.452,
+      "lng": 9.203,
+      "place": "Porta Romana, Milano",
       "sources": [
         {
           "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/cadono-da-una-scala-a-palazzo-nuovo-occupato-uno-e-intubato_ac6a9ebb-ef0f-4613-a944-0254ed13b07e.html"
+          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/14/anziano-ucciso-durante-la-truffa-del-falso-carabiniere-due-fermi_5d3e1a2d-d519-4fe8-b10b-e866c55fbb82.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/lombardia/notizie/2026/11/14/anziano-ucciso-durante-una-truffa-del-falso-carabiniere-due-fermi_a38b8e4c-0ff3-4262-84ee-fade6a65aeb1.html"
         }
       ],
-      "text": "Due uomini di 36 anni sono precipitati all'alba di venerdì da una scala al secondo piano di Palazzo Nuovo, sede delle facoltà umanistiche dell'Università di Torino, mentre cercavano di raggiungere una parete per un graffito. Il più grave è intubato all'ospedale San Giovanni Bosco, l'altro ha fratture a un femore e alle costole. L'ateneo chiede la fine dell'occupazione dell'edificio.",
-      "title": "Torino, due writer cadono da una scala a Palazzo Nuovo: uno è grave",
-      "weight": 1,
+      "text": "La Polizia ha fermato due uomini accusati di rapina aggravata e omicidio di un 92enne, aggredito il 27 ottobre nella sua casa in zona Porta Romana e morto il giorno dopo al Policlinico. Secondo gli investigatori uno faceva da palo e l'altro è entrato in casa con la tecnica del finto carabiniere, ha colpito l'anziano e ha portato via gioielli e oggetti di valore. L'autopsia ha escluso che le fratture al cranio fossero dovute a una caduta per malore.",
+      "title": "Milano, 92enne ucciso durante una truffa del finto carabiniere: due fermati",
+      "weight": 2,
       "zoom": 150
     },
     {
@@ -1128,291 +237,74 @@
         "level": "confermata"
       },
       "icon": "alert",
-      "id": "allarmi-bomba-viminale",
-      "label": "Allarmi bomba",
-      "lat": 41.9008,
-      "lng": 12.4943,
-      "place": "Viminale, Roma",
+      "id": "palermo-cep-vigili",
+      "label": "Sassi ai pompieri",
+      "lat": 38.152,
+      "lng": 13.305,
+      "place": "Cep, Palermo",
       "sources": [
         {
           "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/circolare-viminale-minaccia-inattendibile-se-attraverso-mail-bombing_ca1d2b9c-c7e2-4e00-afb9-6dccb59191fb.html"
-        },
-        {
-          "n": "ANSA (Milano)",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/falsi-allarmi-bomba-i-pm-di-milano-indagano-con-piu-fascicoli_a306e6b8-b7e2-441b-a411-72268e12d64c.html"
+          "u": "https://www.ansa.it/sicilia/notizie/2026/11/14/lancio-di-pietre-contro-i-vigili-del-fuoco-al-cep-di-palermo_ed397417-952a-4cbf-98e3-fbf9ef09819d.html"
         }
       ],
-      "story": "allarmi-bomba",
-      "storyLabel": "Falsi allarmi bomba",
-      "text": "Dopo l'ondata di email minatorie arrivate a migliaia di scuole, il ministero dell'Interno ha indicato i criteri per decidere le evacuazioni: una minaccia inviata in serie per posta elettronica va considerata di norma inattendibile, salvo il ritrovamento di oggetti sospetti o precedenti specifici. A Milano la Procura indaga con più fascicoli.",
-      "title": "Falsi allarmi bomba, circolare del Viminale: le mail seriali non sono minacce credibili",
+      "text": "Una squadra dei vigili del fuoco è stata presa a sassate nel quartiere Cep di Palermo mentre era impegnata in un intervento, nonostante la presenza delle forze dell'ordine. Sono in corso indagini per identificare i responsabili.",
+      "title": "Palermo, sassi contro i vigili del fuoco al Cep durante un intervento",
       "weight": 1,
       "zoom": 150
     },
     {
-      "cat": "societa",
+      "cat": "sport",
       "cc": "IT",
       "check": {
         "level": "confermata"
       },
-      "icon": "justice",
-      "id": "garlasco-sempio-atti",
-      "label": "Garlasco",
-      "lat": 45.186,
-      "lng": 9.155,
-      "place": "Procura di Pavia",
+      "icon": "ball",
+      "id": "ravenna-ronaldinho",
+      "label": "Ronaldinho",
+      "lat": 44.4113,
+      "lng": 12.1883,
+      "place": "Stadio Benelli, Ravenna",
       "sources": [
         {
           "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/garlasco-gli-atti-dei-pm-in-24-punti-nella-richiesta-di-processo-per-sempio_751c2c13-f333-4ba5-b242-4e38e3f308ee.html"
+          "u": "https://www.ansa.it/emiliaromagna/notizie/2026/11/14/ronaldinho-primo-allenamento-a-ravenna-e-subito-show_b585bcce-5849-427e-ab1a-d8607e2ccfe3.html"
         }
       ],
-      "story": "garlasco",
-      "storyLabel": "Delitto di Garlasco",
-      "text": "Nella richiesta di processo per Andrea Sempio, indagato per l'omicidio di Chiara Poggi del 2007, i pm di Pavia elencano in 24 punti gli atti a sostegno dell'accusa. L'udienza preliminare è fissata per il 25 febbraio.",
-      "title": "Garlasco, la Procura sintetizza in 24 punti gli elementi contro Sempio",
-      "weight": 1,
-      "zoom": 80
-    },
-    {
-      "cat": "societa",
-      "cc": "IT",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "news",
-      "id": "colletta-alimentare",
-      "label": "Colletta",
-      "lat": 43.6158,
-      "lng": 13.5189,
-      "place": "Ancona, Marche",
-      "sources": [
-        {
-          "n": "ANSA Marche",
-          "u": "https://www.ansa.it/marche/notizie/2026/11/12/colletta-alimentare-il-14-novembre-nelle-marche-in-400-punti-vendita_fdee4835-7381-4bbb-8d75-70fb0e1889f8.html"
-        },
-        {
-          "n": "ANSA Toscana",
-          "u": "https://www.ansa.it/toscana/notizie/2026/11/13/colletta-alimentare-il-14-novembre-si-puo-donare-la-spesa-anche-in-toscana_d8259148-4caf-4543-98cb-beba866c18bd.html"
-        }
-      ],
-      "text": "Sabato 14 novembre i volontari del Banco alimentare raccolgono nei supermercati la spesa donata dai clienti, destinata alle strutture caritative che aiutano le famiglie in difficoltà. Solo nelle Marche i punti vendita aderenti sono circa 400.",
-      "title": "Oggi la Colletta alimentare nei supermercati di tutta Italia",
-      "weight": 1,
-      "zoom": 15
-    },
-    {
-      "cat": "sport",
-      "cc": "IT",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "car",
-      "id": "antonelli-quirinale",
-      "label": "Antonelli",
-      "lat": 41.8996,
-      "lng": 12.4875,
-      "place": "Quirinale, Roma",
-      "sources": [
-        {
-          "n": "Sky TG24",
-          "u": "https://tg24.sky.it/sport/2026/11/13/kimi-antonelli-incontro-mattarella-quirinale"
-        },
-        {
-          "n": "Adnkronos",
-          "u": "https://www.adnkronos.com/sport/antonelli-visita-mattarella-casco-regalo-invito-monza_3symbBMhxdUppduFW3FTPR"
-        },
-        {
-          "n": "Il Fatto Quotidiano",
-          "u": "https://www.ilfattoquotidiano.it/2026/11/13/antonelli-mattarella-quirinale-casco-personalizzato-invito-monza/8571369/"
-        }
-      ],
-      "text": "Il presidente della Repubblica ha ricevuto il pilota bolognese Kimi Antonelli, primo italiano campione del mondo di Formula 1 dai tempi di Alberto Ascari, insieme alla famiglia. Antonelli gli ha donato un casco con dedica e lo ha invitato al Gran Premio di Monza; Mattarella ha risposto che l'idea lo attira molto.",
-      "title": "Antonelli al Quirinale, il campione del mondo regala il casco a Mattarella",
+      "text": "L'ex campione brasiliano Ronaldinho, 46 anni, si è unito al Ravenna, squadra di Serie C allenata da Andrea Mandorlini, e ha svolto la rifinitura allo stadio Benelli. Il club spiega che il giocatore ha aderito al progetto con la promessa di disputare una partita ufficiale: dovrebbe scendere in campo oggi nel derby romagnolo contro il Forlì.",
+      "title": "Ronaldinho si allena con il Ravenna: oggi in campo nel derby di Serie C con il Forlì",
       "weight": 2,
       "zoom": 150
     },
     {
-      "cat": "sport",
-      "cc": "BE",
+      "cat": "ambiente",
+      "cc": "IT",
       "check": {
         "level": "confermata"
       },
-      "icon": "ball",
-      "id": "belgio-italia-vigilia",
-      "label": "Belgio-Italia",
-      "lat": 50.8955,
-      "lng": 4.3341,
-      "place": "Stadio Re Baldovino, Bruxelles",
+      "icon": "leaf",
+      "id": "roma-domenica-ecologica",
+      "label": "Domenica ecologica",
+      "lat": 41.8986,
+      "layers": [
+        "trasporti"
+      ],
+      "lng": 12.4769,
+      "place": "Roma",
       "sources": [
         {
-          "n": "Skuola.net",
-          "u": "https://www.skuola.net/news/trend/italia-belgio-nations-league-pareggio-quarti-orario.html"
+          "n": "ANSA",
+          "u": "https://www.ansa.it/canale_motori/notizie/mondo_motori/2026/11/12/smog-a-roma-il-15-novembre-la-prima-domenica-ecologica_3750d0fd-679a-436c-bd9b-a46ab80fdf30.html"
         },
         {
-          "n": "Sky Sport",
-          "u": "https://sport.sky.it/calcio/nations-league/partite/2026/giornata-6/belgio-italia"
+          "n": "ANSA",
+          "u": "https://www.ansa.it/canale_motori/notizie/sicurezza/2026/10/27/cambio-gomme-dal-15-novembre-tempo-di-invernali_242ecc49-fa3e-4522-95ac-60eacbe5b17c.html"
         }
       ],
-      "story": "nations-league",
-      "storyLabel": "Nations League",
-      "text": "Domenica alle 20.45 allo stadio Re Baldovino di Bruxelles l'Italia di Mancini chiude il girone contro il Belgio. Dopo la vittoria per 3-1 sulla Francia a San Siro, gli azzurri sono primi con 10 punti come i francesi (avanti negli scontri diretti) e uno in più dei belgi: con un pareggio sono ai quarti, con una vittoria anche primi. In caso di sconfitta servirebbe un successo della Turchia sulla Francia.",
-      "title": "Nations League, domani Belgio-Italia: agli azzurri basta un pari per i quarti",
-      "weight": 2,
-      "zoom": 150
-    },
-    {
-      "cat": "sport",
-      "cc": "RS",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "ball",
-      "id": "serbia-germania",
-      "label": "SRB-GER 1-3",
-      "lat": 44.7834,
-      "live": {
-        "a": "SRB",
-        "b": "GER",
-        "kind": "score",
-        "sa": 1,
-        "sb": 3,
-        "status": "Finale"
-      },
-      "lng": 20.4648,
-      "place": "Belgrado, Serbia",
-      "sources": [
-        {
-          "n": "Tuttosport",
-          "u": "https://www.tuttosport.com/news/calcio/uefa-nations-league/2026/11/13-152571134/l_olanda_esagera_7-0_alla_grecia_tripletta_reijnders_koop_entra_i_risultati_di_nations_league"
-        },
-        {
-          "n": "Alfredo Pedullà",
-          "u": "https://www.alfredopedulla.com/nations-league-settebello-olanda-alla-grecia-stravince-la-germania-in-serbia/"
-        },
-        {
-          "n": "Novosti",
-          "u": "https://www.novosti.rs/sport/fudbal/1654977/fudbalska-reprezentacija-srbije-fudbalska-reprezentacija-nemacke-liga-nacija-lajv-prenos"
-        }
-      ],
-      "story": "nations-league",
-      "storyLabel": "Nations League",
-      "text": "Venerdì la Germania ha battuto la Serbia 3-1 a Belgrado con un autogol di Babic e le reti di Wirtz e Gruda, ma per evitare lo spareggio dovrà battere l'Olanda all'ultima giornata. Gli olandesi hanno dilagato contro la Grecia (tripletta di Reijnders, doppietta di Timber) e sono a un passo dai quarti. La Svizzera, con lo 0-0 in Slovenia, conquista la promozione in Lega A.",
-      "title": "Nations League, la Germania vince 3-1 in Serbia. L'Olanda travolge la Grecia 7-0",
-      "weight": 2,
-      "zoom": 120
-    },
-    {
-      "cat": "sport",
-      "cc": "GB",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "ball",
-      "id": "scozia-macedonia",
-      "label": "SCO-MKD 2-1",
-      "lat": 55.8258,
-      "live": {
-        "a": "SCO",
-        "b": "MKD",
-        "kind": "score",
-        "sa": 2,
-        "sb": 1,
-        "status": "Finale"
-      },
-      "lng": -4.252,
-      "place": "Glasgow, Scozia",
-      "sources": [
-        {
-          "n": "Tuttosport",
-          "u": "https://www.tuttosport.com/news/calcio/uefa-nations-league/2026/11/13-152571134/l_olanda_esagera_7-0_alla_grecia_tripletta_reijnders_koop_entra_i_risultati_di_nations_league"
-        },
-        {
-          "n": "Alfredo Pedullà",
-          "u": "https://www.alfredopedulla.com/nations-league-settebello-olanda-alla-grecia-stravince-la-germania-in-serbia/"
-        }
-      ],
-      "story": "nations-league",
-      "storyLabel": "Nations League",
-      "text": "In Lega B la Scozia ha superato la Macedonia del Nord 2-1: due gol di John McGinn, di Rastoder il momentaneo pareggio macedone.",
-      "title": "La Scozia batte la Macedonia del Nord 2-1 con una doppietta di McGinn",
-      "weight": 1,
-      "zoom": 120
-    },
-    {
-      "cat": "sport",
-      "cc": "RO",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "ball",
-      "id": "nations-league-sabato",
-      "label": "Nations League",
-      "lat": 44.4373,
-      "lng": 26.1525,
-      "place": "Bucarest, Romania",
-      "sources": [
-        {
-          "n": "Tuttosport",
-          "u": "https://www.tuttosport.com/news/calcio/uefa-nations-league/2026/11/14-152589510/zhegrova_non_punge_il_kosovo_pareggia_contro_israele_cosa_cambia_in_nations_league"
-        },
-        {
-          "n": "Calciomagazine",
-          "u": "https://www.calciomagazine.net/risultati-14-novembre-2026-252863.html"
-        },
-        {
-          "n": "Napoli Magazine",
-          "u": "https://www.napolimagazine.com/calcio/articolo/nations-league-il-programma-di-sabato-14-novembre-in-campo-hojlund-con-la-sua-danimarca-14-11-2026"
-        },
-        {
-          "n": "Radio Romania International",
-          "u": "https://www.rri.ro/en/news-and-current-affairs/newsflash/november-13-2026-id1083407.html"
-        }
-      ],
-      "story": "nations-league",
-      "storyLabel": "Nations League",
-      "text": "Kosovo e Israele hanno pareggiato 0-0 a Pristina in Lega B. Alle 18 sono iniziate Norvegia-Galles (Lega A) e Georgia-Ungheria; alle 20.45 Portogallo-Danimarca e, in Lega B, Austria-Irlanda, Irlanda del Nord-Ucraina, Romania-Polonia e Svezia-Bosnia Erzegovina. Domani alle 20.45 Belgio-Italia.",
-      "title": "Nations League, Kosovo-Israele 0-0; stasera Portogallo-Danimarca e Romania-Polonia",
-      "updatedAt": "19:55",
+      "text": "A Roma si svolge oggi la prima domenica ecologica della stagione, con limitazioni alla circolazione dei veicoli più inquinanti per contenere lo smog. Le fasce orarie e le deroghe sono indicate dal Comune; dal 15 novembre scatta inoltre in gran parte d'Italia l'obbligo di pneumatici invernali o catene a bordo sulle strade dove è previsto.",
+      "title": "Roma, oggi la prima domenica ecologica: auto ferme nella fascia verde",
       "weight": 1,
       "zoom": 60
-    },
-    {
-      "cat": "sport",
-      "cc": "IT",
-      "check": {
-        "level": "confermata"
-      },
-      "icon": "trophy",
-      "id": "rugby-italia-argentina",
-      "label": "Italia-Argentina",
-      "lat": 44.4165,
-      "lng": 8.9525,
-      "place": "Stadio Luigi Ferraris, Genova",
-      "sources": [
-        {
-          "n": "LaPresse",
-          "u": "https://www.lapresse.it/sport/rugby/2026/11/14/nations-championship-2026-italia-argentina-14-19-quesada-cerano-le-condizioni-per-vincere/"
-        },
-        {
-          "n": "Il Messaggero",
-          "u": "https://www.ilmessaggero.it/sport/rugby/nations_championship_marassi_italrugby_pumas-9889643.html"
-        },
-        {
-          "n": "GenovaToday",
-          "u": "https://www.genovatoday.it/sport/rugby-italia-argentina.html"
-        },
-        {
-          "n": "Liguria Notizie",
-          "u": "https://www.ligurianotizie.it/rugby-italia-ko-a-genova-largentina-vince-19-14-al-ferraris/2026/11/14/1288625/"
-        }
-      ],
-      "text": "L'Argentina ha battuto l'Italia 19-14 allo stadio Ferraris di Genova nella quinta giornata del Nations Championship. Gli azzurri erano andati avanti con una meta di Ioane, ma i Pumas hanno pareggiato prima dell'intervallo con Bernasconi e allungato nella ripresa con Delguy e Carreras; una meta tecnica ha riportato l'Italia a -5, senza bastare. Il ct Quesada ha detto che c'erano le condizioni per vincere. Sabato prossimo a Udine l'ultima partita del girone, contro le Figi.",
-      "title": "Rugby, l'Italia cede all'Argentina 14-19 a Genova",
-      "updatedAt": "19:55",
-      "weight": 2,
-      "zoom": 150
     },
     {
       "cat": "sport",
@@ -1421,119 +313,853 @@
         "level": "confermata"
       },
       "icon": "tennis",
-      "id": "atp-finals-vigilia",
+      "id": "atp-finals-via",
       "label": "Atp Finals",
       "lat": 45.042,
       "lng": 7.65,
       "place": "Inalpi Arena, Torino",
       "sources": [
         {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/13/accadeoggi_dd38a7d3-309c-4e12-a6b9-d7b1590e0cf6.html"
+          "n": "Torino Top News",
+          "u": "https://torinotopnews.it/sport/atp-finals-torino-15-novembre-2026-zverev-cobolli-programma/"
         },
         {
-          "n": "Sport Mediaset",
-          "u": "https://www.sportmediaset.mediaset.it/speciale/atp-finals-2026/atp-finals-2026-sorteggiati-i-due-gironi-cobolli-con-alcaraz_118893939-202602k.shtml"
-        },
-        {
-          "n": "Agi",
-          "u": "https://www.agi.it/sport/news/2026-10-06/sinner-salta-atp-finals-39402211/amp/"
+          "n": "Ubitennis",
+          "u": "https://www.ubitennis.com/blog/2026/11/12/atp-finals-il-programma-di-domenica-15-e-lunedi-16-novembre-con-lesordio-di-flavio-cobolli/"
         }
       ],
       "story": "atp-finals-2026",
       "storyLabel": "Atp Finals 2026",
-      "text": "Da domenica 15 novembre l'Inalpi Arena di Torino ospita le Atp Finals tra gli otto migliori giocatori della stagione; oggi media day e celebrazione dei doppisti. Flavio Cobolli è l'unico azzurro in singolare, nel girone con Alcaraz e Medvedev, mentre Jannik Sinner ha chiuso in anticipo la stagione per un problema al ginocchio. La finale è in programma domenica 22.",
-      "title": "Atp Finals, domani a Torino il via: Cobolli unico italiano, Sinner assente",
+      "text": "Si aprono oggi all'Inalpi Arena di Torino le Atp Finals, il torneo che chiude la stagione con gli otto migliori tennisti. In singolare giocano Zverev contro Jodar dalle 14 e Shelton contro Fils in serata. Lunedì tocca a Flavio Cobolli, unico italiano in singolare, contro Medvedev, e al doppio Bolelli-Vavassori; Jannik Sinner è assente per infortunio.",
+      "title": "Atp Finals, oggi a Torino il via: Zverev-Jodar e Shelton-Fils, domani esordio di Cobolli",
       "weight": 2,
       "zoom": 150
     },
     {
-      "cat": "sport",
-      "cc": "FI",
+      "cat": "economia",
+      "cc": "IT",
       "check": {
         "level": "confermata"
       },
-      "icon": "trophy",
-      "id": "sci-levi-slalom",
-      "label": "Slalom Levi",
-      "lat": 67.8037,
-      "lng": 24.8089,
-      "place": "Levi, Finlandia",
+      "icon": "bus",
+      "id": "scioperi-settimana",
+      "label": "Scioperi",
+      "lat": 40.8518,
+      "layers": [
+        "trasporti"
+      ],
+      "lng": 14.2681,
+      "place": "Napoli",
       "sources": [
         {
-          "n": "FIS",
-          "u": "https://www.fis-ski.com/alpine-skiing/news/2026-27/-a-good-birthday-present-aicher-wins-first-world-cup-slalom"
+          "n": "Adnkronos",
+          "u": "https://www.adnkronos.com/economia/scioperi-bus-treni-aerei-novembre-2026-date_5pXmMUWbO8B31EVxPZUEWK"
         },
         {
-          "n": "AP (via KSL)",
-          "u": "https://www.ksl.com/article/51645891/german-skier-emma-aicher-wins-her-first-world-cup-slalom-race"
-        },
-        {
-          "n": "Ski Racing",
-          "u": "https://skiracing.com/emma-aicher-levi-slalom-2026/"
+          "n": "ANSA",
+          "u": "https://www.ansa.it/campania/notizie/2026/11/13/sciopero-generale-del-20-novembre-in-campania-5-manifestazioni-nelle-citta-capoluogo_89166da4-aa9e-400b-892a-4cc69a8ad054.html"
         }
       ],
-      "text": "La tedesca Emma Aicher ha vinto lo slalom femminile di Levi, in Finlandia, primo della stagione e sua prima vittoria in carriera nella specialità. Seconda l'albanese Lara Colturi a 43 centesimi, terza l'austriaca Katharina Truppe a 50; quarta la croata Zrinka Ljutic. Assente per scelta Mikaela Shiffrin. Domani a Levi lo slalom maschile; il prossimo slalom femminile è sabato a Gurgl, in Austria.",
-      "title": "Sci, a Levi prima vittoria in slalom per Emma Aicher",
-      "updatedAt": "19:55",
+      "story": "scioperi-novembre",
+      "storyLabel": "Scioperi di novembre",
+      "text": "Lunedì 16 novembre a Napoli si fermano bus, metro e funicolari dell'Anm dalle 11 alle 15, e nella stessa giornata scioperano sanità privata, cooperative ed enti locali con le fasce di garanzia. Venerdì 20 è confermato lo sciopero generale della Cgil contro la manovra, con manifestazioni anche nei capoluoghi campani; per treni e trasporto locale lo stop va dalle 21 del 20 alle 20 del 21 novembre.",
+      "title": "Scioperi, domani bus e metro a Napoli e sanità privata; venerdì lo sciopero generale",
       "weight": 1,
       "zoom": 60
     },
     {
+      "cat": "economia",
+      "cc": "IT",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "plane",
+      "id": "malpensa-voli-usa",
+      "label": "Voli cancellati",
+      "lat": 45.63,
+      "layers": [
+        "trasporti"
+      ],
+      "lng": 8.7231,
+      "place": "Aeroporto di Malpensa",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/lombardia/notizie/2026/11/14/blocco-negli-stati-uniti-cancellati-3-voli-su-10-previsti-a-malpensa_7a220a50-5b65-48a3-9899-0a781acd1c79.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/15/cancellati-sabato-negli-usa-6.500-voli-oggi-almeno-altri-760_cbe40d91-464e-4ab8-99c1-80fe5bc20559.html"
+        }
+      ],
+      "text": "Il blocco del traffico aereo deciso venerdì dall'autorità dell'aviazione statunitense ha avuto ripercussioni anche in Italia: a Malpensa sono stati cancellati tre dei dieci voli previsti da e per gli Stati Uniti, ma lo scalo è rimasto operativo. Negli Usa la piena operatività è tornata sabato, ma i disagi proseguono con nuove cancellazioni.",
+      "title": "Blocco dei voli negli Usa, cancellati tre voli su dieci previsti a Malpensa",
+      "weight": 1,
+      "zoom": 150
+    },
+    {
+      "cat": "societa",
+      "cc": "IT",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "virus",
+      "id": "iss-influenza",
+      "label": "Influenza",
+      "lat": 41.9045,
+      "lng": 12.5155,
+      "place": "Istituto superiore di sanità, Roma",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/canale_saluteebenessere/notizie/sanita/2026/11/13/iss-da-influenza-a-raffreddori-478mila-casi-acuti-in-una-settimana_82ce66ea-1033-41dd-85f1-1d6c030ed503.html"
+        }
+      ],
+      "text": "Secondo l'Istituto superiore di sanità, nell'ultima settimana in Italia si sono registrati circa 478mila casi di infezioni respiratorie acute, tra influenza, virus simil-influenzali e raffreddori. Il dato segna l'avvio della stagione invernale dei virus respiratori.",
+      "title": "Influenza e raffreddori, l'Iss stima 478mila casi in una settimana",
+      "weight": 1,
+      "zoom": 150
+    },
+    {
+      "cat": "societa",
+      "cc": "IT",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "news",
+      "id": "marchesini-treccani",
+      "label": "Marchesini",
+      "lat": 41.8966,
+      "lng": 12.4703,
+      "place": "Istituto Treccani, Roma",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/ansa-anna-marchesini-a-dieci-anni-dalla-morte-entra-nella-treccani_0fdedffd-3d32-405e-be9c-962431472744.html"
+        }
+      ],
+      "text": "A dieci anni dalla scomparsa, l'attrice e comica Anna Marchesini, tra le fondatrici del Trio con Massimo Lopez e Tullio Solenghi, entra nell'Enciclopedia Treccani.",
+      "title": "Anna Marchesini entra nella Treccani a dieci anni dalla morte",
+      "weight": 1,
+      "zoom": 150
+    },
+    {
       "cat": "guerra",
-      "cc": "IR",
+      "cc": "UA",
       "check": {
         "level": "parziale",
-        "note": "Versione delle forze armate iraniane, riportata da AFP; non ci sono ancora conferme indipendenti né reazioni ufficiali Usa."
+        "note": "Bilanci e numeri dei droni sono forniti dalle autorità ucraine; Mosca non ha commentato."
+      },
+      "fx": [
+        {
+          "t": "pulse"
+        },
+        {
+          "cc": [
+            "UA"
+          ],
+          "t": "zone"
+        }
+      ],
+      "icon": "missile",
+      "id": "ua-attacchi-zaporizhzhia",
+      "label": "Zaporizhzhia",
+      "lat": 47.8388,
+      "lng": 35.1396,
+      "place": "Zaporizhzhia, Ucraina",
+      "sources": [
+        {
+          "n": "Kyiv Independent",
+          "u": "https://kyivindependent.com/at-least-7-killed-80-injured-in-russian-attacks-across-ukraine-zaporizhzhia-among-worst-hit/"
+        },
+        {
+          "n": "Kyiv Independent",
+          "u": "https://kyivindependent.com/russia-strikes-zaporizhzhia-injures-13-including-5-children/"
+        }
+      ],
+      "story": "ucraina-guerra",
+      "storyLabel": "Guerra in Ucraina",
+      "text": "Secondo le autorità regionali ucraine, gli attacchi russi di venerdì e della notte hanno causato almeno 7 morti e 80 feriti. La regione più colpita è Zaporizhzhia, con 3 morti, tra cui un bambino, e 62 feriti: in città un palazzo residenziale è stato centrato da missili. Vittime anche nelle regioni di Kherson, Donetsk e Kharkiv, mentre nella regione di Odessa circa 50mila utenze sono rimaste senza elettricità. L'aviazione ucraina riferisce di 96 droni lanciati nella notte, 81 dei quali abbattuti.",
+      "title": "Ucraina, attacchi russi: almeno 7 morti e 80 feriti, Zaporizhzhia la più colpita",
+      "weight": 3,
+      "zoom": 60
+    },
+    {
+      "cat": "guerra",
+      "cc": "RU",
+      "check": {
+        "level": "parziale",
+        "note": "Gli attacchi e i danni sono rivendicati dallo Stato maggiore ucraino, senza conferme indipendenti o russe."
       },
       "fx": [
         {
           "t": "pulse"
         }
       ],
-      "icon": "ship",
-      "id": "hormuz-petroliere-mine",
-      "label": "Hormuz",
-      "lat": 26.5,
-      "layers": [
-        "geopolitica",
-        "economia"
-      ],
-      "lng": 56.3,
-      "place": "Stretto di Hormuz",
+      "icon": "blast",
+      "id": "ua-colpi-lipetsk-samara",
+      "label": "Raid su Lipetsk",
+      "lat": 52.6031,
+      "lng": 39.5708,
+      "place": "Lipetsk, Russia",
       "sources": [
         {
-          "n": "Oman Observer (AFP)",
-          "u": "https://www.omanobserver.om/article/1199638/world/region/iran-reports-three-incidents-of-oil-tankers-hit-by-mines-in-hormuz"
+          "n": "Kyiv Independent",
+          "u": "https://kyivindependent.com/ukraine-hits-key-russian-oil-hub-military-airbase-in-latest-long-range-strikes/"
         },
         {
-          "n": "Gazzetta di Parma (ANSA)",
-          "u": "https://www.gazzettadiparma.it/italia-mondo/2026/11/14/news/teheran-due-petroliere-in-fiamme-dopo-aver-urtato-mine-nello-stretto-di-hormuz-981316/"
-        },
-        {
-          "n": "Arab News (AFP)",
-          "u": "https://www.arabnews.pk/middle-east/iran-guards-say-two-oil-tankers-hit-by-mines-in-hormuz-3006996"
-        },
-        {
-          "n": "ANI",
-          "u": "https://www.aninews.in/news/world/middle-east/two-oil-tankers-explode-catch-fire-after-hitting-naval-mines-near-hormuz-irans-irgc-navy20261114040310/"
-        },
-        {
-          "n": "ANI",
-          "u": "https://www.aninews.in/news/world/middle-east/iran8217s-navy-warns-tankers-against-entering-restricted-hormuz-zone-after-vessel-hits-naval-mine-catches-fire20261114143205/"
-        },
-        {
-          "n": "Naharnet (AFP)",
-          "u": "https://www.naharnet.com/stories/en/323777-iran-reports-three-incidents-of-oil-tankers-hit-by-mines-in-hormuz"
+          "n": "Ukrinform",
+          "u": "https://www.ukrinform.net/rubric-ato/4059235-war-update-176-clashes-on-front-line-defense-forces-repelled-52-attacks-in-pokrovsk-sector.html"
         }
       ],
-      "story": "iran-guerra",
-      "storyLabel": "Guerra Usa-Iran",
-      "text": "Le forze navali iraniane affermano che tre petroliere, tra cui una superpetroliera, hanno urtato mine nello Stretto di Hormuz prendendo fuoco: due nella parte meridionale dello stretto e una più a est. Secondo Teheran le navi avevano spento i sistemi di localizzazione per percorrere una rotta non autorizzata; nomi e bandiere non sono stati resi noti e non risultano notizie di vittime. Dall'inizio della guerra con gli Stati Uniti, a febbraio, l'Iran impone un'autorizzazione per attraversare lo stretto; Washington sostiene di aver sminato le rotte principali. In serata la marina iraniana ha avvertito che qualsiasi nave entri nell'area vietata a est dello stretto rischia la stessa sorte.",
-      "title": "Hormuz, Teheran: tre petroliere in fiamme dopo aver urtato mine",
-      "updatedAt": "19:55",
+      "story": "ucraina-guerra",
+      "storyLabel": "Guerra in Ucraina",
+      "text": "Lo Stato maggiore ucraino afferma di aver colpito il 13 novembre l'aeroporto militare Lipetsk-2, nella Russia occidentale, danneggiando un hangar, un deposito di carburante e un posto di comando. Kiev segnala anche un incendio in una stazione di pompaggio e miscelazione del petrolio vicino a Samara, a circa 950 chilometri dal fronte. Mosca non ha diffuso commenti su questi episodi.",
+      "title": "Kiev rivendica attacchi a una base aerea a Lipetsk e a un nodo petrolifero vicino a Samara",
+      "weight": 2,
+      "zoom": 40
+    },
+    {
+      "cat": "tech",
+      "cc": "UA",
+      "check": {
+        "level": "parziale",
+        "note": "Le accuse sono di Kiev; SpaceX le respinge."
+      },
+      "icon": "rocket",
+      "id": "zelensky-starshield",
+      "label": "Starshield",
+      "lat": 50.4501,
+      "lng": 30.5234,
+      "place": "Kiev, Ucraina",
+      "sources": [
+        {
+          "n": "Kyiv Independent",
+          "u": "https://kyivindependent.com/zelensky-says-starshield-restrictions-give-russia-more-room-to-attack-accuses-spacex-of-treating-occupied-territories-as-not-ours/"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/mondo/europa/2026/11/12/ue-preoccupati-per-notizie-su-starshield-se-vero-e-inaccettabile_42f2ba41-81c7-44c2-80e9-23ba93d68922.html"
+        }
+      ],
+      "story": "ucraina-guerra",
+      "storyLabel": "Guerra in Ucraina",
+      "text": "Il presidente ucraino Zelensky sostiene che le limitazioni al sistema satellitare militare Starshield di SpaceX lascino alla Russia più spazio per colpire, e accusa l'azienda di trattare i territori occupati come «non nostri». SpaceX ha smentito di aver imposto limiti; negli Stati Uniti i democratici hanno chiesto a Musk di conservare la documentazione sul caso, mentre l'Ue si è detta preoccupata.",
+      "title": "Zelensky: le restrizioni di Starshield danno più margine agli attacchi russi",
+      "weight": 1,
+      "zoom": 60
+    },
+    {
+      "cat": "politica",
+      "cc": "RU",
+      "check": {
+        "level": "parziale",
+        "note": "Il contenuto del documento è riferito dal New York Times e non è stato confermato ufficialmente da Mosca o da Washington."
+      },
+      "fx": [
+        {
+          "cc": [
+            "PL",
+            "LT",
+            "LV",
+            "EE"
+          ],
+          "t": "zone"
+        }
+      ],
+      "icon": "talks",
+      "id": "nyt-russia-nato-1997",
+      "label": "Richieste russe",
+      "lat": 55.752,
+      "layers": [
+        "geopolitica"
+      ],
+      "lng": 37.6175,
+      "place": "Mosca, Russia",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/nyt-russia-propone-ritiro-nato-a-posizioni-pre-1997-modello-e-patto_07f9cff8-48be-4e0c-a575-7760171a2b29.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/13/ucraina-bild-mosca-chiede-la-finlandia-fuori-dalla-nato-e-la-moldavia-divisa._44817c41-c94b-49c5-82d4-c2480ddd3563.html"
+        }
+      ],
+      "story": "ucraina-negoziati",
+      "storyLabel": "Negoziati per l'Ucraina",
+      "text": "Secondo il New York Times, che dice di aver visto un documento russo datato 10 novembre, ai negoziati di Abu Dhabi Mosca ha riproposto la richiesta di riportare le forze Nato del fianco orientale, cioè in Polonia e nei Paesi baltici, alle posizioni del 1997, prima dell'allargamento. I russi avrebbero indicato la Guerra fredda come modello per l'Europa del dopoguerra, mentre gli americani li hanno invitati a guardare avanti. Due partecipanti citati dal giornale dicono che Putin potrebbe mostrarsi flessibile; il Cremlino non ha commentato.",
+      "title": "Nyt: ai colloqui di Abu Dhabi Mosca chiede il ritiro della Nato alle posizioni del 1997",
       "weight": 3,
-      "zoom": 20
+      "zoom": 40
+    },
+    {
+      "cat": "politica",
+      "cc": "GB",
+      "check": {
+        "level": "confermata",
+        "note": "L'origine dei droni non è stata chiarita."
+      },
+      "icon": "shield",
+      "id": "lakenheath-droni",
+      "label": "Droni sulla base",
+      "lat": 52.409,
+      "layers": [
+        "geopolitica"
+      ],
+      "lng": 0.556,
+      "place": "RAF Lakenheath, Suffolk",
+      "sources": [
+        {
+          "n": "Kyiv Independent",
+          "u": "https://kyivindependent.com/us-air-force-responds-to-suspected-drone-activity-at-military-base-in-uk/"
+        },
+        {
+          "n": "Kyiv Independent",
+          "u": "https://kyivindependent.com/"
+        }
+      ],
+      "text": "Venerdì il personale di sicurezza dell'aviazione statunitense è intervenuto per una sospetta attività di droni non autorizzati sulla base di Lakenheath, nel Suffolk, che ospita caccia F-35 e F-15. Ministero della Difesa britannico e comando Usa in Europa dicono che non ci sono stati feriti né danni; l'origine dei droni non è nota e le indagini sono congiunte.",
+      "title": "Regno Unito, droni sospetti sulla base aerea di Lakenheath usata dagli Usa",
+      "weight": 1,
+      "zoom": 120
+    },
+    {
+      "cat": "societa",
+      "cc": "FR",
+      "check": {
+        "level": "confermata",
+        "note": "Le cifre e l'attribuzione delle violenze sono del ministero dell'Interno francese."
+      },
+      "fx": [
+        {
+          "cc": [
+            "FR"
+          ],
+          "t": "zone"
+        }
+      ],
+      "icon": "protest",
+      "id": "francia-proteste-fermi",
+      "label": "219 fermati",
+      "lat": 48.8726,
+      "lng": 2.3165,
+      "place": "Parigi, Francia",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/ministero-interno-219-fermi-in-francia-e-10-agenti-lievemente-feriti_b5a92c67-2b50-4eae-949e-32bb835a137e.html"
+        },
+        {
+          "n": "Ministero dell'Interno francese",
+          "u": "https://www.interieur.gouv.fr/actualites/actualites-du-ministere/bilan-de-mobilisation-du-7-novembre-2026-des-corteges-emailles-de-nombreux-incidents-dans-grandes"
+        }
+      ],
+      "story": "francia-proteste",
+      "storyLabel": "Proteste in Francia",
+      "text": "Il ministero dell'Interno francese riferisce che sabato almeno 219 persone sono state fermate in tutto il Paese durante le manifestazioni contro il carovita e che dieci agenti sono rimasti lievemente feriti. Incidenti, con lanci di petardi contro la polizia e cassonetti incendiati, sono stati segnalati in diverse città, tra cui Marsiglia, Lione, Bordeaux, Tolosa e Lille; il ministero attribuisce le violenze a gruppi radicali e condanna un'aggressione contro giornalisti a Lione.",
+      "title": "Francia, 219 fermati e 10 agenti feriti nelle proteste contro il carovita",
+      "weight": 3,
+      "zoom": 40
+    },
+    {
+      "cat": "tech",
+      "cc": "FR",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "chip",
+      "id": "la-poste-cyber",
+      "label": "Dati rubati",
+      "lat": 48.8412,
+      "lng": 2.3209,
+      "place": "Parigi, Francia",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/14/attacco-cyber-a-la-poste-violati-i-dati-di-22-milioni-di-persone_0324e481-bf35-4d5d-bfa1-0d199a789a40.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/"
+        }
+      ],
+      "text": "Il gruppo postale francese La Poste ha reso noto che a metà settembre la sua filiale Maileva, che spedisce posta per conto delle imprese, ha subito un attacco informatico con il furto di nomi e indirizzi di 22 milioni di destinatari. L'azienda ha avvisato il garante della privacy francese e presentato denuncia; è in corso un'indagine giudiziaria.",
+      "title": "Francia, attacco informatico a una filiale di La Poste: rubati i dati di 22 milioni di persone",
+      "weight": 2,
+      "zoom": 60
+    },
+    {
+      "cat": "politica",
+      "cc": "ES",
+      "check": {
+        "level": "confermata"
+      },
+      "fx": [
+        {
+          "from": [
+            42.8806,
+            -8.5457
+          ],
+          "label": "Feijóo a Santiago, Sánchez a Maiorca",
+          "t": "link",
+          "to": [
+            39.5696,
+            2.6502
+          ]
+        }
+      ],
+      "icon": "vote",
+      "id": "spagna-campagna-weekend",
+      "label": "Campagna 29N",
+      "lat": 42.8806,
+      "layers": [
+        "elezioni"
+      ],
+      "lng": -8.5457,
+      "place": "Santiago de Compostela, Spagna",
+      "sources": [
+        {
+          "n": "Infobae",
+          "u": "https://www.infobae.com/espana/2026/11/14/campana-de-las-elecciones-generales-29-n-en-directo-primer-fin-de-semana-de-la-campana-electoral/"
+        },
+        {
+          "n": "El Español",
+          "u": "https://www.elespanol.com/espana/20261114/elecciones-generales-directo-ultima-hora-campana-pedro-sanchez-encuestas-actos-pp-psoe-vox-sondeos-voto-correo-espana-partidos-2026-frente-amplio-electoral/1003744458244_10.html"
+        }
+      ],
+      "story": "spagna-elezioni-29n",
+      "storyLabel": "Elezioni in Spagna",
+      "text": "La Spagna vota il 29 novembre per rinnovare il Parlamento e la campagna elettorale entra nel primo fine settimana. Sabato il leader del Partito popolare Alberto Núñez Feijóo ha tenuto un comizio a Santiago de Compostela, mentre il premier socialista Pedro Sánchez ha parlato ai sostenitori a Maiorca. Venerdì il primo dibattito televisivo tra i responsabili economici dei partiti ha toccato ferrovie, casa, pensioni, salari e tasse.",
+      "title": "Spagna, primo fine settimana di campagna: Feijóo a Santiago, Sánchez a Maiorca",
+      "weight": 3,
+      "zoom": 40
+    },
+    {
+      "cat": "politica",
+      "cc": "AL",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "protest",
+      "id": "albania-proteste-dialogo",
+      "label": "Proteste Tirana",
+      "lat": 41.3275,
+      "lng": 19.8187,
+      "place": "Tirana, Albania",
+      "sources": [
+        {
+          "n": "CGTN (Reuters)",
+          "u": "https://newseu.cgtn.com/news/2026-11-14/Protests-in-Albania-continue-as-Prime-Minister-calls-for-dialogue-1RWr3FLNDgY/p.html"
+        },
+        {
+          "n": "LaPresse",
+          "u": "https://www.lapresse.it/video/2026/11/12/albania-le-proteste-degli-studenti-contro-rama-dimissioni-la-tua-fine-e-arrivata/"
+        }
+      ],
+      "story": "albania-proteste",
+      "storyLabel": "Proteste in Albania",
+      "text": "A Tirana continuano le manifestazioni serali davanti ai palazzi del governo contro il premier Edi Rama, nate dalla contestazione di un progetto turistico costiero sostenuto da Jared Kushner. Rama ha detto all'agenzia Reuters che non si dimetterà e ha invitato i manifestanti a un dialogo senza condizioni, ma gli studenti hanno respinto l'offerta. Dall'inizio delle proteste violente gli arresti sono stati 271; la Commissione europea ha condannato le violenze.",
+      "title": "Albania, proseguono le proteste contro Rama: il premier offre dialogo, gli studenti rifiutano",
+      "weight": 1,
+      "zoom": 60
+    },
+    {
+      "cat": "politica",
+      "cc": "GB",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "gov",
+      "id": "farage-russia",
+      "label": "Farage e Mosca",
+      "lat": 51.5007,
+      "layers": [
+        "geopolitica"
+      ],
+      "lng": -0.1246,
+      "place": "Londra, Regno Unito",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/14/farage-sugella-la-rottura-con-putin-mosca-minaccia-numero-1_a3bf317d-5934-4bba-89c2-bc14c666fd98.html"
+        }
+      ],
+      "text": "Il leader di Reform UK Nigel Farage ha definito la Russia la più grave minaccia immediata per la sicurezza britannica, annunciando l'ex militare Angus MacIntyre come responsabile della difesa del partito. In passato Farage era stato criticato per posizioni vicine a Mosca; i laburisti, ora guidati da Andy Burnham, continuano a rinfacciargliele.",
+      "title": "Regno Unito, Farage: «La Russia è la minaccia più grave per la nostra sicurezza»",
+      "weight": 1,
+      "zoom": 60
+    },
+    {
+      "cat": "societa",
+      "cc": "GB",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "news",
+      "id": "re-carlo-78",
+      "label": "Re Carlo 78",
+      "lat": 51.5014,
+      "lng": -0.1419,
+      "place": "Buckingham Palace, Londra",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/14/re-carlo-compie-78-anni-in-piena-attivita-e-scherza-col-coetaneo-elton-john_4cd4bf27-3ed9-4eeb-a8fa-ca6d77ef49fe.html"
+        }
+      ],
+      "text": "Il re britannico Carlo III ha compiuto 78 anni sabato, continuando a svolgere impegni pubblici; nei festeggiamenti ha scherzato con il coetaneo Elton John.",
+      "title": "Re Carlo compie 78 anni",
+      "weight": 1,
+      "zoom": 150
+    },
+    {
+      "cat": "ambiente",
+      "cc": "TR",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "leaf",
+      "id": "cop31-seconda-settimana",
+      "label": "Cop31",
+      "lat": 36.8969,
+      "layers": [
+        "geopolitica"
+      ],
+      "lng": 30.7133,
+      "place": "Antalya, Turchia",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/ansa2030/notizie/lavoro_formazione/2026/11/14/cop31-ecco-posizioni-ancora-distanti-sul-documento-politico-cover-decision_b73726da-dbb3-406a-ad49-58ce67b2c47e.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/ansa2030/notizie/energia_energie/2026/11/14/mase-falso-che-litalia-diserti-la-cop31-impegnati-nei-negoziati_89fa0c69-444f-467e-8b26-31e041b3ef8e.html"
+        },
+        {
+          "n": "WWF Italia",
+          "u": "https://www.wwf.it/pandanews/clima/cosa-accade-alla-cop31-giorno-per-giorno/"
+        }
+      ],
+      "story": "cop31",
+      "storyLabel": "Cop31 ad Antalya",
+      "text": "Alla conferenza Onu sul clima di Antalya, in Turchia, si chiude la prima settimana con posizioni ancora lontane sul documento politico finale, la cosiddetta decisione di copertura, di cui è attesa una prima bozza a inizio settimana. I lavori terminano il 21 novembre. Sabato le organizzazioni non governative hanno aperto una contro-conferenza con un corteo, a cui si sono uniti anche gruppi Lgbtq turchi; il ministero dell'Ambiente italiano ha respinto le critiche sulla scarsa presenza dell'Italia, ricordando i 29 esperti impegnati nei negoziati.",
+      "title": "Cop31, verso la seconda settimana: posizioni ancora distanti sul documento finale",
+      "weight": 2,
+      "zoom": 60
+    },
+    {
+      "cat": "politica",
+      "cc": "IL",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "gov",
+      "id": "israele-netanyahu-eisenkot",
+      "label": "Governo Israele",
+      "lat": 31.7767,
+      "layers": [
+        "geopolitica",
+        "elezioni"
+      ],
+      "lng": 35.2054,
+      "place": "Knesset, Gerusalemme",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/eisenkot-proposta-unita-di-netanyahu-ennesimo-trucco-colloqui-gia-programmati_140ef535-21f4-48a6-930b-e1f977b62d86.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/netanyahu-insiste-governo-di-unita-nazionale-per-chiudere-i-conti-con-liran_c8608ef7-07b3-4696-a067-57f6719bef73.html"
+        },
+        {
+          "n": "Agenzia Nova",
+          "u": "https://www.agenzianova.com/en/news/Israel%27s-Netanyahu-reiterates-the-need-for-a-unity-government-under-his-leadership/"
+        }
+      ],
+      "story": "israele-governo",
+      "storyLabel": "Nuovo governo in Israele",
+      "text": "Il premier ad interim Benjamin Netanyahu ha ribadito che solo un governo di unità nazionale che lo includa può garantire la sicurezza di Israele e ha detto di voler riprendere la guerra contro l'Iran. Gadi Eisenkot, leader di Yashar e incaricato di formare il nuovo governo dopo le elezioni di ottobre, ha definito la proposta una manovra di propaganda, ricordando che le delegazioni di Likud e Yashar hanno già fissato un incontro per oggi.",
+      "title": "Israele, Netanyahu insiste sull'unità nazionale; Eisenkot: «Un trucco», oggi nuovo incontro",
+      "weight": 3,
+      "zoom": 120
+    },
+    {
+      "cat": "guerra",
+      "cc": "PS",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "hospital",
+      "id": "gaza-ue-aiuti",
+      "label": "Appello Ue aiuti",
+      "lat": 31.2236,
+      "layers": [
+        "geopolitica"
+      ],
+      "lng": 34.2843,
+      "place": "Valico di Kerem Shalom, Gaza",
+      "sources": [
+        {
+          "n": "Euronews",
+          "u": "https://it.euronews.com/2026/11/14/appello-dellue-a-israele-consentire-immediatamente-laccesso-degli-aiuti-umanitari-a-gaza"
+        },
+        {
+          "n": "Ocha (Onu)",
+          "u": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026"
+        }
+      ],
+      "story": "gaza-guerra",
+      "storyLabel": "Guerra a Gaza",
+      "text": "In una dichiarazione diffusa sabato l'Unione europea chiede a Israele di consentire senza ostacoli l'ingresso degli aiuti umanitari nella Striscia, di riaprire i valichi e di permettere il lavoro dell'Onu e delle organizzazioni civili, giudicando preoccupante il recente raid sull'ospedale Nasser. A un anno dalla tregua, piogge e inverno aggravano la mancanza di rifugi e medicinali. L'Ue chiede anche il disarmo di Hamas, escluso dal futuro governo di Gaza, e il ritiro completo delle forze israeliane.",
+      "title": "Gaza, l'Ue chiede a Israele di far entrare subito gli aiuti e riaprire i valichi",
+      "weight": 2,
+      "zoom": 120
+    },
+    {
+      "cat": "sport",
+      "cc": "BE",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "ball",
+      "id": "belgio-italia-stasera",
+      "label": "Belgio-Italia",
+      "lat": 50.8955,
+      "lng": 4.3341,
+      "place": "Stadio Re Baldovino, Bruxelles",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/sport/calcio/2026/11/14/nations-league-italia-senza-paura.-mancini-bello-giocarci-i-quarti-con_d5d8b284-0b36-46fe-bf2b-d1642e3e4337.html"
+        },
+        {
+          "n": "Sky Sport",
+          "u": "https://sport.sky.it/calcio/nations-league/partite/2026/giornata-6/belgio-italia"
+        }
+      ],
+      "story": "nations-league",
+      "storyLabel": "Nations League",
+      "text": "Alle 20.45 allo stadio Re Baldovino di Bruxelles l'Italia di Mancini chiude il girone di Nations League contro il Belgio, in diretta su Rai 1. Gli azzurri sono primi con 10 punti, come la Francia ma avanti negli scontri diretti, e uno in più dei belgi: un pareggio vale la qualificazione ai quarti, una vittoria anche il primo posto e lo status di testa di serie.",
+      "title": "Nations League, stasera Belgio-Italia a Bruxelles: agli azzurri basta un pari per i quarti",
+      "weight": 3,
+      "zoom": 150
+    },
+    {
+      "cat": "sport",
+      "cc": "PT",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "ball",
+      "id": "portogallo-danimarca",
+      "label": "POR-DEN 1-4",
+      "lat": 41.5627,
+      "live": {
+        "a": "POR",
+        "b": "DEN",
+        "kind": "score",
+        "sa": 1,
+        "sb": 4,
+        "status": "Finale"
+      },
+      "lng": -8.4296,
+      "place": "Estádio Municipal, Braga",
+      "sources": [
+        {
+          "n": "Sky Sport",
+          "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/sport/calcio/2026/11/14/nations-league-il-portogallo-rovina-lomaggio-a-cr7-crolla-con-la-danimarca_61b91677-4e77-48d5-9bb6-5b5515810229.html"
+        }
+      ],
+      "story": "nations-league",
+      "storyLabel": "Nations League",
+      "text": "La Danimarca ha battuto 4-1 il Portogallo a Braga nella serata dell'omaggio a Cristiano Ronaldo: a segno Højbjerg su rigore, Højlund due volte e Andersen, mentre Bernardo Silva ha accorciato nel recupero. Nello stesso girone la Norvegia ha superato il Galles 3-1, con l'ultimo gol di Haaland su rigore.",
+      "title": "Nations League, la Danimarca travolge il Portogallo 4-1 a Braga con una doppietta di Højlund",
+      "weight": 2,
+      "zoom": 150
+    },
+    {
+      "cat": "sport",
+      "cc": "NO",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "ball",
+      "id": "norvegia-galles",
+      "label": "NOR-GAL 3-1",
+      "lat": 59.9489,
+      "live": {
+        "a": "NOR",
+        "b": "WAL",
+        "kind": "score",
+        "sa": 3,
+        "sb": 1,
+        "status": "Finale"
+      },
+      "lng": 10.7343,
+      "place": "Ullevaal Stadion, Oslo",
+      "sources": [
+        {
+          "n": "Sky Sport",
+          "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
+        },
+        {
+          "n": "Diretta.it",
+          "u": "https://www.diretta.it/news/calcio-uefa-nations-league-nations-league-le-partite-di-sabato-14-novembre-otto-partite-tra-lega-a-e-lega-b/nL2wDeZ1/"
+        }
+      ],
+      "story": "nations-league",
+      "storyLabel": "Nations League",
+      "text": "A Oslo la Norvegia ha battuto il Galles 3-1 con le reti di Nusa, Schjeldrup e Haaland su rigore; per i gallesi ha segnato Brooks.",
+      "title": "Nations League, Norvegia-Galles 3-1: a segno anche Haaland",
+      "weight": 1,
+      "zoom": 150
+    },
+    {
+      "cat": "sport",
+      "cc": "RO",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "ball",
+      "id": "romania-polonia",
+      "label": "ROU-POL 2-1",
+      "lat": 44.4373,
+      "live": {
+        "a": "ROU",
+        "b": "POL",
+        "kind": "score",
+        "sa": 2,
+        "sb": 1,
+        "status": "Finale"
+      },
+      "lng": 26.1525,
+      "place": "Arena Națională, Bucarest",
+      "sources": [
+        {
+          "n": "Sky Sport",
+          "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
+        },
+        {
+          "n": "Calcio Magazine",
+          "u": "https://www.calciomagazine.net/risultati-14-novembre-2026-252863.html"
+        }
+      ],
+      "story": "nations-league",
+      "storyLabel": "Nations League",
+      "text": "Nella Lega B la Romania ha superato la Polonia 2-1 con i gol di Cicâldău e Man; per i polacchi ha segnato Benedyczak. Nello stesso girone la Svezia ha vinto 3-2 contro la Bosnia ed Erzegovina, con un rigore di Gyökeres.",
+      "title": "Nations League, la Romania batte la Polonia 2-1 a Bucarest",
+      "weight": 1,
+      "zoom": 150
+    },
+    {
+      "cat": "sport",
+      "cc": "GB",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "ball",
+      "id": "irlanda-nord-ucraina",
+      "label": "NIR-UKR 1-0",
+      "lat": 54.5826,
+      "live": {
+        "a": "NIR",
+        "b": "UKR",
+        "kind": "score",
+        "sa": 1,
+        "sb": 0,
+        "status": "Finale"
+      },
+      "lng": -5.955,
+      "place": "Windsor Park, Belfast",
+      "sources": [
+        {
+          "n": "Sky Sport",
+          "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
+        },
+        {
+          "n": "Calcio Magazine",
+          "u": "https://www.calciomagazine.net/risultati-14-novembre-2026-252863.html"
+        }
+      ],
+      "story": "nations-league",
+      "storyLabel": "Nations League",
+      "text": "A Belfast l'Irlanda del Nord ha battuto l'Ucraina 1-0 con un gol nel secondo tempo. Sempre in Lega B, l'Austria ha vinto 1-0 contro l'Irlanda grazie a Kalajdzic e l'Ungheria si è imposta 2-0 in Georgia.",
+      "title": "Nations League, l'Irlanda del Nord batte l'Ucraina 1-0; l'Austria supera l'Irlanda",
+      "weight": 1,
+      "zoom": 150
+    },
+    {
+      "cat": "sport",
+      "cc": "GB",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "trophy",
+      "id": "galles-all-blacks",
+      "label": "WAL-NZL 35-28",
+      "lat": 51.4782,
+      "live": {
+        "a": "WAL",
+        "b": "NZL",
+        "kind": "score",
+        "sa": 35,
+        "sb": 28,
+        "status": "Finale"
+      },
+      "lng": -3.1826,
+      "place": "Principality Stadium, Cardiff",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/sport/altrisport/2026/11/14/rugby-impresa-del-galles-che-batte-gli-all-blacks-non_4446b174-c754-42ed-ae4a-f48070bbd1f4.html"
+        },
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/"
+        }
+      ],
+      "text": "Nel test match di Cardiff il Galles ha battuto la Nuova Zelanda 35-28, dopo un primo tempo chiuso sul 21-21. È la prima vittoria gallese contro gli All Blacks dal 1953.",
+      "title": "Rugby, il Galles batte gli All Blacks 35-28: non accadeva dal 1953",
+      "weight": 2,
+      "zoom": 150
+    },
+    {
+      "cat": "sport",
+      "cc": "AT",
+      "check": {
+        "level": "confermata"
+      },
+      "icon": "trophy",
+      "id": "eurobasket-donne-vienna",
+      "label": "Basket donne",
+      "lat": 48.2082,
+      "live": {
+        "a": "AUT",
+        "b": "ITA",
+        "kind": "score",
+        "sa": 49,
+        "sb": 71,
+        "status": "Finale"
+      },
+      "lng": 16.3738,
+      "place": "Vienna, Austria",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/sport/basket/2026/11/14/eurobasket-donne-litalia-batte-anche-laustria-71-49-a-vienna_ea08078c-ccd8-498a-b48b-4bee509d9610.html"
+        }
+      ],
+      "text": "Nelle qualificazioni agli Europei di basket femminile l'Italia ha battuto l'Austria 71-49 a Vienna, seconda vittoria in due partite. Le migliori realizzatrici azzurre sono state Cubaj e Andrè con 12 punti.",
+      "title": "Basket, qualificazioni europee: l'Italia femminile vince 71-49 in Austria",
+      "weight": 1,
+      "zoom": 60
     },
     {
       "cat": "politica",
@@ -1541,20 +1167,6 @@
       "check": {
         "level": "confermata"
       },
-      "fx": [
-        {
-          "from": [
-            38.8977,
-            -77.0365
-          ],
-          "label": "Trump → Shenzhen (Apec)",
-          "t": "link",
-          "to": [
-            22.5431,
-            114.0579
-          ]
-        }
-      ],
       "icon": "talks",
       "id": "trump-xi-putin-shenzhen",
       "label": "Vertice a tre",
@@ -1566,18 +1178,51 @@
       "place": "Shenzhen, Cina",
       "sources": [
         {
-          "n": "Reuters (via Internazionale)",
-          "u": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/14/trump-to-meet-putin-and-xi-in-china-white-house-says"
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/cremlino-conferma-il-trilaterale-putin-xi-e-trump-a-shenzen-il-19-novembre_38c8b6c6-9747-4f7c-a00c-1c4781ef8b43.html"
         },
         {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/casa-bianca-trump-discutera-di-iran-con-xi-e-putin-non-di-ucraina_4070f4cc-6dc8-4cf7-b146-40449b162ac5.html"
+          "n": "Kyiv Independent",
+          "u": "https://kyivindependent.com/historic-first-summit-among-trump-xi-putin-will-not-focus-on-ukraine-white-house-says/"
         }
       ],
-      "text": "La Casa Bianca ha annunciato colloqui a tre tra Trump, Xi Jinping e Putin giovedì prossimo a Shenzhen, a margine del vertice Apec del 18-19 novembre. Sul tavolo la riduzione degli arsenali nucleari, su cui Washington non si aspetta accordi, e la guerra con l'Iran; l'Ucraina non sarà discussa perché la Cina non partecipa ai negoziati che la riguardano. Non è previsto un bilaterale Trump-Putin.",
-      "title": "Trump, Xi e Putin si vedranno giovedì a Shenzhen: Iran e armi nucleari, non l'Ucraina",
+      "story": "vertice-shenzhen",
+      "storyLabel": "Vertice Trump-Xi-Putin",
+      "text": "Il portavoce del Cremlino Peskov ha confermato che Putin, Xi Jinping e Trump si incontreranno giovedì 19 novembre a Shenzhen, in Cina, a margine del vertice Apec. Secondo la Casa Bianca al centro dei colloqui ci saranno l'Iran e la non proliferazione nucleare, non la guerra in Ucraina.",
+      "title": "Il Cremlino conferma: giovedì a Shenzhen il primo vertice a tre Trump-Xi-Putin",
       "weight": 3,
       "zoom": 40
+    },
+    {
+      "cat": "societa",
+      "cc": "US",
+      "check": {
+        "level": "confermata",
+        "note": "La causa tecnica del guasto non è ancora stata chiarita."
+      },
+      "icon": "plane",
+      "id": "usa-voli-cancellati",
+      "label": "Voli cancellati",
+      "lat": 38.8869,
+      "layers": [
+        "trasporti"
+      ],
+      "lng": -77.023,
+      "place": "Washington, Stati Uniti",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/15/cancellati-sabato-negli-usa-6.500-voli-oggi-almeno-altri-760_cbe40d91-464e-4ab8-99c1-80fe5bc20559.html"
+        },
+        {
+          "n": "Times of Israel",
+          "u": "https://www.timesofisrael.com/liveblog-november-14-2026/"
+        }
+      ],
+      "text": "Negli Stati Uniti proseguono i disagi dopo il blocco di quasi cinque ore deciso venerdì dall'autorità dell'aviazione civile per un guasto alle telecomunicazioni: sabato sono stati cancellati circa 6.500 voli e oltre 7.700 hanno subito ritardi, e per oggi risultano già annullati altri 760. Le autorità parlano di un problema tecnico, ma non escludono altre ipotesi.",
+      "title": "Usa, dopo il blocco dei voli altre 6.500 cancellazioni sabato e 760 oggi",
+      "weight": 2,
+      "zoom": 8
     },
     {
       "cat": "fede",
@@ -1596,186 +1241,101 @@
               "lng": -77.0428
             },
             {
-              "date": "13 nov",
+              "date": "13-14 nov",
               "label": "Chiclayo",
               "lat": -6.7714,
               "lng": -79.8409
             },
             {
-              "date": "16 nov",
-              "label": "Lima",
-              "lat": -12.0464,
-              "lng": -77.0428
+              "date": "15 nov",
+              "label": "Cusco",
+              "lat": -13.5167,
+              "lng": -71.9781
             }
           ],
           "t": "route"
         }
       ],
       "icon": "church",
-      "id": "papa-peru-chiclayo",
-      "label": "Papa a Chiclayo",
-      "lat": -6.7714,
-      "lng": -79.8409,
-      "place": "Chiclayo, Perù",
+      "id": "papa-cusco",
+      "label": "Papa a Cusco",
+      "lat": -13.5167,
+      "lng": -71.9781,
+      "place": "Cusco, Perù",
       "sources": [
         {
+          "n": "Affaritaliani",
+          "u": "https://www.affaritaliani.it/cronache/viaggio-di-papa-leone-in-peru-oggi-il-ritorno-a-chiclayo-e-domani-langelus-a-cusco.html"
+        },
+        {
           "n": "Sky TG24",
-          "u": "https://tg24.sky.it/mondo/2026/11/11/papa-leone-xiv-peru-programma-tappe"
+          "u": "https://tg24.sky.it/mondo/2026/11/14/papa-leone-xiv-peru-programma"
         },
         {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/14/revocato-il-blocco-dei-voli-negli-stati-uniti_d2a6ded1-a075-4399-8855-8bc69e436c24.html"
-        },
-        {
-          "n": "Il Giornale d'Italia",
-          "u": "https://www.ilgiornaleditalia.it/news/cronaca/835576/papa-leone-xiv-e-partito-per-il-sudamerica-dopo-loperazione-al-polmone-12-giorni-di-viaggio-tra-uruguay-argentina-e-peru.html"
+          "n": "Sala Stampa Vaticana",
+          "u": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2026/09/21/0736/01738.html"
         }
       ],
       "story": "papa-viaggio-peru",
       "storyLabel": "Il Papa in America Latina",
-      "text": "Leone XIV prosegue il viaggio in Perù con una giornata a Chiclayo, la diocesi di cui è stato vescovo: oggi l'incoronazione della statua dell'Immacolata in cattedrale, una messa a Santa Cruz de Succhabamba e la chiusura del giubileo di san Toribio de Mogrovejo. Il Papa ha detto di stare superando un periodo difficile per la sua salute, dopo l'intervento al polmone che aveva preceduto la partenza. Il rientro a Roma è previsto martedì 17.",
-      "title": "Il Papa a Chiclayo, la sua ex diocesi: «Sto superando il periodo difficile per la salute»",
+      "text": "Leone XIV recita oggi l'Angelus davanti alla cattedrale di Cusco, nelle Ande peruviane, dopo le giornate a Chiclayo, la diocesi di cui è stato vescovo, dove ha parlato di scienza e coscienza agli universitari. Il viaggio in Uruguay, Argentina e Perù si conclude martedì 17 novembre con il rientro a Roma.",
+      "title": "Il Papa a Cusco per l'Angelus, ultime tappe del viaggio in Perù",
       "weight": 2,
       "zoom": 60
-    },
-    {
-      "cat": "tech",
-      "cc": "US",
-      "check": {
-        "level": "parziale",
-        "note": "I presunti legami con la Cina restano non verificati."
-      },
-      "icon": "chip",
-      "id": "nvidia-settimana",
-      "label": "Nvidia",
-      "lat": 37.3708,
-      "layers": [
-        "economia"
-      ],
-      "lng": -121.9637,
-      "place": "Santa Clara, California",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/14/revocato-il-blocco-dei-voli-negli-stati-uniti_d2a6ded1-a075-4399-8855-8bc69e436c24.html"
-        },
-        {
-          "n": "ANSA (ultima ora)",
-          "u": "https://www.ansa.it/sito/notizie/topnews/2026/11/13/media-lutnick-testimoniera-sul-caso-nvidia-prima-del-congresso_1d353339-a1d8-495f-8853-635e1df21342.html"
-        },
-        {
-          "n": "Borse.it",
-          "u": "https://www.borse.it/articolo/ultime-notizie/borse-europee-caute-nel-finale-dottava-tra-laddio-di-huang-a-nvidia-e-i-timori-sui-tassi-fed"
-        }
-      ],
-      "story": "caso-nvidia",
-      "storyLabel": "Caso Nvidia",
-      "text": "Il titolo Nvidia ha chiuso venerdì in calo del 2% a Wall Street, portando le perdite settimanali a quasi il 13%, sull'onda dello scandalo che ha investito l'amministratore delegato Jensen Huang. Secondo i media il segretario al Commercio Lutnick sarà ascoltato dal Congresso; l'intelligence Usa dice di non essere certa che una dipendente al centro del caso, Alice Huang, fosse una spia cinese.",
-      "title": "Nvidia perde quasi il 13% in una settimana, Lutnick testimonierà al Congresso",
-      "weight": 2,
-      "zoom": 60
-    },
-    {
-      "cat": "tech",
-      "cc": "US",
-      "check": {
-        "level": "parziale",
-        "note": "Posizioni contrapposte di Kiev e SpaceX."
-      },
-      "icon": "rocket",
-      "id": "starshield-ucraina",
-      "label": "Starshield",
-      "lat": 38.8977,
-      "layers": [
-        "geopolitica"
-      ],
-      "lng": -77.0365,
-      "place": "Washington, Stati Uniti",
-      "sources": [
-        {
-          "n": "Kyiv Independent",
-          "u": "https://kyivindependent.com/ukraine-war-latest-ex-pm-press-secretary-reportedly-injured-in-moscow-car-explosion/"
-        },
-        {
-          "n": "Kyiv Independent (Starlink)",
-          "u": "https://kyivindependent.com/us-democrats-direct-musk-to-preserve-records-on-ukraines-starlink-restriction-wsj-reports/"
-        }
-      ],
-      "story": "ucraina-guerra",
-      "storyLabel": "Guerra in Ucraina",
-      "text": "Zelensky sostiene che restrizioni sul sistema satellitare Starshield limitano a 161 km/h la velocità dei droni intercettori, ostacolando la difesa contro gli Shahed. Il ministero della Difesa ucraino chiede chiarimenti a Washington; SpaceX ha definito la notizia «falsa», negando qualsiasi modifica.",
-      "title": "Kiev chiede spiegazioni agli Usa sui limiti di Starshield, SpaceX smentisce",
-      "weight": 1,
-      "zoom": 40
-    },
-    {
-      "cat": "societa",
-      "cc": "IT",
-      "check": {
-        "level": "confermata",
-        "note": "Nessun numero ufficiale dei partecipanti."
-      },
-      "icon": "protest",
-      "id": "milano-corteo-italia-in-piazza",
-      "isNew": true,
-      "label": "Corteo Milano",
-      "lat": 45.4781,
-      "lng": 9.2276,
-      "newAt": "13:20",
-      "place": "Piazza Leonardo da Vinci, Milano",
-      "sources": [
-        {
-          "n": "ANSA",
-          "u": "https://www.ansa.it/lombardia/notizie/2026/11/14/a-milano-poche-centinaia-per-il-nuovo-corteo-di-italia-in-piazza_e92976d0-1519-4e90-9278-ae276c20b4b6.html"
-        },
-        {
-          "n": "Adnkronos",
-          "u": "https://www.adnkronos.com/cronaca/corteo-oggi-milano-14-novembre_44mVchVKhZ5FJNd3RFB6Eg"
-        },
-        {
-          "n": "il Giornale",
-          "u": "https://www.ilgiornale.it/diretta/nazionale/milano-al-via-un-nuovo-corteo-dei-pro-pal-e-dei-collettivi-in-piazza-contro-carovita-riarmo-e-repressione/"
-        }
-      ],
-      "text": "Il secondo corteo del movimento «Italia in piazza» contro carovita e riarmo ha raccolto poche centinaia di persone, secondo l'ANSA. Il percorso è stato cambiato: partito da piazza Leonardo da Vinci, è passato per piazzale Loreto e via Padova e si è concluso al parco della Martesana invece che al Cimitero Monumentale, lontano dal centro. Non sono stati segnalati scontri, a differenza della manifestazione del 17 ottobre.",
-      "title": "Milano, poche centinaia al corteo «Italia in piazza»: nessun incidente segnalato",
-      "updatedAt": "19:55",
-      "weight": 1,
-      "zoom": 150
     },
     {
       "cat": "politica",
-      "cc": "FI",
+      "cc": "VE",
       "check": {
-        "level": "parziale",
-        "note": "Notizia della Bild basata su fonti non nominate; il Cremlino smentisce."
+        "level": "confermata"
+      },
+      "icon": "justice",
+      "id": "echenagucia-venezuela",
+      "label": "Echenagucía libero",
+      "lat": 10.4806,
+      "lng": -66.9036,
+      "place": "Caracas, Venezuela",
+      "sources": [
+        {
+          "n": "ANSA",
+          "u": "https://www.ansa.it/sito/notizie/mondo/2026/11/14/finito-lincubo-per-litaliano-echenagucia-in-cella-in-venezuela-dal-2024_3cdb41d6-1cf2-48a2-8886-6aa81c1a9943.html"
+        }
+      ],
+      "text": "La Farnesina ha annunciato la scarcerazione di Daniel Echenagucía, imprenditore italo-venezuelano arrestato nell'agosto 2024 a un posto di blocco a Valencia con accuse che includevano terrorismo e tradimento. I giudici hanno sostituito la detenzione con misure cautelari; il ministro degli Esteri Tajani ha parlato di un passo avanti nella transizione democratica del Venezuela.",
+      "title": "Venezuela, scarcerato l'imprenditore italo-venezuelano Echenagucía dopo oltre due anni",
+      "weight": 2,
+      "zoom": 40
+    },
+    {
+      "cat": "guerra",
+      "cc": "US",
+      "check": {
+        "level": "confermata"
       },
       "icon": "talks",
-      "id": "bild-finlandia-nato",
-      "isNew": true,
-      "label": "Finlandia e Nato",
-      "lat": 60.1699,
+      "id": "rubio-iran",
+      "label": "Rubio sull'Iran",
+      "lat": 38.8946,
       "layers": [
         "geopolitica"
       ],
-      "lng": 24.9384,
-      "newAt": "19:55",
-      "place": "Helsinki, Finlandia",
+      "lng": -77.0481,
+      "place": "Washington, Stati Uniti",
       "sources": [
         {
-          "n": "Meduza",
-          "u": "https://meduza.io/en/news/2026/11/14/russia-demands-finland-leave-nato-bild-reports-moscow-denies-it-and-helsinki-is-outraged"
+          "n": "Times of Israel",
+          "u": "https://www.timesofisrael.com/liveblog-november-14-2026/"
         },
         {
-          "n": "Kyiv Post",
-          "u": "https://www.kyivpost.com/post/90033"
+          "n": "Atlanta Journal-Constitution (AP)",
+          "u": "https://www.ajc.com/news/2026/11/israeli-strikes-and-gunfire-in-gaza-kill-5-people-and-other-mideast-news/"
         }
       ],
-      "story": "ucraina-negoziati",
-      "storyLabel": "Negoziati per l'Ucraina",
-      "text": "Secondo il quotidiano tedesco Bild, nei contatti informali sull'Ucraina la Russia avrebbe chiesto anche l'uscita della Finlandia dalla Nato, oltre a tutto il Donbas e allo stop alle basi Nato nei Paesi baltici. Il portavoce del Cremlino Peskov ha detto che una proposta simile «non è stata avanzata». Il ministro della Difesa finlandese Häkkänen ha definito richieste di questo tipo non negoziabili e «semplicemente oltraggiose».",
-      "title": "Bild: Mosca vorrebbe la Finlandia fuori dalla Nato. Il Cremlino smentisce",
-      "weight": 2,
+      "story": "iran-guerra",
+      "storyLabel": "Guerra Usa-Iran",
+      "text": "Il segretario di Stato americano Marco Rubio ha detto che non sono necessarie nuove azioni militari contro l'Iran perché la pressione economica sta indebolendo il governo di Teheran, e che la vittoria per Washington significa impedire all'Iran di dotarsi dell'arma nucleare. In Israele, invece, il premier ad interim Netanyahu ha parlato di riprendere la guerra.",
+      "title": "Rubio: non servono altre azioni militari contro l'Iran, basta la pressione economica",
+      "weight": 1,
       "zoom": 60
     },
     {
@@ -1784,24 +1344,26 @@
       "check": {
         "level": "confermata"
       },
-      "icon": "trophy",
-      "id": "wta-finals-svitolina-sabalenka",
-      "isNew": true,
-      "label": "Wta Finals",
+      "icon": "tennis",
+      "id": "wta-finals-errani-paolini",
+      "label": "Errani-Paolini",
       "lat": 33.7238,
-      "lng": -116.3059,
-      "newAt": "19:55",
+      "lng": -116.3053,
       "place": "Indian Wells, Stati Uniti",
       "sources": [
         {
           "n": "ANSA",
-          "u": "https://www.ansa.it/sito/notizie/sport/tennis/2026/11/14/tennis-sabalenka-eliminata-nella-fase-a-gironi-delle-wta-finals-indian_aa915780-925d-4002-9654-6f679f765731.html"
+          "u": "https://www.ansa.it/sito/notizie/sport/2026/11/15/wta-finals-errani-e-paolini-volano-in-finale-battute-guo-e-mladenovic_a6a4dc9e-0d3c-40e8-9cb9-1d71a585294e.html"
+        },
+        {
+          "n": "WTA",
+          "u": "https://www.wtatennis.com/news/4606680"
         }
       ],
-      "text": "Elina Svitolina ha battuto Aryna Sabalenka 6-3, 3-6, 6-1 nella fase a gironi delle Wta Finals di Indian Wells e si è qualificata per le semifinali. La bielorussa, numero 2 del mondo e favorita del torneo, è eliminata; assente la numero 1 Elena Rybakina.",
-      "title": "Wta Finals, Svitolina elimina Sabalenka e va in semifinale",
+      "text": "A Indian Wells, in California, Sara Errani e Jasmine Paolini hanno battuto Mladenovic e Guo 6-3, 6-4 e per la prima volta giocano la finale di doppio delle Wta Finals, contro Siniakova e Townsend. In singolare la finale sarà tra l'ucraina Elina Svitolina e la russa Mirra Andreeva.",
+      "title": "Wta Finals, Errani e Paolini in finale nel doppio; in singolare Svitolina contro Andreeva",
       "weight": 1,
-      "zoom": 60
+      "zoom": 120
     }
   ],
   "markets": [
@@ -1847,7 +1409,7 @@
       "name": "IBEX 35"
     }
   ],
-  "marketsNote": "Chiusura della seduta di venerdì 13 novembre 2026 (Borse europee ore 17.30-17.35); dati non disponibili per AEX, SMI ed Euro Stoxx 50.",
+  "marketsNote": "Chiusura della seduta di venerdì 13 novembre 2026 (Borse europee ore 17.30-17.35); nel fine settimana i mercati sono chiusi. Dati non disponibili per AEX, SMI ed Euro Stoxx 50.",
   "marketsSources": [
     {
       "n": "Teleborsa",
@@ -1863,102 +1425,134 @@
     }
   ],
   "pills": [
-    "ue-team-negoziati",
-    "zelensky-nato-donbas",
-    "manovra-scuola-sindacati",
-    "ua-kyiv-odesa",
-    "maltempo-emilia-arancione",
-    "spagna-campagna-29n",
-    "sp-rating-italia",
-    "gaza-deir-al-balah",
-    "belgio-italia-vigilia"
+    "belgio-italia-stasera",
+    "maltempo-allerta-15nov",
+    "ua-attacchi-zaporizhzhia",
+    "nyt-russia-nato-1997",
+    "cosenza-galleria",
+    "manovra-meloni-messina",
+    "israele-netanyahu-eisenkot",
+    "francia-proteste-fermi",
+    "spagna-campagna-weekend"
   ],
   "sport": {
     "matches": [
       {
-        "a": "SRB",
-        "aName": "Serbia",
-        "b": "GER",
-        "bName": "Germania",
+        "a": "BEL",
+        "aName": "Belgio",
+        "b": "ITA",
+        "bName": "Italia",
         "comp": "Nations League",
-        "lat": 44.7834,
-        "lng": 20.4648,
-        "note": "La Germania si giocherà la qualificazione contro l'Olanda.",
+        "lat": 50.8955,
+        "lng": 4.3341,
+        "note": "All'Italia basta un pareggio per i quarti.",
+        "sources": [
+          {
+            "n": "ANSA",
+            "u": "https://www.ansa.it/sito/notizie/sport/calcio/2026/11/14/nations-league-italia-senza-paura.-mancini-bello-giocarci-i-quarti-con_d5d8b284-0b36-46fe-bf2b-d1642e3e4337.html"
+          }
+        ],
+        "status": "Dom 20:45",
+        "venue": "Stadio Re Baldovino, Bruxelles"
+      },
+      {
+        "a": "POR",
+        "aName": "Portogallo",
+        "b": "DEN",
+        "bName": "Danimarca",
+        "comp": "Nations League",
+        "lat": 41.5627,
+        "lng": -8.4296,
         "sa": 1,
-        "sb": 3,
-        "scorers": "Babic (aut.), Wirtz, Gruda; Babic",
+        "sb": 4,
+        "scorers": "B. Silva 93'; Højbjerg 43' rig., Højlund 50' 57', Andersen 75'",
         "sources": [
           {
-            "n": "Tuttosport",
-            "u": "https://www.tuttosport.com/news/calcio/uefa-nations-league/2026/11/13-152571134/l_olanda_esagera_7-0_alla_grecia_tripletta_reijnders_koop_entra_i_risultati_di_nations_league"
+            "n": "Sky Sport",
+            "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
           }
         ],
         "status": "Finale",
-        "venue": "Belgrado"
+        "venue": "Estádio Municipal, Braga"
       },
       {
-        "a": "SCO",
-        "aName": "Scozia",
-        "b": "MKD",
-        "bName": "Macedonia del Nord",
+        "a": "NOR",
+        "aName": "Norvegia",
+        "b": "WAL",
+        "bName": "Galles",
         "comp": "Nations League",
-        "lat": 55.8258,
-        "lng": -4.252,
-        "sa": 2,
+        "lat": 59.9489,
+        "lng": 10.7343,
+        "sa": 3,
         "sb": 1,
-        "scorers": "McGinn 2; Rastoder",
+        "scorers": "Nusa 59', Schjeldrup 68', Haaland 88' rig.; Brooks 79'",
         "sources": [
           {
-            "n": "Tuttosport",
-            "u": "https://www.tuttosport.com/news/calcio/uefa-nations-league/2026/11/13-152571134/l_olanda_esagera_7-0_alla_grecia_tripletta_reijnders_koop_entra_i_risultati_di_nations_league"
+            "n": "Sky Sport",
+            "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
           }
         ],
         "status": "Finale",
-        "venue": "Glasgow"
+        "venue": "Ullevaal Stadion, Oslo"
       },
       {
-        "a": "SVN",
-        "aName": "Slovenia",
-        "b": "SUI",
-        "bName": "Svizzera",
+        "a": "NIR",
+        "aName": "Irlanda del Nord",
+        "b": "UKR",
+        "bName": "Ucraina",
         "comp": "Nations League",
-        "lat": 46.0806,
-        "lng": 14.518,
-        "note": "La Svizzera è promossa in Lega A.",
-        "sa": 0,
+        "lat": 54.5826,
+        "lng": -5.955,
+        "sa": 1,
         "sb": 0,
         "sources": [
           {
-            "n": "Tuttosport",
-            "u": "https://www.tuttosport.com/news/calcio/uefa-nations-league/2026/11/13-152571134/l_olanda_esagera_7-0_alla_grecia_tripletta_reijnders_koop_entra_i_risultati_di_nations_league"
+            "n": "Sky Sport",
+            "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
           }
         ],
         "status": "Finale",
-        "venue": "Lubiana"
+        "venue": "Windsor Park, Belfast"
       },
       {
-        "a": "ITA",
-        "aName": "Italia",
-        "b": "ARG",
-        "bName": "Argentina",
-        "comp": "Rugby, test match",
-        "lat": 44.4165,
-        "lng": 8.9525,
-        "note": "Mete azzurre di Ioane e tecnica; per l'Argentina Bernasconi, Delguy e Carreras.",
-        "sa": 14,
-        "sb": 19,
+        "a": "GEO",
+        "aName": "Georgia",
+        "b": "HUN",
+        "bName": "Ungheria",
+        "comp": "Nations League",
+        "lat": 41.723,
+        "lng": 44.7898,
+        "sa": 0,
+        "sb": 2,
+        "scorers": "aut. Dvali 73', Varga 85'",
         "sources": [
           {
-            "n": "LaPresse",
-            "u": "https://www.lapresse.it/sport/rugby/2026/11/14/nations-championship-2026-italia-argentina-14-19-quesada-cerano-le-condizioni-per-vincere/"
-          },
-          {
-            "n": "Il Messaggero",
-            "u": "https://www.ilmessaggero.it/sport/rugby/nations_championship_marassi_italrugby_pumas-9889643.html"
+            "n": "Sky Sport",
+            "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
           }
         ],
         "status": "Finale",
-        "venue": "Stadio Luigi Ferraris, Genova"
+        "venue": "Boris Paichadze Arena, Tbilisi"
+      },
+      {
+        "a": "AUT",
+        "aName": "Austria",
+        "b": "IRL",
+        "bName": "Irlanda",
+        "comp": "Nations League",
+        "lat": 48.2073,
+        "lng": 16.4206,
+        "sa": 1,
+        "sb": 0,
+        "scorers": "Kalajdzic 79'",
+        "sources": [
+          {
+            "n": "Sky Sport",
+            "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
+          }
+        ],
+        "status": "Finale",
+        "venue": "Ernst Happel Stadion, Vienna"
       },
       {
         "a": "KOS",
@@ -1972,84 +1566,12 @@
         "sb": 0,
         "sources": [
           {
-            "n": "Tuttosport",
-            "u": "https://www.tuttosport.com/news/calcio/uefa-nations-league/2026/11/14-152589510/zhegrova_non_punge_il_kosovo_pareggia_contro_israele_cosa_cambia_in_nations_league"
-          },
-          {
-            "n": "Calciomagazine",
-            "u": "https://www.calciomagazine.net/risultati-14-novembre-2026-252863.html"
+            "n": "Sky Sport",
+            "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
           }
         ],
         "status": "Finale",
-        "venue": "Pristina"
-      },
-      {
-        "a": "NOR",
-        "aName": "Norvegia",
-        "b": "WAL",
-        "bName": "Galles",
-        "comp": "Nations League",
-        "lat": 59.9489,
-        "lng": 10.7343,
-        "sources": [
-          {
-            "n": "Napoli Magazine",
-            "u": "https://www.napolimagazine.com/calcio/articolo/nations-league-il-programma-di-sabato-14-novembre-in-campo-hojlund-con-la-sua-danimarca-14-11-2026"
-          }
-        ],
-        "status": "In corso",
-        "venue": "Oslo"
-      },
-      {
-        "a": "GEO",
-        "aName": "Georgia",
-        "b": "HUN",
-        "bName": "Ungheria",
-        "comp": "Nations League",
-        "lat": 41.723,
-        "lng": 44.7898,
-        "sources": [
-          {
-            "n": "Napoli Magazine",
-            "u": "https://www.napolimagazine.com/calcio/articolo/nations-league-il-programma-di-sabato-14-novembre-in-campo-hojlund-con-la-sua-danimarca-14-11-2026"
-          }
-        ],
-        "status": "In corso",
-        "venue": "Tbilisi"
-      },
-      {
-        "a": "AUT",
-        "aName": "Austria",
-        "b": "IRL",
-        "bName": "Irlanda",
-        "comp": "Nations League",
-        "lat": 48.2073,
-        "lng": 16.4206,
-        "sources": [
-          {
-            "n": "Napoli Magazine",
-            "u": "https://www.napolimagazine.com/calcio/articolo/nations-league-il-programma-di-sabato-14-novembre-in-campo-hojlund-con-la-sua-danimarca-14-11-2026"
-          }
-        ],
-        "status": "Sab 20:45",
-        "venue": "Vienna"
-      },
-      {
-        "a": "NIR",
-        "aName": "Irlanda del Nord",
-        "b": "UKR",
-        "bName": "Ucraina",
-        "comp": "Nations League",
-        "lat": 54.5826,
-        "lng": -5.955,
-        "sources": [
-          {
-            "n": "Napoli Magazine",
-            "u": "https://www.napolimagazine.com/calcio/articolo/nations-league-il-programma-di-sabato-14-novembre-in-campo-hojlund-con-la-sua-danimarca-14-11-2026"
-          }
-        ],
-        "status": "Sab 20:45",
-        "venue": "Belfast"
+        "venue": "Stadio Fadil Vokrri, Pristina"
       },
       {
         "a": "ROU",
@@ -2059,18 +1581,17 @@
         "comp": "Nations League",
         "lat": 44.4373,
         "lng": 26.1525,
+        "sa": 2,
+        "sb": 1,
+        "scorers": "Cicâldău 68', Man 72'; Benedyczak 82'",
         "sources": [
           {
-            "n": "Napoli Magazine",
-            "u": "https://www.napolimagazine.com/calcio/articolo/nations-league-il-programma-di-sabato-14-novembre-in-campo-hojlund-con-la-sua-danimarca-14-11-2026"
-          },
-          {
-            "n": "Radio Romania International",
-            "u": "https://www.rri.ro/en/news-and-current-affairs/newsflash/november-13-2026-id1083407.html"
+            "n": "Sky Sport",
+            "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
           }
         ],
-        "status": "Sab 20:45",
-        "venue": "Bucarest"
+        "status": "Finale",
+        "venue": "Arena Națională, Bucarest"
       },
       {
         "a": "SWE",
@@ -2080,54 +1601,69 @@
         "comp": "Nations League",
         "lat": 59.3725,
         "lng": 18.0003,
+        "sa": 3,
+        "sb": 2,
+        "scorers": "Svensson 5', rig. 11', Gyökeres 45'+2 rig.; Gigovic 48', Kolasinac 62'",
         "sources": [
-          {
-            "n": "Napoli Magazine",
-            "u": "https://www.napolimagazine.com/calcio/articolo/nations-league-il-programma-di-sabato-14-novembre-in-campo-hojlund-con-la-sua-danimarca-14-11-2026"
-          }
-        ],
-        "status": "Sab 20:45",
-        "venue": "Solna (Stoccolma)"
-      },
-      {
-        "a": "BEL",
-        "aName": "Belgio",
-        "b": "ITA",
-        "bName": "Italia",
-        "comp": "Nations League",
-        "lat": 50.8955,
-        "lng": 4.3341,
-        "note": "All'Italia basta un pareggio per i quarti.",
-        "sources": [
-          {
-            "n": "Skuola.net",
-            "u": "https://www.skuola.net/news/trend/italia-belgio-nations-league-pareggio-quarti-orario.html"
-          },
           {
             "n": "Sky Sport",
-            "u": "https://sport.sky.it/calcio/nations-league/partite/2026/giornata-6/belgio-italia"
+            "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
           }
         ],
-        "status": "Dom 20:45",
-        "venue": "Stadio Re Baldovino, Bruxelles"
+        "status": "Finale",
+        "venue": "Strawberry Arena, Solna"
+      },
+      {
+        "a": "WAL",
+        "aName": "Galles",
+        "b": "NZL",
+        "bName": "Nuova Zelanda",
+        "comp": "Rugby, test match",
+        "lat": 51.4782,
+        "lng": -3.1826,
+        "note": "Prima vittoria gallese sugli All Blacks dal 1953.",
+        "sa": 35,
+        "sb": 28,
+        "sources": [
+          {
+            "n": "ANSA",
+            "u": "https://www.ansa.it/sito/notizie/sport/altrisport/2026/11/14/rugby-impresa-del-galles-che-batte-gli-all-blacks-non_4446b174-c754-42ed-ae4a-f48070bbd1f4.html"
+          }
+        ],
+        "status": "Finale",
+        "venue": "Principality Stadium, Cardiff"
+      },
+      {
+        "a": "ZVE",
+        "aName": "Zverev",
+        "b": "JOD",
+        "bName": "Jodar",
+        "comp": "Atp Finals",
+        "lat": 45.042,
+        "lng": 7.65,
+        "note": "In serata Shelton-Fils; lunedì esordio di Cobolli contro Medvedev.",
+        "sources": [
+          {
+            "n": "Torino Top News",
+            "u": "https://torinotopnews.it/sport/atp-finals-torino-15-novembre-2026-zverev-cobolli-programma/"
+          }
+        ],
+        "status": "Dom 14:00",
+        "venue": "Inalpi Arena, Torino"
       }
     ],
     "sources": [
       {
+        "n": "Sky Sport",
+        "u": "https://sport.sky.it/calcio/nations-league/2026/11/14/nations-league-risultati-14-novembre-diretta-gol"
+      },
+      {
+        "n": "ANSA",
+        "u": "https://www.ansa.it/sito/notizie/sport/calcio/2026/11/14/nations-league-il-portogallo-rovina-lomaggio-a-cr7-crolla-con-la-danimarca_61b91677-4e77-48d5-9bb6-5b5515810229.html"
+      },
+      {
         "n": "Corriere dello Sport (classifica Serie A)",
         "u": "https://www.corrieredellosport.it/live/classifica-serie-a"
-      },
-      {
-        "n": "DAZN (classifica Serie A)",
-        "u": "https://www.dazn.com/it-IT/news/calcio/classifica-serie-a-aggiornata/1ae86cqx9wpxe1ltiy5kwpuxtd"
-      },
-      {
-        "n": "Tuttosport",
-        "u": "https://www.tuttosport.com/news/calcio/uefa-nations-league/2026/11/13-152571134/l_olanda_esagera_7-0_alla_grecia_tripletta_reijnders_koop_entra_i_risultati_di_nations_league"
-      },
-      {
-        "n": "Napoli Magazine",
-        "u": "https://www.napolimagazine.com/calcio/articolo/nations-league-il-programma-di-sabato-14-novembre-in-campo-hojlund-con-la-sua-danimarca-14-11-2026"
       }
     ],
     "standings": [
@@ -2189,25 +1725,6 @@
     ]
   },
   "strikes": [
-    {
-      "area": "Bari",
-      "cc": "IT",
-      "date": "14 nov",
-      "hours": "24 ore, con fasce di garanzia",
-      "lat": 41.1171,
-      "lng": 16.8719,
-      "note": "Proclamato da Filt Cgil, Fit Cisl, Uiltrasporti e Ugl.",
-      "sector": "mezzi",
-      "sectorLabel": "Bus",
-      "short": "Bus Bari",
-      "sources": [
-        {
-          "n": "Adnkronos",
-          "u": "https://www.adnkronos.com/economia/scioperi-bus-treni-aerei-novembre-2026-date_5pXmMUWbO8B31EVxPZUEWK"
-        }
-      ],
-      "title": "Sciopero del trasporto locale a Bari"
-    },
     {
       "area": "Napoli",
       "cc": "IT",
@@ -2350,284 +1867,334 @@
       "title": "Sciopero dei controllori Enav a Varese"
     }
   ],
-  "updateLabel": "Aggiornata in serata",
-  "updatedAt": "2026-11-14T19:55:00+01:00",
+  "updatedAt": "2026-11-15T07:15:00+01:00",
   "weather": {
     "cities": [
       {
         "lat": 41.9,
         "lng": 12.5,
         "name": "Roma",
-        "note": "Piogge sparse sul Lazio, possibili temporali dal pomeriggio sulle coste.",
+        "note": "Piogge e temporali al mattino, schiarite dal pomeriggio.",
         "rank": 1,
         "sky": "rain",
-        "tmax": 18
+        "tmax": 19,
+        "tmin": 14
       },
       {
         "lat": 45.46,
         "lng": 9.19,
         "name": "Milano",
-        "note": "Nubi in aumento, possibili rovesci dal pomeriggio.",
+        "note": "Nubi alternate a schiarite, asciutto.",
         "rank": 1,
         "sky": "partly",
-        "tmax": 12
+        "tmax": 14,
+        "tmin": 8
       },
       {
         "lat": 40.85,
         "lng": 14.27,
         "name": "Napoli",
-        "note": "Schiarite e qualche piovasco al mattino, in miglioramento.",
+        "note": "Variabile con piogge, possibili rovesci forti nel pomeriggio sulla Campania.",
         "rank": 1,
-        "sky": "partly",
+        "sky": "rain",
         "tmax": 20,
         "tmin": 14
-      },
-      {
-        "lat": 38.12,
-        "lng": 13.36,
-        "name": "Palermo",
-        "note": "Clima mite e prevalentemente soleggiato.",
-        "rank": 1,
-        "sky": "sun",
-        "tmax": 23
-      },
-      {
-        "lat": 45.44,
-        "lng": 12.33,
-        "name": "Venezia",
-        "note": "Cielo poco nuvoloso, temperature in lieve calo.",
-        "rank": 1,
-        "sky": "sun",
-        "tmax": 12
-      },
-      {
-        "lat": 44.49,
-        "lng": 11.34,
-        "name": "Bologna",
-        "note": "Nubi in aumento e possibili rovesci dal pomeriggio; resta l'allerta per le piene.",
-        "rank": 2,
-        "sky": "cloud",
-        "tmax": 12
       },
       {
         "lat": 45.07,
         "lng": 7.68,
         "name": "Torino",
-        "note": "Molto nuvoloso, rovesci possibili dal pomeriggio.",
-        "rank": 2,
+        "note": "Parzialmente nuvoloso con ampie schiarite.",
+        "rank": 1,
+        "sky": "partly",
+        "tmax": 14,
+        "tmin": 7
+      },
+      {
+        "lat": 38.12,
+        "lng": 13.36,
+        "name": "Palermo",
+        "note": "Variabile, qualche pioggia debole e vento in rinforzo.",
+        "rank": 1,
+        "sky": "partly",
+        "tmax": 22,
+        "tmin": 16
+      },
+      {
+        "lat": 44.49,
+        "lng": 11.34,
+        "name": "Bologna",
+        "note": "Nuvoloso con isolati piovaschi.",
+        "rank": 1,
         "sky": "cloud",
-        "tmax": 10,
-        "tmin": 8
+        "tmax": 14,
+        "tmin": 9
+      },
+      {
+        "lat": 43.77,
+        "lng": 11.25,
+        "name": "Firenze",
+        "note": "Nuvoloso, piogge deboli possibili.",
+        "rank": 1,
+        "sky": "cloud",
+        "tmax": 17,
+        "tmin": 11
+      },
+      {
+        "lat": 45.44,
+        "lng": 12.33,
+        "name": "Venezia",
+        "note": "Nubi sparse e schiarite.",
+        "rank": 1,
+        "sky": "partly",
+        "tmax": 15,
+        "tmin": 10
       },
       {
         "lat": 44.41,
         "lng": 8.93,
         "name": "Genova",
-        "note": "Deboli piogge residue sulla Liguria.",
-        "rank": 2,
-        "sky": "rain",
-        "tmax": 14
+        "note": "Variabile, deboli piogge al mattino; mare molto mosso.",
+        "rank": 1,
+        "sky": "partly",
+        "tmax": 17,
+        "tmin": 13
+      },
+      {
+        "lat": 41.12,
+        "lng": 16.87,
+        "name": "Bari",
+        "note": "Variabile, temporali sparsi nell'entroterra.",
+        "rank": 1,
+        "sky": "partly",
+        "tmax": 20,
+        "tmin": 13
       },
       {
         "lat": 39.22,
         "lng": 9.12,
         "name": "Cagliari",
-        "note": "Piogge sparse sulla Sardegna.",
-        "rank": 2,
-        "sky": "rain"
+        "note": "Nubi e schiarite, forti venti occidentali.",
+        "rank": 1,
+        "sky": "wind",
+        "tmax": 20,
+        "tmin": 13
       },
       {
-        "lat": 40.64,
-        "lng": 15.8,
-        "name": "Potenza",
-        "note": "Variabile, con schiarite.",
+        "lat": 45.65,
+        "lng": 13.78,
+        "name": "Trieste",
+        "note": "Nubi e schiarite, vento moderato.",
         "rank": 2,
         "sky": "partly",
-        "tmax": 14
+        "tmax": 15,
+        "tmin": 11
+      },
+      {
+        "lat": 46.5,
+        "lng": 11.35,
+        "name": "Bolzano",
+        "note": "Ampie schiarite.",
+        "rank": 2,
+        "sky": "sun",
+        "tmax": 13,
+        "tmin": 5
+      },
+      {
+        "lat": 46.07,
+        "lng": 11.12,
+        "name": "Trento",
+        "note": "Nuvolosità irregolare, asciutto.",
+        "rank": 2,
+        "sky": "partly",
+        "tmax": 12,
+        "tmin": 5
+      },
+      {
+        "lat": 42.46,
+        "lng": 14.21,
+        "name": "Pescara",
+        "note": "Nubi sparse, temporali possibili nell'entroterra.",
+        "rank": 2,
+        "sky": "partly",
+        "tmax": 18,
+        "tmin": 12
       }
     ],
-    "day": "sabato 14 novembre",
+    "day": "domenica 15 novembre",
     "europe": [],
     "italy": [
       {
-        "areas": "Arancione: pianura bolognese e modenese. Giallo: pianura reggiana, collina bolognese e zone montane",
-        "lat": 44.55,
-        "level": "arancione",
-        "lng": 11,
-        "note": "I fiumi gonfiati dalle piogge dei giorni scorsi portano ancora piene verso valle; possibili esondazioni, frane e strade interrotte. Dal pomeriggio nuovi rovesci. Domenica l'allerta scende a gialla per piene nella pianura bolognese e modenese.",
-        "region": "Emilia-Romagna",
+        "areas": "Marsica, bacini dell'Alto Sangro e dell'Aterno",
+        "lat": 42.2,
+        "level": "giallo",
+        "lng": 13.85,
+        "note": "Possibili temporali e locali frane nelle zone interne.",
+        "region": "Abruzzo",
         "risks": [
-          "idraulico",
+          "temporali",
           "idrogeologico"
         ],
-        "until": "sabato 14 novembre"
+        "until": "fino alla mezzanotte di domenica 15"
       },
       {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 39.05,
+        "areas": "Tutte e quattro le zone di allerta",
+        "lat": 40.55,
         "level": "giallo",
-        "lng": 16.5,
-        "note": "Piogge e temporali, anche intensi.",
+        "lng": 16,
+        "note": "Rovesci e temporali, più intensi dal pomeriggio sul versante tirrenico.",
+        "region": "Basilicata",
+        "risks": [
+          "temporali"
+        ],
+        "until": "fino alla mezzanotte di domenica 15"
+      },
+      {
+        "areas": "Versante tirrenico e ionico settentrionale",
+        "lat": 39.1,
+        "level": "giallo",
+        "lng": 16.35,
+        "note": "Temporali in serata sul Tirreno con rischio di allagamenti e frane; vento forte da ovest.",
         "region": "Calabria",
         "risks": [
           "idraulico",
-          "idrogeologico",
-          "temporali"
+          "temporali",
+          "idrogeologico"
         ],
-        "until": "domenica 15 novembre"
+        "until": "fino alla mezzanotte di domenica 15"
       },
       {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 40.85,
+        "areas": "Gran parte della regione, compresa l'area di Napoli e il Salernitano",
+        "lat": 40.9,
         "level": "giallo",
-        "lng": 14.85,
-        "note": "Piogge diffuse.",
+        "lng": 14.9,
+        "note": "Piogge diffuse e possibili nubifragi tra Salernitano e Avellinese nel pomeriggio.",
         "region": "Campania",
         "risks": [
           "idraulico",
           "idrogeologico"
         ],
-        "until": "domenica 15 novembre"
+        "until": "fino alla mezzanotte di domenica 15"
       },
       {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 41.9,
+        "areas": "Pianura bolognese e modenese, montagna bolognese ed emiliana centrale",
+        "lat": 44.4,
         "level": "giallo",
-        "lng": 12.8,
-        "note": "Piogge diffuse, possibili rovesci.",
+        "lng": 10.95,
+        "note": "Restano sorvegliate le piene dei fiumi di pianura; frane possibili in Appennino.",
+        "region": "Emilia-Romagna",
+        "risks": [
+          "idraulico",
+          "idrogeologico"
+        ],
+        "until": "fino alla mezzanotte di domenica 15"
+      },
+      {
+        "areas": "Quasi tutti i bacini, Roma compresa; rischio idraulico sui bacini costieri sud",
+        "lat": 41.7,
+        "level": "giallo",
+        "lng": 13.1,
+        "note": "Piogge e temporali al mattino, in attenuazione dal pomeriggio.",
         "region": "Lazio",
         "risks": [
           "idraulico",
           "idrogeologico"
         ],
-        "until": "domenica 15 novembre"
+        "until": "fino alla mezzanotte di domenica 15"
       },
       {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 43.35,
+        "areas": "Zone 1, 3, 4 e 5",
+        "lat": 43.3,
         "level": "giallo",
-        "lng": 11.1,
-        "note": "Possibili temporali, soprattutto nella notte.",
-        "region": "Toscana",
-        "risks": [
-          "idrogeologico",
-          "temporali"
-        ],
-        "until": "domenica 15 novembre"
-      },
-      {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 41,
-        "level": "giallo",
-        "lng": 16.5,
-        "note": "Rovesci e temporali.",
-        "region": "Puglia",
-        "risks": [
-          "idrogeologico",
-          "temporali"
-        ],
-        "until": "domenica 15 novembre"
-      },
-      {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 40.1,
-        "level": "giallo",
-        "lng": 9,
-        "note": "Rovesci e temporali.",
-        "region": "Sardegna",
-        "risks": [
-          "idrogeologico",
-          "temporali"
-        ],
-        "until": "domenica 15 novembre"
-      },
-      {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 42.25,
-        "level": "giallo",
-        "lng": 13.9,
-        "note": "Rovesci e temporali.",
-        "region": "Abruzzo",
-        "risks": [
-          "idrogeologico",
-          "temporali"
-        ],
-        "until": "domenica 15 novembre"
-      },
-      {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 41.65,
-        "level": "giallo",
-        "lng": 14.6,
-        "note": "Rovesci e temporali.",
-        "region": "Molise",
-        "risks": [
-          "idrogeologico",
-          "temporali"
-        ],
-        "until": "domenica 15 novembre"
-      },
-      {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 40.5,
-        "level": "giallo",
-        "lng": 16.1,
-        "note": "Possibili temporali.",
-        "region": "Basilicata",
-        "risks": [
-          "temporali"
-        ],
-        "until": "domenica 15 novembre"
-      },
-      {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 42.95,
-        "level": "giallo",
-        "lng": 12.55,
-        "note": "Possibili temporali.",
-        "region": "Umbria",
-        "risks": [
-          "temporali"
-        ],
-        "until": "domenica 15 novembre"
-      },
-      {
-        "areas": "Zone indicate dal bollettino",
-        "lat": 43.35,
-        "level": "giallo",
-        "lng": 13.15,
-        "note": "Piogge sparse.",
+        "lng": 13.1,
+        "note": "Piogge sulle zone interne con possibili smottamenti.",
         "region": "Marche",
         "risks": [
           "idrogeologico"
         ],
-        "until": "domenica 15 novembre"
+        "until": "fino alla mezzanotte di domenica 15"
+      },
+      {
+        "areas": "Tutte le zone, costa compresa",
+        "lat": 41.65,
+        "level": "giallo",
+        "lng": 14.55,
+        "note": "Rovesci e temporali, più intensi nel settore occidentale.",
+        "region": "Molise",
+        "risks": [
+          "temporali",
+          "idrogeologico"
+        ],
+        "until": "fino alla mezzanotte di domenica 15"
+      },
+      {
+        "areas": "Foggiano, Gargano, Puglia centrale e Salento",
+        "lat": 41,
+        "level": "giallo",
+        "lng": 16.3,
+        "note": "Temporali sparsi e vento in rinforzo dal pomeriggio.",
+        "region": "Puglia",
+        "risks": [
+          "temporali",
+          "idrogeologico"
+        ],
+        "until": "fino alla mezzanotte di domenica 15"
+      },
+      {
+        "areas": "Iglesiente, Campidano e bacino del Tirso",
+        "lat": 40.05,
+        "level": "giallo",
+        "lng": 9,
+        "note": "Rovesci nel sud-ovest e forti venti occidentali con mare molto mosso.",
+        "region": "Sardegna",
+        "risks": [
+          "temporali",
+          "idrogeologico"
+        ],
+        "until": "fino alla mezzanotte di domenica 15"
+      },
+      {
+        "areas": "Grossetano, Fiora e Albegna, Giglio e costa sud",
+        "lat": 43.3,
+        "level": "giallo",
+        "lng": 11.15,
+        "note": "Piogge anche abbondanti sulle zone già colpite dal maltempo dei giorni scorsi.",
+        "region": "Toscana",
+        "risks": [
+          "temporali",
+          "idrogeologico"
+        ],
+        "until": "fino alla mezzanotte di domenica 15"
+      },
+      {
+        "areas": "Tutte le zone di allerta",
+        "lat": 42.85,
+        "level": "giallo",
+        "lng": 12.45,
+        "note": "Rovesci e temporali diffusi.",
+        "region": "Umbria",
+        "risks": [
+          "temporali"
+        ],
+        "until": "fino alla mezzanotte di domenica 15"
       }
     ],
     "sources": [
       {
-        "n": "Meteo.it (bollettino Protezione civile)",
-        "u": "https://www.meteo.it/notizie/meteo-allerta-arancione-e-gialla-14-novembre-2026-in-italia-dove-6e5c026"
-      },
-      {
-        "n": "Fanpage",
-        "u": "https://www.fanpage.it/attualita/maltempo-allerta-meteo-arancione-gialla-14-novembre-2026-temporali-protezione-civile-regioni-colpite/"
-      },
-      {
-        "n": "MeteoWeb",
-        "u": "https://www.meteoweb.eu/2026/11/allerta-meteo-protezione-civile-14-novembre-rischio-idraulico-e-idrogeologico-in-4-regioni-le-criticita-previste/1002003167/"
-      },
-      {
-        "n": "Newsroom24 (previsioni)",
-        "u": "https://newsroom24.it/notizia/2026/11/13/meteo-previsioni-per-domani-sabato-14-novembre-sole-al-nord-piogge-sparse-sul-tirreno"
-      },
-      {
-        "n": "MeteoWeb (bollettino Protezione civile 15/11)",
+        "n": "MeteoWeb (bollettino Protezione civile)",
         "u": "https://www.meteoweb.eu/2026/11/allerta-meteo-protezione-civile-15-novembre-domenica-di-forte-maltempo-12-regioni-tra-temporali-frane-e-criticita-idrauliche/1002003492/"
       },
       {
-        "n": "Fanpage (allerta 15/11)",
+        "n": "Fanpage",
         "u": "https://www.fanpage.it/attualita/maltempo-allerta-meteo-gialla-15-novembre-2026-per-pioggia-e-temporali-le-regioni-colpite/"
+      },
+      {
+        "n": "Sicilianews24 (dati MeteoAM)",
+        "u": "https://www.sicilianews24.it/meteo-del-15-novembre-2026-previsioni-regione-per-regione-in-italia-847476.html"
+      },
+      {
+        "n": "RomaDailyNews",
+        "u": "https://www.romadailynews.it/2026/11/14/meteo-roma-lazio-15-novembre-2026-piogge-temporali-983540"
       }
     ]
   }
