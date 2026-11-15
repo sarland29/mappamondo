@@ -859,13 +859,22 @@ function items(){
 let _locSrc = null, _locOut = [];
 function localItems(){
   const L = state.local;
-  if (state.archiveMode || !L || !Array.isArray(L.items)) return [];
-  if (state.edition && L.date && state.edition.date && L.date !== state.edition.date) return [];
+  if (state.archiveMode || !L || !Array.isArray(L.items)) return worldItems();
+  if (state.edition && L.date && state.edition.date && L.date !== state.edition.date) return worldItems();
   if (_locSrc !== L){ _locSrc = L; _locOut = L.items.filter(it => it && it.title && hasCoords(it)).map(it => Object.assign({}, it, { local: true, weight: 1, id: "loc-" + String(it.id || it.title).slice(0, 60) })); }
-  return _locOut;
+  return _locOut.concat(worldItems());
+}
+/* news from the other countries: a separate daily edition, shown from a little closer than the main news */
+let _wSrc = null, _wOut = [];
+function worldItems(){
+  const W = state.world;
+  if (state.archiveMode || !W || !Array.isArray(W.items)) return [];
+  if (state.edition && W.date && state.edition.date && W.date !== state.edition.date) return [];
+  if (_wSrc !== W){ _wSrc = W; _wOut = W.items.filter(it => it && it.title && hasCoords(it)).map(it => Object.assign({}, it, { local: true, world: true, weight: 1, id: "w-" + String(it.id || it.title).slice(0, 60) })); }
+  return _wOut;
 }
 function allItems(){ return items().concat(localItems()); }
-const LOC_K = 2.4;
+const LOC_K = 2.4, WORLD_K = 1.35;
 function visibleItems(){ return items().filter(it => state.cats.has(it.cat) || !CATS[it.cat]); }
 
 /* ---------- map layers ---------- */
@@ -1141,7 +1150,7 @@ function fxExplainHtml(it){
 
 /* regional news in the list: one region at a time, chosen from a menu */
 function regionalHtml(){
-  const loc = localItems().filter(it => state.cats.has(it.cat) || !CATS[it.cat]);
+  const loc = localItems().filter(it => !it.world && (state.cats.has(it.cat) || !CATS[it.cat]));
   if (!loc.length) return "";
   const by = {};
   loc.forEach(it => { const r = String(it.region || "Altre zone"); (by[r] = by[r] || []).push(it); });
@@ -1152,6 +1161,22 @@ function regionalHtml(){
   let h = `<div class="sectionlabel more-h">Dalle regioni</div><div class="regbar"><select id="regSel" aria-label="Scegli la regione">${regs.map(r => `<option value="${esc(r)}"${r === state.region ? " selected" : ""}>${esc(r)} (${by[r].length})</option>`).join("")}</select><small>${loc.length} notizie locali</small></div>`;
   SECTIONS.local = { label: state.region, list, numbered: false };
   if (state.listMode === "grid") h += `<div class="grid">${list.map((it, i) => tileHtml(it, 0, "local", i)).join("")}</div>`;
+  else h += list.map(it => cardHtml(it, 0, {small:true})).join("");
+  return h;
+}
+/* other countries in the list: one country at a time */
+function worldHtml(){
+  const ws = worldItems().filter(it => state.cats.has(it.cat) || !CATS[it.cat]);
+  if (!ws.length) return "";
+  const by = {};
+  ws.forEach(it => { const c = String(it.country || countryName(it.cc || "") || it.cc || "Altri"); (by[c] = by[c] || []).push(it); });
+  const cs = Object.keys(by).sort((a, b) => a.localeCompare(b, "it"));
+  if (!state.wcountry){ try { state.wcountry = localStorage.getItem("mm_wcountry") || ""; } catch(e){} }
+  if (!by[state.wcountry]) state.wcountry = by["Francia"] ? "Francia" : cs[0];
+  const list = by[state.wcountry];
+  let h = `<div class="sectionlabel more-h">Dagli altri Paesi</div><div class="regbar"><select id="wSel" aria-label="Scegli il Paese">${cs.map(r => `<option value="${esc(r)}"${r === state.wcountry ? " selected" : ""}>${esc(r)} (${by[r].length})</option>`).join("")}</select><small>${cs.length} Paesi</small></div>`;
+  SECTIONS.world = { label: state.wcountry, list, numbered: false };
+  if (state.listMode === "grid") h += `<div class="grid">${list.map((it, i) => tileHtml(it, 0, "world", i)).join("")}</div>`;
   else h += list.map(it => cardHtml(it, 0, {small:true})).join("");
   return h;
 }
@@ -1193,12 +1218,14 @@ function renderList(){
   html += sectionHtml("pills", state.archiveMode ? "Le pillole del giorno" : "Le pillole di oggi", pills, true, true);
   html += sectionHtml("europe", "Italia ed Europa", europe, false, !pills.length);
   html += regionalHtml();
+  html += worldHtml();
   html += sectionHtml("world", "Dal resto del mondo", world, false, false);
   if (!pills.length && !europe.length && !world.length) html += `<div class="empty">Nessuna notizia per questi filtri.</div>`;
   html += `<div class="foot-note">Sintesi scritte da Claude a partire dalle fonti indicate in ogni notizia, verificate incrociando più testate. Le animazioni sulla mappa sono indicative.<br>L'edizione si aggiorna ogni mattina.</div>`;
   body.innerHTML = html;
   body.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", ev => { ev.stopPropagation(); focusItem(b.dataset.go); }));
   const lb = $("#lsnBtn"); if (lb) lb.addEventListener("click", () => LISTEN.start());
+  const wsel = $("#wSel"); if (wsel) wsel.addEventListener("change", () => { state.wcountry = wsel.value; try { localStorage.setItem("mm_wcountry", wsel.value); } catch(e){} const y = $("#listPane").scrollTop; renderList(); renderFilters(); $("#listPane").scrollTop = y; });
   const rs = $("#regSel"); if (rs) rs.addEventListener("change", () => { state.region = rs.value; try { localStorage.setItem("mm_region", rs.value); } catch(e){} const y = $("#listPane").scrollTop; renderList(); renderFilters(); $("#listPane").scrollTop = y; });
   body.querySelectorAll("[data-lm]").forEach(b => b.addEventListener("click", () => {
     state.listMode = b.dataset.lm; try { localStorage.setItem("mm_listmode", state.listMode); } catch(e){}
@@ -1390,7 +1417,7 @@ const MAP = (function(){
       g.append("text").attr("class", "lbl").attr("text-anchor", "middle").attr("y", r + 14).text(String(it.label || it.place || "").slice(0, 24));
       g.on("click", ev => { ev.stopPropagation(); stopTour(); openNear(it, true); });
       const pi = pillIds.indexOf(it.id);
-      mkNodes.push({ it, g, w, loc: !!it.local, p: GEO.project(it.lat, it.lng), prio: it.local ? -1 : (pi >= 0 ? 100 - pi : 0) + w * 10, sx: 0, sy: 0 });
+      mkNodes.push({ it, g, w, loc: !!it.local, wk: it.world ? WORLD_K : LOC_K, p: GEO.project(it.lat, it.lng), prio: it.local ? -1 : (pi >= 0 ? 100 - pi : 0) + w * 10, sx: 0, sy: 0 });
     });
     mkNodes.sort((a, b) => b.prio - a.prio);
     select(state.selected);
@@ -1572,22 +1599,23 @@ const MAP = (function(){
     const fxOn = (LAYERS[state.layer] || LAYERS.all).fxAlways || t.k >= kHome * 1.8;
     for (const n of mkNodes){ const q = t.apply([n.p.x, n.p.y]); n.sx = q[0]; n.sy = q[1]; }
     // local news only from close up; greedy clustering in screen space, most important first
-    const locOn = t.k >= kHome * LOC_K;
+    const locOn = t.k >= kHome * LOC_K, kk = t.k / kHome;
+    const shown = n => !n.loc || kk >= n.wk;
     const cls = [], R2 = CL_R * CL_R;
     for (const n of mkNodes){
-      if (n.loc && !locOn) continue;
+      if (!shown(n)) continue;
       let c = null;
       for (const k of cls){ const dx = k.x - n.sx, dy = k.y - n.sy; if (dx*dx + dy*dy < R2){ c = k; break; } }
       if (c) c.m.push(n); else cls.push({ x: n.sx, y: n.sy, m: [n] });
     }
     const multi = cls.filter(c => c.m.length > 1);
-    const sig = (locOn ? "L" : "") + multi.map(c => c.m.map(n => n.it.id).join(",")).join("|");
+    const sig = (locOn ? "L" : "") + (kk >= WORLD_K ? "W" : "") + multi.map(c => c.m.map(n => n.it.id).join(",")).join("|");
     if (sig !== clSig){
       clSig = sig;
       gCl.selectAll("*").remove();
       const hidden = new Set();
       multi.forEach(c => c.m.forEach(n => hidden.add(n)));
-      for (const n of mkNodes) n.g.style("display", hidden.has(n) || (n.loc && !locOn) ? "none" : null);
+      for (const n of mkNodes) n.g.style("display", hidden.has(n) || !shown(n) ? "none" : null);
       clGroups = multi.map(clusterBubble);
     }
     multi.forEach((c, i) => clGroups[i] && clGroups[i].attr("transform", `translate(${c.x.toFixed(1)},${c.y.toFixed(1)})`));
@@ -1697,7 +1725,7 @@ async function showCountry(code, mapName){
     const A = a && alertOf(a.level);
     if (A) note = `<div class="arcnote"><span class="wxbadge" style="background:${A.c};color:${A.ink}">${esc(A.l)}</span> ${a.risk ? "<b>" + esc(a.risk) + "</b>. " : ""}${esc(a.note || "")}</div>`;
   }
-  const row = (it, i, src) => { const c = catOf(it); return `<button class="cn-row" data-src="${src}" data-i="${i}"><span class="d" style="background:${c.c}">${iconSvg(iconOf(it))}</span><span>${esc(it.title)}<small>${esc(it.place || "")}${it.local ? " · notizia locale" : ""}</small></span></button>`; };
+  const row = (it, i, src) => { const c = catOf(it); return `<button class="cn-row" data-src="${src}" data-i="${i}"><span class="d" style="background:${c.c}">${iconSvg(iconOf(it))}</span><span>${esc(it.title)}<small>${esc(it.place || "")}${it.local && !it.world ? " · notizia locale" : ""}</small></span></button>`; };
   const build = (weekHtml, storiesHtml) => {
     let h = note;
     if (f){
@@ -1707,7 +1735,7 @@ async function showCountry(code, mapName){
       if (f.note) h += `<p style="font-size:13px;line-height:1.45;margin:0 2px 8px">${esc(f.note)}</p>`;
     }
     h += `<div class="cn-h">Oggi</div>` + (its.length ? its.map((it, i) => row(it, i, "m")).join("") : `<div class="tl-empty">Nessuna notizia di oggi da ${esc(name)}.</div>`);
-    if (loc.length) h += `<div class="cn-h">Notizie locali</div>` + loc.slice(0, 12).map((it, i) => row(it, i, "l")).join("");
+    if (loc.length) h += `<div class="cn-h">${code === "IT" ? "Notizie locali" : "Altre notizie dal Paese"}</div>` + loc.slice(0, 12).map((it, i) => row(it, i, "l")).join("");
     h += storiesHtml || "";
     h += weekHtml || "";
     if (f){ const srcs = (Array.isArray(f.sources) ? f.sources : []).map(s => { const u = safeUrl(s && s.u); return u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(s.n || new URL(u).hostname)}</a>` : ""; }).filter(Boolean).join(" · ");
@@ -1922,7 +1950,7 @@ function openPlace(name, pt, radius){
     let h = "";
     if (pl.length) h += `<div class="sb-h">Luoghi</div>` + pl.map((p, i) => `<button data-pl="${i}"><span class="ic">${PIN}</span><span>${esc(p.name)}<small>${esc(p.kind)} · ${newsNear(p, p.kind === "regione" ? 120 : 30).length} notizie vicine</small></span></button>`).join("");
     if (cs.length) h += `<div class="sb-h">Paesi</div>` + cs.map(c => `<button data-cc="${esc(c.cc)}"><span class="ic">${FLAG}</span><span>${esc(c.name)}<small>scheda del Paese</small></span></button>`).join("");
-    if (ns.length) h += `<div class="sb-h">Notizie</div>` + ns.map((it, i) => { const c = catOf(it); return `<button data-n="${i}"><span class="ic" style="background:${c.c};color:#fff">${iconSvg(iconOf(it))}</span><span>${esc(it.title)}<small>${esc(it.place || "")}${it.local ? " · locale" : ""}</small></span></button>`; }).join("");
+    if (ns.length) h += `<div class="sb-h">Notizie</div>` + ns.map((it, i) => { const c = catOf(it); return `<button data-n="${i}"><span class="ic" style="background:${c.c};color:#fff">${iconSvg(iconOf(it))}</span><span>${esc(it.title)}<small>${esc(it.place || "")}${it.local && !it.world ? " · locale" : ""}</small></span></button>`; }).join("");
     if (evs.length) h += `<div class="sb-h">Eventi</div>` + evs.map((e, i) => { const c = EV.cat(e); return `<button data-ev="${i}"><span class="ic" style="background:${c.col};color:#fff">${iconSvg(c.icon)}</span><span>${esc(e.title)}<small>${esc(EV.when(e))}${e.city ? " · " + esc(e.city) : ""}</small></span></button>`; }).join("");
     res.innerHTML = h || `<div class="sb-empty">Nessun risultato per «${esc(inp.value)}» nelle notizie di oggi.</div>`;
     res.querySelectorAll("[data-pl]").forEach(b => b.addEventListener("click", () => { const p = pl[+b.dataset.pl]; close(); openPlace(p.name, p, p.kind === "regione" ? 120 : 30); }));
@@ -2699,7 +2727,7 @@ $("#backToday").addEventListener("click", () => backToToday());
 
 /* ---------- boot ---------- */
 /* data source: the artifact database inside Claude, or the site's own JSON files when installed as a web app */
-const FILES = { "editions/latest": "data/latest.json", "editions/local": "data/local.json", "editions/events": "data/events.json", "reference/countries": "data/countries.json" };
+const FILES = { "editions/latest": "data/latest.json", "editions/local": "data/local.json", "editions/world": "data/world.json", "editions/events": "data/events.json", "reference/countries": "data/countries.json" };
 function staticDb(){
   const get = async (path) => { const r = await fetch(path + (path.includes("?") ? "&" : "?") + "t=" + Math.floor(Date.now() / 60000), {cache: "no-cache"}); if (!r.ok) throw new Error(r.status); return r.json(); };
   return {
@@ -2751,6 +2779,11 @@ if (IS_SITE && "serviceWorker" in navigator) { window.addEventListener("load", (
     if (!snap.exists) return;
     const d = snap.data(); if (!d || (state.local && state.local.updatedAt === d.updatedAt && state.local.date === d.date)) return;
     state.local = d; if (state.edition){ const y = $("#listPane").scrollTop; renderList(); renderFilters(); $("#listPane").scrollTop = y; MAP.render(); }
+  }, () => {}); } catch(e){}
+  try { db.doc("editions/world").onSnapshot(snap => {
+    if (!snap.exists) return;
+    const d = snap.data(); if (!d || (state.world && state.world.updatedAt === d.updatedAt && state.world.date === d.date)) return;
+    state.world = d; if (state.edition){ const y = $("#listPane").scrollTop; renderList(); renderFilters(); $("#listPane").scrollTop = y; MAP.render(); }
   }, () => {}); } catch(e){}
   try { db.doc("editions/events").onSnapshot(snap => {
     if (!snap.exists) return; const d = snap.data(); if (!d || (state.events && state.events.updatedAt === d.updatedAt)) return;
