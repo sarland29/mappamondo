@@ -187,8 +187,8 @@ nav.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);op
 /* live weather */
 .radarcv{position:absolute;left:0;top:0;pointer-events:none;opacity:.72;z-index:1}
 #map > svg{position:relative;z-index:0}
-#map .ltemp rect{stroke:#fff;stroke-width:1.5px;opacity:.92}
-#map .ltemp text{font-size:12.5px;font-weight:800;fill:#fff;pointer-events:none}
+#map .ltemp rect{fill:var(--card);stroke:var(--line);stroke-width:1px;filter:drop-shadow(0 1px 3px rgba(0,0,0,.18))}
+#map .ltemp text{font-size:13.5px;font-weight:800;pointer-events:none}
 #map .ltemp .lwind{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.55}
 #map .ltemp{pointer-events:none}
 .livepanel{position:absolute;left:8px;right:8px;bottom:78px;z-index:21;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:8px 10px;display:flex;flex-direction:column;gap:6px}
@@ -209,6 +209,8 @@ nav.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);op
 .lp-time small{display:block;font-size:10.5px;font-weight:700;color:#2f6fd9;text-transform:uppercase;letter-spacing:.04em}
 .lp-time small.fc{color:#8a4bb0}
 .lp-scale{display:flex;align-items:center;justify-content:space-between;font-size:10.5px;color:var(--muted);margin:-2px 0 0 40px}
+.lp-key{display:flex;align-items:center;gap:4px;font-size:10.5px;color:var(--muted);justify-content:center;flex-wrap:wrap}
+.lp-key i{display:inline-block;width:12px;height:8px;border-radius:2px;margin-left:5px}
 .lp-now{border:1px solid var(--line);background:transparent;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:700;color:var(--ink)}
 .lp-time{font-size:13px;font-weight:800;min-width:96px;text-align:right;line-height:1.15}
 .lp-note{font-size:11.5px;color:var(--muted);text-align:center}
@@ -1730,8 +1732,8 @@ function showLegend(){
     ${state.layer === "meteo" ? `
     <div class="lgrow"><span class="lg lg-alert"><i style="background:#f2c230"></i><i style="background:#f08a24"></i><i style="background:#d93a2b"></i></span><span><b>Allerte della Protezione civile</b> per regione: giallo = criticità ordinaria, arancione = moderata, rosso = elevata. Tocca il cerchio con il punto esclamativo per i dettagli.</span></div>
     <div class="lgrow"><span class="lg lg-zone" style="--c:#f08a24"></span><span><b>Paese europeo colorato:</b> allerta meteo in corso in quel Paese, con lo stesso codice di colori.</span></div>
-    ${window.LIVEWX && LIVEWX.enabled ? `<div class="lgrow"><span class="lg lg-zone" style="--c:#1f5fd9"></span><span><b>Pioggia:</b> le zone azzurre, blu e viola sono le precipitazioni. Col cursore vai dalle ultime 2 ore, rilevate dai radar (fonte RainViewer), alle prossime 12 ore previste dal modello meteo (fonte Open-Meteo; la parte viola del cursore è la previsione). Col tasto ▶ le vedi muoversi.</span></div>
-    <div class="lgrow"><span class="lg lg-score" style="background:#e07a1f">14°</span><span><b>Temperature adesso</b>, colorate dal blu (freddo) al rosso (caldo); la freccia indica da dove soffia il vento quando è sostenuto. Tocca un punto qualsiasi per le previsioni a 7 giorni (fonte Open-Meteo).</span></div>` : `<div class="lgrow"><span class="lg lg-wx">☁︎ 14°</span><span><b>Meteo nelle città:</b> simbolo del tempo previsto e temperatura massima. Avvicinandoti compaiono altre città. Radar e previsioni a 7 giorni sono nell'app installata.</span></div>`}` : ""}
+    ${window.LIVEWX && LIVEWX.enabled ? `<div class="lgrow"><span class="lg lg-zone" style="--c:#1f5fd9"></span><span><b>Radar pioggia:</b> le macchie azzurre e blu sono la pioggia vera rilevata dai radar nelle ultime 2 ore (fonte RainViewer): più il colore è scuro, più piove forte. Col tasto ▶ le vedi muoversi.</span></div>
+    <div class="lgrow"><span class="lg lg-score" style="background:#e07a1f">14°</span><span><b>Tempo e temperature</b> come nelle cartine del meteo in tv: simbolo (sole, nuvole, pioggia, temporale, neve, nebbia) e temperatura, colorata dal blu (freddo) al rosso (caldo); la freccia indica il vento forte. Spostando il cursore verso destra vedi le previsioni ora per ora fino a 12 ore. Tocca un punto qualsiasi per le previsioni a 7 giorni (fonte Open-Meteo).</span></div>` : `<div class="lgrow"><span class="lg lg-wx">☁︎ 14°</span><span><b>Meteo nelle città:</b> simbolo del tempo previsto e temperatura massima. Avvicinandoti compaiono altre città. Radar e previsioni a 7 giorni sono nell'app installata.</span></div>`}` : ""}
     <div class="lgrow"><span class="lg lg-dot"></span><span><b>Cerchio con simbolo: una notizia.</b> Il colore indica il tema, la grandezza l'importanza. Toccalo per leggerla.<span class="lgcats">${cats}</span></span></div>
     <div class="lgrow"><span class="lg lg-dot" style="box-shadow:0 0 0 2px #fff inset"></span><span><b>Punti piccoli con bordo bianco: notizie locali</b> delle regioni italiane. Compaiono quando ti avvicini a una regione.</span></div>
     <div class="lgrow"><span class="lg lg-cl"><i>3</i></span><span><b>Cerchio con numero: più notizie vicine.</b> Toccalo per avvicinarti e separarle.</span></div>
@@ -1817,12 +1819,19 @@ function newsNear(pt, radius){
   return allItems().filter(hasCoords).map(it => ({ it, d: kmLL(pt, it) })).filter(x => x.d <= radius).sort((a, b) => a.d - b.d).map(x => x.it);
 }
 function openPlace(name, pt, radius){
+  if (state.layer === "meteo" && window.LIVEWX && LIVEWX.enabled && LIVEWX.forecast){
+    if (!isWide()) setView("map");
+    setTimeout(() => { MAP.ensure(); MAP.flyTo(pt.lat, pt.lng, radius > 60 ? 18 : 45, 1200); LIVEWX.forecast(pt, name); }, 60);
+    return;
+  }
   if (!isWide()) setView("map");
   setTimeout(() => {
     MAP.ensure(); closeSheet();
     MAP.flyTo(pt.lat, pt.lng, radius > 60 ? 18 : 60, 1300);
     let list = newsNear(pt, radius);
     let note = `<div class="arcnote">Notizie entro ${radius} km da ${esc(name)}, dalla più vicina.</div>`;
+    if (state.layer === "meteo"){ const c = wxList("cities").filter(x => num(x.lat) && num(x.lng)).map(x => ({ x, d: kmLL(pt, x) })).sort((a, b) => a.d - b.d)[0];
+      if (c && c.d < 30) note = `<div class="arcnote"><b>Meteo di oggi a ${esc(c.x.name)}:</b> ${esc((WX_NAMES && WX_NAMES[c.x.sky]) || "")}${num(c.x.tmin) ? ", minima " + Math.round(c.x.tmin) + "°" : ""}${num(c.x.tmax) ? ", massima " + Math.round(c.x.tmax) + "°" : ""}.${c.x.note ? " " + esc(c.x.note) : ""}<br><small>Le previsioni per i prossimi giorni sono nell'app installata.</small></div>` + note; }
     if (!list.length){ list = allItems().filter(hasCoords).sort((a, b) => kmLL(pt, a) - kmLL(pt, b)).slice(0, 6); note = `<div class="arcnote">Oggi nessuna notizia entro ${radius} km da ${esc(name)}. Ecco le più vicine.</div>`; }
     showSheet(name, list, 0, null, note);
   }, 60);
@@ -1906,9 +1915,10 @@ window.LIVEWX = (function(){
   /* ---- controls panel shown in the weather layer ---- */
   const panel = document.createElement("div");
   panel.className = "livepanel"; panel.hidden = true;
-  panel.innerHTML = `<div class="lp-row"><button class="lp-t" data-o="radar" aria-pressed="true"><span class="sw sw-rain"></span>Pioggia</button><button class="lp-t" data-o="temps" aria-pressed="true"><span class="sw sw-temp"></span>Temperature e vento</button></div>
+  panel.innerHTML = `<div class="lp-row"><button class="lp-t" data-o="radar" aria-pressed="true"><span class="sw sw-rain"></span>Radar pioggia</button><button class="lp-t" data-o="temps" aria-pressed="true"><span class="sw sw-temp"></span>Tempo e temperature</button></div>
     <div class="lp-row lp-radar"><button class="lp-play" aria-label="Riproduci le ultime 2 ore"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button><input type="range" class="lp-range" min="0" max="0" value="0" aria-label="Ora: radar delle ultime 2 ore, poi previsione delle prossime 12"><span class="lp-time">—</span></div>
-    <div class="lp-scale"><span>‹ 2 ore fa · radar</span><button class="lp-now">Adesso</button><span>previsione 12 ore ›</span></div>
+    <div class="lp-scale"><span>‹ 2 ore fa · radar</span><button class="lp-now">Adesso</button><span>previsioni 12 ore ›</span></div>
+    <div class="lp-key"><span>Pioggia:</span><i style="background:#9fd0ff"></i>debole<i style="background:#3d82ec"></i>moderata<i style="background:#1f3fa8"></i>forte<i style="background:#c43ca0"></i>molto forte</div>
     <div class="lp-note">Tocca un punto della mappa per le previsioni dei prossimi 7 giorni.<br><small>Radar: RainViewer · Meteo: Open-Meteo</small></div>`;
   $("#map").parentNode.appendChild(panel);
   const cv = document.createElement("canvas"); cv.className = "radarcv"; $("#map").appendChild(cv);
@@ -1930,7 +1940,7 @@ window.LIVEWX = (function(){
     } catch(e){ R.frames = []; rebuildRange(); }
   }
   /* the slider runs over the radar frames (past 2 hours) and then the forecast hours */
-  const total = () => R.frames.length + FC.hours.length;
+  const total = () => R.frames.length + (opts.temps ? FC.hours.length : 0);
   function rebuildRange(){
     const rg = panel.querySelector(".lp-range"), n = total();
     rg.max = Math.max(0, n - 1); if (R.i < 0) R.i = R.frames.length - 1; rg.value = Math.max(0, R.i);
@@ -1940,7 +1950,7 @@ window.LIVEWX = (function(){
   }
   function setTime(){
     const el = panel.querySelector(".lp-time");
-    const lg = MAP.liveGroup(); if (lg) lg.style("opacity", R.i >= R.frames.length ? 0.35 : null);
+    paintGrid();
     if (R.i < R.frames.length){ const f = R.frames[R.i]; el.innerHTML = f ? `${new Date(f.time * 1000).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" })}<small>${R.i === R.frames.length - 1 ? "radar, adesso" : "radar"}</small>` : (FC.hours.length ? "—" : "radar non disponibile"); return; }
     const h = FC.hours[R.i - R.frames.length];
     el.innerHTML = h ? `${new Date(h.t).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" })}<small class="fc">previsione +${R.i - R.frames.length + 1} h</small>` : "—";
@@ -1954,8 +1964,8 @@ window.LIVEWX = (function(){
     const dpr = Math.min(2, window.devicePixelRatio || 1);
     if (cv.width !== Math.round(D.W * dpr) || cv.height !== Math.round(D.H * dpr)){ cv.width = Math.round(D.W * dpr); cv.height = Math.round(D.H * dpr); cv.style.width = D.W + "px"; cv.style.height = D.H + "px"; }
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, D.W, D.H);
-    if (!t || !active() || !opts.radar) return;
-    if (R.i >= R.frames.length){ drawForecast(t, R.i - R.frames.length); return; }
+    if (!t || !active() || !opts.radar){ return; }
+    if (R.i >= R.frames.length) return;
     const f = R.frames[R.i];
     if (!f) return;
     const a = t.invert([0, 0]), b = t.invert([D.W, D.H]);
@@ -2072,12 +2082,38 @@ window.LIVEWX = (function(){
     const pts = gridPoints(); const need = pts.filter(p => !tcache.has(p.lat + "," + p.lng));
     if (need.length){
       try {
-        const u = `${OM}?latitude=${need.map(p => p.lat).join(",")}&longitude=${need.map(p => p.lng).join(",")}&current=temperature_2m,wind_speed_10m,wind_direction_10m,weather_code&timezone=auto`;
+        const u = `${OM}?latitude=${need.map(p => p.lat).join(",")}&longitude=${need.map(p => p.lng).join(",")}&current=temperature_2m,wind_speed_10m,wind_direction_10m,weather_code&hourly=temperature_2m,weather_code,wind_speed_10m,wind_direction_10m&forecast_hours=14&timezone=auto`;
         const r = await fetch(u); const d = await r.json(); const arr = Array.isArray(d) ? d : [d];
-        arr.forEach((x, i) => { if (x && x.current) tcache.set(need[i].lat + "," + need[i].lng, x.current); });
+        arr.forEach((x, i) => { if (!x || !x.current) return;
+          const off = (x.utc_offset_seconds || 0) * 1000;
+          const inst = x.hourly && x.hourly.time ? x.hourly.time.map(tt => Date.parse(tt + "Z") - off) : [];
+          tcache.set(need[i].lat + "," + need[i].lng, { cur: x.current, h: x.hourly || null, inst }); });
+        // forecast hours on the slider: the next 12 whole hours
+        const any = tcache.get(need[0].lat + "," + need[0].lng);
+        if (any && any.inst.length){ const now = Date.now(); const hrs = any.inst.filter(tt => tt > now).slice(0, 12).map(tt => ({ t: tt }));
+          if (hrs.length && (!FC.hours.length || FC.hours[0].t !== hrs[0].t)){ const wasFc = R.i >= R.frames.length; const oldH = R.i - R.frames.length; FC.hours = hrs; if (wasFc) R.i = R.frames.length + Math.min(oldH, hrs.length - 1); rebuildRange(); } }
       } catch(e){}
     }
     renderGrid(pts);
+  }
+  /* what a grid point shows: now, or the forecast hour chosen on the slider */
+  function valueAt(c){
+    const h = R.i >= R.frames.length ? FC.hours[R.i - R.frames.length] : null;
+    if (h && c.h){ const k = c.inst.indexOf(h.t); if (k >= 0) return { temperature_2m: c.h.temperature_2m[k], weather_code: c.h.weather_code[k], wind_speed_10m: c.h.wind_speed_10m[k], wind_direction_10m: c.h.wind_direction_10m[k] }; }
+    return c.cur;
+  }
+  const ICOL = { sun: "#e0a21f", partly: "#d39a2a", cloud: "#7a8794", rain: "#2f6fd9", storm: "#8a4bb0", snow: "#4aa3d6", fog: "#8f979f", wind: "#5b6b7a" };
+  function paintGrid(){
+    gridNodes.forEach(n => {
+      const c = tcache.get(n.key); if (!c) return; const v = valueAt(c); if (!v || typeof v.temperature_2m !== "number") return;
+      const k = WMO(v.weather_code)[0], tv = Math.round(v.temperature_2m);
+      n.ico.html(`<path d="${WX_ICONS[k] || ""}" fill="none" stroke="${ICOL[k] || "#555"}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`);
+      n.txt.text(tv + "°").attr("fill", tCol(tv));
+      if (typeof v.wind_speed_10m === "number" && v.wind_speed_10m >= 20){
+        const L = Math.min(24, 10 + v.wind_speed_10m / 4);
+        n.wind.attr("d", `M0,${-L / 2 - 20} l0,${L} m-4,-6 l4,6 l4,-6`).attr("transform", `rotate(${(v.wind_direction_10m || 0) + 180})`).style("display", null);
+      } else n.wind.style("display", "none");
+    });
   }
   function renderGrid(pts){
     const g = MAP.liveGroup(); if (!g) return;
@@ -2086,17 +2122,15 @@ window.LIVEWX = (function(){
     gridSig = sig; g.selectAll("*").remove(); gridNodes = [];
     if (!sig) return;
     pts.forEach(p => {
-      const c = tcache.get(p.lat + "," + p.lng); if (!c || typeof c.temperature_2m !== "number") return;
-      const v = Math.round(c.temperature_2m), col = tCol(v);
+      const key = p.lat + "," + p.lng; if (!tcache.get(key)) return;
       const n = g.append("g").attr("class", "ltemp");
-      if (typeof c.wind_speed_10m === "number" && c.wind_speed_10m >= 8){
-        const L = Math.min(26, 10 + c.wind_speed_10m / 3);
-        n.append("path").attr("class", "lwind").attr("d", `M0,${-L / 2 - 16} l0,${L} m-4,-6 l4,6 l4,-6`).attr("transform", `rotate(${(c.wind_direction_10m || 0) + 180})`);
-      }
-      n.append("rect").attr("x", -19).attr("y", -11).attr("width", 38).attr("height", 22).attr("rx", 11).attr("fill", col);
-      n.append("text").attr("text-anchor", "middle").attr("dy", "0.36em").text(v + "°");
-      gridNodes.push({ g: n, p: GEO.project(p.lat, p.lng) });
+      const wind = n.append("path").attr("class", "lwind");
+      n.append("rect").attr("x", -27).attr("y", -15).attr("width", 54).attr("height", 30).attr("rx", 15);
+      const ico = n.append("g").attr("transform", "translate(-23,-11) scale(0.92)");
+      const txt = n.append("text").attr("x", 13).attr("text-anchor", "middle").attr("dy", "0.36em");
+      gridNodes.push({ g: n, p: GEO.project(p.lat, p.lng), key, ico, txt, wind });
     });
+    paintGrid();
     onPlace();
   }
   let lastOn = null;
@@ -2105,13 +2139,13 @@ window.LIVEWX = (function(){
     const on = active(); if (on !== lastOn){ lastOn = on; refresh(); return; }
     for (const n of gridNodes){ const q = t.apply([n.p.x, n.p.y]); n.g.attr("transform", `translate(${q[0].toFixed(1)},${q[1].toFixed(1)})`); }
     queueDraw();
-    clearTimeout(gridTimer); gridTimer = setTimeout(() => { loadGrid(); loadFc(); }, 700);
+    clearTimeout(gridTimer); gridTimer = setTimeout(loadGrid, 700);
   }
 
   /* ---- tap anywhere: forecast for that point ---- */
-  async function forecast(ll){
+  async function forecast(ll, given){
     const near = PLACES.filter(p => p.kind === "città").map(p => ({ p, d: kmLL(ll, p) })).sort((a, b) => a.d - b.d)[0];
-    const name = near && near.d < 35 ? (near.d < 6 ? near.p.name : "Vicino a " + near.p.name) : `${Math.abs(ll.lat).toFixed(2)}° ${ll.lat >= 0 ? "N" : "S"}, ${Math.abs(ll.lng).toFixed(2)}° ${ll.lng >= 0 ? "E" : "O"}`;
+    const name = given ? given : near && near.d < 35 ? (near.d < 6 ? near.p.name : "Vicino a " + near.p.name) : `${Math.abs(ll.lat).toFixed(2)}° ${ll.lat >= 0 ? "N" : "S"}, ${Math.abs(ll.lng).toFixed(2)}° ${ll.lng >= 0 ? "E" : "O"}`;
     MAP.setMe(ll.lat, ll.lng);
     showInfo(name, `<div class="empty"><div class="spinner"></div>Carico le previsioni…</div>`);
     try {
@@ -2153,13 +2187,13 @@ window.LIVEWX = (function(){
     panel.hidden = !on;
     panel.querySelectorAll(".lp-t").forEach(b => b.setAttribute("aria-pressed", String(!!opts[b.dataset.o])));
     panel.querySelector(".lp-radar").style.display = opts.radar ? "" : "none";
-    if (on && opts.radar){ loadRadar(); loadFc(); }
+    if (on && opts.radar) loadRadar();
     if (!on || !opts.temps){ gridSig = "x"; renderGrid([]); gridSig = ""; } else loadGrid();
     queueDraw();
   }
   panel.querySelectorAll(".lp-t").forEach(b => b.addEventListener("click", () => { opts[b.dataset.o] = !opts[b.dataset.o]; save(); refresh(); }));
   setInterval(() => { if (active() && opts.radar){ R.loadedAt = 0; loadRadar(); } }, 10 * 60 * 1000);
-  api.tap = tap; api.onPlace = onPlace; api.refresh = refresh;
+  api.tap = tap; api.onPlace = onPlace; api.refresh = refresh; api.forecast = forecast;
   return api;
 })();
 
