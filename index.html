@@ -191,6 +191,8 @@ nav.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);op
 #map .ltemp text{font-size:13.5px;font-weight:800;pointer-events:none}
 #map .ltemp .lwind{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.55}
 #map .ltemp{pointer-events:none}
+#map .ltemp text.lcity{font-size:10.5px;font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
+#map .ltemp .ldot{display:none}
 .livepanel{position:absolute;left:8px;right:8px;bottom:78px;z-index:21;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:8px 10px;display:flex;flex-direction:column;gap:6px}
 .livepanel[hidden]{display:none}
 .app:has(#sheet.open) .livepanel,.app.rewinding .livepanel{display:none}
@@ -2063,19 +2065,20 @@ window.LIVEWX = (function(){
 
   /* ---- temperatures and wind on a grid that follows the view (Open-Meteo) ---- */
   const tcache = new Map(); let gridTimer = null, gridNodes = [], gridSig = "";
+  /* weather symbols sit on real cities, chosen by zoom: capitals and big cities first, then provincial capitals */
+  const BIGL = ["Roma","Milano","Parigi","Londra","Berlino","Madrid","Napoli","Palermo","Torino","Bari","Cagliari","Venezia","Vienna","Varsavia","Atene","Istanbul","Kiev","Mosca","Lisbona","Dublino","Stoccolma","Oslo","Helsinki","Copenaghen","Bruxelles","Amsterdam","Praga","Budapest","Bucarest","Belgrado","Sofia","Berna","Ankara","Bologna","Firenze","Genova","Catania","Trieste","Bolzano","Pescara","Ancona","Perugia","Reggio Calabria",,"Berlino","Madrid","Londra","Lisbona","Dublino","Bruxelles","Amsterdam","Berna","Vienna","Copenaghen","Oslo","Stoccolma","Helsinki","Varsavia","Praga","Budapest","Belgrado","Atene","Bucarest","Sofia","Kiev","Minsk","Mosca","Ankara","Istanbul","Zagabria","Lubiana","Sarajevo","Tirana","Vilnius","Riga","Tallinn","Reykjavik","Tunisi","Algeri","Rabat","Il Cairo","Tripoli","Beirut","Gerusalemme","Damasco","Tbilisi","Barcellona","Monaco di Baviera","Marsiglia","Lione","Amburgo","Odessa","San Pietroburgo"];
+  const BIG = new Map(BIGL.map((n, i) => [n, i]));
   function gridPoints(){
     const t = MAP.tr(), D = MAP.dims(); if (!t) return [];
-    const cols = D.W < 600 ? 4 : 6, rows = Math.max(4, Math.round(cols * D.H / D.W));
-    const pts = [];
-    for (let i = 0; i < cols; i++) for (let j = 0; j < rows; j++){
-      const sx = 10 + (i + 0.5) * (D.W - 90) / cols, sy = 110 + (j + 0.5) * (D.H - 200) / rows;
-      const q = t.invert([sx, sy]); const ll = GEO.unproject(q[0], q[1]);
-      const step = (le => le > 2 ? 1 : le > 0.5 ? 0.25 : 0.1)(Math.abs(t.invert([D.W, 0])[0] - t.invert([0, 0])[0]) / cols * 360 / GEO.width);
-      const r = v => Math.round(v / step) * step;
-      if (ll.lat < -80 || ll.lat > 80) continue;
-      pts.push({ lat: +r(ll.lat).toFixed(2), lng: +r(ll.lng).toFixed(2) });
+    const cand = PLACES.filter(p => p.kind === "città").map(p => { const q = scr(p.lat, p.lng, t); return { p, x: q[0], y: q[1], rank: BIG.has(p.name) ? BIG.get(p.name) : 999 }; })
+      .filter(c => c.x > 12 && c.x < D.W - 84 && c.y > 205 && c.y < D.H - 150);
+    cand.sort((a, b) => (a.rank - b.rank) || a.p.name.localeCompare(b.p.name));
+    const minD = D.W < 600 ? 70 : 86, picked = [];
+    for (const c of cand){
+      if (picked.some(o => Math.abs(o.x - c.x) < minD && Math.abs(o.y - c.y) < minD * 0.62)) continue;
+      picked.push(c); if (picked.length >= 28) break;
     }
-    return pts;
+    return picked.map(c => ({ lat: c.p.lat, lng: c.p.lng, name: c.p.name }));
   }
   async function loadGrid(){
     if (!active() || !opts.temps) return;
@@ -2128,6 +2131,8 @@ window.LIVEWX = (function(){
       n.append("rect").attr("x", -27).attr("y", -15).attr("width", 54).attr("height", 30).attr("rx", 15);
       const ico = n.append("g").attr("transform", "translate(-23,-11) scale(0.92)");
       const txt = n.append("text").attr("x", 13).attr("text-anchor", "middle").attr("dy", "0.36em");
+      n.append("text").attr("class", "lcity").attr("text-anchor", "middle").attr("y", 26).text(p.name.length > 14 ? p.name.slice(0, 13) + "…" : p.name);
+      n.append("circle").attr("class", "ldot").attr("r", 2.5).attr("cy", 0).attr("cx", 0);
       gridNodes.push({ g: n, p: GEO.project(p.lat, p.lng), key, ico, txt, wind });
     });
     paintGrid();
