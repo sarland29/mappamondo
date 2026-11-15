@@ -236,6 +236,13 @@ nav.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);op
 .fc-day .fd-bar i{position:absolute;top:0;bottom:0;border-radius:3px}
 .fc-day .fd-r{grid-column:1/-1;font-size:12px;color:#2f6fd9;font-weight:600;margin-top:4px}
 .fc-day .fd-r small{color:var(--muted);font-weight:500}
+.ev-cats{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.ev-cats::-webkit-scrollbar{display:none}
+.ev-c{flex:0 0 auto;display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:5px 10px 5px 7px;font-size:12px;font-weight:700;opacity:.55}
+.ev-c svg{width:15px;height:15px}
+.ev-c.on{opacity:1;color:#fff;background:var(--c);border-color:var(--c)}
+.evpanel .lp-t{padding:6px 4px}
+#map .evnode{cursor:pointer}
 /* listen + ask */
 .askbtn,.lsnbtn{display:none}
 .can-ask .askbtn{display:inline-flex}
@@ -640,6 +647,12 @@ const ICONS = {
   chart:"M4 20V11 M10 20V5 M16 20v-7 M21 20H3",
   flame:"M12 3c1 4 5 5.5 5 10a5 5 0 01-10 0c0-3 2-4.5 2-7 1.5 1 3 2.5 3 4.5",
   road:"M8 3L5 21 M16 3l3 18 M12 5v3 M12 11v3 M12 17v3",
+  music:"M9 18V5l11-2v13 M9 18a3 3 0 11-6 0 3 3 0 016 0z M20 16a3 3 0 11-6 0 3 3 0 016 0z",
+  ticket:"M3 7h18v3a2 2 0 000 4v3H3v-3a2 2 0 000-4z M14 7v10",
+  palette:"M12 3a9 9 0 100 18c1 0 1.5-.8 1.5-1.5 0-.9-.7-1.2-.7-2 0-.8.6-1.5 1.5-1.5H17a4 4 0 004-4c0-5-4-9-9-9z M7.5 11h.01 M10 7h.01 M15 7.5h.01",
+  theater:"M3 4h9v6a4.5 4.5 0 01-9 0z M12 9h9v6a4.5 4.5 0 01-9 0 M6 7h.01 M9 7h.01 M15 12h.01 M18 12h.01",
+  food:"M7 3v8 M5 3v4a2 2 0 004 0V3 M7 11v10 M16 3c-2 0-3 2-3 5s1 4 3 4v9",
+  tent:"M3 20L12 4l9 16z M12 4v16 M8.5 20l3.5-6 3.5 6",
   anchor:"M12 3a2 2 0 100 4 2 2 0 000-4z M12 7v14 M5 13a7 7 0 0014 0 M8.5 10h7",
   globe:"M12 3a9 9 0 100 18 9 9 0 000-18z M3 12h18 M12 3c3 3 3 15 0 18 M12 3c-3 3-3 15 0 18"
 };
@@ -769,7 +782,7 @@ const state = {
   latest: null, edition: null, archiveMode: false, rewinding: false,
   listMode: (function(){ try { return localStorage.getItem('mm_listmode') === 'grid' ? 'grid' : 'full'; } catch(e){ return 'full'; } })(),
   cats: new Set(Object.keys(CATS)),
-  layer: (function(){ try { const v = localStorage.getItem('mm_layer'); return ['top','geo','meteo','sport','eco','pol','trasp','hot','all'].includes(v) ? v : 'top'; } catch(e){ return 'top'; } })(),
+  layer: (function(){ try { const v = localStorage.getItem('mm_layer'); return ['top','geo','meteo','sport','eco','pol','trasp','events','hot','all'].includes(v) ? v : 'top'; } catch(e){ return 'top'; } })(),
   sheetList: [], sheetIdx: 0, read: new Set(), selected: null
 };
 try { const r = JSON.parse(localStorage.getItem("mm_read") || "[]"); if (Array.isArray(r)) r.slice(-400).forEach(x => state.read.add(x)); } catch(e){}
@@ -873,6 +886,8 @@ const LAYERS = {
          test: it => it.cat === "politica" || it.icon === "vote" || inLayerTag(it, "elezioni") },
   trasp: { l: "Trasporti e scioperi", i: "train", d: "Scioperi di treni, aerei, mezzi pubblici e altri servizi, con date e orari; grandi disagi.", fxAlways: true,
          test: it => inLayerTag(it, "trasporti") },
+  events: { l: "Eventi", i: "ticket", d: "Concerti, festival, mostre, teatro, fiere, sagre e grandi eventi: oggi e nei prossimi 30 giorni.", fxAlways: false,
+         test: () => false },
   hot: { l: "Dove si parla di più", i: "flame", d: "Paesi colorati in base a quante notizie hanno oggi. Tocca un Paese per leggerle.", fxAlways: false,
          test: () => false },
   all: { l: "Tutto", i: "layers", d: "Tutte le notizie del giorno: avvicinati per separarle e vedere linee e attacchi.", fxAlways: false,
@@ -886,6 +901,7 @@ function setLayer(k){
   try { localStorage.setItem("mm_layer", k); } catch(e){}
   stopTour(); closeSheet(); renderLayerBar(); MAP.render();
   if (window.LIVEWX && LIVEWX.refresh) LIVEWX.refresh();
+  EV.renderPanel();
 }
 function renderLayerBar(){
   const el = $("#mapFilters"); if (!el) return;
@@ -893,7 +909,8 @@ function renderLayerBar(){
   const cur = LAYERS[state.layer] || LAYERS.top;
   const extra = { meteo: () => wxList("italy").length + wxList("europe").length, sport: () => (Array.isArray(dataBlock("sport").matches) ? dataBlock("sport").matches.length : 0),
     eco: () => dataList("markets").length, pol: () => dataList("elections").length, trasp: () => dataList("strikes").length,
-    hot: () => new Set(items().map(i => i.cc).filter(Boolean)).size };
+    hot: () => new Set(items().map(i => i.cc).filter(Boolean)).size,
+    events: () => EV.inRange().length };
   const count = k => all.filter(LAYERS[k].test).length + (extra[k] ? extra[k]() : 0);
   const ico = k => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="${ICONS[LAYERS[k].i]}"/></svg>`;
   el.innerHTML = `<div class="layersel">
@@ -1284,6 +1301,7 @@ const MAP = (function(){
     else if (state.layer === "pol") renderElections();
     else if (state.layer === "trasp") renderStrikes();
     else if (state.layer === "hot") renderHot();
+    else if (state.layer === "events") renderEvents();
     const pillIds = Array.isArray(state.edition && state.edition.pills) ? state.edition.pills : [];
     const vis = mapItems();
     // zones: tint countries
@@ -1428,6 +1446,23 @@ const MAP = (function(){
       g.append("text").attr("class", "wlbl").attr("text-anchor", "middle").attr("y", 27).text(String(e.country || countryName(e.cc || "")).slice(0, 22));
       g.on("click", ev => { ev.stopPropagation(); stopTour(); openElection(e); });
       addNode(g, e.lat, e.lng);
+    });
+  }
+  /* events: one badge per town (count and the type of the first event); tap for the list */
+  function renderEvents(){
+    const list = EV.inRange(); const by = new Map();
+    list.forEach(e => { if (!inBox(e.lat, e.lng)) return; const k = (e.city || e.venue || "") + "|" + (e.lat).toFixed(1) + "," + (e.lng).toFixed(1); if (!by.has(k)) by.set(k, []); by.get(k).push(e); });
+    by.forEach(arr => {
+      arr.sort(EV.cmp); const e = arr[0], c = EV.cat(e), today = arr.some(EV.isToday);
+      const lat = arr.reduce((a, b) => a + b.lat, 0) / arr.length, lng = arr.reduce((a, b) => a + b.lng, 0) / arr.length;
+      const g = gW.append("g").attr("class", "dnode evnode");
+      g.append("circle").attr("r", 22).attr("fill", "transparent");
+      g.append("circle").attr("r", 15).attr("fill", today ? "var(--accent)" : c.col).attr("stroke", "#fff").attr("stroke-width", 2);
+      g.append("g").attr("transform", "translate(-9,-9) scale(0.75)").html(`<path d="${ICONS[c.icon]}" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>`);
+      if (arr.length > 1){ g.append("circle").attr("cx", 12).attr("cy", -12).attr("r", 8).attr("fill", "var(--ink)").attr("stroke", "#fff").attr("stroke-width", 1.5); g.append("text").attr("x", 12).attr("y", -12).attr("dy", "0.35em").attr("text-anchor", "middle").attr("class", "ptxt").attr("fill", "var(--paper)").style("font-size", "10px").text(arr.length); }
+      g.append("text").attr("class", "wlbl").attr("text-anchor", "middle").attr("y", 28).text(String(e.city || e.venue || "").slice(0, 18));
+      g.on("click", ev => { ev.stopPropagation(); stopTour(); EV.openList(e.city || e.venue || "Eventi", arr); });
+      addNode(g, lat, lng);
     });
   }
   function renderStrikes(){
@@ -1730,6 +1765,7 @@ function showLegend(){
     ${state.layer === "eco" ? `<div class="lgrow"><span class="lg lg-score" style="background:#16866a">+0,4%</span><span><b>Borse:</b> verde se l'indice ha chiuso in rialzo, rosso se in calo. Tocca per la tabella completa con gli altri indicatori.</span></div>` : ""}
     ${state.layer === "pol" ? `<div class="lgrow"><span class="lg lg-zone" style="--c:#2f5fa7"></span><span><b>Paese in blu:</b> elezioni in programma. <b>Viola:</b> risultati disponibili. Tocca l'etichetta per date e risultati ufficiali, mostrati tutti con lo stesso colore.</span></div>` : ""}
     ${state.layer === "trasp" ? `<div class="lgrow"><span class="lg lg-score" style="background:#8a4bb0">20 nov</span><span><b>Sciopero:</b> il simbolo indica il settore (treni, aerei, mezzi pubblici, porti, scuola, sanità), la scritta la data. Tocca per orari e zone.</span></div>` : ""}
+    ${state.layer === "events" ? `<div class="lgrow"><span class="lg lg-dot" style="background:var(--accent)"></span><span><b>Cerchio rosso:</b> c'è almeno un evento oggi. Gli altri colori indicano il tipo: concerti, festival, mostre, teatro, fiere, sagre, sport. Il numero è quanti eventi ci sono in quella città nel periodo scelto. Tocca per l'elenco e i dettagli, con il link al sito ufficiale.</span></div>` : ""}
     ${state.layer === "hot" ? `<div class="lgrow"><span class="lg lg-zone" style="--c:#c4372b"></span><span><b>Colore più intenso = più notizie</b> su quel Paese oggi. Il numero nel cerchio indica quante. Tocca per leggerle.</span></div>` : ""}
     ${state.layer === "meteo" ? `
     <div class="lgrow"><span class="lg lg-alert"><i style="background:#f2c230"></i><i style="background:#f08a24"></i><i style="background:#d93a2b"></i></span><span><b>Allerte della Protezione civile</b> per regione: giallo = criticità ordinaria, arancione = moderata, rosso = elevata. Tocca il cerchio con il punto esclamativo per i dettagli.</span></div>
@@ -1882,13 +1918,16 @@ function openPlace(name, pt, radius){
     const pl = PLACES.filter(p => hit(p.name)).sort((a, b) => (starts(b.name) - starts(a.name)) || a.name.length - b.name.length).slice(0, 5);
     const cs = countryIndex().filter(c => hit(c.name)).sort((a, b) => (starts(b.name) - starts(a.name))).slice(0, 4);
     const ns = allItems().map(it => ({ it, sc: (hit(it.title) ? 3 : 0) + (hit(it.place || "") ? 2 : 0) + (hit((it.storyLabel || "") + " " + (it.region || "")) ? 2 : 0) + (hit(it.text || "") ? 1 : 0) })).filter(x => x.sc > 0).sort((a, b) => b.sc - a.sc || (b.it.weight || 1) - (a.it.weight || 1)).slice(0, 12).map(x => x.it);
+    const evs = EV.all().filter(e => hit(e.title) || hit(e.city || "") || hit(e.venue || "")).sort(EV.cmp).slice(0, 6);
     let h = "";
     if (pl.length) h += `<div class="sb-h">Luoghi</div>` + pl.map((p, i) => `<button data-pl="${i}"><span class="ic">${PIN}</span><span>${esc(p.name)}<small>${esc(p.kind)} · ${newsNear(p, p.kind === "regione" ? 120 : 30).length} notizie vicine</small></span></button>`).join("");
     if (cs.length) h += `<div class="sb-h">Paesi</div>` + cs.map(c => `<button data-cc="${esc(c.cc)}"><span class="ic">${FLAG}</span><span>${esc(c.name)}<small>scheda del Paese</small></span></button>`).join("");
     if (ns.length) h += `<div class="sb-h">Notizie</div>` + ns.map((it, i) => { const c = catOf(it); return `<button data-n="${i}"><span class="ic" style="background:${c.c};color:#fff">${iconSvg(iconOf(it))}</span><span>${esc(it.title)}<small>${esc(it.place || "")}${it.local ? " · locale" : ""}</small></span></button>`; }).join("");
+    if (evs.length) h += `<div class="sb-h">Eventi</div>` + evs.map((e, i) => { const c = EV.cat(e); return `<button data-ev="${i}"><span class="ic" style="background:${c.col};color:#fff">${iconSvg(c.icon)}</span><span>${esc(e.title)}<small>${esc(EV.when(e))}${e.city ? " · " + esc(e.city) : ""}</small></span></button>`; }).join("");
     res.innerHTML = h || `<div class="sb-empty">Nessun risultato per «${esc(inp.value)}» nelle notizie di oggi.</div>`;
     res.querySelectorAll("[data-pl]").forEach(b => b.addEventListener("click", () => { const p = pl[+b.dataset.pl]; close(); openPlace(p.name, p, p.kind === "regione" ? 120 : 30); }));
     res.querySelectorAll("[data-cc]").forEach(b => b.addEventListener("click", () => { const cc = b.dataset.cc; close(); if (!isWide()) setView("map"); setTimeout(() => { MAP.ensure(); MAP.flyToCountry(cc); showCountry(cc); }, 60); }));
+    res.querySelectorAll("[data-ev]").forEach(b => b.addEventListener("click", () => { const e = evs[+b.dataset.ev]; close(); if (!isWide()) setView("map"); setTimeout(() => { MAP.ensure(); MAP.flyTo(e.lat, e.lng, 45, 1100); EV.openEvent(e); }, 60); }));
     res.querySelectorAll("[data-n]").forEach(b => b.addEventListener("click", () => { const it = ns[+b.dataset.n]; close(); if (inRegion(it)) focusItem(it.id); else showSheet(it.place || "Notizia", [it], 0); }));
   }
   function open(){ stopTour(); hideHint(); closeSheet(); box.classList.add("open"); countries = null; run(); setTimeout(() => inp.focus(), 30); }
@@ -2066,8 +2105,8 @@ window.LIVEWX = (function(){
   /* ---- temperatures and wind on a grid that follows the view (Open-Meteo) ---- */
   const tcache = new Map(); let gridTimer = null, gridNodes = [], gridSig = "";
   /* weather symbols sit on real cities, chosen by zoom: capitals and big cities first, then provincial capitals */
-  const BIGL = ["Roma","Milano","Parigi","Londra","Berlino","Madrid","Napoli","Palermo","Torino","Bari","Cagliari","Venezia","Vienna","Varsavia","Atene","Istanbul","Kiev","Mosca","Lisbona","Dublino","Stoccolma","Oslo","Helsinki","Copenaghen","Bruxelles","Amsterdam","Praga","Budapest","Bucarest","Belgrado","Sofia","Berna","Ankara","Bologna","Firenze","Genova","Catania","Trieste","Bolzano","Pescara","Ancona","Perugia","Reggio Calabria",,"Berlino","Madrid","Londra","Lisbona","Dublino","Bruxelles","Amsterdam","Berna","Vienna","Copenaghen","Oslo","Stoccolma","Helsinki","Varsavia","Praga","Budapest","Belgrado","Atene","Bucarest","Sofia","Kiev","Minsk","Mosca","Ankara","Istanbul","Zagabria","Lubiana","Sarajevo","Tirana","Vilnius","Riga","Tallinn","Reykjavik","Tunisi","Algeri","Rabat","Il Cairo","Tripoli","Beirut","Gerusalemme","Damasco","Tbilisi","Barcellona","Monaco di Baviera","Marsiglia","Lione","Amburgo","Odessa","San Pietroburgo"];
-  const BIG = new Map(BIGL.map((n, i) => [n, i]));
+  const BIGL = ["Roma","Milano","Parigi","Londra","Berlino","Madrid","Napoli","Palermo","Torino","Bari","Cagliari","Venezia","Vienna","Varsavia","Atene","Istanbul","Kiev","Mosca","Lisbona","Dublino","Stoccolma","Oslo","Helsinki","Copenaghen","Bruxelles","Amsterdam","Praga","Budapest","Bucarest","Belgrado","Sofia","Berna","Ankara","Bologna","Firenze","Genova","Catania","Trieste","Bolzano","Pescara","Ancona","Perugia","Reggio Calabria","Berlino","Madrid","Londra","Lisbona","Dublino","Bruxelles","Amsterdam","Berna","Vienna","Copenaghen","Oslo","Stoccolma","Helsinki","Varsavia","Praga","Budapest","Belgrado","Atene","Bucarest","Sofia","Kiev","Minsk","Mosca","Ankara","Istanbul","Zagabria","Lubiana","Sarajevo","Tirana","Vilnius","Riga","Tallinn","Reykjavik","Tunisi","Algeri","Rabat","Il Cairo","Tripoli","Beirut","Gerusalemme","Damasco","Tbilisi","Barcellona","Monaco di Baviera","Marsiglia","Lione","Amburgo","Odessa","San Pietroburgo"];
+  const BIG = new Map(); BIGL.forEach((n, i) => { if (n && !BIG.has(n)) BIG.set(n, i); });
   function gridPoints(){
     const t = MAP.tr(), D = MAP.dims(); if (!t) return [];
     const cand = PLACES.filter(p => p.kind === "città").map(p => { const q = scr(p.lat, p.lng, t); return { p, x: q[0], y: q[1], rank: BIG.has(p.name) ? BIG.get(p.name) : 999 }; })
@@ -2200,6 +2239,77 @@ window.LIVEWX = (function(){
   setInterval(() => { if (active() && opts.radar){ R.loadedAt = 0; loadRadar(); } }, 10 * 60 * 1000);
   api.tap = tap; api.onPlace = onPlace; api.refresh = refresh; api.forecast = forecast;
   return api;
+})();
+
+/* ---------- events: concerts, festivals, exhibitions, fairs… today and the next 30 days ---------- */
+const EV = (function(){
+  const CATS = {
+    concerto: { l: "Concerti", icon: "music", col: "#8a4bb0" }, festival: { l: "Festival", icon: "star", col: "#d9822b" },
+    mostra: { l: "Mostre", icon: "palette", col: "#2f8f9d" }, teatro: { l: "Teatro e danza", icon: "theater", col: "#b5543f" },
+    fiera: { l: "Fiere", icon: "tent", col: "#5b6b7a" }, sagra: { l: "Sagre e mercatini", icon: "food", col: "#7a9a3a" },
+    sport: { l: "Sport", icon: "trophy", col: "#2f6aa8" }, cultura: { l: "Cultura e incontri", icon: "ticket", col: "#6b5b95" }, altro: { l: "Altri eventi", icon: "ticket", col: "#7a7f86" }
+  };
+  const RANGES = [["oggi", "Oggi"], ["weekend", "Weekend"], ["7", "7 giorni"], ["30", "30 giorni"]];
+  let range = "7", cats = new Set(Object.keys(CATS));
+  try { const r = localStorage.getItem("mm_evrange"); if (RANGES.some(x => x[0] === r)) range = r; } catch(e){}
+  const pad = n => String(n).padStart(2, "0");
+  const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const addD = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+  function bounds(){
+    const t0 = new Date(); t0.setHours(12, 0, 0, 0);
+    if (range === "oggi") return [ymd(t0), ymd(t0)];
+    if (range === "weekend"){ const dow = t0.getDay(); const sat = addD(t0, dow === 0 ? -1 : 6 - dow); const sun = addD(sat, 1); return [ymd(dow === 0 ? t0 : (dow === 6 ? t0 : (dow === 5 ? t0 : sat))), ymd(sun)]; }
+    return [ymd(t0), ymd(addD(t0, +range))];
+  }
+  const cat = e => CATS[e.cat] || CATS.altro;
+  const all = () => (state.events && Array.isArray(state.events.items) ? state.events.items : []).filter(e => e && e.title && num(e.lat) && num(e.lng) && /^\d{4}-\d{2}-\d{2}$/.test(e.dateStart || ""));
+  const endOf = e => /^\d{4}-\d{2}-\d{2}$/.test(e.dateEnd || "") ? e.dateEnd : e.dateStart;
+  function inRange(){ const [a, b] = bounds(); return all().filter(e => cats.has(CATS[e.cat] ? e.cat : "altro") && e.dateStart <= b && endOf(e) >= a); }
+  const isToday = e => { const d = ymd(new Date()); return e.dateStart <= d && endOf(e) >= d; };
+  const cmp = (a, b) => (isToday(b) - isToday(a)) || String(a.dateStart).localeCompare(String(b.dateStart)) || (b.weight || 1) - (a.weight || 1);
+  function when(e){
+    const f = s => new Date(s + "T12:00:00").toLocaleDateString("it-IT", { weekday: "short", day: "numeric", month: "short" });
+    let w = e.dateLabel || (endOf(e) !== e.dateStart ? `dal ${f(e.dateStart)} al ${f(endOf(e))}` : f(e.dateStart));
+    return (isToday(e) ? "Oggi · " : "") + w + (e.time ? ", " + e.time : "");
+  }
+  function row(e, i){ const c = cat(e); return `<button class="cn-row" data-ev="${i}"><span class="d" style="background:${isToday(e) ? "var(--accent)" : c.col}">${iconSvg(c.icon)}</span><span>${esc(e.title)}<small>${esc(when(e))}${e.venue ? " · " + esc(e.venue) : ""}</small></span></button>`; }
+  function openList(title, arr){
+    arr = arr.slice().sort(cmp);
+    showInfo(title, `<div class="arcnote">${arr.length} ${arr.length === 1 ? "evento" : "eventi"} · ${esc((RANGES.find(r => r[0] === range) || [0, ""])[1].toLowerCase())}</div>` + arr.map(row).join(""));
+    document.querySelectorAll("#shBody [data-ev]").forEach(b => b.addEventListener("click", () => openEvent(arr[+b.dataset.ev], () => openList(title, arr))));
+  }
+  function openEvent(e, back){
+    const c = cat(e);
+    const u = safeUrl(e.url);
+    const srcs = (Array.isArray(e.sources) ? e.sources : []).map(s => { const x = safeUrl(s && s.u); return x ? `<a href="${esc(x)}" target="_blank" rel="noopener noreferrer">${esc(s.n || new URL(x).hostname)}</a>` : ""; }).filter(Boolean).join("");
+    showInfo(e.city || "Evento", `${back ? `<button class="fbtn" id="evBack" style="margin-bottom:10px">‹ Tutti gli eventi qui</button>` : ""}
+      <div class="wxcard">
+        <div class="wxbadge" style="background:${c.col};color:#fff">${esc(c.l)}</div>
+        <h3 style="font-family:Newsreader,serif;font-size:20px;line-height:1.25;margin:8px 0 6px">${esc(e.title)}</h3>
+        <p><b>Quando:</b> ${esc(when(e))}</p>
+        ${e.venue || e.city ? `<p><b>Dove:</b> ${esc([e.venue, e.city].filter(Boolean).join(", "))}</p>` : ""}
+        ${e.price ? `<p><b>Ingresso:</b> ${esc(e.price)}</p>` : ""}
+        ${e.text ? `<p>${esc(e.text)}</p>` : ""}
+        ${u ? `<p><a class="go" style="display:inline-flex;text-decoration:none" href="${esc(u)}" target="_blank" rel="noopener noreferrer">Sito ufficiale →</a></p>` : ""}
+        <p class="wxfoot">Date e orari possono cambiare: controlla sul sito ufficiale prima di andare.</p>
+        ${srcs ? `<div class="srcs wxsrc">${srcs}</div>` : ""}
+      </div>`);
+    const b = document.getElementById("evBack"); if (b && back) b.addEventListener("click", back);
+  }
+  /* filter panel shown in the events layer */
+  const panel = document.createElement("div"); panel.className = "livepanel evpanel"; panel.hidden = true;
+  $("#map").parentNode.appendChild(panel);
+  function renderPanel(){
+    const on = state.layer === "events" && !state.archiveMode; panel.hidden = !on; if (!on) return;
+    const n = inRange().length;
+    panel.innerHTML = `<div class="lp-row">${RANGES.map(r => `<button class="lp-t" data-r="${r[0]}" aria-pressed="${r[0] === range}">${r[1]}</button>`).join("")}</div>
+      <div class="ev-cats">${Object.entries(CATS).filter(([k]) => k !== "altro").map(([k, c]) => `<button class="ev-c${cats.has(k) ? " on" : ""}" data-c="${k}" style="--c:${c.col}">${iconSvg(c.icon)}${esc(c.l)}</button>`).join("")}</div>
+      <div class="lp-note">${all().length ? `${n} ${n === 1 ? "evento" : "eventi"} nel periodo scelto · tocca un cerchio per l'elenco` : "Gli eventi arrivano con l'edizione del mattino."}</div>`;
+    panel.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => { range = b.dataset.r; try { localStorage.setItem("mm_evrange", range); } catch(e){} refresh(); }));
+    panel.querySelectorAll("[data-c]").forEach(b => b.addEventListener("click", () => { const k = b.dataset.c; if (cats.has(k) && cats.size > 1) cats.delete(k); else cats.add(k); if (k === "cultura"){ if (cats.has("cultura")) cats.add("altro"); else cats.delete("altro"); } refresh(); }));
+  }
+  function refresh(){ renderPanel(); if (state.layer === "events"){ MAP.render(); renderLayerBar(); } }
+  return { inRange, all, cmp, isToday, cat, openList, openEvent, when, renderPanel, refresh, CATS };
 })();
 
 /* ---------- badges for news added or changed by the midday / evening update ---------- */
@@ -2589,7 +2699,7 @@ $("#backToday").addEventListener("click", () => backToToday());
 
 /* ---------- boot ---------- */
 /* data source: the artifact database inside Claude, or the site's own JSON files when installed as a web app */
-const FILES = { "editions/latest": "data/latest.json", "editions/local": "data/local.json", "reference/countries": "data/countries.json" };
+const FILES = { "editions/latest": "data/latest.json", "editions/local": "data/local.json", "editions/events": "data/events.json", "reference/countries": "data/countries.json" };
 function staticDb(){
   const get = async (path) => { const r = await fetch(path + (path.includes("?") ? "&" : "?") + "t=" + Math.floor(Date.now() / 60000), {cache: "no-cache"}); if (!r.ok) throw new Error(r.status); return r.json(); };
   return {
@@ -2641,6 +2751,10 @@ if (IS_SITE && "serviceWorker" in navigator) { window.addEventListener("load", (
     if (!snap.exists) return;
     const d = snap.data(); if (!d || (state.local && state.local.updatedAt === d.updatedAt && state.local.date === d.date)) return;
     state.local = d; if (state.edition){ const y = $("#listPane").scrollTop; renderList(); renderFilters(); $("#listPane").scrollTop = y; MAP.render(); }
+  }, () => {}); } catch(e){}
+  try { db.doc("editions/events").onSnapshot(snap => {
+    if (!snap.exists) return; const d = snap.data(); if (!d || (state.events && state.events.updatedAt === d.updatedAt)) return;
+    state.events = d; EV.renderPanel(); if (state.layer === "events" && state.edition){ MAP.render(); } if (state.edition) renderLayerBar();
   }, () => {}); } catch(e){}
   try { db.doc("reference/countries").onSnapshot(snap => { if (snap.exists) state.countries = snap.data(); }, () => {}); } catch(e){}
 })();
